@@ -29,6 +29,8 @@
   const CARD_TINTS = ['#F5EFE3','#EAF1ED','#EDEAF5','#F1ECE6','#E8EFF2','#F5E9E4'];
   let displayCards     = $state([]);
   let targetWords      = $state([]);
+  let matchedIds       = $state(new Set());
+  let clickedIds       = $state(new Set());
   let score            = $state(0);
   let remainingSeconds = $state(0);
   let wrongCardId      = $state(-1);
@@ -193,6 +195,8 @@
     const data      = await createRound(config, sectionId);
     displayCards      = data.displayCards;
     targetWords       = data.targetWords;
+    matchedIds        = new Set();
+    clickedIds        = new Set();
     score             = 0;
     setsCompleted     = 0;
     remainingSeconds  = globals?.round_seconds ?? 60;
@@ -219,6 +223,7 @@
     const data      = await createRound(gameConfig, sectionId);
     displayCards    = data.displayCards;
     targetWords     = data.targetWords;
+    matchedIds      = new Set();
     mistakesInSet   = 0;
     comboPrimed     = false;
     clearTimeout(comboPrimedTimeout);
@@ -231,6 +236,7 @@
   function clickCard(card) {
     wrongCardId = -1;
     clearTimeout(wrongTimeout);
+    if (card.icon) clickedIds = new Set([...clickedIds, card.icon]);
 
     if (!targetWords.includes(card.target)) {
       score += globals?.score_wrong ?? -1;
@@ -266,9 +272,8 @@
     }
     remainingSeconds += globals?.timer_bonus_per_correct ?? 1;
 
-    displayCards = displayCards.filter(c => c.id !== card.id);
-    targetWords  = targetWords.filter(w => w !== card.target);
-    if (targetWords.length === 0) loadNextRound();
+    matchedIds = new Set([...matchedIds, card.id]);
+    if (matchedIds.size >= targetWords.length) loadNextRound();
   }
 
   function comboExpired() { comboActive = false; comboPrimed = false; }
@@ -361,15 +366,17 @@
       </div>
     </div>
 
-    <!-- Combo drain — hidden visually, JS logic kept intact -->
-    {#key comboRestartKey}
-      <div
-        class="combo-drain"
-        class:active={comboRestartKey > 0}
-        style={comboRestartKey > 0 ? `animation-duration:${comboDurationMs}ms` : ''}
-        onanimationend={comboExpired}
-      ></div>
-    {/key}
+    <!-- Combo streak bar -->
+    <div class="combo-strip">
+      {#key comboRestartKey}
+        <div
+          class="combo-drain"
+          class:active={comboRestartKey > 0}
+          style={comboRestartKey > 0 ? `animation-duration:${comboDurationMs}ms` : ''}
+          onanimationend={comboExpired}
+        ></div>
+      {/key}
+    </div>
 
     <!-- Board -->
     <div class="board">
@@ -379,13 +386,16 @@
           <button
             class="board-card"
             class:wrong={wrongCardId === card.id}
+            class:matched={matchedIds.has(card.id)}
             style="--rot:{card.rot || 0}deg; --tint:{tint}"
             onclick={() => clickCard(card)}
           >
             <div class="card-inner">
               {#if boardLang === 'english' && card.icon}
                 <img class="card-icon" src="{import.meta.env.BASE_URL}icons/{card.icon}" alt={card.base}/>
-                <span class="card-icon-label">{card.base}</span>
+                {#if !clickedIds.has(card.icon)}
+                  <span class="card-icon-label">{card.base}</span>
+                {/if}
               {:else}
                 <span class="card-word">{card.base}</span>
               {/if}
@@ -411,6 +421,7 @@
           <button
             class="target-card"
             class:peeking={previewTargetWord === word}
+            class:matched={matchedIds.has(iconCard?.id)}
             onclick={() => clickTargetWord(word)}
           >
             {#if targetLang === 'english' && iconCard?.icon}
@@ -582,10 +593,24 @@
     flex-shrink: 0;
   }
 
-  /* Combo drain — invisible but keeps JS animation running */
-  .combo-drain { display: none; }
+  /* Combo streak strip */
+  .combo-strip {
+    position: relative;
+    height: 3px;
+    border-radius: 999px;
+    background: #E8E3D9;
+    margin-bottom: 0.35rem;
+    overflow: hidden;
+  }
+  .combo-drain {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 999px;
+    background: #D49A4A;
+  }
   .combo-drain.active {
-    display: block;
     width: 100%;
     animation: drain linear forwards;
   }
@@ -627,6 +652,10 @@
   .board-card:active {
     transform: rotate(var(--rot, 0deg)) scale(0.96);
     box-shadow: 0 1px 3px rgba(20,18,15,0.08);
+  }
+  .board-card.matched {
+    visibility: hidden;
+    pointer-events: none;
   }
   .board-card.wrong {
     border-color: #C75A4A;
@@ -730,7 +759,7 @@
     background: #FFFFFF;
     border: 1px solid #E8E3D9;
     border-radius: 12px;
-    padding: 12px 8px;
+    padding: 8px 4px;
     font-family: inherit;
     text-align: center;
     line-height: 1.2;
@@ -742,6 +771,10 @@
     position: relative;
   }
 
+  .target-card.matched {
+    visibility: hidden;
+    pointer-events: none;
+  }
   .target-card:active, .target-card.peeking {
     background: #E0F0E8;
     border-color: #2F8F6E;
@@ -760,8 +793,8 @@
   }
 
   .target-icon {
-    width: 40px;
-    height: 40px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
     display: block;
   }
