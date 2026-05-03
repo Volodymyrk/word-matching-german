@@ -1,16 +1,40 @@
 <script>
   import { dirLabel } from './theme.js';
 
+  const base = import.meta.env.BASE_URL;
+
   let { lesson, sectionLabel, dir, words = [], onBack, onStart } = $props();
 
-  const label = $derived(dirLabel(lesson, dir));
+  const label      = $derived(dirLabel(lesson, dir));
+  const baseLang   = $derived(lesson.languages[dir]);
+
+  // Always show german → english → icon regardless of play direction
+  function germanWord(w)  { return baseLang === 'german' ? w.base   : w.target; }
+  function englishWord(w) { return baseLang === 'english' ? w.base  : w.target; }
+
+  function speakWord(w) {
+    if (w.icon) {
+      const stem = w.icon.replace(/\.[^.]+$/, '');
+      new Audio(`${base}audio/${stem}.mp3`).play().catch(() => {});
+      return;
+    }
+    if (!window.speechSynthesis) return;
+    const word    = germanWord(w);
+    const grammar = w.grammar ?? '';
+    const article = grammar === 'm' ? 'der' : grammar === 'f' ? 'die' : grammar === 'n' ? 'das' : '';
+    const utt = new SpeechSynthesisUtterance(article ? `${article} ${word}` : word);
+    utt.lang = 'de-DE';
+    utt.rate = 0.9;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(utt);
+  }
 </script>
 
 <div class="page">
   <div class="header">
     <button class="back-btn" aria-label="Zurück" onclick={onBack}>
       <svg width="14" height="14" viewBox="0 0 14 14">
-        <path d="M9 2L3 7l6 5" stroke="#1B1410" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 2L3 7l6 5" stroke="#7A7269" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
     <div>
@@ -23,11 +47,14 @@
 
   <div class="word-list">
     {#each words as w, i}
-      <div class="word-row" class:alt={i % 2 !== 0}>
-        <span class="word-base">{w.base}</span>
+      <button class="word-row" class:alt={i % 2 !== 0} onclick={() => speakWord(w)} aria-label="Anhören: {germanWord(w)}">
+        <span class="word-base">{germanWord(w)}</span>
         <span class="word-sep">→</span>
-        <span class="word-target">{w.target}</span>
-      </div>
+        <span class="word-target">{englishWord(w)}</span>
+        {#if w.icon}
+          <img class="word-icon" src="{base}icons/{w.icon}" alt={englishWord(w)}/>
+        {/if}
+      </button>
     {/each}
   </div>
 
@@ -37,11 +64,13 @@
 </div>
 
 <style>
+  :global(body) { margin: 0; background: #FBFAF7; }
+
   .page {
     height: 100dvh;
     overflow: hidden;
-    background: #FBF6EC;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    background: #FBFAF7;
+    font-family: 'Inter', system-ui, sans-serif;
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -59,12 +88,11 @@
   .back-btn {
     appearance: none;
     cursor: pointer;
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
-    background: #FFFCF5;
-    border: 2px solid #1B1410;
-    box-shadow: 2px 2px 0 #1B1410;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: #F4F2EC;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,34 +100,32 @@
   }
 
   .header-eyebrow {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #5A4E45;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: #B0A89E;
+    letter-spacing: 0.3px;
   }
 
   .header-title {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.4rem;
-    color: #1B1410;
-    line-height: 1.1;
-    margin-top: 2px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1F1D1A;
+    line-height: 1.15;
+    margin-top: 1px;
   }
 
   .dir-badge {
     align-self: flex-start;
     margin: 0 1.25rem 1rem;
-    background: #FFFCF5;
-    border: 1.5px solid #1B1410;
+    background: #F4F2EC;
+    border: none;
     border-radius: 999px;
-    padding: 4px 14px;
-    font-family: 'Geist Mono', ui-monospace, monospace;
+    padding: 4px 12px;
+    font-family: ui-monospace, monospace;
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.5px;
-    color: #1B1410;
+    color: #7A7269;
     flex-shrink: 0;
   }
 
@@ -110,46 +136,60 @@
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     margin: 0 1.25rem;
-    border: 2px solid #1B1410;
+    border: 1px solid #E8E3D9;
     border-radius: 16px;
-    box-shadow: 3px 3px 0 #1B1410;
-    background: #FFFCF5;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.03);
+    background: #FFFFFF;
   }
 
   .word-row {
+    appearance: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E8E3D9;
+    width: 100%;
+    text-align: left;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0.75rem 1.1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border-bottom: 1px solid #EDE5D5;
+    padding: 0.2rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: inherit;
+    transition: background 80ms;
   }
 
-  .word-row:last-child {
-    border-bottom: none;
-  }
-
-  .word-row.alt {
-    background: #F5F0E6;
-  }
+  .word-row:last-child { border-bottom: none; }
+  .word-row.alt { background: #FBFAF7; }
+  .word-row:active { background: #F0EDE6; }
 
   .word-base {
     flex: 1;
-    color: #1B1410;
+    color: #1F1D1A;
+    font-weight: 600;
+    min-width: 0;
   }
 
   .word-sep {
-    color: #A89880;
-    font-size: 0.85rem;
+    color: #B0A89E;
+    font-size: 0.8rem;
     flex-shrink: 0;
   }
 
   .word-target {
     flex: 1;
-    text-align: right;
-    color: #2F5A3D;
-    font-weight: 700;
+    color: #2F8F6E;
+    font-weight: 500;
+    min-width: 0;
+  }
+
+  .word-icon {
+    width: 54px;
+    height: 54px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 8px;
   }
 
   .footer {
@@ -161,20 +201,20 @@
     appearance: none;
     cursor: pointer;
     width: 100%;
-    background: #E8654A;
-    color: #FFF6E8;
-    border: 2.5px solid #1B1410;
-    border-radius: 14px;
+    background: #2F8F6E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
     padding: 0.95rem;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 1.05rem;
-    box-shadow: 4px 4px 0 #1B1410;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.08), 0 4px 12px rgba(20,18,15,0.06);
     transition: transform 80ms, box-shadow 80ms;
   }
 
   .btn-start:active {
-    transform: translate(4px, 4px);
-    box-shadow: 0 0 0 #1B1410;
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(20,18,15,0.10) inset;
   }
 </style>

@@ -2,6 +2,8 @@
   import { onMount, onDestroy } from 'svelte';
   import { dirLabel } from './theme.js';
 
+  const base = import.meta.env.BASE_URL;
+
   let {
     lesson, sectionLabel, dir,
     baseScore, bonusSecs, roundSeconds = 60,
@@ -25,7 +27,7 @@
   let showStars    = $state(false);
   let starsVal     = $state(0);
 
-  function formatTime(/** @type {number} */ s) {
+  function formatTime(s) {
     const m = Math.floor(s / 60);
     return `${m}:${String(s % 60).padStart(2, '0')}`;
   }
@@ -71,342 +73,305 @@
 </script>
 
 <div class="page">
-  <!-- Confetti dots -->
-  <svg class="confetti" width="100%" height="100%" aria-hidden="true">
-    {#each Array.from({length: 22}) as _, i}
-      {@const colors = ['#E8654A','#F0B83D','#7CA982','#FFD9A8','#C8E0D4']}
-      {@const x = (i * 73 + 11) % 100}
-      {@const y = (i * 47 + 5) % 90 + 5}
-      {@const c = colors[i % colors.length]}
-      {@const r = i % 3 === 0 ? 12 : 7}
-      <circle cx="{x}%" cy="{y}%" r={r} fill={c} stroke="#1B1410" stroke-width="1.5" opacity="0.7"/>
-    {/each}
-  </svg>
-
   <div class="content">
-    <div class="eyebrow">GESCHAFFT!</div>
-    <div class="title">Optime!</div>
+    <div class="eyebrow">Geschafft</div>
+    <div class="title">Super gemacht</div>
+    <div class="subtitle">{lesson.name} · {sectionLabel} · {label}</div>
 
-    <div class="badge-row">
-      <div class="badge">{lesson.name} · {sectionLabel}</div>
-      <div class="badge">{label}</div>
-    </div>
-
-    <!-- Stars — appear after bonus animation -->
+    <!-- Stars with scale-in animation -->
     <div class="stars">
       {#each [0, 1, 2] as i}
-        <div
-          class="star-wrap"
-          style="transform: translateY({i === 1 ? '-10px' : '0'}) rotate({i === 0 ? '-8deg' : i === 2 ? '8deg' : '0deg'})"
-        >
-          <div
-            class="star-slam"
-            class:earned={showStars && i < starsVal}
-            style={showStars && i < starsVal ? `animation-delay:${(i * 0.28 + 0.05).toFixed(2)}s` : ''}
-          >
-            <svg width="52" height="52" viewBox="0 0 24 24">
-              <path
-                d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
-                fill={showStars && i < starsVal ? '#F0B83D' : '#EDE5D5'}
-                stroke={showStars && i < starsVal ? '#1B1410' : '#A89880'}
-                stroke-width="1.4"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
+        <div class="star-wrap" style="animation-delay:{showStars ? i * 120 : 0}ms">
+          <svg width="48" height="48" viewBox="0 0 24 24" class="star" class:earned={showStars && i < starsVal}>
+            <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
+              fill={showStars && i < starsVal ? '#D49A4A' : '#E8E3D9'}/>
+          </svg>
         </div>
       {/each}
     </div>
 
-    <!-- Stats cards -->
-    <div class="stats-row">
-      <div class="stat-card">
-        <div class="stat-label">PUNKTE</div>
-        <div class="stat-value">{displayScore}</div>
+    <!-- Stat row -->
+    <div class="stat-row">
+      <div class="stat-item">
+        <div class="stat-label">Punkte</div>
+        <div class="stat-val">+{displayScore}</div>
         {#if isNewBest}<div class="new-best">★ Rekord</div>{/if}
       </div>
-      <div class="stat-card">
-        <div class="stat-label">ZEIT</div>
-        <div class="stat-value">{formatTime(displaySecs)}</div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-label">Zeit</div>
+        <div class="stat-val">{formatTime(displaySecs)}</div>
       </div>
-      <div class="stat-card">
-        <div class="stat-label">TREFFER</div>
-        <div class="stat-value">{accuracy}%</div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-label">Treffer</div>
+        <div class="stat-val">{accuracy}%</div>
       </div>
     </div>
 
-    <!-- Wrong words -->
+    <!-- Wrong words — review list -->
     {#if wrongWords.length > 0}
-      <div class="wrong-section">
-        <div class="wrong-title">SCHWIERIGE WÖRTER</div>
-        {#each wrongWords as w}
-          <div class="wrong-pair">
-            <span class="wrong-clicked">{w.clicked}</span>
-            <span class="wrong-arrow">→</span>
-            <span class="wrong-correct">{w.correct}</span>
-          </div>
-        {/each}
+      <div class="review-section">
+        <div class="review-title">Wiederholen</div>
+        <div class="review-card">
+          {#each wrongWords as w, i}
+            <div class="review-row" class:border-top={i > 0}>
+              <div class="review-icon-wrap">
+                {#if w.icon}
+                  <img src="{base}icons/{w.icon}" alt={w.clicked} class="review-icon"/>
+                {:else}
+                  <span class="review-icon-text">{w.clicked.slice(0, 2)}</span>
+                {/if}
+              </div>
+              <span class="review-clicked">{w.clicked}</span>
+              <svg width="14" height="10" viewBox="0 0 14 10" style="flex-shrink:0;color:#B0A89E">
+                <path d="M1 5h11m-3-3l3 3-3 3" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="review-correct">{w.correct}</span>
+            </div>
+          {/each}
+        </div>
       </div>
     {/if}
 
-    <!-- Plant decorations -->
-    <div class="plants">
-      <svg width="54" height="70" viewBox="0 0 54 70" fill="none" aria-hidden="true">
-        <ellipse cx="27" cy="65" rx="12" ry="5" fill="#C8E0D4" stroke="#1B1410" stroke-width="1.5"/>
-        <path d="M27 64 Q27 40 15 28" stroke="#7CA982" stroke-width="3" stroke-linecap="round" fill="none"/>
-        <ellipse cx="12" cy="22" rx="11" ry="8" fill="#7CA982" stroke="#1B1410" stroke-width="1.5" transform="rotate(-25 12 22)"/>
-        <path d="M27 55 Q27 38 38 30" stroke="#7CA982" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <ellipse cx="41" cy="26" rx="9" ry="7" fill="#7CA982" stroke="#1B1410" stroke-width="1.5" transform="rotate(20 41 26)"/>
-        <path d="M27 48 Q20 38 20 28" stroke="#7CA982" stroke-width="2" stroke-linecap="round" fill="none"/>
-        <circle cx="20" cy="24" r="6" fill="#A8D5B8" stroke="#1B1410" stroke-width="1.4"/>
-      </svg>
-      <svg width="54" height="70" viewBox="0 0 54 70" fill="none" aria-hidden="true" style="transform:scaleX(-1)">
-        <ellipse cx="27" cy="65" rx="12" ry="5" fill="#C8E0D4" stroke="#1B1410" stroke-width="1.5"/>
-        <path d="M27 64 Q27 40 15 28" stroke="#7CA982" stroke-width="3" stroke-linecap="round" fill="none"/>
-        <ellipse cx="12" cy="22" rx="11" ry="8" fill="#7CA982" stroke="#1B1410" stroke-width="1.5" transform="rotate(-25 12 22)"/>
-        <path d="M27 55 Q27 38 38 30" stroke="#7CA982" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <ellipse cx="41" cy="26" rx="9" ry="7" fill="#7CA982" stroke="#1B1410" stroke-width="1.5" transform="rotate(20 41 26)"/>
-        <path d="M27 48 Q20 38 20 28" stroke="#7CA982" stroke-width="2" stroke-linecap="round" fill="none"/>
-        <circle cx="20" cy="24" r="6" fill="#A8D5B8" stroke="#1B1410" stroke-width="1.4"/>
-      </svg>
-    </div>
-
     <!-- Actions -->
     <div class="actions">
-      <button class="btn btn-primary" onclick={onContinue}>
+      <button class="btn-primary" onclick={onContinue}>
         Weiter{nextLabel ? ` · ${nextLabel}` : ''}
       </button>
-      <button class="btn btn-secondary" onclick={onRetry}>Wiederholen</button>
+      <button class="btn-ghost" onclick={onRetry}>Wiederholen</button>
     </div>
   </div>
 </div>
 
 <style>
-  .page {
-    min-height: 100dvh;
-    background: #FBF6EC;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
+  @keyframes v2Star {
+    0%   { transform: scale(0); }
+    60%  { transform: scale(1.25); }
+    100% { transform: scale(1); }
   }
 
-  .confetti {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
+  :global(body) { margin: 0; background: #FBFAF7; }
+
+  .page {
+    min-height: 100dvh;
+    background: #FBFAF7;
+    font-family: 'Inter', system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
   }
 
   .content {
-    position: relative;
-    z-index: 1;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 1.5rem 3rem;
+    padding: 5rem 1.5rem 3rem;
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .eyebrow {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #5A4E45;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #B0A89E;
   }
 
   .title {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 3.5rem;
-    font-style: italic;
-    color: #E8654A;
-    line-height: 1;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1F1D1A;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
     margin-top: 4px;
   }
 
-  .badge-row {
-    display: flex;
-    gap: 8px;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+  .subtitle {
+    font-size: 0.85rem;
+    color: #7A7269;
+    margin-top: 6px;
   }
 
-  .badge {
-    background: #FFFCF5;
-    border: 1.5px solid #1B1410;
-    border-radius: 999px;
-    padding: 4px 12px;
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: #1B1410;
-  }
-
+  /* Stars */
   .stars {
     display: flex;
-    align-items: flex-end;
-    gap: 4px;
-    margin: 1.5rem 0 1.25rem;
-    min-height: 56px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 2rem 0 1.5rem;
+    min-height: 52px;
   }
 
   .star-wrap { display: flex; }
 
-  .star-slam { display: flex; }
+  .star { display: block; transition: fill 200ms; }
 
-  .star-slam.earned {
-    opacity: 0;
-    animation: star-slam 0.44s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  .star.earned {
+    animation: v2Star 480ms ease-out backwards;
   }
 
-  @keyframes star-slam {
-    0%   { opacity: 0; transform: scale(0) rotate(-25deg); }
-    55%  { opacity: 1; transform: scale(1.55) rotate(7deg); filter: drop-shadow(0 0 12px #F5C518); }
-    80%  { transform: scale(0.88) rotate(-3deg); filter: none; }
-    100% { opacity: 1; transform: scale(1) rotate(0deg); }
-  }
-
-  /* Stats */
-  .stats-row {
+  /* Stat row */
+  .stat-row {
     display: flex;
-    gap: 10px;
+    align-items: center;
     width: 100%;
     max-width: 360px;
-    margin-bottom: 1.5rem;
+    padding: 14px 18px;
+    background: #F4F2EC;
+    border-radius: 14px;
+    margin-bottom: 1.25rem;
   }
 
-  .stat-card {
+  .stat-item {
     flex: 1;
-    background: #FFFCF5;
-    border: 2px solid #1B1410;
-    border-radius: 16px;
-    box-shadow: 3px 3px 0 #1B1410;
-    padding: 0.75rem 0.5rem 0.6rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
+    text-align: center;
   }
 
   .stat-label {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.58rem;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    color: #5A4E45;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: #7A7269;
+    letter-spacing: 0.2px;
   }
 
-  .stat-value {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.65rem;
-    font-style: italic;
-    color: #1B1410;
-    line-height: 1.1;
+  .stat-val {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1F1D1A;
+    margin-top: 2px;
+    font-variant-numeric: tabular-nums;
   }
 
   .new-best {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.55rem;
-    font-weight: 700;
-    color: #E8654A;
-    letter-spacing: 0.5px;
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #2F8F6E;
+    letter-spacing: 0.3px;
+    margin-top: 2px;
   }
 
-  /* Wrong words */
-  .wrong-section {
+  .stat-divider {
+    width: 1px;
+    height: 28px;
+    background: #E8E3D9;
+  }
+
+  /* Review list */
+  .review-section {
     width: 100%;
     max-width: 360px;
-    background: #FFFCF5;
-    border: 2px solid #1B1410;
-    border-radius: 16px;
-    box-shadow: 3px 3px 0 #1B1410;
-    padding: 0.85rem 1rem;
     margin-bottom: 1.25rem;
     text-align: left;
   }
 
-  .wrong-title {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #5A4E45;
-    margin-bottom: 0.5rem;
+  .review-title {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #B0A89E;
+    margin-bottom: 8px;
+    padding: 0 4px;
   }
 
-  .wrong-pair {
+  .review-card {
+    background: #FFFFFF;
+    border: 1px solid #E8E3D9;
+    border-radius: 14px;
+    padding: 4px;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.03);
+  }
+
+  .review-row {
     display: flex;
     align-items: center;
-    gap: 6px;
-    padding: 3px 0;
-    font-size: 0.95rem;
-    font-weight: 600;
+    gap: 10px;
+    padding: 8px 10px;
   }
 
-  .wrong-clicked {
-    color: #E8654A;
-  }
+  .review-row.border-top { border-top: 1px solid #E8E3D9; }
 
-  .wrong-arrow {
-    color: #A89880;
-    font-size: 0.85rem;
-  }
-
-  .wrong-correct {
-    color: #2F5A3D;
-    font-weight: 700;
-  }
-
-  /* Plants */
-  .plants {
+  .review-icon-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: #F5EFE3;
     display: flex;
-    gap: 3rem;
-    margin: 0.5rem 0 1rem;
-    opacity: 0.9;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+
+  .review-icon { width: 32px; height: 32px; object-fit: contain; }
+
+  .review-icon-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #7A7269;
+  }
+
+  .review-clicked {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1F1D1A;
+    min-width: 0;
+    text-align: left;
+  }
+
+  .review-correct {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2F8F6E;
+    flex-shrink: 0;
   }
 
   /* Actions */
   .actions {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 6px;
     width: 100%;
     max-width: 360px;
-  }
-
-  .btn {
-    appearance: none;
-    cursor: pointer;
-    border-radius: 14px;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 1rem;
-    padding: 0.9rem 1.2rem;
-    transition: transform 80ms, box-shadow 80ms;
-    border: 2.5px solid #1B1410;
-  }
-
-  .btn:active {
-    transform: translate(3px, 3px);
-    box-shadow: 0 0 0 #1B1410 !important;
+    margin-top: auto;
+    padding-top: 1rem;
   }
 
   .btn-primary {
-    background: #E8654A;
-    color: #FFF6E8;
-    box-shadow: 4px 4px 0 #1B1410;
+    appearance: none;
+    cursor: pointer;
+    background: #2F8F6E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 24px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.08), 0 4px 12px rgba(20,18,15,0.06);
+    transition: transform 100ms, box-shadow 100ms;
   }
 
-  .btn-secondary {
+  .btn-primary:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(20,18,15,0.10) inset;
+  }
+
+  .btn-ghost {
+    appearance: none;
+    cursor: pointer;
     background: transparent;
-    color: #5A4E45;
-    box-shadow: none;
-    border-color: transparent;
-    font-size: 0.95rem;
+    border: none;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7A7269;
   }
 </style>

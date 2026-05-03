@@ -36,7 +36,7 @@ async function loadPairs(config, sectionId = null) {
     const words = data[lk]?.[sk] || [];
     for (const w of words) {
       if (w[bk] !== undefined && w[tk] !== undefined) {
-        pairs.push({ base: w[bk], target: w[tk], grammar: w.grammar ?? '' });
+        pairs.push({ base: w[bk], target: w[tk], grammar: w.grammar ?? '', icon: w.icon ?? null });
       }
     }
   } else {
@@ -44,7 +44,7 @@ async function loadPairs(config, sectionId = null) {
       for (const words of Object.values(lv)) {
         for (const w of words) {
           if (w[bk] !== undefined && w[tk] !== undefined) {
-            pairs.push({ base: w[bk], target: w[tk], grammar: w.grammar ?? '' });
+            pairs.push({ base: w[bk], target: w[tk], grammar: w.grammar ?? '', icon: w.icon ?? null });
           }
         }
       }
@@ -89,6 +89,7 @@ export async function createRound(config, sectionId = null) {
     base:    pair.base,
     target:  pair.target,
     grammar: pair.grammar,
+    icon:    pair.icon,
     left:    positions[i].left,
     top:     positions[i].top,
     rot:     (Math.random() - 0.5) * 8,

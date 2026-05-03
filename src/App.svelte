@@ -26,12 +26,7 @@
   let globals         = $state(null);
 
   // ── Game state ─────────────────────────────────────────────────────────────
-  const BG_COUNT = 6;
-  function randomBg() {
-    const i = Math.floor(Math.random() * BG_COUNT) + 1;
-    return `${import.meta.env.BASE_URL}images/bg_${String(i).padStart(2, '0')}.webp`;
-  }
-  let boardBg          = $state(randomBg());
+  const CARD_TINTS = ['#F5EFE3','#EAF1ED','#EDEAF5','#F1ECE6','#E8EFF2','#F5E9E4'];
   let displayCards     = $state([]);
   let targetWords      = $state([]);
   let score            = $state(0);
@@ -53,6 +48,9 @@
   const livesRange  = $derived(Array.from({ length: globals?.lives ?? 3 }, (_, i) => i));
   const setsPerRound = $derived(globals?.sets_per_round ?? 6);
   const setProgress  = $derived(setsCompleted);
+
+  const boardLang       = $derived(selectedLesson?.languages?.[selectedDir] ?? '');
+  const targetLang      = $derived(selectedLesson?.languages?.[1 - selectedDir] ?? '');
 
   const currentDirLabel = $derived.by(() => {
     if (!selectedLesson || selectedDir == null) return '';
@@ -198,7 +196,6 @@
     score             = 0;
     setsCompleted     = 0;
     remainingSeconds  = globals?.round_seconds ?? 60;
-    boardBg           = randomBg();
     wrongCardId       = -1;
     mistakesInSet     = 0;
     wrongInRound      = 0;
@@ -252,10 +249,7 @@
     }
 
     correctClicks++;
-    const boardLang  = selectedLesson?.languages?.[selectedDir];
-    const targetLang = selectedLesson?.languages?.[1 - selectedDir];
-    if (boardLang === 'german')       speakWord(card.base,   card.grammar, 'german');
-    else if (targetLang === 'german') speakWord(card.target, card.grammar, 'german');
+    if (boardLang === 'german' || targetLang === 'german') speakWord(card);
 
     const inCombo     = comboPrimed || comboActive;
     const comboDurMs  = Math.round((globals?.combo_seconds ?? 2) * 1000);
@@ -279,13 +273,19 @@
 
   function comboExpired() { comboActive = false; comboPrimed = false; }
 
-  function speakWord(word, grammar, lang) {
+  function speakWord(card) {
+    if (card.icon) {
+      const stem = card.icon.replace(/\.[^.]+$/, '');
+      const audio = new Audio(`${import.meta.env.BASE_URL}audio/${stem}.mp3`);
+      audio.play().catch(() => {});
+      return;
+    }
     if (!window.speechSynthesis) return;
-    const article = lang === 'german'
-      ? (grammar === 'm' ? 'der' : grammar === 'f' ? 'die' : grammar === 'n' ? 'das' : '')
-      : '';
+    const word    = boardLang === 'german' ? card.base : card.target;
+    const grammar = card.grammar ?? '';
+    const article = grammar === 'm' ? 'der' : grammar === 'f' ? 'die' : grammar === 'n' ? 'das' : '';
     const utt = new SpeechSynthesisUtterance(article ? `${article} ${word}` : word);
-    utt.lang = lang === 'german' ? 'de-DE' : '';
+    utt.lang = 'de-DE';
     utt.rate = 0.9;
     speechSynthesis.cancel();
     speechSynthesis.speak(utt);
@@ -328,65 +328,70 @@
 {:else if screen === 'game'}
   <div class="page">
 
-    <!-- HUD -->
+    <!-- HUD row 1: quit + thin progress + count + life dots -->
     <div class="hud">
       <button class="quit-btn" aria-label="Zurück zur Saga" onclick={quitToSaga}>
         <svg width="13" height="13" viewBox="0 0 13 13">
-          <path d="M1 1l11 11M12 1L1 12" stroke="#1B1410" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M2 2l9 9M11 2L2 11" stroke="#7A7269" stroke-width="1.8" stroke-linecap="round"/>
         </svg>
       </button>
-      <div class="progress-bar">
-        {#each Array.from({ length: setsPerRound }, (_, i) => i) as i}
-          <div class="chunk" class:filled={i < setProgress}></div>
-        {/each}
+      <div class="hud-bar-wrap">
+        <div class="hud-bar">
+          <div class="hud-bar-fill" style="width:{(setsCompleted / setsPerRound) * 100}%"
+            class:combo={comboActive}></div>
+        </div>
       </div>
-      <div class="hud-stats">
-        <div class="pill pill-score">★ {score}</div>
-        <div class="pill pill-time">{remainingSeconds}s</div>
-      </div>
-    </div>
-
-    <!-- Meta bar -->
-    <div class="meta-bar">
-      <div class="dir-badge">{currentDirLabel}</div>
-      <div class="hearts">
+      <div class="hud-count">{setsCompleted}/{setsPerRound}</div>
+      <div class="hud-lives">
         {#each livesRange as i}
-          <svg width="20" height="18" viewBox="0 0 20 18">
-            <path d="M10 16C10 16 2 11 2 6a4 4 0 0 1 8-1 4 4 0 0 1 8 1c0 5-8 10-8 10z"
-              fill={i < livesLeft ? '#E8654A' : 'transparent'}
-              stroke="#1B1410" stroke-width="1.8" stroke-linejoin="round"/>
-          </svg>
+          <div class="life-dot" class:live={i < livesLeft}></div>
         {/each}
       </div>
     </div>
 
-    <!-- Combo bar -->
-    <div class="combo-wrap">
-      {#key comboRestartKey}
-        <div
-          class="combo-bar"
-          class:active={comboRestartKey > 0}
-          style={comboRestartKey > 0 ? `animation-duration:${comboDurationMs}ms` : ''}
-          onanimationend={comboExpired}
-        ></div>
-      {/key}
+    <!-- HUD row 2: section label + direction badge + score -->
+    <div class="hud-meta">
+      <span class="hud-section">{sectionLabel}</span>
+      <div class="hud-dir">{currentDirLabel}</div>
+      <div class="hud-score">
+        <svg width="11" height="11" viewBox="0 0 24 24" style="flex-shrink:0">
+          <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z" fill="#D49A4A"/>
+        </svg>
+        <span>{score}</span>
+      </div>
     </div>
+
+    <!-- Combo drain — hidden visually, JS logic kept intact -->
+    {#key comboRestartKey}
+      <div
+        class="combo-drain"
+        class:active={comboRestartKey > 0}
+        style={comboRestartKey > 0 ? `animation-duration:${comboDurationMs}ms` : ''}
+        onanimationend={comboExpired}
+      ></div>
+    {/key}
 
     <!-- Board -->
     <div class="board">
-      <div class="board-bg" style="background-image: url('{boardBg}')"></div>
-      <div class="board-hint">TIPP · finde die 3 Paare</div>
       {#each displayCards as card (card.id)}
+        {@const tint = CARD_TINTS[card.id % 6]}
         <div class="card-anchor" style="left:{card.left}; top:{card.top}">
           <button
             class="board-card"
             class:wrong={wrongCardId === card.id}
-            style="--rot:{card.rot || 0}deg"
+            style="--rot:{card.rot || 0}deg; --tint:{tint}"
             onclick={() => clickCard(card)}
           >
-            {card.base}
+            <div class="card-inner">
+              {#if boardLang === 'english' && card.icon}
+                <img class="card-icon" src="{import.meta.env.BASE_URL}icons/{card.icon}" alt={card.base}/>
+                <span class="card-icon-label">{card.base}</span>
+              {:else}
+                <span class="card-word">{card.base}</span>
+              {/if}
+            </div>
             {#if wrongCardId === card.id}
-              <span class="card-hint">{card.target}</span>
+              <div class="card-hint-bubble">{card.target}</div>
             {/if}
           </button>
         </div>
@@ -398,19 +403,30 @@
       <div class="target-label">{bottomLabel}</div>
       <div class="target-row">
         {#each targetWords as word}
-          <button class="target-card" class:peeking={previewTargetWord === word} onclick={() => clickTargetWord(word)}>
-            {word}
+          {@const iconCard = displayCards.find(c => c.target === word)}
+          {@const grammar = iconCard?.grammar ?? ''}
+          {@const article = targetLang === 'german'
+            ? (grammar === 'm' ? 'der' : grammar === 'f' ? 'die' : grammar === 'n' ? 'das' : '')
+            : ''}
+          <button
+            class="target-card"
+            class:peeking={previewTargetWord === word}
+            onclick={() => clickTargetWord(word)}
+          >
+            {#if targetLang === 'english' && iconCard?.icon}
+              <img class="target-icon" src="{import.meta.env.BASE_URL}icons/{iconCard.icon}" alt={word}/>
+            {:else}
+              {#if article}
+                <span class="target-article">{article}</span>
+              {/if}
+              <span class="target-word">{word.replace(/^(der|die|das) /, '')}</span>
+            {/if}
             {#if previewTargetWord === word}
-              <span class="card-hint">{displayCards.find(c => c.target === word)?.base ?? ''}</span>
+              <span class="card-hint-bubble">{iconCard?.base ?? ''}</span>
             {/if}
           </button>
         {/each}
       </div>
-    </div>
-
-    <!-- Game footer -->
-    <div class="game-footer">
-      {selectedLesson?.name} · {sectionLabel}
     </div>
 
   </div>
@@ -441,119 +457,135 @@
   }
   @keyframes vmShake {
     0%, 100% { transform: rotate(var(--rot, 0deg)) translateX(0); }
-    25%       { transform: rotate(var(--rot, 0deg)) translateX(-6px); }
-    75%       { transform: rotate(var(--rot, 0deg)) translateX(6px); }
+    25%       { transform: rotate(var(--rot, 0deg)) translateX(-5px); }
+    75%       { transform: rotate(var(--rot, 0deg)) translateX(5px); }
   }
 
-  :global(body) { margin: 0; background: #FBF6EC; }
+  :global(body) { margin: 0; background: #FBFAF7; }
 
   .page {
     max-width: 600px;
     margin: 0 auto;
-    padding: 0.75rem;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    padding: 0.6rem 0.75rem 0.5rem;
+    font-family: 'Inter', system-ui, sans-serif;
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    background: #FBF6EC;
+    background: #FBFAF7;
   }
 
-  /* HUD */
+  /* HUD row 1 */
   .hud {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 0.4rem 0 0.25rem;
+    padding: 0.3rem 0 0.2rem;
   }
 
   .quit-btn {
     appearance: none;
     cursor: pointer;
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     border-radius: 10px;
-    background: #FFFCF5;
-    border: 2px solid #1B1410;
-    box-shadow: 2px 2px 0 #1B1410;
+    background: #F4F2EC;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
 
-  .progress-bar {
+  .hud-bar-wrap {
     flex: 1;
-    height: 14px;
+    height: 4px;
     border-radius: 999px;
-    background: #FFFCF5;
-    border: 2px solid #1B1410;
-    box-shadow: 2px 2px 0 #1B1410;
-    display: flex;
+    background: #E8E3D9;
     overflow: hidden;
   }
 
-  .chunk { flex: 1; background: transparent; transition: background 200ms; }
-  .chunk:not(:last-child) { border-right: 1px solid #1B1410; }
-  .chunk.filled { background: #7CA982; }
-
-  .hud-stats { display: flex; gap: 6px; flex-shrink: 0; }
-
-  .pill {
-    border: 2px solid #1B1410;
-    border-radius: 10px;
-    padding: 3px 8px;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
-    font-weight: 700;
-    font-size: 0.85rem;
-    box-shadow: 2px 2px 0 #1B1410;
-    background: #FFFCF5;
-    white-space: nowrap;
+  .hud-bar {
+    height: 100%;
+    border-radius: 999px;
+    overflow: hidden;
   }
-  .pill-score { color: #E8654A; }
-  .pill-time  { color: #dc2626; }
 
-  /* Meta bar */
-  .meta-bar {
+  .hud-bar-fill {
+    height: 100%;
+    background: #2F8F6E;
+    border-radius: 999px;
+    transition: width 300ms ease;
+  }
+
+  .hud-bar-fill.combo { background: #D49A4A; }
+
+  .hud-count {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #7A7269;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+
+  .hud-lives { display: flex; gap: 3px; align-items: center; flex-shrink: 0; }
+
+  .life-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #E8E3D9;
+    transition: background 200ms;
+  }
+  .life-dot.live { background: #2F8F6E; }
+
+  /* HUD row 2 */
+  .hud-meta {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0.35rem 0 0.3rem;
+    gap: 10px;
+    padding: 0.3rem 0 0.4rem;
+    font-size: 0.8rem;
   }
 
-  .dir-badge {
+  .hud-section {
+    font-weight: 600;
+    color: #1F1D1A;
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hud-dir {
     display: inline-flex;
     align-items: center;
-    padding: 4px 10px;
+    padding: 3px 9px;
     border-radius: 999px;
-    background: #FFFCF5;
-    border: 1.5px solid #1B1410;
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: #1B1410;
+    background: #F4F2EC;
+    color: #7A7269;
+    font-size: 0.72rem;
+    font-weight: 600;
+    font-family: ui-monospace, monospace;
+    letter-spacing: 0.4px;
+    flex-shrink: 0;
   }
 
-  .hearts { display: flex; gap: 2px; align-items: center; }
+  .hud-score {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #1F1D1A;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
 
-  /* Combo */
-  .combo-wrap {
-    height: 8px;
-    background: #FFFCF5;
-    border-radius: 6px;
-    border: 2px solid #1B1410;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-    box-shadow: 2px 2px 0 #1B1410;
-  }
-  .combo-bar {
-    height: 100%;
-    background: transparent;
-    border-radius: 6px;
-    width: 0%;
-  }
-  .combo-bar.active {
-    background: #E8654A;
+  /* Combo drain — invisible but keeps JS animation running */
+  .combo-drain { display: none; }
+  .combo-drain.active {
+    display: block;
     width: 100%;
     animation: drain linear forwards;
   }
@@ -564,45 +596,12 @@
     width: 100%;
     flex: 1;
     min-height: 280px;
-    background-color: #FFFCF5;
-    border: 2.5px solid #1B1410;
+    background: #FFFFFF;
+    border: 1px solid #E8E3D9;
     border-radius: 18px;
-    box-shadow: 4px 4px 0 #1B1410;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.03), 0 4px 16px rgba(20,18,15,0.04);
     overflow: hidden;
     margin-bottom: 0.75rem;
-  }
-
-  .board-bg {
-    position: absolute;
-    inset: 0;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .board-bg::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(251, 246, 236, 0.5);
-  }
-
-  .board-hint {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #FBF6EC;
-    border: 1.5px solid #1B1410;
-    border-radius: 999px;
-    padding: 3px 12px;
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    color: #5A4E45;
-    white-space: nowrap;
-    z-index: 1;
-    pointer-events: none;
   }
 
   .card-anchor {
@@ -613,64 +612,112 @@
   .board-card {
     appearance: none;
     cursor: pointer;
-    background: #FFD9A8;
-    color: #7A2715;
-    border: 2.5px solid #1B1410;
-    border-radius: 12px;
-    padding: 10px 14px;
-    box-shadow: 3px 4px 0 #1B1410;
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    line-height: 1.1;
-    white-space: nowrap;
+    background: var(--tint, #F5EFE3);
+    border: 1px solid #E8E3D9;
+    border-radius: 16px;
+    padding: 4px;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.04), 0 4px 12px rgba(20,18,15,0.05);
     transform: rotate(var(--rot, 0deg));
-    transition: box-shadow 120ms ease, background 150ms;
+    transition: transform 200ms ease, box-shadow 200ms;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3px;
+    position: relative;
   }
-  .board-card:hover { box-shadow: 4px 5px 0 #1B1410; }
   .board-card:active {
-    box-shadow: 1px 2px 0 #1B1410;
-    transform: rotate(var(--rot, 0deg)) translate(2px, 2px);
+    transform: rotate(var(--rot, 0deg)) scale(0.96);
+    box-shadow: 0 1px 3px rgba(20,18,15,0.08);
   }
   .board-card.wrong {
-    background: #C44536;
-    color: white;
+    border-color: #C75A4A;
+    background: #FAE8E5;
     animation: vmShake 280ms ease-in-out;
   }
 
-  .card-hint {
-    font-size: 0.8rem;
-    opacity: 0.9;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+  .card-inner {
+    background: #FFFFFF;
+    border-radius: 13px;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .card-icon {
+    width: 84px;
+    height: 84px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .card-icon-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.58rem;
     font-weight: 600;
+    color: #1F1D1A;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 2px 4px 3px;
+    border-radius: 0 0 13px 13px;
+    line-height: 1.3;
+    pointer-events: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-word {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1F1D1A;
+    text-align: center;
+    word-break: break-word;
+    hyphens: auto;
+    line-height: 1.25;
+    padding: 6px;
+    font-family: inherit;
+  }
+
+  .card-hint-bubble {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1F1D1A;
+    color: #FFF;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 8px;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 10;
   }
 
   /* Target panel */
   .target-panel {
-    background: #FFFCF5;
-    border: 2.5px solid #1B1410;
+    background: #FFFFFF;
+    border: 1px solid #E8E3D9;
     border-radius: 16px;
-    box-shadow: 4px 4px 0 #1B1410;
-    padding: 10px 12px;
-    transition: background 200ms;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.03);
+    padding: 12px 12px 14px;
     margin-bottom: 0.5rem;
   }
 
-
   .target-label {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
-    color: #5A4E45;
+    color: #B0A89E;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .target-row { display: flex; gap: 8px; }
@@ -680,37 +727,42 @@
     min-width: 0;
     appearance: none;
     cursor: pointer;
-    background: #C8E0D4;
-    color: #2F5A3D;
-    border: 2.5px solid #1B1410;
+    background: #FFFFFF;
+    border: 1px solid #E8E3D9;
     border-radius: 12px;
-    padding: 10px 8px;
-    box-shadow: 3px 3px 0 #1B1410;
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1rem;
-    font-weight: 400;
+    padding: 12px 8px;
+    font-family: inherit;
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.2;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2px;
-    transition: background 120ms;
+    transition: background 150ms, border-color 150ms;
+    position: relative;
   }
 
-  .target-card.peeking {
-    background: #E8654A;
-    color: #FFF6E8;
+  .target-card:active, .target-card.peeking {
+    background: #E0F0E8;
+    border-color: #2F8F6E;
   }
 
-  /* Game footer */
-  .game-footer {
-    text-align: center;
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.6rem;
+  .target-article {
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: #B0A89E;
+  }
+
+  .target-word {
+    font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    color: #5A4E45;
-    padding: 0.4rem 0 0.25rem;
+    color: #1F1D1A;
+  }
+
+  .target-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
   }
 </style>

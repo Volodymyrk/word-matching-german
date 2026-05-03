@@ -3,7 +3,7 @@
 
   let { lesson, sections, progress, starThresholds = [1, 10, 20], onBack, onStart } = $props();
 
-  let finalSelected = $state(false);
+  let selectedId = $state(null); // section.id or 'final' whose dir panel is open
   const FINAL = 'final';
 
   function isDone(sectionId, dir) {
@@ -25,7 +25,7 @@
 
   const isFinalUnlocked = $derived(!finalLocked(lesson, sections, progress, starThresholds));
 
-  // Flat level list: for each section, dir=1 first (target→source), then dir=0 (source→target)
+  // Flat level list to compute currentLevelKey (same logic as before)
   const levels = $derived(sections.flatMap((section, i) => [
     { section, sectionIdx: i, dir: 1 },
     { section, sectionIdx: i, dir: 0 },
@@ -40,149 +40,225 @@
     return null;
   });
 
-  const fd0      = $derived(isDone(FINAL, 0));
-  const fd1      = $derived(isDone(FINAL, 1));
-  const fAllDone = $derived(fd0 && fd1);
-  const fCurrent = $derived(currentLevelKey === FINAL);
-  const fFill    = $derived(!isFinalUnlocked ? '#D9D0BD' : fAllDone ? '#7CA982' : fCurrent ? '#E8654A' : '#FFFCF5');
-  const fRow     = $derived(levels.length % 2 !== 0);
+  // Which section id contains the current level
+  const currentSectionId = $derived.by(() => {
+    if (!currentLevelKey || currentLevelKey === FINAL) return currentLevelKey;
+    return currentLevelKey.split(':')[0];
+  });
+
+  const fAllDone = $derived(hasEnoughStars(FINAL, 0) && hasEnoughStars(FINAL, 1));
+  const fIsCurrent = $derived(currentSectionId === FINAL);
+  // Final row aligns right if sections.length is even (0-based: last section is odd)
+  const fAlignRight = $derived(sections.length % 2 !== 0);
+
+  function isSectionLocked(idx) {
+    return levelLocked(lesson, idx, 1, sections, progress, starThresholds);
+  }
+
+  function isSectionAllDone(s) {
+    return hasEnoughStars(s.id, 1) && hasEnoughStars(s.id, 0);
+  }
+
+  // Dot state: 'done' | 'current' | 'played' | 'open' | 'locked'
+  function dotState(sectionId, dir, sectionIdx) {
+    if (levelLocked(lesson, sectionIdx, dir, sections, progress, starThresholds)) return 'locked';
+    if (hasEnoughStars(sectionId, dir)) return 'done';
+    if (currentLevelKey === `${sectionId}:${dir}`) return 'current';
+    if (isDone(sectionId, dir)) return 'played';
+    return 'open';
+  }
+
+  function openPanel(id) {
+    if (id === FINAL) {
+      if (!isFinalUnlocked) return;
+    } else {
+      const idx = sections.findIndex(s => s.id === id);
+      if (isSectionLocked(idx)) return;
+    }
+    selectedId = id;
+  }
+
+  function startDir(id, dir) {
+    if (id === FINAL) {
+      onStart({ id: FINAL, isFinal: true }, dir);
+    } else {
+      const sec = sections.find(s => s.id === id);
+      const idx = sections.findIndex(s => s.id === id);
+      if (levelLocked(lesson, idx, dir, sections, progress, starThresholds)) return;
+      onStart(sec, dir);
+    }
+    selectedId = null;
+  }
+
+  // Build a smooth S-curve path through N alternating nodes
+  function buildPath(n) {
+    const step = 130;
+    const L = 80, R = 240, M = 160;
+    let d = `M ${L} 60`;
+    for (let i = 1; i < n; i++) {
+      const x = i % 2 === 0 ? L : R;
+      const y = i * step + 60;
+      const cy = y - step / 2;
+      d += ` Q ${M} ${cy}, ${x} ${y}`;
+    }
+    return d;
+  }
 </script>
 
 <div class="page">
   <div class="header">
-    <button class="back-btn" aria-label="Zurück zur Lektionsauswahl" onclick={onBack}>
+    <button class="back-btn" aria-label="Zurück" onclick={onBack}>
       <svg width="14" height="14" viewBox="0 0 14 14">
-        <path d="M9 2L3 7l6 5" stroke="#1B1410" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 2L3 7l6 5" stroke="#7A7269" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </button>
     <div>
-      <div class="header-eyebrow">Lernpfad</div>
-      <div class="header-title">{lesson.name}</div>
+      <div class="header-eyebrow">{lesson.name}</div>
+      <div class="header-title">Lernpfad</div>
     </div>
   </div>
 
   <div class="saga">
-    {#each levels as lv, i}
-      {@const locked    = levelLocked(lesson, lv.sectionIdx, lv.dir, sections, progress, starThresholds)}
-      {@const cleared   = hasEnoughStars(lv.section.id, lv.dir)}
-      {@const isCurrent = `${lv.section.id}:${lv.dir}` === currentLevelKey}
-      {@const fill      = locked ? '#D9D0BD' : cleared ? '#7CA982' : isCurrent ? '#E8654A' : '#FFFCF5'}
-      {@const numColor  = cleared ? '#2F5A3D' : isCurrent ? '#FFF6E8' : '#1B1410'}
-      {@const stars     = starsFor(lv.section.id, lv.dir)}
+    <!-- Dashed curved path behind nodes -->
+    <svg class="path-svg" width="320" height="{(sections.length + 1) * 130 + 60}" viewBox="0 0 320 {(sections.length + 1) * 130 + 60}">
+      <path d={buildPath(sections.length + 1)} stroke="#D4CDC0" stroke-width="2" stroke-dasharray="2 6" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    {#each sections as s, i}
+      {@const sLocked    = isSectionLocked(i)}
+      {@const sAllDone   = isSectionAllDone(s)}
+      {@const isCurrent  = currentSectionId === s.id}
+      {@const dot1       = dotState(s.id, 1, i)}
+      {@const dot0       = dotState(s.id, 0, i)}
+      {@const sectionStars = Math.min(3, starsFor(s.id, 0) + starsFor(s.id, 1))}
 
       <div class="node-row" class:right={i % 2 !== 0}>
         {#if isCurrent}
-          <div class="callout">HIER WEITER<div class="callout-arrow"></div></div>
+          <div class="callout">weiter hier<div class="callout-arrow"></div></div>
         {/if}
         <button
           class="node-btn"
-          class:locked
-          onclick={() => !locked && onStart(lv.section, lv.dir)}
+          class:locked={sLocked}
+          onclick={() => openPanel(s.id)}
         >
-          <div class="hex-wrap">
-            <svg width="88" height="96" viewBox="0 0 100 110" style="overflow:visible">
-              <polygon
-                points="50,2 96,26 96,84 50,108 4,84 4,26"
-                fill={fill}
-                stroke="#1B1410"
-                stroke-width="2.5"
-                stroke-linejoin="round"
-                stroke-dasharray={locked ? '4 5' : 'none'}
-                filter={locked ? '' : 'drop-shadow(3px 4px 0 #1B1410)'}
-              />
-            </svg>
-            <div class="hex-content">
-              {#if locked}
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <rect x="5" y="11" width="14" height="9" rx="2" fill="#8A8070"/>
-                  <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#8A8070" stroke-width="2.2" stroke-linecap="round"/>
-                </svg>
-              {:else}
-                <div class="hex-numeral" style="color:{numColor}">{roman(lv.sectionIdx)}</div>
-              {/if}
-            </div>
+          <div
+            class="circle"
+            style="
+              background: {sLocked ? '#E8E3D9' : sAllDone ? '#E0F0E8' : isCurrent ? '#2F8F6E' : '#FFFFFF'};
+              border: 1.5px solid {sLocked ? '#E8E3D9' : (sAllDone || isCurrent) ? '#2F8F6E' : '#D4CDC0'};
+              box-shadow: {isCurrent ? '0 0 0 5px #E0F0E8, 0 1px 2px rgba(20,18,15,0.05)' : !sLocked ? '0 1px 3px rgba(20,18,15,0.07)' : 'none'};
+            "
+          >
+            {#if sLocked}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="11" width="14" height="9" rx="2" fill="#B0A89E"/>
+                <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#B0A89E" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            {:else}
+              <span class="circle-numeral" style="color:{isCurrent ? '#FFFFFF' : sAllDone ? '#2F8F6E' : '#1F1D1A'}">{roman(i)}</span>
+            {/if}
           </div>
-          <div class="node-label" style="color:{locked ? '#8A8070' : '#1B1410'}">
-            {dirLabel(lesson, lv.dir)}
+          <div class="node-info">
+            <div class="node-label" style="color:{sLocked ? '#B0A89E' : '#1F1D1A'}">Abschnitt {roman(i)}</div>
+            {#if !sLocked}
+              <div class="node-sub">{s.wordCount} Wörter</div>
+              <div class="node-stars">
+                {#each [0, 1, 2] as st}
+                  <svg width="10" height="10" viewBox="0 0 24 24">
+                    <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
+                      fill={st < sectionStars ? '#D49A4A' : '#E8E3D9'}/>
+                  </svg>
+                {/each}
+              </div>
+              <div class="dir-dots">
+                <div class="dot dot-{dot1}"></div>
+                <div class="dot dot-{dot0}"></div>
+              </div>
+            {/if}
           </div>
-          {#if !locked}
-            <div class="level-stars">
-              {#each [0, 1, 2] as s}
-                <svg width="15" height="15" viewBox="0 0 24 24">
-                  <path
-                    d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
-                    fill={s < stars ? '#F0B83D' : '#EDE5D5'}
-                    stroke={s < stars ? '#1B1410' : '#A89880'}
-                    stroke-width="1.4"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              {/each}
-            </div>
-          {/if}
         </button>
       </div>
     {/each}
 
     <!-- Final node -->
-    <div class="node-row" class:right={fRow}>
-      {#if fCurrent}
-        <div class="callout">HIER WEITER<div class="callout-arrow"></div></div>
+    <div class="node-row" class:right={fAlignRight}>
+      {#if fIsCurrent}
+        <div class="callout">weiter hier<div class="callout-arrow"></div></div>
       {/if}
       <button
         class="node-btn"
         class:locked={!isFinalUnlocked}
-        onclick={() => { if (isFinalUnlocked) finalSelected = !finalSelected; }}
+        onclick={() => openPanel(FINAL)}
       >
-        <div class="magna" style="background:{fFill}">
+        <div
+          class="circle circle-final"
+          style="
+            background: {!isFinalUnlocked ? '#E8E3D9' : fAllDone ? '#E0F0E8' : fIsCurrent ? '#2F8F6E' : '#FFFFFF'};
+            border: 1.5px solid {!isFinalUnlocked ? '#E8E3D9' : (fAllDone || fIsCurrent) ? '#2F8F6E' : '#D4CDC0'};
+            box-shadow: {fIsCurrent ? '0 0 0 5px #E0F0E8, 0 1px 2px rgba(20,18,15,0.05)' : isFinalUnlocked ? '0 1px 3px rgba(20,18,15,0.07)' : 'none'};
+          "
+        >
           {#if !isFinalUnlocked}
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <rect x="5" y="11" width="14" height="9" rx="2" fill="#8A8070"/>
-              <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#8A8070" stroke-width="2.2" stroke-linecap="round"/>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="5" y="11" width="14" height="9" rx="2" fill="#B0A89E"/>
+              <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#B0A89E" stroke-width="2.2" stroke-linecap="round"/>
             </svg>
           {:else}
-            <span class="magna-star" style="color:{fAllDone ? '#2F5A3D' : '#1B1410'}">★</span>
+            <svg width="28" height="28" viewBox="0 0 24 24">
+              <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
+                fill={fAllDone ? '#2F8F6E' : '#D49A4A'}/>
+            </svg>
           {/if}
         </div>
-        <div class="node-label" style="color:{!isFinalUnlocked ? '#8A8070' : '#1B1410'}">
-          Finalrunde
+        <div class="node-info">
+          <div class="node-label" style="color:{!isFinalUnlocked ? '#B0A89E' : '#1F1D1A'}">Finalrunde</div>
+          {#if isFinalUnlocked}
+            <div class="node-stars">
+              {#each [0, 1, 2] as st}
+                {@const best = Math.max(starsFor(FINAL, 0), starsFor(FINAL, 1))}
+                <svg width="10" height="10" viewBox="0 0 24 24">
+                  <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
+                    fill={st < best ? '#D49A4A' : '#E8E3D9'}/>
+                </svg>
+              {/each}
+            </div>
+          {/if}
         </div>
-        {#if isFinalUnlocked}
-          <div class="level-stars">
-            {#each [0, 1, 2] as s}
-              <svg width="15" height="15" viewBox="0 0 24 24">
-                <path
-                  d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
-                  fill={s < Math.max(starsFor(FINAL, 0), starsFor(FINAL, 1)) ? '#F0B83D' : '#EDE5D5'}
-                  stroke={s < Math.max(starsFor(FINAL, 0), starsFor(FINAL, 1)) ? '#1B1410' : '#A89880'}
-                  stroke-width="1.4"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            {/each}
-          </div>
-        {/if}
       </button>
     </div>
   </div>
 
-  <!-- Direction picker panel (final round only) -->
-  {#if finalSelected}
+  <!-- Direction picker panel -->
+  {#if selectedId !== null}
+    {@const panelIsFinal = selectedId === FINAL}
+    {@const panelSecIdx  = panelIsFinal ? -1 : sections.findIndex(s => s.id === selectedId)}
     <div class="dir-panel">
-      <div class="dir-panel-label">Finalrunde · Richtung wählen</div>
+      <div class="dir-panel-label">
+        {panelIsFinal ? 'Finalrunde' : `Abschnitt ${roman(panelSecIdx)}`} · Richtung wählen
+      </div>
       <div class="dir-btns">
-        {#each [0, 1] as dir}
-          {@const done = isDone(FINAL, dir)}
+        {#each [1, 0] as dir}
+          {@const isLk = !panelIsFinal && levelLocked(lesson, panelSecIdx, dir, sections, progress, starThresholds)}
+          {@const isDn = hasEnoughStars(selectedId, dir)}
           <button
             class="dir-btn"
-            class:dir-done={done}
-            onclick={() => { onStart({ id: FINAL, isFinal: true }, dir); finalSelected = false; }}
+            class:done={isDn}
+            class:dir-locked={isLk}
+            onclick={() => { if (!isLk) startDir(selectedId, dir); }}
           >
             <span class="dir-btn-label">{dirLabel(lesson, dir)}</span>
-            {#if done}<span class="dir-check">✓</span>{/if}
+            {#if isLk}
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="11" width="14" height="9" rx="2" fill="currentColor"/>
+                <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              </svg>
+            {:else if isDn}
+              <span class="dir-check">✓</span>
+            {/if}
           </button>
         {/each}
       </div>
+      <button class="dir-cancel" onclick={() => selectedId = null}>Abbrechen</button>
     </div>
   {/if}
 </div>
@@ -190,27 +266,30 @@
 <style>
   .page {
     min-height: 100dvh;
-    background: #FBF6EC;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    background: #FBFAF7;
+    font-family: 'Inter', system-ui, sans-serif;
     padding-bottom: 7rem;
+    max-width: 600px;
+    margin: 0 auto;
   }
+
+  :global(body) { margin: 0; background: #FBFAF7; }
 
   .header {
     display: flex;
     align-items: center;
     gap: 12px;
-    padding: 3.5rem 1.1rem 1rem;
+    padding: 3.5rem 1.25rem 1rem;
   }
 
   .back-btn {
     appearance: none;
     cursor: pointer;
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
-    background: #FFFCF5;
-    border: 2px solid #1B1410;
-    box-shadow: 2px 2px 0 #1B1410;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: #F4F2EC;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,55 +297,69 @@
   }
 
   .header-eyebrow {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #5A4E45;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: #B0A89E;
+    letter-spacing: 0.3px;
   }
 
   .header-title {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.5rem;
-    color: #1B1410;
-    line-height: 1.1;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1F1D1A;
+    line-height: 1.15;
     margin-top: 1px;
   }
 
   .saga {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2.5rem;
-    padding: 1.5rem 0 1rem;
-    position: relative;
+    padding: 1rem 0 2rem;
+    gap: 0;
+  }
+
+  .path-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    pointer-events: none;
+    width: 100%;
+    overflow: visible;
   }
 
   .node-row {
-    padding-left: 2rem;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     position: relative;
+    z-index: 1;
+    min-height: 110px;
+    display: flex;
+    align-items: flex-start;
   }
 
   .node-row.right {
     align-self: flex-end;
     padding-left: 0;
-    padding-right: 2rem;
+    padding-right: 2.5rem;
   }
 
   .callout {
     position: absolute;
-    top: -34px;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: #1B1410;
-    color: #FBF6EC;
-    padding: 4px 10px;
+    background: #2F8F6E;
+    color: #FFF;
+    padding: 3px 10px;
     border-radius: 8px;
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
     white-space: nowrap;
     z-index: 2;
   }
@@ -278,9 +371,9 @@
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid #1B1410;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #2F8F6E;
   }
 
   .node-btn {
@@ -289,88 +382,98 @@
     background: transparent;
     border: none;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 14px;
     padding: 0;
+    font-family: inherit;
   }
 
   .node-btn.locked { cursor: default; opacity: 0.7; }
 
-  .hex-wrap {
-    position: relative;
-    width: 88px;
-    height: 96px;
-  }
-
-  .hex-wrap svg { position: absolute; inset: 0; }
-
-  .hex-content {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hex-numeral {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.8rem;
-    font-style: italic;
-    line-height: 1;
-  }
-
-  .magna {
-    width: 88px;
-    height: 88px;
+  .circle {
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    border: 3px solid #1B1410;
-    box-shadow: 4px 5px 0 #1B1410;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    transition: background 200ms, border-color 200ms, box-shadow 200ms;
   }
 
-  .magna-star {
-    font-size: 2.2rem;
-    line-height: 1;
+  .circle-final {
+    width: 76px;
+    height: 76px;
   }
 
-  .node-label {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.7rem;
+  .circle-numeral {
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    line-height: 1;
+    font-family: inherit;
   }
 
-  .level-stars {
+  .node-info {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 3px;
   }
 
+  .node-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .node-sub {
+    font-size: 0.72rem;
+    color: #7A7269;
+    font-weight: 400;
+  }
+
+  .node-stars { display: flex; gap: 2px; }
+
+  .dir-dots {
+    display: flex;
+    gap: 5px;
+    margin-top: 2px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+  }
+  .dot-done    { background: #2F8F6E; }
+  .dot-current { background: #D49A4A; }
+  .dot-played  { background: transparent; border: 1.5px solid #D4CDC0; }
+  .dot-open    { background: transparent; border: 1.5px solid #D4CDC0; }
+  .dot-locked  { background: transparent; border: 1.5px solid #E8E3D9; }
+
+  /* Direction picker */
   .dir-panel {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #FFFCF5;
-    border-top: 2.5px solid #1B1410;
-    box-shadow: 0 -4px 0 #1B1410;
-    padding: 1rem 1.25rem 2rem;
+    background: #FFFFFF;
+    border-top: 1px solid #E8E3D9;
+    box-shadow: 0 -4px 20px rgba(20,18,15,0.08);
+    padding: 1rem 1.25rem 2.5rem;
     z-index: 10;
     max-width: 600px;
     margin: 0 auto;
   }
 
   .dir-panel-label {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: #5A4E45;
+    color: #B0A89E;
     text-align: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.9rem;
   }
 
   .dir-btns { display: flex; gap: 0.75rem; }
@@ -379,38 +482,61 @@
     flex: 1;
     appearance: none;
     cursor: pointer;
-    background: #E8654A;
-    color: #FFF6E8;
-    border: 2.5px solid #1B1410;
-    border-radius: 14px;
+    background: #2F8F6E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
     padding: 0.85rem;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
-    font-weight: 700;
+    font-family: inherit;
+    font-weight: 600;
     font-size: 0.95rem;
-    box-shadow: 3px 3px 0 #1B1410;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 6px;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.08), 0 4px 12px rgba(20,18,15,0.06);
     transition: transform 80ms, box-shadow 80ms;
   }
 
   .dir-btn:active {
-    transform: translate(3px, 3px);
-    box-shadow: 0 0 0 #1B1410;
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(20,18,15,0.10) inset;
   }
 
-  .dir-btn.dir-done {
-    background: #7CA982;
-    color: #2F5A3D;
+  .dir-btn.done {
+    background: #E0F0E8;
+    color: #2F8F6E;
+    box-shadow: none;
+  }
+
+  .dir-btn.dir-locked {
+    background: #F4F2EC;
+    color: #B0A89E;
+    cursor: default;
+    box-shadow: none;
   }
 
   .dir-btn-label {
-    font-family: 'Geist Mono', ui-monospace, monospace;
     font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-family: ui-monospace, monospace;
   }
 
-  .dir-check { font-size: 1rem; font-weight: 700; }
+  .dir-check { font-size: 0.9rem; font-weight: 700; }
+
+  .dir-cancel {
+    appearance: none;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.4rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7A7269;
+    text-align: center;
+  }
 </style>

@@ -4,7 +4,6 @@
 
   let { lessons, sectionsMap, progress, onSelect } = $props();
 
-  // Group by language pair for section headers
   const groups = $derived.by(() => {
     const map = new Map();
     for (const l of lessons) {
@@ -15,6 +14,14 @@
     return [...map.values()];
   });
 
+  const totalStars = $derived(
+    lessons.reduce((sum, l) => {
+      const p = lessonProgress(l, sectionsMap[l.id] || [], progress);
+      // sum stars from best scores — approximate with done plays
+      return sum + (p.finalDone ? 3 : 0);
+    }, 0)
+  );
+
   function groupLabel(langs) {
     const names = { german: 'Deutsch', latin: 'Latein', english: 'Englisch' };
     return langs.map(l => names[l] || l).join(' & ');
@@ -23,38 +30,62 @@
 
 <div class="page">
   <div class="header">
-    <div class="brand-eyebrow">VOCABULA</div>
-    <div class="brand-title">Maxima</div>
+    <div class="header-eyebrow">Hallo</div>
+    <div class="header-title">
+      Vocabula <span class="brand-accent">Germanica</span>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat-item">
+        <svg width="13" height="13" viewBox="0 0 24 24" style="flex-shrink:0">
+          <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z" fill="#D49A4A"/>
+        </svg>
+        <span class="stat-val">{totalStars}</span>
+        <span class="stat-unit">Sterne</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-val">{lessons.length}</span>
+        <span class="stat-unit">Lektionen</span>
+      </div>
+    </div>
   </div>
 
   {#each groups as group}
     <div class="group-label">{groupLabel(group.langs)}</div>
     <div class="lesson-list">
-      {#each group.items as lesson, localIdx}
+      {#each group.items as lesson}
         {@const prog = lessonProgress(lesson, sectionsMap[lesson.id] || [], progress)}
         {@const pct  = prog.totalSectionPlays
             ? Math.round((prog.doneSectionPlays / prog.totalSectionPlays) * 100)
             : 0}
+        {@const isComplete = pct === 100 && prog.finalDone}
+        {@const isStarted = pct > 0}
         <button class="lesson-card" onclick={() => onSelect(lesson)}>
-          <div class="numeral-circle"
-            style="background:{pct === 100 ? '#7CA982' : pct > 0 ? '#E8654A' : '#D9D0BD'};
-                   color:{pct > 0 ? '#FFF6E8' : '#8A8070'}">
-            {roman(localIdx)}
+          <div class="lesson-badge"
+            style="background:{isComplete ? '#E0F0E8' : isStarted ? '#2F8F6E' : '#F4F2EC'};
+                   color:{isComplete ? '#2F8F6E' : isStarted ? '#FFF' : '#B0A89E'}">
+            {lesson.emoji ?? roman(group.items.indexOf(lesson))}
           </div>
           <div class="lesson-info">
+            <div class="lesson-subtitle">{lesson.name}</div>
             <div class="lesson-name">{lesson.name}</div>
-            {#if prog.totalSectionPlays > 0}
-              <div class="lesson-meta">
-                {prog.doneSectionPlays}/{prog.totalSectionPlays} Runden
-                {#if prog.finalDone}&nbsp;· ★ Abgeschlossen{/if}
+            <div class="lesson-progress">
+              <div class="prog-track">
+                <div class="prog-fill" style="width:{pct}%"></div>
               </div>
-            {/if}
-            <div class="prog-track">
-              <div class="prog-fill" style="width:{pct}%"></div>
+              <div class="lesson-stars">
+                {#each [0, 1, 2] as s}
+                  <svg width="11" height="11" viewBox="0 0 24 24">
+                    <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
+                      fill={s < (prog.finalDone ? 3 : isStarted ? 1 : 0) ? '#D49A4A' : '#E8E3D9'} />
+                  </svg>
+                {/each}
+              </div>
             </div>
           </div>
-          <svg class="chevron" width="10" height="16" viewBox="0 0 10 16">
-            <path d="M2 2l6 6-6 6" stroke="#5A4E45" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg width="16" height="16" viewBox="0 0 16 16" style="flex-shrink:0;color:#B0A89E">
+            <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
       {/each}
@@ -65,80 +96,97 @@
 <style>
   .page {
     min-height: 100dvh;
-    background: #FBF6EC;
-    padding: 0 1rem 3rem;
-    font-family: 'Bricolage Grotesque', system-ui, sans-serif;
+    background: #FBFAF7;
+    padding: 0 1.25rem 3rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
   }
+
+  :global(body) { margin: 0; background: #FBFAF7; }
 
   .header {
-    padding: 3.5rem 0.25rem 1.25rem;
+    padding: 4rem 0 1.25rem;
   }
 
-  .brand-eyebrow {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.68rem;
+  .header-eyebrow {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #7A7269;
+    letter-spacing: 0.2px;
+  }
+
+  .header-title {
+    font-size: 1.75rem;
     font-weight: 700;
-    letter-spacing: 3px;
-    color: #5A4E45;
-  }
-
-  .brand-title {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 3rem;
-    font-style: italic;
-    color: #E8654A;
-    line-height: 1;
+    color: #1F1D1A;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
     margin-top: 2px;
   }
 
+  .brand-accent { color: #2F8F6E; font-weight: 600; }
+
+  .stat-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 16px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: #F4F2EC;
+    font-size: 0.8rem;
+    color: #7A7269;
+  }
+
+  .stat-item { display: flex; align-items: center; gap: 5px; }
+  .stat-val { color: #1F1D1A; font-weight: 600; }
+  .stat-unit { color: #7A7269; }
+  .stat-divider { width: 1px; height: 14px; background: #E8E3D9; }
+
   .group-label {
-    font-family: 'Geist Mono', ui-monospace, monospace;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
     text-transform: uppercase;
-    color: #5A4E45;
-    margin: 1.25rem 0.25rem 0.5rem;
+    color: #B0A89E;
+    margin: 1.5rem 0 0.6rem;
   }
 
   .lesson-list {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 10px;
   }
 
   .lesson-card {
     appearance: none;
     cursor: pointer;
     text-align: left;
-    background: #FFFCF5;
-    border: 2.5px solid #1B1410;
-    border-radius: 16px;
-    padding: 0.9rem 1rem;
-    box-shadow: 3px 3px 0 #1B1410;
+    background: #FFFFFF;
+    border: 1px solid #E8E3D9;
+    border-radius: 14px;
+    padding: 14px;
+    box-shadow: 0 1px 2px rgba(20,18,15,0.03);
     display: flex;
     align-items: center;
-    gap: 0.9rem;
-    transition: transform 80ms, box-shadow 80ms;
+    gap: 14px;
+    font-family: inherit;
+    transition: box-shadow 120ms;
   }
 
   .lesson-card:active {
-    transform: translate(3px, 3px);
-    box-shadow: 0 0 0 #1B1410;
+    box-shadow: 0 1px 4px rgba(20,18,15,0.08);
   }
 
-  .numeral-circle {
+  .lesson-badge {
     width: 48px;
     height: 48px;
-    border-radius: 50%;
-    border: 2.5px solid #1B1410;
-    box-shadow: 2px 2px 0 #1B1410;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.2rem;
-    font-style: italic;
+    font-size: 1.3rem;
     flex-shrink: 0;
     transition: background 200ms;
   }
@@ -148,33 +196,42 @@
     min-width: 0;
   }
 
-  .lesson-name {
-    font-family: 'DM Serif Display', Georgia, serif;
-    font-size: 1.15rem;
-    color: #1B1410;
-    line-height: 1.15;
+  .lesson-subtitle {
+    font-size: 0;  /* hidden — name is used directly */
+    display: none;
   }
 
-  .lesson-meta {
-    font-size: 0.72rem;
-    color: #5A4E45;
-    margin: 3px 0 6px;
+  .lesson-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1F1D1A;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .lesson-progress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
   }
 
   .prog-track {
-    height: 6px;
+    flex: 1;
+    height: 4px;
     border-radius: 999px;
-    background: rgba(0,0,0,0.07);
-    border: 1px solid #1B1410;
+    background: #E8E3D9;
     overflow: hidden;
   }
 
   .prog-fill {
     height: 100%;
-    background: #E8654A;
+    background: #2F8F6E;
     border-radius: 999px;
     transition: width 400ms ease;
   }
 
-  .chevron { flex-shrink: 0; }
+  .lesson-stars { display: flex; gap: 2px; flex-shrink: 0; }
 </style>

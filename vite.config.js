@@ -4,5 +4,5 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [svelte()],
-  base: '/word-matching-svelte/',
+  base: '/word-matching-german/',
 })
