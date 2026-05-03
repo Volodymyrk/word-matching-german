@@ -1,0 +1,25 @@
+{
+    "lesson_4": {
+      "section_1": [
+        {"english": "apple", "grammar": "m", "german": "Apfel"},
+        {"english": "bread", "grammar": "n", "german": "Brot"},
+        {"english": "water", "grammar": "n", "german": "Wasser"},
+        {"english": "cat", "grammar": "f", "german": "Katze"},
+        {"english": "dog", "grammar": "m", "german": "Hund"},
+        {"english": "house", "grammar": "n", "german": "Haus"},
+        {"english": "book", "grammar": "n", "german": "Buch"},
+        {"english": "friend", "grammar": "m", "german": "Freund"},
+        {"english": "mother", "grammar": "f", "german": "Mutter"}
+      ],
+      "section_2": [
+        {"english": "hello", "grammar": "", "german": "hallo"},
+        {"english": "please", "grammar": "", "german": "bitte"},
+        {"english": "thanks", "grammar": "", "german": "danke"},
+        {"english": "yes", "grammar": "", "german": "ja"},
+        {"english": "no", "grammar": "", "german": "nein"},
+        {"english": "good", "grammar": "Adj.", "german": "gut"},
+        {"english": "small", "grammar": "Adj.", "german": "klein"},
+        {"english": "big", "grammar": "Adj.", "german": "groß"}
+      ]
+    }
+  }

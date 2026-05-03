@@ -1,0 +1,13 @@
+{
+  "round_seconds": 60,
+  "combo_seconds": 2,
+  "combo_new_set_bonus_seconds": 2,
+  "score_correct": 1,
+  "score_combo": 2,
+  "score_wrong": -1,
+  "timer_bonus_per_correct": 1,
+  "star_thresholds": [15, 30, 50],
+  "lives": 3,
+  "wrong_flash_ms": 2000,
+  "sets_per_round": 9
+}
