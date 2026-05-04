@@ -1,0 +1,160 @@
+{
+  "Alltag und Aktivitäten": {
+    "Tagesablauf": [
+      {
+        "english": "to get up",
+        "grammar": "",
+        "german": "aufstehen"
+      },
+      {
+        "english": "to sleep",
+        "grammar": "",
+        "german": "schlafen"
+      },
+      {
+        "english": "to shower",
+        "grammar": "",
+        "german": "duschen"
+      },
+      {
+        "english": "to get dressed",
+        "grammar": "",
+        "german": "anziehen"
+      },
+      {
+        "english": "to have breakfast",
+        "grammar": "",
+        "german": "frühstücken"
+      },
+      {
+        "english": "to go shopping",
+        "grammar": "",
+        "german": "einkaufen"
+      },
+      {
+        "english": "to tidy up",
+        "grammar": "",
+        "german": "aufräumen"
+      },
+      {
+        "english": "to clean",
+        "grammar": "",
+        "german": "putzen"
+      },
+      {
+        "english": "to wash",
+        "grammar": "",
+        "german": "waschen"
+      },
+      {
+        "english": "to fall asleep",
+        "grammar": "",
+        "german": "einschlafen"
+      }
+    ],
+    "Kommunikation": [
+      {
+        "english": "to say",
+        "grammar": "",
+        "german": "sagen"
+      },
+      {
+        "english": "to tell / narrate",
+        "grammar": "",
+        "german": "erzählen"
+      },
+      {
+        "english": "to talk",
+        "grammar": "",
+        "german": "reden"
+      },
+      {
+        "english": "to call out",
+        "grammar": "",
+        "german": "rufen"
+      },
+      {
+        "english": "to call (phone)",
+        "grammar": "",
+        "german": "anrufen"
+      },
+      {
+        "english": "to send",
+        "grammar": "",
+        "german": "schicken"
+      },
+      {
+        "english": "conversation",
+        "grammar": "n",
+        "german": "Gespräch"
+      },
+      {
+        "english": "message",
+        "grammar": "f",
+        "german": "Nachricht"
+      },
+      {
+        "english": "letter",
+        "grammar": "m",
+        "german": "Brief"
+      },
+      {
+        "english": "email",
+        "grammar": "f",
+        "german": "E-Mail"
+      }
+    ],
+    "Alltägliche Verben": [
+      {
+        "english": "to go",
+        "grammar": "",
+        "german": "gehen"
+      },
+      {
+        "english": "to drive / go (by vehicle)",
+        "grammar": "",
+        "german": "fahren"
+      },
+      {
+        "english": "to take",
+        "grammar": "",
+        "german": "nehmen"
+      },
+      {
+        "english": "to bring",
+        "grammar": "",
+        "german": "bringen"
+      },
+      {
+        "english": "to fetch / get",
+        "grammar": "",
+        "german": "holen"
+      },
+      {
+        "english": "to stand",
+        "grammar": "",
+        "german": "stehen"
+      },
+      {
+        "english": "to sit",
+        "grammar": "",
+        "german": "sitzen"
+      },
+      {
+        "english": "to lie (down)",
+        "grammar": "",
+        "german": "liegen"
+      },
+      {
+        "english": "to wait",
+        "grammar": "",
+        "german": "warten"
+      },
+      {
+        "english": "to look for",
+        "grammar": "",
+        "german": "suchen"
+      }
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "Persönliche Angaben": {
+    "Begrüßung": [
+      {
+        "english": "hello",
+        "grammar": "",
+        "german": "Hallo"
+      },
+      {
+        "english": "bye",
+        "grammar": "",
+        "german": "Tschüss"
+      },
+      {
+        "english": "please",
+        "grammar": "",
+        "german": "bitte"
+      },
+      {
+        "english": "thank you",
+        "grammar": "",
+        "german": "danke"
+      },
+      {
+        "english": "yes",
+        "grammar": "",
+        "german": "ja"
+      },
+      {
+        "english": "no",
+        "grammar": "",
+        "german": "nein"
+      },
+      {
+        "english": "also / too",
+        "grammar": "",
+        "german": "auch"
+      },
+      {
+        "english": "very",
+        "grammar": "",
+        "german": "sehr"
+      },
+      {
+        "english": "good",
+        "grammar": "",
+        "german": "gut"
+      },
+      {
+        "english": "sorry / excuse me",
+        "grammar": "",
+        "german": "Entschuldigung"
+      }
+    ],
+    "Persönliche Angaben": [
+      {
+        "english": "name",
+        "grammar": "m",
+        "german": "Name"
+      },
+      {
+        "english": "first name",
+        "grammar": "m",
+        "german": "Vorname"
+      },
+      {
+        "english": "last name",
+        "grammar": "m",
+        "german": "Nachname"
+      },
+      {
+        "english": "address",
+        "grammar": "f",
+        "german": "Adresse"
+      },
+      {
+        "english": "street",
+        "grammar": "f",
+        "german": "Straße"
+      },
+      {
+        "english": "city",
+        "grammar": "f",
+        "german": "Stadt"
+      },
+      {
+        "english": "country",
+        "grammar": "n",
+        "german": "Land"
+      },
+      {
+        "english": "age",
+        "grammar": "n",
+        "german": "Alter"
+      },
+      {
+        "english": "language",
+        "grammar": "f",
+        "german": "Sprache"
+      },
+      {
+        "english": "nationality",
+        "grammar": "f",
+        "german": "Nationalität"
+      }
+    ],
+    "Wichtige Verben": [
+      {
+        "english": "to be called",
+        "grammar": "",
+        "german": "heißen"
+      },
+      {
+        "english": "to come",
+        "grammar": "",
+        "german": "kommen"
+      },
+      {
+        "english": "to live",
+        "grammar": "",
+        "german": "wohnen"
+      },
+      {
+        "english": "to speak",
+        "grammar": "",
+        "german": "sprechen"
+      },
+      {
+        "english": "to understand",
+        "grammar": "",
+        "german": "verstehen"
+      },
+      {
+        "english": "to write",
+        "grammar": "",
+        "german": "schreiben"
+      },
+      {
+        "english": "to read",
+        "grammar": "",
+        "german": "lesen"
+      },
+      {
+        "english": "to ask",
+        "grammar": "",
+        "german": "fragen"
+      },
+      {
+        "english": "to spell",
+        "grammar": "",
+        "german": "buchstabieren"
+      },
+      {
+        "english": "to be",
+        "grammar": "",
+        "german": "sein"
+      }
+    ],
+    "Personen": [
+      {
+        "english": "man",
+        "grammar": "m",
+        "german": "Mann"
+      },
+      {
+        "english": "woman",
+        "grammar": "f",
+        "german": "Frau"
+      },
+      {
+        "english": "child",
+        "grammar": "n",
+        "german": "Kind"
+      },
+      {
+        "english": "boy",
+        "grammar": "m",
+        "german": "Junge"
+      },
+      {
+        "english": "girl",
+        "grammar": "n",
+        "german": "Mädchen"
+      },
+      {
+        "english": "person",
+        "grammar": "f",
+        "german": "Person"
+      },
+      {
+        "english": "mister / gentleman",
+        "grammar": "m",
+        "german": "Herr"
+      },
+      {
+        "english": "lady",
+        "grammar": "f",
+        "german": "Dame"
+      },
+      {
+        "english": "friend (m)",
+        "grammar": "m",
+        "german": "Freund"
+      },
+      {
+        "english": "friend (f)",
+        "grammar": "f",
+        "german": "Freundin"
+      }
+    ]
+  }
+}

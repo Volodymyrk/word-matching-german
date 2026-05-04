@@ -1,0 +1,160 @@
+{
+  "Wetter und Natur": {
+    "Wetter": [
+      {
+        "english": "weather",
+        "grammar": "n",
+        "german": "Wetter"
+      },
+      {
+        "english": "sun",
+        "grammar": "f",
+        "german": "Sonne"
+      },
+      {
+        "english": "rain",
+        "grammar": "m",
+        "german": "Regen"
+      },
+      {
+        "english": "snow",
+        "grammar": "m",
+        "german": "Schnee"
+      },
+      {
+        "english": "wind",
+        "grammar": "m",
+        "german": "Wind"
+      },
+      {
+        "english": "cloud",
+        "grammar": "f",
+        "german": "Wolke"
+      },
+      {
+        "english": "fog / mist",
+        "grammar": "m",
+        "german": "Nebel"
+      },
+      {
+        "english": "thunderstorm",
+        "grammar": "n",
+        "german": "Gewitter"
+      },
+      {
+        "english": "temperature",
+        "grammar": "f",
+        "german": "Temperatur"
+      },
+      {
+        "english": "degree",
+        "grammar": "m",
+        "german": "Grad"
+      }
+    ],
+    "Wetterbeschreibungen": [
+      {
+        "english": "warm",
+        "grammar": "",
+        "german": "warm"
+      },
+      {
+        "english": "cold",
+        "grammar": "",
+        "german": "kalt"
+      },
+      {
+        "english": "hot",
+        "grammar": "",
+        "german": "heiß"
+      },
+      {
+        "english": "cool",
+        "grammar": "",
+        "german": "kühl"
+      },
+      {
+        "english": "wet",
+        "grammar": "",
+        "german": "nass"
+      },
+      {
+        "english": "dry",
+        "grammar": "",
+        "german": "trocken"
+      },
+      {
+        "english": "sunny",
+        "grammar": "",
+        "german": "sonnig"
+      },
+      {
+        "english": "cloudy",
+        "grammar": "",
+        "german": "bewölkt"
+      },
+      {
+        "english": "to rain",
+        "grammar": "",
+        "german": "regnen"
+      },
+      {
+        "english": "to snow",
+        "grammar": "",
+        "german": "schneien"
+      }
+    ],
+    "Natur": [
+      {
+        "english": "mountain",
+        "grammar": "m",
+        "german": "Berg"
+      },
+      {
+        "english": "lake",
+        "grammar": "m",
+        "german": "See"
+      },
+      {
+        "english": "river",
+        "grammar": "m",
+        "german": "Fluss"
+      },
+      {
+        "english": "sea",
+        "grammar": "n",
+        "german": "Meer"
+      },
+      {
+        "english": "forest",
+        "grammar": "m",
+        "german": "Wald"
+      },
+      {
+        "english": "field",
+        "grammar": "n",
+        "german": "Feld"
+      },
+      {
+        "english": "park",
+        "grammar": "m",
+        "german": "Park"
+      },
+      {
+        "english": "flower",
+        "grammar": "f",
+        "german": "Blume"
+      },
+      {
+        "english": "tree",
+        "grammar": "m",
+        "german": "Baum"
+      },
+      {
+        "english": "animal",
+        "grammar": "n",
+        "german": "Tier"
+      }
+    ]
+  }
+}

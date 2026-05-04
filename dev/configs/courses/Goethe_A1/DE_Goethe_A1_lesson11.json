@@ -1,0 +1,170 @@
+{
+  "Zahlen und Mengen": {
+    "Zahlen 1–12": [
+      {
+        "english": "one",
+        "grammar": "",
+        "german": "eins"
+      },
+      {
+        "english": "two",
+        "grammar": "",
+        "german": "zwei"
+      },
+      {
+        "english": "three",
+        "grammar": "",
+        "german": "drei"
+      },
+      {
+        "english": "four",
+        "grammar": "",
+        "german": "vier"
+      },
+      {
+        "english": "five",
+        "grammar": "",
+        "german": "fünf"
+      },
+      {
+        "english": "six",
+        "grammar": "",
+        "german": "sechs"
+      },
+      {
+        "english": "seven",
+        "grammar": "",
+        "german": "sieben"
+      },
+      {
+        "english": "eight",
+        "grammar": "",
+        "german": "acht"
+      },
+      {
+        "english": "nine",
+        "grammar": "",
+        "german": "neun"
+      },
+      {
+        "english": "ten",
+        "grammar": "",
+        "german": "zehn"
+      },
+      {
+        "english": "eleven",
+        "grammar": "",
+        "german": "elf"
+      },
+      {
+        "english": "twelve",
+        "grammar": "",
+        "german": "zwölf"
+      }
+    ],
+    "Zahlen 13–1000": [
+      {
+        "english": "thirteen",
+        "grammar": "",
+        "german": "dreizehn"
+      },
+      {
+        "english": "fourteen",
+        "grammar": "",
+        "german": "vierzehn"
+      },
+      {
+        "english": "fifteen",
+        "grammar": "",
+        "german": "fünfzehn"
+      },
+      {
+        "english": "sixteen",
+        "grammar": "",
+        "german": "sechzehn"
+      },
+      {
+        "english": "twenty",
+        "grammar": "",
+        "german": "zwanzig"
+      },
+      {
+        "english": "thirty",
+        "grammar": "",
+        "german": "dreißig"
+      },
+      {
+        "english": "forty",
+        "grammar": "",
+        "german": "vierzig"
+      },
+      {
+        "english": "fifty",
+        "grammar": "",
+        "german": "fünfzig"
+      },
+      {
+        "english": "hundred",
+        "grammar": "",
+        "german": "hundert"
+      },
+      {
+        "english": "thousand",
+        "grammar": "",
+        "german": "tausend"
+      }
+    ],
+    "Mengen und Maße": [
+      {
+        "english": "much / a lot",
+        "grammar": "",
+        "german": "viel"
+      },
+      {
+        "english": "little / few",
+        "grammar": "",
+        "german": "wenig"
+      },
+      {
+        "english": "all",
+        "grammar": "",
+        "german": "alle"
+      },
+      {
+        "english": "no / not any",
+        "grammar": "",
+        "german": "kein"
+      },
+      {
+        "english": "some",
+        "grammar": "",
+        "german": "einige"
+      },
+      {
+        "english": "kilogram",
+        "grammar": "n",
+        "german": "Kilogramm"
+      },
+      {
+        "english": "litre",
+        "grammar": "m",
+        "german": "Liter"
+      },
+      {
+        "english": "gram",
+        "grammar": "n",
+        "german": "Gramm"
+      },
+      {
+        "english": "half",
+        "grammar": "f",
+        "german": "Hälfte"
+      },
+      {
+        "english": "piece",
+        "grammar": "n",
+        "german": "Stück"
+      }
+    ]
+  }
+}

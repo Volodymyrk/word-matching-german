@@ -1,0 +1,160 @@
+{
+  "Sprache und Medien": {
+    "Sprache lernen": [
+      {
+        "english": "grammar",
+        "grammar": "f",
+        "german": "Grammatik"
+      },
+      {
+        "english": "word",
+        "grammar": "n",
+        "german": "Wort"
+      },
+      {
+        "english": "sentence",
+        "grammar": "m",
+        "german": "Satz"
+      },
+      {
+        "english": "text",
+        "grammar": "m",
+        "german": "Text"
+      },
+      {
+        "english": "to translate",
+        "grammar": "",
+        "german": "übersetzen"
+      },
+      {
+        "english": "to repeat",
+        "grammar": "",
+        "german": "wiederholen"
+      },
+      {
+        "english": "to practise",
+        "grammar": "",
+        "german": "üben"
+      },
+      {
+        "english": "to explain",
+        "grammar": "",
+        "german": "erklären"
+      },
+      {
+        "english": "to correct",
+        "grammar": "",
+        "german": "korrigieren"
+      },
+      {
+        "english": "mistake / error",
+        "grammar": "m",
+        "german": "Fehler"
+      }
+    ],
+    "Medien und Technologie": [
+      {
+        "english": "radio",
+        "grammar": "n",
+        "german": "Radio"
+      },
+      {
+        "english": "smartphone",
+        "grammar": "n",
+        "german": "Smartphone"
+      },
+      {
+        "english": "internet",
+        "grammar": "n",
+        "german": "Internet"
+      },
+      {
+        "english": "website",
+        "grammar": "f",
+        "german": "Website"
+      },
+      {
+        "english": "app",
+        "grammar": "f",
+        "german": "App"
+      },
+      {
+        "english": "photo",
+        "grammar": "n",
+        "german": "Foto"
+      },
+      {
+        "english": "video",
+        "grammar": "n",
+        "german": "Video"
+      },
+      {
+        "english": "magazine",
+        "grammar": "f",
+        "german": "Zeitschrift"
+      },
+      {
+        "english": "library",
+        "grammar": "f",
+        "german": "Bibliothek"
+      },
+      {
+        "english": "programme / show",
+        "grammar": "f",
+        "german": "Sendung"
+      }
+    ],
+    "Fragewörter": [
+      {
+        "english": "who",
+        "grammar": "",
+        "german": "wer"
+      },
+      {
+        "english": "what",
+        "grammar": "",
+        "german": "was"
+      },
+      {
+        "english": "where",
+        "grammar": "",
+        "german": "wo"
+      },
+      {
+        "english": "when",
+        "grammar": "",
+        "german": "wann"
+      },
+      {
+        "english": "why",
+        "grammar": "",
+        "german": "warum"
+      },
+      {
+        "english": "how",
+        "grammar": "",
+        "german": "wie"
+      },
+      {
+        "english": "which",
+        "grammar": "",
+        "german": "welche"
+      },
+      {
+        "english": "how much / how many",
+        "grammar": "",
+        "german": "wie viel"
+      },
+      {
+        "english": "where from",
+        "grammar": "",
+        "german": "woher"
+      },
+      {
+        "english": "where to",
+        "grammar": "",
+        "german": "wohin"
+      }
+    ]
+  }
+}

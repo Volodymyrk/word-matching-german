@@ -1,0 +1,212 @@
+{
+  "Wohnen": {
+    "Wohnung und Haus": [
+      {
+        "english": "apartment",
+        "grammar": "f",
+        "german": "Wohnung"
+      },
+      {
+        "english": "house",
+        "grammar": "n",
+        "german": "Haus"
+      },
+      {
+        "english": "room",
+        "grammar": "n",
+        "german": "Zimmer"
+      },
+      {
+        "english": "bedroom",
+        "grammar": "n",
+        "german": "Schlafzimmer"
+      },
+      {
+        "english": "living room",
+        "grammar": "n",
+        "german": "Wohnzimmer"
+      },
+      {
+        "english": "kitchen",
+        "grammar": "f",
+        "german": "Küche"
+      },
+      {
+        "english": "bathroom",
+        "grammar": "n",
+        "german": "Badezimmer"
+      },
+      {
+        "english": "hallway",
+        "grammar": "m",
+        "german": "Flur"
+      },
+      {
+        "english": "balcony",
+        "grammar": "m",
+        "german": "Balkon"
+      },
+      {
+        "english": "basement",
+        "grammar": "m",
+        "german": "Keller"
+      }
+    ],
+    "Möbel": [
+      {
+        "english": "bed",
+        "grammar": "n",
+        "german": "Bett"
+      },
+      {
+        "english": "table",
+        "grammar": "m",
+        "german": "Tisch"
+      },
+      {
+        "english": "chair",
+        "grammar": "m",
+        "german": "Stuhl"
+      },
+      {
+        "english": "sofa",
+        "grammar": "n",
+        "german": "Sofa"
+      },
+      {
+        "english": "wardrobe",
+        "grammar": "m",
+        "german": "Schrank"
+      },
+      {
+        "english": "shelf",
+        "grammar": "n",
+        "german": "Regal"
+      },
+      {
+        "english": "lamp",
+        "grammar": "f",
+        "german": "Lampe"
+      },
+      {
+        "english": "mirror",
+        "grammar": "m",
+        "german": "Spiegel"
+      },
+      {
+        "english": "window",
+        "grammar": "n",
+        "german": "Fenster"
+      },
+      {
+        "english": "door",
+        "grammar": "f",
+        "german": "Tür"
+      }
+    ],
+    "Haushalt": [
+      {
+        "english": "fridge",
+        "grammar": "m",
+        "german": "Kühlschrank"
+      },
+      {
+        "english": "stove",
+        "grammar": "m",
+        "german": "Herd"
+      },
+      {
+        "english": "washing machine",
+        "grammar": "f",
+        "german": "Waschmaschine"
+      },
+      {
+        "english": "television",
+        "grammar": "m",
+        "german": "Fernseher"
+      },
+      {
+        "english": "phone",
+        "grammar": "n",
+        "german": "Telefon"
+      },
+      {
+        "english": "computer",
+        "grammar": "m",
+        "german": "Computer"
+      },
+      {
+        "english": "book",
+        "grammar": "n",
+        "german": "Buch"
+      },
+      {
+        "english": "newspaper",
+        "grammar": "f",
+        "german": "Zeitung"
+      },
+      {
+        "english": "key",
+        "grammar": "m",
+        "german": "Schlüssel"
+      },
+      {
+        "english": "rent",
+        "grammar": "f",
+        "german": "Miete"
+      }
+    ],
+    "Beschreibungen": [
+      {
+        "english": "big",
+        "grammar": "",
+        "german": "groß"
+      },
+      {
+        "english": "small",
+        "grammar": "",
+        "german": "klein"
+      },
+      {
+        "english": "bright / light",
+        "grammar": "",
+        "german": "hell"
+      },
+      {
+        "english": "dark",
+        "grammar": "",
+        "german": "dunkel"
+      },
+      {
+        "english": "expensive",
+        "grammar": "",
+        "german": "teuer"
+      },
+      {
+        "english": "affordable / cheap",
+        "grammar": "",
+        "german": "günstig"
+      },
+      {
+        "english": "modern",
+        "grammar": "",
+        "german": "modern"
+      },
+      {
+        "english": "old",
+        "grammar": "",
+        "german": "alt"
+      },
+      {
+        "english": "new",
+        "grammar": "",
+        "german": "neu"
+      },
+      {
+        "english": "quiet",
+        "grammar": "",
+        "german": "ruhig"
+      }
+    ]
+  }
+}
