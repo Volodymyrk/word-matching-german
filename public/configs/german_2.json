@@ -1,6 +1,6 @@
 {
   "supermarket_essentials": {
-    "section_1_basic_items": [
+    "Lebensmittel": [
       {"english": "bread", "grammar": "n", "german": "Brot"},
       {"english": "milk", "grammar": "f", "german": "Milch"},
       {"english": "egg", "grammar": "n", "german": "Ei"},
@@ -12,7 +12,7 @@
       {"english": "meat", "grammar": "n", "german": "Fleisch"},
       {"english": "vegetables", "grammar": "n", "german": "Gemüse"}
     ],
-    "section_2_shopping_logistics": [
+    "Im Supermarkt": [
       {"english": "shopping cart", "grammar": "m", "german": "Einkaufswagen"},
       {"english": "basket", "grammar": "m", "german": "Korb"},
       {"english": "bag", "grammar": "f", "german": "Tasche"},
@@ -23,7 +23,7 @@
       {"english": "shelf", "grammar": "n", "german": "Regal"},
       {"english": "customer", "grammar": "m", "german": "Kunde"}
     ],
-    "section_3_pantry_and_drinks": [
+    "Vorrat & Getränke": [
       {"english": "rice", "grammar": "m", "german": "Reis"},
       {"english": "pasta", "grammar": "f", "german": "Nudeln"},
       {"english": "sugar", "grammar": "m", "german": "Zucker"},
@@ -35,7 +35,7 @@
       {"english": "flour", "grammar": "n", "german": "Mehl"},
       {"english": "honey", "grammar": "m", "german": "Honig"}
     ],
-    "section_4_useful_phrases_nouns": [
+    "Nützliches": [
       {"english": "change (money)", "grammar": "n", "german": "Kleingeld"},
       {"english": "credit card", "grammar": "f", "german": "Kreditkarte"},
       {"english": "membership card", "grammar": "f", "german": "Kundenkarte"},

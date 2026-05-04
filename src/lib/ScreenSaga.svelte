@@ -1,9 +1,10 @@
 <script>
+  import { onMount } from 'svelte';
   import { roman, dirLabel, levelLocked, finalLocked } from './theme.js';
 
   let { lesson, sections, progress, starThresholds = [1, 10, 20], onBack, onStart } = $props();
 
-  let selectedId = $state(null); // section.id or 'final' whose dir panel is open
+  let finalPanelOpen = $state(false);
   const FINAL = 'final';
 
   function isDone(sectionId, dir) {
@@ -25,7 +26,7 @@
 
   const isFinalUnlocked = $derived(!finalLocked(lesson, sections, progress, starThresholds));
 
-  // Flat level list to compute currentLevelKey (same logic as before)
+  // One node per (section × direction): dir=1 first, then dir=0
   const levels = $derived(sections.flatMap((section, i) => [
     { section, sectionIdx: i, dir: 1 },
     { section, sectionIdx: i, dir: 0 },
@@ -40,69 +41,54 @@
     return null;
   });
 
-  // Which section id contains the current level
-  const currentSectionId = $derived.by(() => {
-    if (!currentLevelKey || currentLevelKey === FINAL) return currentLevelKey;
-    return currentLevelKey.split(':')[0];
+  const fAllDone   = $derived(hasEnoughStars(FINAL, 0) && hasEnoughStars(FINAL, 1));
+  const fIsCurrent = $derived(currentLevelKey === FINAL);
+  const fAlignRight = $derived(levels.length % 2 !== 0);
+
+  function startFinal(dir) {
+    onStart({ id: FINAL, isFinal: true }, dir);
+    finalPanelOpen = false;
+  }
+
+  // Refs to each circle element — index 0..levels.length-1 for level nodes,
+  // index levels.length for the final node.
+  let circleEls = [];
+  let sagaEl    = $state(null);
+  let pathD     = $state('');
+  let pathH     = $state(800);
+
+  function measurePath() {
+    if (!sagaEl) return;
+    const sagaRect = sagaEl.getBoundingClientRect();
+    const pts = circleEls
+      .filter(Boolean)
+      .map(el => {
+        const r = el.getBoundingClientRect();
+        return {
+          x: +(r.left + r.width  / 2 - sagaRect.left).toFixed(1),
+          y: +(r.top  + r.height / 2 - sagaRect.top  + sagaEl.scrollTop).toFixed(1),
+        };
+      });
+    if (pts.length < 2) return;
+    pathH = pts[pts.length - 1].y + 60;
+    let d = `M ${pts[0].x} ${pts[0].y}`;
+    for (let i = 1; i < pts.length; i++) {
+      const p0 = pts[i - 1], p1 = pts[i];
+      const dy = p1.y - p0.y;
+      d += ` C ${p0.x} ${+(p0.y + dy * 0.5).toFixed(1)},`
+         + ` ${p1.x} ${+(p1.y - dy * 0.5).toFixed(1)},`
+         + ` ${p1.x} ${p1.y}`;
+    }
+    pathD = d;
+  }
+
+  onMount(() => {
+    // Two rAF passes: first lets Svelte flush DOM, second waits for paint/layout.
+    requestAnimationFrame(() => requestAnimationFrame(measurePath));
+    const ro = new ResizeObserver(() => requestAnimationFrame(measurePath));
+    ro.observe(sagaEl);
+    return () => ro.disconnect();
   });
-
-  const fAllDone = $derived(hasEnoughStars(FINAL, 0) && hasEnoughStars(FINAL, 1));
-  const fIsCurrent = $derived(currentSectionId === FINAL);
-  // Final row aligns right if sections.length is even (0-based: last section is odd)
-  const fAlignRight = $derived(sections.length % 2 !== 0);
-
-  function isSectionLocked(idx) {
-    return levelLocked(lesson, idx, 1, sections, progress, starThresholds);
-  }
-
-  function isSectionAllDone(s) {
-    return hasEnoughStars(s.id, 1) && hasEnoughStars(s.id, 0);
-  }
-
-  // Dot state: 'done' | 'current' | 'played' | 'open' | 'locked'
-  function dotState(sectionId, dir, sectionIdx) {
-    if (levelLocked(lesson, sectionIdx, dir, sections, progress, starThresholds)) return 'locked';
-    if (hasEnoughStars(sectionId, dir)) return 'done';
-    if (currentLevelKey === `${sectionId}:${dir}`) return 'current';
-    if (isDone(sectionId, dir)) return 'played';
-    return 'open';
-  }
-
-  function openPanel(id) {
-    if (id === FINAL) {
-      if (!isFinalUnlocked) return;
-    } else {
-      const idx = sections.findIndex(s => s.id === id);
-      if (isSectionLocked(idx)) return;
-    }
-    selectedId = id;
-  }
-
-  function startDir(id, dir) {
-    if (id === FINAL) {
-      onStart({ id: FINAL, isFinal: true }, dir);
-    } else {
-      const sec = sections.find(s => s.id === id);
-      const idx = sections.findIndex(s => s.id === id);
-      if (levelLocked(lesson, idx, dir, sections, progress, starThresholds)) return;
-      onStart(sec, dir);
-    }
-    selectedId = null;
-  }
-
-  // Build a smooth S-curve path through N alternating nodes
-  function buildPath(n) {
-    const step = 130;
-    const L = 80, R = 240, M = 160;
-    let d = `M ${L} 60`;
-    for (let i = 1; i < n; i++) {
-      const x = i % 2 === 0 ? L : R;
-      const y = i * step + 60;
-      const cy = y - step / 2;
-      d += ` Q ${M} ${cy}, ${x} ${y}`;
-    }
-    return d;
-  }
 </script>
 
 <div class="page">
@@ -118,19 +104,20 @@
     </div>
   </div>
 
-  <div class="saga">
-    <!-- Dashed curved path behind nodes -->
-    <svg class="path-svg" width="320" height="{(sections.length + 1) * 130 + 60}" viewBox="0 0 320 {(sections.length + 1) * 130 + 60}">
-      <path d={buildPath(sections.length + 1)} stroke="#D4CDC0" stroke-width="2" stroke-dasharray="2 6" fill="none" stroke-linecap="round"/>
+  <div class="saga" bind:this={sagaEl}>
+    <!-- Path rendered first; bubbles (z-index:1) sit on top -->
+    <svg class="path-svg" width="100%" height={pathH}>
+      {#if pathD}
+        <path d={pathD} stroke="#D4CDC0" stroke-width="2" stroke-dasharray="2 6" fill="none" stroke-linecap="round"/>
+      {/if}
     </svg>
 
-    {#each sections as s, i}
-      {@const sLocked    = isSectionLocked(i)}
-      {@const sAllDone   = isSectionAllDone(s)}
-      {@const isCurrent  = currentSectionId === s.id}
-      {@const dot1       = dotState(s.id, 1, i)}
-      {@const dot0       = dotState(s.id, 0, i)}
-      {@const sectionStars = Math.min(3, starsFor(s.id, 0) + starsFor(s.id, 1))}
+    {#each levels as lv, i}
+      {@const locked   = levelLocked(lesson, lv.sectionIdx, lv.dir, sections, progress, starThresholds)}
+      {@const cleared  = hasEnoughStars(lv.section.id, lv.dir)}
+      {@const isCurrent = currentLevelKey === `${lv.section.id}:${lv.dir}`}
+      {@const stars    = starsFor(lv.section.id, lv.dir)}
+      {@const secName  = lv.section.id.split('/').pop()}
 
       <div class="node-row" class:right={i % 2 !== 0}>
         {#if isCurrent}
@@ -138,41 +125,39 @@
         {/if}
         <button
           class="node-btn"
-          class:locked={sLocked}
-          onclick={() => openPanel(s.id)}
+          class:locked
+          class:flipped={i % 2 !== 0}
+          onclick={() => !locked && onStart(lv.section, lv.dir)}
         >
           <div
             class="circle"
+            bind:this={circleEls[i]}
             style="
-              background: {sLocked ? '#E8E3D9' : sAllDone ? '#E0F0E8' : isCurrent ? '#2F8F6E' : '#FFFFFF'};
-              border: 1.5px solid {sLocked ? '#E8E3D9' : (sAllDone || isCurrent) ? '#2F8F6E' : '#D4CDC0'};
-              box-shadow: {isCurrent ? '0 0 0 5px #E0F0E8, 0 1px 2px rgba(20,18,15,0.05)' : !sLocked ? '0 1px 3px rgba(20,18,15,0.07)' : 'none'};
+              background: {locked ? '#E8E3D9' : cleared ? '#E0F0E8' : isCurrent ? '#2F8F6E' : '#FFFFFF'};
+              border: 1.5px solid {locked ? '#E8E3D9' : (cleared || isCurrent) ? '#2F8F6E' : '#D4CDC0'};
+              box-shadow: {isCurrent ? '0 0 0 5px #E0F0E8, 0 1px 2px rgba(20,18,15,0.05)' : !locked ? '0 1px 3px rgba(20,18,15,0.07)' : 'none'};
             "
           >
-            {#if sLocked}
+            {#if locked}
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                 <rect x="5" y="11" width="14" height="9" rx="2" fill="#B0A89E"/>
                 <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#B0A89E" stroke-width="2" stroke-linecap="round"/>
               </svg>
             {:else}
-              <span class="circle-numeral" style="color:{isCurrent ? '#FFFFFF' : sAllDone ? '#2F8F6E' : '#1F1D1A'}">{roman(i)}</span>
+              <span class="circle-numeral" style="color:{isCurrent ? '#FFFFFF' : cleared ? '#2F8F6E' : '#1F1D1A'}">{roman(lv.sectionIdx)}</span>
             {/if}
           </div>
           <div class="node-info">
-            <div class="node-label" style="color:{sLocked ? '#B0A89E' : '#1F1D1A'}">Abschnitt {roman(i)}</div>
-            {#if !sLocked}
-              <div class="node-sub">{s.wordCount} Wörter</div>
+            <div class="node-label" style="color:{locked ? '#B0A89E' : '#1F1D1A'}">{secName}</div>
+            {#if !locked}
+              <div class="node-sub">{dirLabel(lesson, lv.dir)} · {lv.section.wordCount} Wörter</div>
               <div class="node-stars">
                 {#each [0, 1, 2] as st}
                   <svg width="10" height="10" viewBox="0 0 24 24">
                     <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
-                      fill={st < sectionStars ? '#D49A4A' : '#E8E3D9'}/>
+                      fill={st < stars ? '#D49A4A' : '#E8E3D9'}/>
                   </svg>
                 {/each}
-              </div>
-              <div class="dir-dots">
-                <div class="dot dot-{dot1}"></div>
-                <div class="dot dot-{dot0}"></div>
               </div>
             {/if}
           </div>
@@ -188,10 +173,12 @@
       <button
         class="node-btn"
         class:locked={!isFinalUnlocked}
-        onclick={() => openPanel(FINAL)}
+        class:flipped={fAlignRight}
+        onclick={() => isFinalUnlocked && (finalPanelOpen = true)}
       >
         <div
           class="circle circle-final"
+          bind:this={circleEls[levels.length]}
           style="
             background: {!isFinalUnlocked ? '#E8E3D9' : fAllDone ? '#E0F0E8' : fIsCurrent ? '#2F8F6E' : '#FFFFFF'};
             border: 1.5px solid {!isFinalUnlocked ? '#E8E3D9' : (fAllDone || fIsCurrent) ? '#2F8F6E' : '#D4CDC0'};
@@ -228,37 +215,20 @@
     </div>
   </div>
 
-  <!-- Direction picker panel -->
-  {#if selectedId !== null}
-    {@const panelIsFinal = selectedId === FINAL}
-    {@const panelSecIdx  = panelIsFinal ? -1 : sections.findIndex(s => s.id === selectedId)}
+  <!-- Direction picker only for final round -->
+  {#if finalPanelOpen}
     <div class="dir-panel">
-      <div class="dir-panel-label">
-        {panelIsFinal ? 'Finalrunde' : `Abschnitt ${roman(panelSecIdx)}`} · Richtung wählen
-      </div>
+      <div class="dir-panel-label">Finalrunde · Richtung wählen</div>
       <div class="dir-btns">
         {#each [1, 0] as dir}
-          {@const isLk = !panelIsFinal && levelLocked(lesson, panelSecIdx, dir, sections, progress, starThresholds)}
-          {@const isDn = hasEnoughStars(selectedId, dir)}
-          <button
-            class="dir-btn"
-            class:done={isDn}
-            class:dir-locked={isLk}
-            onclick={() => { if (!isLk) startDir(selectedId, dir); }}
-          >
+          {@const isDn = hasEnoughStars(FINAL, dir)}
+          <button class="dir-btn" class:done={isDn} onclick={() => startFinal(dir)}>
             <span class="dir-btn-label">{dirLabel(lesson, dir)}</span>
-            {#if isLk}
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-                <rect x="5" y="11" width="14" height="9" rx="2" fill="currentColor"/>
-                <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-              </svg>
-            {:else if isDn}
-              <span class="dir-check">✓</span>
-            {/if}
+            {#if isDn}<span class="dir-check">✓</span>{/if}
           </button>
         {/each}
       </div>
-      <button class="dir-cancel" onclick={() => selectedId = null}>Abbrechen</button>
+      <button class="dir-cancel" onclick={() => finalPanelOpen = false}>Abbrechen</button>
     </div>
   {/if}
 </div>
@@ -388,7 +358,8 @@
     font-family: inherit;
   }
 
-  .node-btn.locked { cursor: default; opacity: 0.7; }
+  .node-btn.locked  { cursor: default; opacity: 0.7; }
+  .node-btn.flipped { flex-direction: row-reverse; }
 
   .circle {
     width: 64px;
@@ -434,24 +405,7 @@
 
   .node-stars { display: flex; gap: 2px; }
 
-  .dir-dots {
-    display: flex;
-    gap: 5px;
-    margin-top: 2px;
-  }
-
-  .dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-  }
-  .dot-done    { background: #2F8F6E; }
-  .dot-current { background: #D49A4A; }
-  .dot-played  { background: transparent; border: 1.5px solid #D4CDC0; }
-  .dot-open    { background: transparent; border: 1.5px solid #D4CDC0; }
-  .dot-locked  { background: transparent; border: 1.5px solid #E8E3D9; }
-
-  /* Direction picker */
+  /* Direction picker for final round */
   .dir-panel {
     position: fixed;
     bottom: 0;
@@ -506,13 +460,6 @@
   .dir-btn.done {
     background: #E0F0E8;
     color: #2F8F6E;
-    box-shadow: none;
-  }
-
-  .dir-btn.dir-locked {
-    background: #F4F2EC;
-    color: #B0A89E;
-    cursor: default;
     box-shadow: none;
   }
 

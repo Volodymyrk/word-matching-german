@@ -80,8 +80,7 @@
   const sectionLabel = $derived.by(() => {
     if (!selectedSection) return '';
     if (selectedSection.isFinal) return 'Finalrunde';
-    const idx = sections.findIndex(s => s.id === selectedSection.id);
-    return `Abschnitt ${idx + 1}`;
+    return selectedSection.id.split('/').pop();
   });
 
   let timerInterval        = null;
@@ -397,6 +396,10 @@
                   <span class="card-icon-label">{card.base}</span>
                 {/if}
               {:else}
+                {@const cardArticle = card.grammar === 'm' ? 'der' : card.grammar === 'f' ? 'die' : card.grammar === 'n' ? 'das' : ''}
+                {#if cardArticle}
+                  <span class="card-article">{cardArticle}</span>
+                {/if}
                 <span class="card-word">{card.base}</span>
               {/if}
             </div>
@@ -664,11 +667,12 @@
   }
 
   .card-inner {
-    background: #FFFFFF;
+    background: transparent;
     border-radius: 13px;
-    width: 88px;
-    height: 88px;
+    width: 104px;
+    height: 104px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -676,8 +680,8 @@
   }
 
   .card-icon {
-    width: 84px;
-    height: 84px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     display: block;
   }
@@ -690,8 +694,8 @@
     text-align: center;
     font-size: 0.58rem;
     font-weight: 600;
-    color: #1F1D1A;
-    background: rgba(255, 255, 255, 0.88);
+    color: rgba(31, 29, 26, .7);
+    background: rgba(255, 255, 255, 0.5);
     padding: 2px 4px 3px;
     border-radius: 0 0 13px 13px;
     line-height: 1.3;
@@ -701,12 +705,21 @@
     text-overflow: ellipsis;
   }
 
+  .card-article {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: #B0A89E;
+    text-align: center;
+    padding-top: 4px;
+    font-family: inherit;
+  }
+
   .card-word {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #1F1D1A;
     text-align: center;
-    word-break: break-word;
+    /* word-break: break-word; */
     hyphens: auto;
     line-height: 1.25;
     padding: 6px;
@@ -756,7 +769,7 @@
     min-width: 0;
     appearance: none;
     cursor: pointer;
-    background: #FFFFFF;
+    background: #fbfbfb;
     border: 1px solid #E8E3D9;
     border-radius: 12px;
     padding: 8px 4px;
@@ -787,15 +800,20 @@
   }
 
   .target-word {
-    font-size: 0.95rem;
+    font-size: clamp(0.7rem, 2.6vw, 0.95rem);
     font-weight: 600;
     color: #1F1D1A;
+    width: 100%;
+    text-align: center;
   }
 
   .target-icon {
-    width: 72px;
-    height: 72px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     display: block;
+    /* background: #E0F0E8;
+    border-color: #2F8F6E; */
+    background: transparent;
   }
 </style>
