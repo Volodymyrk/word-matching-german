@@ -1,0 +1,274 @@
+{
+  "Zeit und Kalender": {
+    "Wochentage": [
+      {
+        "english": "Monday",
+        "grammar": "",
+        "german": "Montag"
+      },
+      {
+        "english": "Tuesday",
+        "grammar": "",
+        "german": "Dienstag"
+      },
+      {
+        "english": "Wednesday",
+        "grammar": "",
+        "german": "Mittwoch"
+      },
+      {
+        "english": "Thursday",
+        "grammar": "",
+        "german": "Donnerstag"
+      },
+      {
+        "english": "Friday",
+        "grammar": "",
+        "german": "Freitag"
+      },
+      {
+        "english": "Saturday",
+        "grammar": "",
+        "german": "Samstag"
+      },
+      {
+        "english": "Sunday",
+        "grammar": "",
+        "german": "Sonntag"
+      },
+      {
+        "english": "weekday",
+        "grammar": "m",
+        "german": "Werktag"
+      },
+      {
+        "english": "weekend",
+        "grammar": "n",
+        "german": "Wochenende"
+      },
+      {
+        "english": "daily",
+        "grammar": "",
+        "german": "täglich"
+      }
+    ],
+    "Monate": [
+      {
+        "english": "January",
+        "grammar": "",
+        "german": "Januar"
+      },
+      {
+        "english": "February",
+        "grammar": "",
+        "german": "Februar"
+      },
+      {
+        "english": "March",
+        "grammar": "",
+        "german": "März"
+      },
+      {
+        "english": "April",
+        "grammar": "",
+        "german": "April"
+      },
+      {
+        "english": "May",
+        "grammar": "",
+        "german": "Mai"
+      },
+      {
+        "english": "June",
+        "grammar": "",
+        "german": "Juni"
+      },
+      {
+        "english": "July",
+        "grammar": "",
+        "german": "Juli"
+      },
+      {
+        "english": "August",
+        "grammar": "",
+        "german": "August"
+      },
+      {
+        "english": "September",
+        "grammar": "",
+        "german": "September"
+      },
+      {
+        "english": "October",
+        "grammar": "",
+        "german": "Oktober"
+      },
+      {
+        "english": "November",
+        "grammar": "",
+        "german": "November"
+      },
+      {
+        "english": "December",
+        "grammar": "",
+        "german": "Dezember"
+      }
+    ],
+    "Jahreszeiten und Uhrzeit": [
+      {
+        "english": "spring",
+        "grammar": "m",
+        "german": "Frühling"
+      },
+      {
+        "english": "summer",
+        "grammar": "m",
+        "german": "Sommer"
+      },
+      {
+        "english": "autumn",
+        "grammar": "m",
+        "german": "Herbst"
+      },
+      {
+        "english": "winter",
+        "grammar": "m",
+        "german": "Winter"
+      },
+      {
+        "english": "clock / watch",
+        "grammar": "f",
+        "german": "Uhr"
+      },
+      {
+        "english": "hour",
+        "grammar": "f",
+        "german": "Stunde"
+      },
+      {
+        "english": "minute",
+        "grammar": "f",
+        "german": "Minute"
+      },
+      {
+        "english": "second",
+        "grammar": "f",
+        "german": "Sekunde"
+      },
+      {
+        "english": "early",
+        "grammar": "",
+        "german": "früh"
+      },
+      {
+        "english": "late",
+        "grammar": "",
+        "german": "spät"
+      }
+    ],
+    "Tageszeiten": [
+      {
+        "english": "morning",
+        "grammar": "m",
+        "german": "Morgen"
+      },
+      {
+        "english": "late morning",
+        "grammar": "m",
+        "german": "Vormittag"
+      },
+      {
+        "english": "midday / noon",
+        "grammar": "m",
+        "german": "Mittag"
+      },
+      {
+        "english": "afternoon",
+        "grammar": "m",
+        "german": "Nachmittag"
+      },
+      {
+        "english": "evening",
+        "grammar": "m",
+        "german": "Abend"
+      },
+      {
+        "english": "night",
+        "grammar": "f",
+        "german": "Nacht"
+      },
+      {
+        "english": "week",
+        "grammar": "f",
+        "german": "Woche"
+      },
+      {
+        "english": "month",
+        "grammar": "m",
+        "german": "Monat"
+      },
+      {
+        "english": "year",
+        "grammar": "n",
+        "german": "Jahr"
+      },
+      {
+        "english": "date",
+        "grammar": "n",
+        "german": "Datum"
+      }
+    ],
+    "Zeitangaben": [
+      {
+        "english": "now",
+        "grammar": "",
+        "german": "jetzt"
+      },
+      {
+        "english": "today",
+        "grammar": "",
+        "german": "heute"
+      },
+      {
+        "english": "tomorrow",
+        "grammar": "",
+        "german": "morgen"
+      },
+      {
+        "english": "yesterday",
+        "grammar": "",
+        "german": "gestern"
+      },
+      {
+        "english": "always",
+        "grammar": "",
+        "german": "immer"
+      },
+      {
+        "english": "sometimes",
+        "grammar": "",
+        "german": "manchmal"
+      },
+      {
+        "english": "never",
+        "grammar": "",
+        "german": "nie"
+      },
+      {
+        "english": "often",
+        "grammar": "",
+        "german": "oft"
+      },
+      {
+        "english": "already",
+        "grammar": "",
+        "german": "schon"
+      },
+      {
+        "english": "still / yet",
+        "grammar": "",
+        "german": "noch"
+      }
+    ]
+  }
+}

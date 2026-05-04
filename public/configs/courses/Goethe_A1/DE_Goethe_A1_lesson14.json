@@ -1,0 +1,160 @@
+{
+  "Adjektive und Beschreibungen": {
+    "Häufige Adjektive": [
+      {
+        "english": "beautiful / nice",
+        "grammar": "",
+        "german": "schön"
+      },
+      {
+        "english": "ugly",
+        "grammar": "",
+        "german": "hässlich"
+      },
+      {
+        "english": "interesting",
+        "grammar": "",
+        "german": "interessant"
+      },
+      {
+        "english": "boring",
+        "grammar": "",
+        "german": "langweilig"
+      },
+      {
+        "english": "difficult",
+        "grammar": "",
+        "german": "schwierig"
+      },
+      {
+        "english": "easy / simple",
+        "grammar": "",
+        "german": "einfach"
+      },
+      {
+        "english": "important",
+        "grammar": "",
+        "german": "wichtig"
+      },
+      {
+        "english": "correct / right",
+        "grammar": "",
+        "german": "richtig"
+      },
+      {
+        "english": "wrong / false",
+        "grammar": "",
+        "german": "falsch"
+      },
+      {
+        "english": "possible",
+        "grammar": "",
+        "german": "möglich"
+      }
+    ],
+    "Größe und Qualität": [
+      {
+        "english": "wide / broad",
+        "grammar": "",
+        "german": "breit"
+      },
+      {
+        "english": "long",
+        "grammar": "",
+        "german": "lang"
+      },
+      {
+        "english": "short",
+        "grammar": "",
+        "german": "kurz"
+      },
+      {
+        "english": "tall / high",
+        "grammar": "",
+        "german": "hoch"
+      },
+      {
+        "english": "deep / low",
+        "grammar": "",
+        "german": "tief"
+      },
+      {
+        "english": "fast",
+        "grammar": "",
+        "german": "schnell"
+      },
+      {
+        "english": "slow",
+        "grammar": "",
+        "german": "langsam"
+      },
+      {
+        "english": "loud",
+        "grammar": "",
+        "german": "laut"
+      },
+      {
+        "english": "quiet / soft (sound)",
+        "grammar": "",
+        "german": "leise"
+      },
+      {
+        "english": "heavy / difficult",
+        "grammar": "",
+        "german": "schwer"
+      }
+    ],
+    "Gefühle": [
+      {
+        "english": "happy",
+        "grammar": "",
+        "german": "glücklich"
+      },
+      {
+        "english": "sad",
+        "grammar": "",
+        "german": "traurig"
+      },
+      {
+        "english": "nervous",
+        "grammar": "",
+        "german": "nervös"
+      },
+      {
+        "english": "relaxed",
+        "grammar": "",
+        "german": "entspannt"
+      },
+      {
+        "english": "excited",
+        "grammar": "",
+        "german": "aufgeregt"
+      },
+      {
+        "english": "satisfied / content",
+        "grammar": "",
+        "german": "zufrieden"
+      },
+      {
+        "english": "glad / pleased",
+        "grammar": "",
+        "german": "froh"
+      },
+      {
+        "english": "hungry",
+        "grammar": "",
+        "german": "hungrig"
+      },
+      {
+        "english": "thirsty",
+        "grammar": "",
+        "german": "durstig"
+      },
+      {
+        "english": "alone",
+        "grammar": "",
+        "german": "allein"
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "Einkaufen und Kleidung": {
+    "Kleidung": [
+      {
+        "english": "shirt",
+        "grammar": "n",
+        "german": "Hemd"
+      },
+      {
+        "english": "trousers",
+        "grammar": "f",
+        "german": "Hose"
+      },
+      {
+        "english": "dress",
+        "grammar": "n",
+        "german": "Kleid"
+      },
+      {
+        "english": "skirt",
+        "grammar": "m",
+        "german": "Rock"
+      },
+      {
+        "english": "jacket",
+        "grammar": "f",
+        "german": "Jacke"
+      },
+      {
+        "english": "coat",
+        "grammar": "m",
+        "german": "Mantel"
+      },
+      {
+        "english": "shoe",
+        "grammar": "m",
+        "german": "Schuh"
+      },
+      {
+        "english": "boot",
+        "grammar": "m",
+        "german": "Stiefel"
+      },
+      {
+        "english": "sock",
+        "grammar": "f",
+        "german": "Socke"
+      },
+      {
+        "english": "hat",
+        "grammar": "m",
+        "german": "Hut"
+      }
+    ],
+    "Farben": [
+      {
+        "english": "red",
+        "grammar": "",
+        "german": "rot"
+      },
+      {
+        "english": "blue",
+        "grammar": "",
+        "german": "blau"
+      },
+      {
+        "english": "green",
+        "grammar": "",
+        "german": "grün"
+      },
+      {
+        "english": "yellow",
+        "grammar": "",
+        "german": "gelb"
+      },
+      {
+        "english": "black",
+        "grammar": "",
+        "german": "schwarz"
+      },
+      {
+        "english": "white",
+        "grammar": "",
+        "german": "weiß"
+      },
+      {
+        "english": "grey",
+        "grammar": "",
+        "german": "grau"
+      },
+      {
+        "english": "brown",
+        "grammar": "",
+        "german": "braun"
+      },
+      {
+        "english": "orange",
+        "grammar": "",
+        "german": "orange"
+      },
+      {
+        "english": "pink",
+        "grammar": "",
+        "german": "rosa"
+      }
+    ],
+    "Einkaufen": [
+      {
+        "english": "shop / store",
+        "grammar": "n",
+        "german": "Geschäft"
+      },
+      {
+        "english": "store / shop",
+        "grammar": "m",
+        "german": "Laden"
+      },
+      {
+        "english": "market",
+        "grammar": "m",
+        "german": "Markt"
+      },
+      {
+        "english": "size",
+        "grammar": "f",
+        "german": "Größe"
+      },
+      {
+        "english": "price",
+        "grammar": "",
+        "german": "Preis"
+      },
+      {
+        "english": "money",
+        "grammar": "n",
+        "german": "Geld"
+      },
+      {
+        "english": "to buy",
+        "grammar": "",
+        "german": "kaufen"
+      },
+      {
+        "english": "to sell",
+        "grammar": "",
+        "german": "verkaufen"
+      },
+      {
+        "english": "to cost",
+        "grammar": "",
+        "german": "kosten"
+      },
+      {
+        "english": "to pay for",
+        "grammar": "",
+        "german": "bezahlen"
+      }
+    ]
+  }
+}

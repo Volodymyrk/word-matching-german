@@ -1,0 +1,170 @@
+{
+  "Gesundheit und Körper": {
+    "Körperteile": [
+      {
+        "english": "head",
+        "grammar": "m",
+        "german": "Kopf"
+      },
+      {
+        "english": "face",
+        "grammar": "n",
+        "german": "Gesicht"
+      },
+      {
+        "english": "eye",
+        "grammar": "n",
+        "german": "Auge"
+      },
+      {
+        "english": "ear",
+        "grammar": "n",
+        "german": "Ohr"
+      },
+      {
+        "english": "nose",
+        "grammar": "f",
+        "german": "Nase"
+      },
+      {
+        "english": "mouth",
+        "grammar": "m",
+        "german": "Mund"
+      },
+      {
+        "english": "tooth",
+        "grammar": "m",
+        "german": "Zahn"
+      },
+      {
+        "english": "throat / neck",
+        "grammar": "m",
+        "german": "Hals"
+      },
+      {
+        "english": "arm",
+        "grammar": "m",
+        "german": "Arm"
+      },
+      {
+        "english": "hand",
+        "grammar": "f",
+        "german": "Hand"
+      },
+      {
+        "english": "leg",
+        "grammar": "n",
+        "german": "Bein"
+      },
+      {
+        "english": "foot",
+        "grammar": "m",
+        "german": "Fuß"
+      }
+    ],
+    "Beim Arzt": [
+      {
+        "english": "hospital",
+        "grammar": "n",
+        "german": "Krankenhaus"
+      },
+      {
+        "english": "pharmacy",
+        "grammar": "f",
+        "german": "Apotheke"
+      },
+      {
+        "english": "medicine",
+        "grammar": "n",
+        "german": "Medikament"
+      },
+      {
+        "english": "tablet / pill",
+        "grammar": "f",
+        "german": "Tablette"
+      },
+      {
+        "english": "prescription",
+        "grammar": "n",
+        "german": "Rezept"
+      },
+      {
+        "english": "appointment",
+        "grammar": "m",
+        "german": "Termin"
+      },
+      {
+        "english": "health insurance",
+        "grammar": "f",
+        "german": "Krankenkasse"
+      },
+      {
+        "english": "ill / sick",
+        "grammar": "",
+        "german": "krank"
+      },
+      {
+        "english": "healthy",
+        "grammar": "",
+        "german": "gesund"
+      },
+      {
+        "english": "to hurt",
+        "grammar": "",
+        "german": "wehtun"
+      }
+    ],
+    "Beschwerden": [
+      {
+        "english": "pain",
+        "grammar": "m",
+        "german": "Schmerz"
+      },
+      {
+        "english": "fever",
+        "grammar": "n",
+        "german": "Fieber"
+      },
+      {
+        "english": "cough",
+        "grammar": "m",
+        "german": "Husten"
+      },
+      {
+        "english": "cold / runny nose",
+        "grammar": "m",
+        "german": "Schnupfen"
+      },
+      {
+        "english": "flu",
+        "grammar": "f",
+        "german": "Grippe"
+      },
+      {
+        "english": "allergy",
+        "grammar": "f",
+        "german": "Allergie"
+      },
+      {
+        "english": "accident",
+        "grammar": "m",
+        "german": "Unfall"
+      },
+      {
+        "english": "injury",
+        "grammar": "f",
+        "german": "Verletzung"
+      },
+      {
+        "english": "tired",
+        "grammar": "",
+        "german": "müde"
+      },
+      {
+        "english": "to help",
+        "grammar": "",
+        "german": "helfen"
+      }
+    ]
+  }
+}

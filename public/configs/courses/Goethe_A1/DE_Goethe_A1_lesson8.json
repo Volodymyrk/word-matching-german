@@ -1,0 +1,212 @@
+{
+  "Reisen und Verkehr": {
+    "Verkehrsmittel": [
+      {
+        "english": "bus",
+        "grammar": "m",
+        "german": "Bus"
+      },
+      {
+        "english": "train",
+        "grammar": "m",
+        "german": "Zug"
+      },
+      {
+        "english": "car",
+        "grammar": "n",
+        "german": "Auto"
+      },
+      {
+        "english": "motorbike",
+        "grammar": "n",
+        "german": "Motorrad"
+      },
+      {
+        "english": "aeroplane",
+        "grammar": "n",
+        "german": "Flugzeug"
+      },
+      {
+        "english": "ship",
+        "grammar": "n",
+        "german": "Schiff"
+      },
+      {
+        "english": "underground / subway",
+        "grammar": "f",
+        "german": "U-Bahn"
+      },
+      {
+        "english": "taxi",
+        "grammar": "n",
+        "german": "Taxi"
+      },
+      {
+        "english": "tram",
+        "grammar": "f",
+        "german": "Straßenbahn"
+      },
+      {
+        "english": "bicycle",
+        "grammar": "n",
+        "german": "Fahrrad"
+      }
+    ],
+    "Bahnhof und Flughafen": [
+      {
+        "english": "train station",
+        "grammar": "m",
+        "german": "Bahnhof"
+      },
+      {
+        "english": "airport",
+        "grammar": "m",
+        "german": "Flughafen"
+      },
+      {
+        "english": "departure",
+        "grammar": "f",
+        "german": "Abfahrt"
+      },
+      {
+        "english": "arrival",
+        "grammar": "f",
+        "german": "Ankunft"
+      },
+      {
+        "english": "ticket",
+        "grammar": "n",
+        "german": "Ticket"
+      },
+      {
+        "english": "timetable",
+        "grammar": "m",
+        "german": "Fahrplan"
+      },
+      {
+        "english": "bus stop",
+        "grammar": "f",
+        "german": "Haltestelle"
+      },
+      {
+        "english": "platform / track",
+        "grammar": "n",
+        "german": "Gleis"
+      },
+      {
+        "english": "suitcase",
+        "grammar": "m",
+        "german": "Koffer"
+      },
+      {
+        "english": "delay",
+        "grammar": "f",
+        "german": "Verspätung"
+      }
+    ],
+    "Wegbeschreibung": [
+      {
+        "english": "direction",
+        "grammar": "f",
+        "german": "Richtung"
+      },
+      {
+        "english": "left",
+        "grammar": "",
+        "german": "links"
+      },
+      {
+        "english": "right",
+        "grammar": "",
+        "german": "rechts"
+      },
+      {
+        "english": "straight ahead",
+        "grammar": "",
+        "german": "geradeaus"
+      },
+      {
+        "english": "intersection / junction",
+        "grammar": "f",
+        "german": "Kreuzung"
+      },
+      {
+        "english": "bridge",
+        "grammar": "f",
+        "german": "Brücke"
+      },
+      {
+        "english": "square / plaza",
+        "grammar": "m",
+        "german": "Platz"
+      },
+      {
+        "english": "way / path",
+        "grammar": "m",
+        "german": "Weg"
+      },
+      {
+        "english": "near",
+        "grammar": "",
+        "german": "nah"
+      },
+      {
+        "english": "far",
+        "grammar": "",
+        "german": "weit"
+      }
+    ],
+    "Reise": [
+      {
+        "english": "journey / trip",
+        "grammar": "f",
+        "german": "Reise"
+      },
+      {
+        "english": "holiday / vacation",
+        "grammar": "m",
+        "german": "Urlaub"
+      },
+      {
+        "english": "hotel",
+        "grammar": "n",
+        "german": "Hotel"
+      },
+      {
+        "english": "accommodation",
+        "grammar": "f",
+        "german": "Unterkunft"
+      },
+      {
+        "english": "passport",
+        "grammar": "m",
+        "german": "Pass"
+      },
+      {
+        "english": "border",
+        "grammar": "f",
+        "german": "Grenze"
+      },
+      {
+        "english": "tourist (m)",
+        "grammar": "m",
+        "german": "Tourist"
+      },
+      {
+        "english": "reservation / booking",
+        "grammar": "f",
+        "german": "Reservierung"
+      },
+      {
+        "english": "to arrive",
+        "grammar": "",
+        "german": "ankommen"
+      },
+      {
+        "english": "to depart / set off",
+        "grammar": "",
+        "german": "abfahren"
+      }
+    ]
+  }
+}

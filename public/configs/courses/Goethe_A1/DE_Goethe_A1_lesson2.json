@@ -1,0 +1,160 @@
+{
+  "Familie": {
+    "Kernfamilie": [
+      {
+        "english": "family",
+        "grammar": "f",
+        "german": "Familie"
+      },
+      {
+        "english": "mother",
+        "grammar": "f",
+        "german": "Mutter"
+      },
+      {
+        "english": "father",
+        "grammar": "m",
+        "german": "Vater"
+      },
+      {
+        "english": "brother",
+        "grammar": "m",
+        "german": "Bruder"
+      },
+      {
+        "english": "sister",
+        "grammar": "f",
+        "german": "Schwester"
+      },
+      {
+        "english": "son",
+        "grammar": "m",
+        "german": "Sohn"
+      },
+      {
+        "english": "daughter",
+        "grammar": "f",
+        "german": "Tochter"
+      },
+      {
+        "english": "baby",
+        "grammar": "n",
+        "german": "Baby"
+      },
+      {
+        "english": "parents",
+        "grammar": "",
+        "german": "Eltern"
+      },
+      {
+        "english": "siblings",
+        "grammar": "",
+        "german": "Geschwister"
+      }
+    ],
+    "Großfamilie": [
+      {
+        "english": "grandmother",
+        "grammar": "f",
+        "german": "Großmutter"
+      },
+      {
+        "english": "grandfather",
+        "grammar": "m",
+        "german": "Großvater"
+      },
+      {
+        "english": "grandma",
+        "grammar": "f",
+        "german": "Oma"
+      },
+      {
+        "english": "grandpa",
+        "grammar": "m",
+        "german": "Opa"
+      },
+      {
+        "english": "aunt",
+        "grammar": "f",
+        "german": "Tante"
+      },
+      {
+        "english": "uncle",
+        "grammar": "m",
+        "german": "Onkel"
+      },
+      {
+        "english": "male cousin",
+        "grammar": "m",
+        "german": "Cousin"
+      },
+      {
+        "english": "female cousin",
+        "grammar": "f",
+        "german": "Cousine"
+      },
+      {
+        "english": "nephew",
+        "grammar": "m",
+        "german": "Neffe"
+      },
+      {
+        "english": "niece",
+        "grammar": "f",
+        "german": "Nichte"
+      }
+    ],
+    "Beziehungen": [
+      {
+        "english": "husband",
+        "grammar": "m",
+        "german": "Ehemann"
+      },
+      {
+        "english": "wife",
+        "grammar": "f",
+        "german": "Ehefrau"
+      },
+      {
+        "english": "partner (m)",
+        "grammar": "m",
+        "german": "Partner"
+      },
+      {
+        "english": "partner (f)",
+        "grammar": "f",
+        "german": "Partnerin"
+      },
+      {
+        "english": "married",
+        "grammar": "",
+        "german": "verheiratet"
+      },
+      {
+        "english": "single",
+        "grammar": "",
+        "german": "ledig"
+      },
+      {
+        "english": "neighbour (m)",
+        "grammar": "m",
+        "german": "Nachbar"
+      },
+      {
+        "english": "neighbour (f)",
+        "grammar": "f",
+        "german": "Nachbarin"
+      },
+      {
+        "english": "acquaintance",
+        "grammar": "m",
+        "german": "Bekannte"
+      },
+      {
+        "english": "together",
+        "grammar": "",
+        "german": "zusammen"
+      }
+    ]
+  }
+}

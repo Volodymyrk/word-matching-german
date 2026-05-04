@@ -1,0 +1,160 @@
+{
+  "Freizeit und Hobbys": {
+    "Unterhaltung": [
+      {
+        "english": "music",
+        "grammar": "f",
+        "german": "Musik"
+      },
+      {
+        "english": "film / movie",
+        "grammar": "m",
+        "german": "Film"
+      },
+      {
+        "english": "cinema",
+        "grammar": "n",
+        "german": "Kino"
+      },
+      {
+        "english": "theatre",
+        "grammar": "n",
+        "german": "Theater"
+      },
+      {
+        "english": "concert",
+        "grammar": "n",
+        "german": "Konzert"
+      },
+      {
+        "english": "party",
+        "grammar": "f",
+        "german": "Party"
+      },
+      {
+        "english": "sport",
+        "grammar": "m",
+        "german": "Sport"
+      },
+      {
+        "english": "game",
+        "grammar": "n",
+        "german": "Spiel"
+      },
+      {
+        "english": "hobby",
+        "grammar": "n",
+        "german": "Hobby"
+      },
+      {
+        "english": "free time / leisure",
+        "grammar": "f",
+        "german": "Freizeit"
+      }
+    ],
+    "Sport": [
+      {
+        "english": "football / soccer",
+        "grammar": "m",
+        "german": "Fußball"
+      },
+      {
+        "english": "tennis",
+        "grammar": "n",
+        "german": "Tennis"
+      },
+      {
+        "english": "swimming",
+        "grammar": "n",
+        "german": "Schwimmen"
+      },
+      {
+        "english": "running / jogging",
+        "grammar": "n",
+        "german": "Laufen"
+      },
+      {
+        "english": "gymnastics",
+        "grammar": "n",
+        "german": "Turnen"
+      },
+      {
+        "english": "basketball",
+        "grammar": "m",
+        "german": "Basketball"
+      },
+      {
+        "english": "volleyball",
+        "grammar": "n",
+        "german": "Volleyball"
+      },
+      {
+        "english": "club / association",
+        "grammar": "m",
+        "german": "Verein"
+      },
+      {
+        "english": "to train",
+        "grammar": "",
+        "german": "trainieren"
+      },
+      {
+        "english": "fitness",
+        "grammar": "n",
+        "german": "Fitness"
+      }
+    ],
+    "Aktivitäten": [
+      {
+        "english": "to play",
+        "grammar": "",
+        "german": "spielen"
+      },
+      {
+        "english": "to listen",
+        "grammar": "",
+        "german": "hören"
+      },
+      {
+        "english": "to see / watch",
+        "grammar": "",
+        "german": "sehen"
+      },
+      {
+        "english": "to meet",
+        "grammar": "",
+        "german": "treffen"
+      },
+      {
+        "english": "to travel",
+        "grammar": "",
+        "german": "reisen"
+      },
+      {
+        "english": "to go for a walk",
+        "grammar": "",
+        "german": "spazieren"
+      },
+      {
+        "english": "to dance",
+        "grammar": "",
+        "german": "tanzen"
+      },
+      {
+        "english": "to sing",
+        "grammar": "",
+        "german": "singen"
+      },
+      {
+        "english": "to paint",
+        "grammar": "",
+        "german": "malen"
+      },
+      {
+        "english": "to photograph",
+        "grammar": "",
+        "german": "fotografieren"
+      }
+    ]
+  }
+}

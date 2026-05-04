@@ -3,16 +3,18 @@
   import { fetchGlobals, fetchLessons, fetchSections, fetchSectionWords, createRound } from './lib/vocab.js';
   import { logScore, getBestScore, getProgress, markPlay } from './lib/history.js';
   import { dirLabel, roman } from './lib/theme.js';
+  import ScreenCourses  from './lib/ScreenCourses.svelte';
   import ScreenLessons  from './lib/ScreenLessons.svelte';
   import ScreenSaga     from './lib/ScreenSaga.svelte';
   import ScreenPreview  from './lib/ScreenPreview.svelte';
   import ScreenComplete from './lib/ScreenComplete.svelte';
 
   // ── Routing ────────────────────────────────────────────────────────────────
-  let screen          = $state('lessons'); // 'lessons' | 'saga' | 'preview' | 'game' | 'complete'
+  let screen          = $state('courses'); // 'courses' | 'lessons' | 'saga' | 'preview' | 'game' | 'complete'
   let lessons         = $state([]);
   let sectionsMap     = $state({});        // lessonId → sections[]
   let sections        = $state([]);        // sections for selected lesson
+  let selectedCourse  = $state(null);
   let selectedLesson  = $state(null);
   let selectedSection = $state(null);      // { id, wordCount } or { id: 'final', isFinal: true }
   let selectedDir     = $state(0);
@@ -46,6 +48,21 @@
   let comboDurationMs  = $state(1000);
 
   // ── Derived ────────────────────────────────────────────────────────────────
+  const courses = $derived.by(() => {
+    const map = new Map();
+    for (const l of lessons) {
+      if (!map.has(l.course_id)) {
+        map.set(l.course_id, { id: l.course_id, name: l.course_name, emoji: l.course_emoji, lessons: [] });
+      }
+      map.get(l.course_id).lessons.push(l);
+    }
+    return [...map.values()];
+  });
+
+  const courseLessons = $derived(
+    selectedCourse ? lessons.filter(l => l.course_id === selectedCourse.id) : []
+  );
+
   const livesLeft   = $derived(Math.max(0, (globals?.lives ?? 3) - wrongInRound));
   const livesRange  = $derived(Array.from({ length: globals?.lives ?? 3 }, (_, i) => i));
   const setsPerRound = $derived(globals?.sets_per_round ?? 6);
@@ -103,6 +120,11 @@
   });
 
   // ── Navigation ─────────────────────────────────────────────────────────────
+  function selectCourse(course) {
+    selectedCourse = course;
+    screen = 'lessons';
+  }
+
   function selectLesson(lesson) {
     selectedLesson = lesson;
     sections = sectionsMap[lesson.id] || [];
@@ -306,8 +328,18 @@
   }
 </script>
 
-{#if screen === 'lessons'}
-  <ScreenLessons {lessons} {sectionsMap} {progress} onSelect={selectLesson} />
+{#if screen === 'courses'}
+  <ScreenCourses {courses} {sectionsMap} {progress} onSelect={selectCourse} />
+
+{:else if screen === 'lessons'}
+  <ScreenLessons
+    lessons={courseLessons}
+    course={selectedCourse}
+    {sectionsMap}
+    {progress}
+    onSelect={selectLesson}
+    onBack={() => screen = 'courses'}
+  />
 
 {:else if screen === 'saga'}
   <ScreenSaga
@@ -396,7 +428,7 @@
                   <span class="card-icon-label">{card.base}</span>
                 {/if}
               {:else}
-                {@const cardArticle = card.grammar === 'm' ? 'der' : card.grammar === 'f' ? 'die' : card.grammar === 'n' ? 'das' : ''}
+                {@const cardArticle = boardLang !== 'german' ? '' : card.grammar === 'm' ? 'der' : card.grammar === 'f' ? 'die' : card.grammar === 'n' ? 'das' : ''}
                 {#if cardArticle}
                   <span class="card-article">{cardArticle}</span>
                 {/if}
