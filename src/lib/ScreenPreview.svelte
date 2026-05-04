@@ -47,8 +47,12 @@
 
   <div class="word-list">
     {#each words as w, i}
+      {@const grammar = w.grammar ?? ''}
+      {@const article = grammar === 'm' ? 'der' : grammar === 'f' ? 'die' : grammar === 'n' ? 'das' : ''}
       <button class="word-row" class:alt={i % 2 !== 0} onclick={() => speakWord(w)} aria-label="Anhören: {germanWord(w)}">
-        <span class="word-base">{germanWord(w)}</span>
+        <span class="word-base" lang="de">
+          {#if article}<span class="word-article">{article}</span>{/if}{germanWord(w)}
+        </span>
         <span class="word-sep">→</span>
         <span class="word-target">{englishWord(w)}</span>
         {#if w.icon}
@@ -152,8 +156,8 @@
     text-align: left;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 0.2rem 1rem;
+    gap: 6px;
+    padding: 0.2rem 0.75rem;
     font-size: 0.9rem;
     font-weight: 500;
     font-family: inherit;
@@ -169,6 +173,14 @@
     color: #1F1D1A;
     font-weight: 600;
     min-width: 0;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .word-article {
+    font-weight: 400;
+    color: #B0A89E;
+    margin-right: 3px;
   }
 
   .word-sep {

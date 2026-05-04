@@ -45,6 +45,7 @@ export function dirLabel(lesson, dir) {
 
 // Is a specific level (sectionIdx, dir) locked?
 export function levelLocked(lesson, sectionIdx, dir, sections, progress, starThresholds = [1, 10, 20]) {
+  if (import.meta.env.DEV) return false;
   if (sectionIdx === 0 && dir === 1) return false;
   const lp = progress[lesson.id] || {};
   const twoStar = starThresholds[1];
@@ -59,6 +60,7 @@ export function levelLocked(lesson, sectionIdx, dir, sections, progress, starThr
 
 // Final round unlocks when every section has both directions with ≥ 2 stars.
 export function finalLocked(lesson, sections, progress, starThresholds = [1, 10, 20]) {
+  if (import.meta.env.DEV) return false;
   const lp = progress[lesson.id] || {};
   const twoStar = starThresholds[1];
   return !sections.every(s => {
