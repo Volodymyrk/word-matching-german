@@ -1,6 +1,6 @@
 {
     "lesson_4": {
-      "section_1": [
+      "Grundwörter": [
         {"english": "apple", "grammar": "m", "german": "Apfel"},
         {"english": "bread", "grammar": "n", "german": "Brot"},
         {"english": "water", "grammar": "n", "german": "Wasser"},
@@ -11,7 +11,7 @@
         {"english": "friend", "grammar": "m", "german": "Freund"},
         {"english": "mother", "grammar": "f", "german": "Mutter"}
       ],
-      "section_2": [
+      "Ausdrücke": [
         {"english": "hello", "grammar": "", "german": "hallo"},
         {"english": "please", "grammar": "", "german": "bitte"},
         {"english": "thanks", "grammar": "", "german": "danke"},
