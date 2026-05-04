@@ -1,6 +1,17 @@
 {
   "shopping_lesson_2": {
-    "section_1_verbs_and_actions": [
+    "Spezialartikel": [
+      {"english": "detergent", "grammar": "n", "german": "Waschmittel", "icon": "de3_20.webp"},
+      {"english": "frozen food", "grammar": "f", "german": "Tiefkühlkost", "icon": "de3_21.webp"},
+      {"english": "dairy products", "grammar": "f", "german": "Milchprodukte", "icon": "de3_22.webp"},
+      {"english": "bakery", "grammar": "f", "german": "Bäckerei", "icon": "de3_23.webp"},
+      {"english": "pastry", "grammar": "n", "german": "Gebäck", "icon": "de3_24.webp"},
+      {"english": "spices", "grammar": "f", "german": "Gewürze", "icon": "de3_25.webp"},
+      {"english": "cleaning supplies", "grammar": "n", "german": "Reinigungsmittel", "icon": "de3_26.webp"},
+      {"english": "toilet paper", "grammar": "n", "german": "Toilettenpapier", "icon": "de3_27.webp"},
+      {"english": "soap", "grammar": "f", "german": "Seife", "icon": "de3_28.webp"}
+    ],
+    "Verben": [
       {"english": "to pay", "grammar": "verb", "german": "bezahlen", "icon": "de3_01.webp"},
       {"english": "to search/look for", "grammar": "verb", "german": "suchen", "icon": "de3_02.webp"},
       {"english": "to weigh", "grammar": "verb", "german": "wiegen", "icon": "de3_03.webp"},
@@ -11,7 +22,7 @@
       {"english": "to recommend", "grammar": "verb", "german": "empfehlen", "icon": "de3_08.webp"},
       {"english": "to save (money)", "grammar": "verb", "german": "sparen", "icon": "de3_09.webp"}
     ],
-    "section_2_adjectives_and_qualities": [
+    "Eigenschaften": [
       {"english": "fresh", "grammar": "adj", "german": "frisch", "icon": "de3_10.webp"},
       {"english": "expensive", "grammar": "adj", "german": "teuer", "icon": "de3_11.webp"},
       {"english": "cheap", "grammar": "adj", "german": "billig", "icon": "de3_12.webp"},
@@ -23,18 +34,7 @@
       {"english": "empty", "grammar": "adj", "german": "leer", "icon": "de3_18.webp"},
       {"english": "full", "grammar": "adj", "german": "voll", "icon": "de3_19.webp"}
     ],
-    "section_3_specialty_items": [
-      {"english": "detergent", "grammar": "n", "german": "Waschmittel", "icon": "de3_20.webp"},
-      {"english": "frozen food", "grammar": "f", "german": "Tiefkühlkost", "icon": "de3_21.webp"},
-      {"english": "dairy products", "grammar": "f", "german": "Milchprodukte", "icon": "de3_22.webp"},
-      {"english": "bakery", "grammar": "f", "german": "Bäckerei", "icon": "de3_23.webp"},
-      {"english": "pastry", "grammar": "n", "german": "Gebäck", "icon": "de3_24.webp"},
-      {"english": "spices", "grammar": "f", "german": "Gewürze", "icon": "de3_25.webp"},
-      {"english": "cleaning supplies", "grammar": "n", "german": "Reinigungsmittel", "icon": "de3_26.webp"},
-      {"english": "toilet paper", "grammar": "n", "german": "Toilettenpapier", "icon": "de3_27.webp"},
-      {"english": "soap", "grammar": "f", "german": "Seife", "icon": "de3_28.webp"}
-    ],
-    "section_4_transactional_nouns": [
+    "Kassenbegriffe": [
       {"english": "shopping list", "grammar": "f", "german": "Einkaufsliste", "icon": "de3_29.webp"},
       {"english": "expiration date", "grammar": "n", "german": "Verfallsdatum", "icon": "de3_30.webp"},
       {"english": "ingredient", "grammar": "f", "german": "Zutat", "icon": "de3_31.webp"},
