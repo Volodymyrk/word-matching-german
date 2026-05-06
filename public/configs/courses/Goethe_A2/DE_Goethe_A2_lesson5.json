@@ -1,0 +1,52 @@
+{
+  "Gesundheit": {
+    "Körperteile": [
+      { "german": "Herz", "english": "heart", "grammar": "n" },
+      { "german": "Lunge", "english": "lung", "grammar": "f" },
+      { "german": "Magen", "english": "stomach", "grammar": "m" },
+      { "german": "Rücken", "english": "back", "grammar": "m" },
+      { "german": "Hals", "english": "throat / neck", "grammar": "m" },
+      { "german": "Knie", "english": "knee", "grammar": "n" },
+      { "german": "Schulter", "english": "shoulder", "grammar": "f" },
+      { "german": "Ellbogen", "english": "elbow", "grammar": "m" },
+      { "german": "Handgelenk", "english": "wrist", "grammar": "n" },
+      { "german": "Knöchel", "english": "ankle", "grammar": "m" }
+    ],
+    "Beschwerden": [
+      { "german": "Schmerz", "english": "pain", "grammar": "m" },
+      { "german": "Kopfschmerzen", "english": "headache", "grammar": "" },
+      { "german": "Bauchschmerzen", "english": "stomach ache", "grammar": "" },
+      { "german": "Fieber", "english": "fever / temperature", "grammar": "n" },
+      { "german": "Husten", "english": "cough", "grammar": "m" },
+      { "german": "Schnupfen", "english": "runny nose / cold", "grammar": "m" },
+      { "german": "Grippe", "english": "flu", "grammar": "f" },
+      { "german": "Übelkeit", "english": "nausea", "grammar": "f" },
+      { "german": "sich erkälten", "english": "to catch a cold", "grammar": "" },
+      { "german": "Schwindel", "english": "dizziness", "grammar": "m" }
+    ],
+    "Beim Arzt": [
+      { "german": "Arztpraxis", "english": "doctor's practice / surgery", "grammar": "f" },
+      { "german": "Medikament", "english": "medication", "grammar": "n" },
+      { "german": "Tablette", "english": "tablet / pill", "grammar": "f" },
+      { "german": "Krankenkasse", "english": "health insurance", "grammar": "f" },
+      { "german": "Krankenhaus", "english": "hospital", "grammar": "n" },
+      { "german": "Notaufnahme", "english": "A&E / emergency room", "grammar": "f" },
+      { "german": "Krankenwagen", "english": "ambulance", "grammar": "m" },
+      { "german": "impfen", "english": "to vaccinate", "grammar": "" },
+      { "german": "Überweisung", "english": "referral", "grammar": "f" },
+      { "german": "Blutdruck", "english": "blood pressure", "grammar": "m" }
+    ],
+    "Gesund leben": [
+      { "german": "Sport treiben", "english": "to do sport / exercise", "grammar": "" },
+      { "german": "sich bewegen", "english": "to move / be physically active", "grammar": "" },
+      { "german": "sich ausruhen", "english": "to rest / relax", "grammar": "" },
+      { "german": "Entspannung", "english": "relaxation", "grammar": "f" },
+      { "german": "Stress", "english": "stress", "grammar": "m" },
+      { "german": "Rauchen", "english": "smoking", "grammar": "n" },
+      { "german": "Alkohol", "english": "alcohol", "grammar": "m" },
+      { "german": "Schlaf", "english": "sleep", "grammar": "m" },
+      { "german": "Ernährung", "english": "nutrition / diet", "grammar": "f" },
+      { "german": "Vorsorge", "english": "prevention / precaution", "grammar": "f" }
+    ]
+  }
+}

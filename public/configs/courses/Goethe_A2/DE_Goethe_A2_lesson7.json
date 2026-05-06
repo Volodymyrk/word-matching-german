@@ -1,0 +1,52 @@
+{
+  "Reisen und Mobilität": {
+    "Verkehrsmittel": [
+      { "german": "Zug", "english": "train", "grammar": "m" },
+      { "german": "Bus", "english": "bus", "grammar": "m" },
+      { "german": "U-Bahn", "english": "underground / metro", "grammar": "f" },
+      { "german": "Straßenbahn", "english": "tram", "grammar": "f" },
+      { "german": "Taxi", "english": "taxi", "grammar": "n" },
+      { "german": "Schiff", "english": "ship / ferry", "grammar": "n" },
+      { "german": "Flugzeug", "english": "aeroplane", "grammar": "n" },
+      { "german": "Motorrad", "english": "motorbike", "grammar": "n" },
+      { "german": "Roller", "english": "scooter", "grammar": "m" },
+      { "german": "Mitfahrgelegenheit", "english": "carpool / rideshare", "grammar": "f" }
+    ],
+    "Bahnhof und Flughafen": [
+      { "german": "Gleis", "english": "platform / track", "grammar": "n" },
+      { "german": "Abfahrt", "english": "departure", "grammar": "f" },
+      { "german": "Ankunft", "english": "arrival", "grammar": "f" },
+      { "german": "verspätet", "english": "delayed", "grammar": "" },
+      { "german": "Fahrkarte", "english": "ticket (rail)", "grammar": "f" },
+      { "german": "Fahrplan", "english": "timetable / schedule", "grammar": "m" },
+      { "german": "Gepäck", "english": "luggage", "grammar": "n" },
+      { "german": "Koffer", "english": "suitcase", "grammar": "m" },
+      { "german": "Reisepass", "english": "passport", "grammar": "m" },
+      { "german": "Check-in", "english": "check-in", "grammar": "m" }
+    ],
+    "Unterkunft": [
+      { "german": "Hotel", "english": "hotel", "grammar": "n" },
+      { "german": "Pension", "english": "guesthouse / B&B", "grammar": "f" },
+      { "german": "Jugendherberge", "english": "youth hostel", "grammar": "f" },
+      { "german": "Campingplatz", "english": "campsite", "grammar": "m" },
+      { "german": "Einzelzimmer", "english": "single room", "grammar": "n" },
+      { "german": "Doppelzimmer", "english": "double room", "grammar": "n" },
+      { "german": "Rezeption", "english": "reception", "grammar": "f" },
+      { "german": "buchen", "english": "to book", "grammar": "" },
+      { "german": "Zimmerservice", "english": "room service", "grammar": "m" },
+      { "german": "auschecken", "english": "to check out", "grammar": "" }
+    ],
+    "Sehenswürdigkeiten": [
+      { "german": "Sehenswürdigkeit", "english": "sight / tourist attraction", "grammar": "f" },
+      { "german": "Stadtführung", "english": "city tour / guided tour", "grammar": "f" },
+      { "german": "Stadtplan", "english": "city map", "grammar": "m" },
+      { "german": "Tourismus", "english": "tourism", "grammar": "m" },
+      { "german": "Denkmal", "english": "monument / memorial", "grammar": "n" },
+      { "german": "Schloss", "english": "castle / palace", "grammar": "n" },
+      { "german": "Kirche", "english": "church", "grammar": "f" },
+      { "german": "Strand", "english": "beach", "grammar": "m" },
+      { "german": "Berge", "english": "mountains", "grammar": "" },
+      { "german": "Souvenirshop", "english": "souvenir shop", "grammar": "m" }
+    ]
+  }
+}

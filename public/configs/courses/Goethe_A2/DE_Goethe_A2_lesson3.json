@@ -1,0 +1,52 @@
+{
+  "Essen und Kochen": {
+    "Zutaten": [
+      { "german": "Mehl", "english": "flour", "grammar": "n" },
+      { "german": "Zucker", "english": "sugar", "grammar": "m" },
+      { "german": "Ei", "english": "egg", "grammar": "n" },
+      { "german": "Butter", "english": "butter", "grammar": "f" },
+      { "german": "Öl", "english": "oil", "grammar": "n" },
+      { "german": "Essig", "english": "vinegar", "grammar": "m" },
+      { "german": "Salz", "english": "salt", "grammar": "n" },
+      { "german": "Pfeffer", "english": "pepper", "grammar": "m" },
+      { "german": "Gewürz", "english": "spice / seasoning", "grammar": "n" },
+      { "german": "Knoblauch", "english": "garlic", "grammar": "m" }
+    ],
+    "Kochen": [
+      { "german": "braten", "english": "to fry / roast", "grammar": "" },
+      { "german": "backen", "english": "to bake", "grammar": "" },
+      { "german": "schneiden", "english": "to cut", "grammar": "" },
+      { "german": "mischen", "english": "to mix", "grammar": "" },
+      { "german": "Rezept", "english": "recipe", "grammar": "n" },
+      { "german": "Topf", "english": "pot", "grammar": "m" },
+      { "german": "Pfanne", "english": "frying pan", "grammar": "f" },
+      { "german": "Ofen", "english": "oven", "grammar": "m" },
+      { "german": "Mikrowelle", "english": "microwave", "grammar": "f" },
+      { "german": "Messer", "english": "knife", "grammar": "n" }
+    ],
+    "Im Restaurant": [
+      { "german": "bestellen", "english": "to order", "grammar": "" },
+      { "german": "Speisekarte", "english": "menu", "grammar": "f" },
+      { "german": "Vorspeise", "english": "starter", "grammar": "f" },
+      { "german": "Hauptgericht", "english": "main course", "grammar": "n" },
+      { "german": "Nachspeise", "english": "dessert", "grammar": "f" },
+      { "german": "Getränk", "english": "drink / beverage", "grammar": "n" },
+      { "german": "Kellner", "english": "waiter", "grammar": "m" },
+      { "german": "Rechnung", "english": "bill", "grammar": "f" },
+      { "german": "Trinkgeld", "english": "tip", "grammar": "n" },
+      { "german": "reservieren", "english": "to reserve / book", "grammar": "" }
+    ],
+    "Ernährung": [
+      { "german": "vegetarisch", "english": "vegetarian", "grammar": "" },
+      { "german": "vegan", "english": "vegan", "grammar": "" },
+      { "german": "gesund", "english": "healthy", "grammar": "" },
+      { "german": "ungesund", "english": "unhealthy", "grammar": "" },
+      { "german": "Kalorien", "english": "calories", "grammar": "" },
+      { "german": "Vitamin", "english": "vitamin", "grammar": "n" },
+      { "german": "Allergie", "english": "allergy", "grammar": "f" },
+      { "german": "Diät", "english": "diet", "grammar": "f" },
+      { "german": "biologisch", "english": "organic", "grammar": "" },
+      { "german": "frisch", "english": "fresh", "grammar": "" }
+    ]
+  }
+}

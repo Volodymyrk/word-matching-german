@@ -1,0 +1,52 @@
+{
+  "Freizeit und Sport": {
+    "Sportarten": [
+      { "german": "Fußball", "english": "football / soccer", "grammar": "m" },
+      { "german": "Tennis", "english": "tennis", "grammar": "n" },
+      { "german": "Schwimmen", "english": "swimming", "grammar": "n" },
+      { "german": "Radfahren", "english": "cycling", "grammar": "n" },
+      { "german": "Laufen", "english": "running / jogging", "grammar": "n" },
+      { "german": "Wandern", "english": "hiking", "grammar": "n" },
+      { "german": "Klettern", "english": "climbing", "grammar": "n" },
+      { "german": "Skifahren", "english": "skiing", "grammar": "n" },
+      { "german": "Turnen", "english": "gymnastics", "grammar": "n" },
+      { "german": "Yoga", "english": "yoga", "grammar": "n" }
+    ],
+    "Sportorte und Ausrüstung": [
+      { "german": "Sportplatz", "english": "sports ground", "grammar": "m" },
+      { "german": "Schwimmbad", "english": "swimming pool", "grammar": "n" },
+      { "german": "Fitnessstudio", "english": "gym", "grammar": "n" },
+      { "german": "Mannschaft", "english": "team", "grammar": "f" },
+      { "german": "Trikot", "english": "jersey / kit", "grammar": "n" },
+      { "german": "Helm", "english": "helmet", "grammar": "m" },
+      { "german": "Schläger", "english": "racket / bat", "grammar": "m" },
+      { "german": "Fahrrad", "english": "bicycle", "grammar": "n" },
+      { "german": "Trainingsanzug", "english": "tracksuit", "grammar": "m" },
+      { "german": "Sportschuhe", "english": "sports shoes / trainers", "grammar": "" }
+    ],
+    "Freizeitaktivitäten": [
+      { "german": "Tanzen", "english": "dancing", "grammar": "n" },
+      { "german": "Malen", "english": "painting", "grammar": "n" },
+      { "german": "Fotografieren", "english": "photography", "grammar": "n" },
+      { "german": "Gärtnern", "english": "gardening", "grammar": "n" },
+      { "german": "Basteln", "english": "crafting / making things", "grammar": "n" },
+      { "german": "Angeln", "english": "fishing", "grammar": "n" },
+      { "german": "sammeln", "english": "to collect", "grammar": "" },
+      { "german": "Musik machen", "english": "to make music", "grammar": "" },
+      { "german": "Freiwilligenarbeit", "english": "volunteering", "grammar": "f" },
+      { "german": "entspannen", "english": "to relax", "grammar": "" }
+    ],
+    "Kultur und Unterhaltung": [
+      { "german": "Kino", "english": "cinema", "grammar": "n" },
+      { "german": "Theater", "english": "theatre", "grammar": "n" },
+      { "german": "Konzert", "english": "concert", "grammar": "n" },
+      { "german": "Museum", "english": "museum", "grammar": "n" },
+      { "german": "Ausstellung", "english": "exhibition", "grammar": "f" },
+      { "german": "Film", "english": "film / movie", "grammar": "m" },
+      { "german": "Eintrittskarte", "english": "admission ticket", "grammar": "f" },
+      { "german": "Programm", "english": "programme", "grammar": "n" },
+      { "german": "Veranstaltung", "english": "event", "grammar": "f" },
+      { "german": "Aufführung", "english": "performance", "grammar": "f" }
+    ]
+  }
+}

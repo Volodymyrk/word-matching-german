@@ -1,0 +1,14 @@
+[project]
+name = "vocabula-scripts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "websocket-client>=1.9.0",
+    "anthropic",
+    "open-clip-torch",
+    "torch",
+    "torchvision",
+    "pillow",
+]
