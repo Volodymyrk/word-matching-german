@@ -1,0 +1,52 @@
+{
+  "Wohnen und Einrichtung": {
+    "Wohnungssuche": [
+      { "german": "Vermieter", "english": "landlord", "grammar": "m" },
+      { "german": "Mieter", "english": "tenant", "grammar": "m" },
+      { "german": "Mietvertrag", "english": "rental contract", "grammar": "m" },
+      { "german": "Kaution", "english": "deposit", "grammar": "f" },
+      { "german": "Nebenkosten", "english": "additional costs / utilities", "grammar": "" },
+      { "german": "Quadratmeter", "english": "square metre", "grammar": "m" },
+      { "german": "Heizung", "english": "heating", "grammar": "f" },
+      { "german": "einziehen", "english": "to move in", "grammar": "" },
+      { "german": "ausziehen", "english": "to move out", "grammar": "" },
+      { "german": "Wohngemeinschaft", "english": "shared flat / flatshare", "grammar": "f" }
+    ],
+    "Einrichtung": [
+      { "german": "Teppich", "english": "carpet / rug", "grammar": "m" },
+      { "german": "Vorhang", "english": "curtain", "grammar": "m" },
+      { "german": "Schreibtisch", "english": "desk", "grammar": "m" },
+      { "german": "Kommode", "english": "chest of drawers", "grammar": "f" },
+      { "german": "Bilderrahmen", "english": "picture frame", "grammar": "m" },
+      { "german": "Kerze", "english": "candle", "grammar": "f" },
+      { "german": "Pflanze", "english": "plant", "grammar": "f" },
+      { "german": "Dusche", "english": "shower", "grammar": "f" },
+      { "german": "Waschbecken", "english": "washbasin / sink", "grammar": "n" },
+      { "german": "Bücherregal", "english": "bookshelf", "grammar": "n" }
+    ],
+    "Nachbarschaft": [
+      { "german": "Nachbarschaft", "english": "neighbourhood", "grammar": "f" },
+      { "german": "Stockwerk", "english": "floor / storey", "grammar": "n" },
+      { "german": "Erdgeschoss", "english": "ground floor", "grammar": "n" },
+      { "german": "Aufzug", "english": "lift / elevator", "grammar": "m" },
+      { "german": "Klingel", "english": "doorbell", "grammar": "f" },
+      { "german": "Briefkasten", "english": "letterbox / mailbox", "grammar": "m" },
+      { "german": "Hausmeister", "english": "caretaker / janitor", "grammar": "m" },
+      { "german": "Treppenhaus", "english": "stairwell", "grammar": "n" },
+      { "german": "Hof", "english": "courtyard / yard", "grammar": "m" },
+      { "german": "Tiefgarage", "english": "underground car park", "grammar": "f" }
+    ],
+    "Probleme und Reparaturen": [
+      { "german": "kaputt", "english": "broken", "grammar": "" },
+      { "german": "reparieren", "english": "to repair", "grammar": "" },
+      { "german": "Handwerker", "english": "tradesperson / craftsman", "grammar": "m" },
+      { "german": "Strom", "english": "electricity / power", "grammar": "m" },
+      { "german": "Lärm", "english": "noise", "grammar": "m" },
+      { "german": "Schaden", "english": "damage", "grammar": "m" },
+      { "german": "Feuchtigkeit", "english": "damp / moisture", "grammar": "f" },
+      { "german": "Schloss", "english": "lock", "grammar": "n" },
+      { "german": "tropfen", "english": "to drip / leak", "grammar": "" },
+      { "german": "klingeln", "english": "to ring (a doorbell)", "grammar": "" }
+    ]
+  }
+}

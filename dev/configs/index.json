@@ -232,5 +232,155 @@
     "course_id": "goethe_a1",
     "course_name": "Goethe A1",
     "course_emoji": "📖"
+  },
+  {
+    "id": "goethe_a2_1",
+    "name": "Alltag und Tagesablauf",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson1.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_2",
+    "name": "Wohnen und Einrichtung",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson2.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_3",
+    "name": "Essen und Kochen",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson3.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_4",
+    "name": "Familie und soziales Leben",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson4.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_5",
+    "name": "Gesundheit",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson5.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_6",
+    "name": "Freizeit und Sport",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson6.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_7",
+    "name": "Reisen und Mobilität",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson7.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_8",
+    "name": "Arbeit und Beruf",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson8.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_9",
+    "name": "Schule und Bildung",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson9.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_10",
+    "name": "Einkaufen und Dienstleistungen",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson10.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_11",
+    "name": "Öffentliches Leben",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson11.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_12",
+    "name": "Natur und Umwelt",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson12.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_13",
+    "name": "Gefühle und Meinungen",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson13.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_14",
+    "name": "Kommunikation und Medien",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson14.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
+  },
+  {
+    "id": "goethe_a2_15",
+    "name": "Kultur und Gesellschaft",
+    "emoji": "📗",
+    "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson15.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_a2",
+    "course_name": "Goethe A2",
+    "course_emoji": "📗"
   }
 ]
