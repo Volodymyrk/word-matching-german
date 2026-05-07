@@ -6,7 +6,7 @@
 
   let {
     lesson, sectionLabel, dir,
-    baseScore, bonusSecs, roundSeconds = 60,
+    baseScore, timeBonus, streakBonus, elapsedSecs,
     wrongWords = [], correctClicks, wrongClicks,
     isNewBest, starThresholds = [1, 10, 20],
     nextLabel = '',
@@ -14,16 +14,14 @@
   } = $props();
 
   const label      = $derived(dirLabel(lesson, dir));
-  const totalScore = $derived(baseScore + Math.floor(bonusSecs / 5));
+  const totalScore = $derived(baseScore + timeBonus);
   const accuracy   = $derived(
     correctClicks + wrongClicks > 0
       ? Math.round(correctClicks / (correctClicks + wrongClicks) * 100)
       : 100
   );
-  const elapsedStart = $derived(roundSeconds - bonusSecs);
 
   let displayScore = $state(0);
-  let displaySecs  = $state(0);
   let showStars    = $state(false);
   let starsVal     = $state(0);
 
@@ -32,38 +30,35 @@
     return `${m}:${String(s % 60).padStart(2, '0')}`;
   }
 
+  function computeStars(s) {
+    return s >= starThresholds[2] ? 3
+         : s >= starThresholds[1] ? 2
+         : s >= starThresholds[0] ? 1 : 0;
+  }
+
   let animInterval;
   let starTimeout;
 
   onMount(() => {
     displayScore = baseScore;
-    displaySecs  = elapsedStart;
 
-    if (bonusSecs <= 0) {
-      showStars = true;
-      starsVal  = totalScore >= starThresholds[2] ? 3
-                : totalScore >= starThresholds[1] ? 2
-                : totalScore >= starThresholds[0] ? 1 : 0;
+    if (timeBonus <= 0) {
+      displayScore = totalScore;
+      showStars    = true;
+      starsVal     = computeStars(totalScore);
       return;
     }
 
-    let tick = 0;
     animInterval = setInterval(() => {
-      tick++;
-      displaySecs = Math.min(roundSeconds, displaySecs + 1);
-      if (tick % 5 === 0 && displayScore < totalScore) displayScore++;
-      if (tick >= bonusSecs) {
-        displayScore = totalScore;
-        displaySecs  = roundSeconds;
+      if (displayScore < totalScore) displayScore++;
+      if (displayScore >= totalScore) {
         clearInterval(animInterval);
         starTimeout = setTimeout(() => {
-          starsVal  = totalScore >= starThresholds[2] ? 3
-                    : totalScore >= starThresholds[1] ? 2
-                    : totalScore >= starThresholds[0] ? 1 : 0;
+          starsVal  = computeStars(totalScore);
           showStars = true;
         }, 350);
       }
-    }, 50);
+    }, 80);
   });
 
   onDestroy(() => {
@@ -100,12 +95,25 @@
       <div class="stat-divider"></div>
       <div class="stat-item">
         <div class="stat-label">Zeit</div>
-        <div class="stat-val">{formatTime(displaySecs)}</div>
+        <div class="stat-val">{formatTime(elapsedSecs)}</div>
       </div>
       <div class="stat-divider"></div>
       <div class="stat-item">
         <div class="stat-label">Treffer</div>
         <div class="stat-val">{accuracy}%</div>
+      </div>
+    </div>
+
+    <!-- Bonus breakdown -->
+    <div class="bonus-card">
+      <div class="bonus-line">
+        <span class="bonus-lbl">Kombo Bonus</span>
+        <span class="bonus-pts" class:dim={streakBonus === 0}>+{streakBonus}</span>
+      </div>
+      <div class="bonus-sep"></div>
+      <div class="bonus-line">
+        <span class="bonus-lbl">Zeit Bonus</span>
+        <span class="bonus-pts" class:dim={timeBonus === 0}>+{timeBonus}</span>
       </div>
     </div>
 
@@ -224,7 +232,7 @@
     padding: 14px 18px;
     background: #F4F2EC;
     border-radius: 14px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 8px;
   }
 
   .stat-item {
@@ -259,6 +267,45 @@
     width: 1px;
     height: 28px;
     background: #E8E3D9;
+  }
+
+  /* Bonus card */
+  .bonus-card {
+    width: 100%;
+    max-width: 360px;
+    background: #F4F2EC;
+    border-radius: 10px;
+    padding: 6px 18px;
+    margin-bottom: 1.25rem;
+  }
+
+  .bonus-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  .bonus-sep {
+    height: 1px;
+    background: #E8E3D9;
+  }
+
+  .bonus-lbl {
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: #7A7269;
+  }
+
+  .bonus-pts {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1F1D1A;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .bonus-pts.dim {
+    color: #B0A89E;
   }
 
   /* Review list */

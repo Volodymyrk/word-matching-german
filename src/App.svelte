@@ -20,10 +20,12 @@
   let selectedDir     = $state(0);
   let progress        = $state({});
   let previewWords    = $state([]);
-  let lastScore       = $state(0);
-  let lastBaseScore   = $state(0);
-  let lastBonusSecs   = $state(0);
-  let lastNextLabel   = $state('');
+  let lastScore        = $state(0);
+  let lastBaseScore    = $state(0);
+  let lastTimeBonus    = $state(0);
+  let lastStreakBonus   = $state(0);
+  let lastElapsedSecs  = $state(0);
+  let lastNextLabel    = $state('');
   let isNewBest       = $state(false);
   let globals         = $state(null);
 
@@ -42,6 +44,8 @@
   let wrongWords          = $state([]);  // { clicked, correct }[]
   let previewTargetWord   = $state(null);
   let setsCompleted    = $state(0);
+  let comboClicks      = $state(0);
+  let roundCompleted   = $state(false);
   let comboActive      = $state(false);
   let comboPrimed      = $state(false);
   let comboRestartKey  = $state(0);
@@ -186,16 +190,26 @@
 
   function endRound() {
     clearInterval(timerInterval);
-    lastBonusSecs = remainingSeconds;
-    lastBaseScore = score;
-    lastScore     = score + Math.floor(remainingSeconds / 5);
-    lastNextLabel = computeNextLabel();
+    const roundSecs   = globals?.round_seconds ?? 60;
+    const elapsed     = roundSecs - remainingSeconds;
+    const threshold   = globals?.time_bonus_threshold ?? Infinity;
+    const scoreCorr   = globals?.score_correct ?? 1;
+    const scoreCombo  = globals?.score_combo ?? 2;
+    const tBonus      = roundCompleted && elapsed < threshold ? Math.floor(remainingSeconds / 5) : 0;
+    const sBonus      = comboClicks * (scoreCombo - scoreCorr);
+
+    lastElapsedSecs  = elapsed;
+    lastBaseScore    = score;
+    lastTimeBonus    = tBonus;
+    lastStreakBonus   = sBonus;
+    lastScore        = score + tBonus;
+    lastNextLabel    = computeNextLabel();
     const configName = `${selectedLesson.id}-${selectedSection.id}-${selectedDir}`;
-    const best = getBestScore(configName);
-    isNewBest = lastScore > best && lastScore > 0;
-    displayCards = [];
-    targetWords  = [];
-    screen = 'complete';
+    const best       = getBestScore(configName);
+    isNewBest        = lastScore > best && lastScore > 0;
+    displayCards     = [];
+    targetWords      = [];
+    screen           = 'complete';
   }
 
   // ── Game logic ─────────────────────────────────────────────────────────────
@@ -228,6 +242,8 @@
     wrongWords        = [];
     previewTargetWord = null;
     clearTimeout(targetPreviewTimeout);
+    comboClicks       = 0;
+    roundCompleted    = false;
     comboActive       = false;
     comboPrimed       = false;
     comboRestartKey   = 0;
@@ -238,7 +254,7 @@
 
   async function loadNextRound() {
     setsCompleted++;
-    if (setsCompleted >= setsPerRound) { endRound(); return; }
+    if (setsCompleted >= setsPerRound) { roundCompleted = true; endRound(); return; }
     await tick();
     const sectionId = selectedSection?.isFinal ? null : selectedSection?.id;
     const data      = await createRound(gameConfig, sectionId);
@@ -281,6 +297,7 @@
     const inCombo     = comboPrimed || comboActive;
     const comboDurMs  = Math.round((globals?.combo_seconds ?? 2) * 1000);
     score += inCombo ? (globals?.score_combo ?? 2) : (globals?.score_correct ?? 1);
+    if (inCombo) comboClicks++;
     clearTimeout(comboPrimedTimeout);
     if (inCombo) {
       comboActive     = true;
@@ -483,8 +500,9 @@
     {sectionLabel}
     dir={selectedDir}
     baseScore={lastBaseScore}
-    bonusSecs={lastBonusSecs}
-    roundSeconds={globals?.round_seconds ?? 60}
+    timeBonus={lastTimeBonus}
+    streakBonus={lastStreakBonus}
+    elapsedSecs={lastElapsedSecs}
     wrongWords={wrongWords}
     correctClicks={correctClicks}
     wrongClicks={wrongInRound}
@@ -739,8 +757,8 @@
 
   .card-article {
     font-size: 0.65rem;
-    font-weight: 500;
-    color: #B0A89E;
+    font-weight: 700;
+    color: #7A7269;
     text-align: center;
     padding-top: 4px;
     font-family: inherit;
@@ -827,8 +845,8 @@
 
   .target-article {
     font-size: 0.68rem;
-    font-weight: 500;
-    color: #B0A89E;
+    font-weight: 700;
+    color: #7A7269;
   }
 
   .target-word {

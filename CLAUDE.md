@@ -11,6 +11,11 @@ npm run build      # production build → dist/
 npm run preview    # preview the production build locally
 ```
 
+Python scripts (in `scripts/`) must be run with `uv`:
+```bash
+uv run scripts/generate_index.py
+```
+
 There are no tests or linter config in this project.
 
 ## Architecture

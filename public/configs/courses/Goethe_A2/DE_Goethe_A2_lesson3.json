@@ -1,52 +1,52 @@
 {
   "Essen und Kochen": {
     "Zutaten": [
-      { "german": "Mehl", "english": "flour", "grammar": "n" },
-      { "german": "Zucker", "english": "sugar", "grammar": "m" },
-      { "german": "Ei", "english": "egg", "grammar": "n" },
-      { "german": "Butter", "english": "butter", "grammar": "f" },
-      { "german": "Öl", "english": "oil", "grammar": "n" },
-      { "german": "Essig", "english": "vinegar", "grammar": "m" },
-      { "german": "Salz", "english": "salt", "grammar": "n" },
-      { "german": "Pfeffer", "english": "pepper", "grammar": "m" },
-      { "german": "Gewürz", "english": "spice / seasoning", "grammar": "n" },
-      { "german": "Knoblauch", "english": "garlic", "grammar": "m" }
+      { "german": "Mehl", "english": "flour", "grammar": "n", "icon": "mehl.webp" },
+      { "german": "Zucker", "english": "sugar", "grammar": "m", "icon": "zucker.webp" },
+      { "german": "Ei", "english": "egg", "grammar": "n", "icon": "ei.webp" },
+      { "german": "Butter", "english": "butter", "grammar": "f", "icon": "butter.webp" },
+      { "german": "Öl", "english": "oil", "grammar": "n", "icon": "oel.webp" },
+      { "german": "Essig", "english": "vinegar", "grammar": "m", "icon": "essig.webp" },
+      { "german": "Salz", "english": "salt", "grammar": "n", "icon": "salz.webp" },
+      { "german": "Pfeffer", "english": "pepper", "grammar": "m", "icon": "pfeffer.webp" },
+      { "german": "Gewürz", "english": "spice / seasoning", "grammar": "n", "icon": "gewuerz.webp" },
+      { "german": "Knoblauch", "english": "garlic", "grammar": "m", "icon": "knoblauch.webp" }
     ],
     "Kochen": [
-      { "german": "braten", "english": "to fry / roast", "grammar": "" },
-      { "german": "backen", "english": "to bake", "grammar": "" },
-      { "german": "schneiden", "english": "to cut", "grammar": "" },
-      { "german": "mischen", "english": "to mix", "grammar": "" },
-      { "german": "Rezept", "english": "recipe", "grammar": "n" },
-      { "german": "Topf", "english": "pot", "grammar": "m" },
-      { "german": "Pfanne", "english": "frying pan", "grammar": "f" },
-      { "german": "Ofen", "english": "oven", "grammar": "m" },
-      { "german": "Mikrowelle", "english": "microwave", "grammar": "f" },
-      { "german": "Messer", "english": "knife", "grammar": "n" }
+      { "german": "braten", "english": "to fry / roast", "grammar": "", "icon": "braten.webp" },
+      { "german": "backen", "english": "to bake", "grammar": "", "icon": "backen.webp" },
+      { "german": "schneiden", "english": "to cut", "grammar": "", "icon": "schneiden.webp" },
+      { "german": "mischen", "english": "to mix", "grammar": "", "icon": "mischen.webp" },
+      { "german": "Rezept", "english": "recipe", "grammar": "n", "icon": "rezept.webp" },
+      { "german": "Topf", "english": "pot", "grammar": "m", "icon": "topf.webp" },
+      { "german": "Pfanne", "english": "frying pan", "grammar": "f", "icon": "pfanne.webp" },
+      { "german": "Ofen", "english": "oven", "grammar": "m", "icon": "ofen.webp" },
+      { "german": "Mikrowelle", "english": "microwave", "grammar": "f", "icon": "mikrowelle.webp" },
+      { "german": "Messer", "english": "knife", "grammar": "n", "icon": "messer.webp" }
     ],
     "Im Restaurant": [
-      { "german": "bestellen", "english": "to order", "grammar": "" },
-      { "german": "Speisekarte", "english": "menu", "grammar": "f" },
-      { "german": "Vorspeise", "english": "starter", "grammar": "f" },
-      { "german": "Hauptgericht", "english": "main course", "grammar": "n" },
-      { "german": "Nachspeise", "english": "dessert", "grammar": "f" },
-      { "german": "Getränk", "english": "drink / beverage", "grammar": "n" },
-      { "german": "Kellner", "english": "waiter", "grammar": "m" },
-      { "german": "Rechnung", "english": "bill", "grammar": "f" },
-      { "german": "Trinkgeld", "english": "tip", "grammar": "n" },
-      { "german": "reservieren", "english": "to reserve / book", "grammar": "" }
+      { "german": "bestellen", "english": "to order", "grammar": "", "icon": "bestellen.webp" },
+      { "german": "Speisekarte", "english": "menu", "grammar": "f", "icon": "speisekarte.webp" },
+      { "german": "Vorspeise", "english": "starter", "grammar": "f", "icon": "vorspeise.webp" },
+      { "german": "Hauptgericht", "english": "main course", "grammar": "n", "icon": "hauptgericht.webp" },
+      { "german": "Nachspeise", "english": "dessert", "grammar": "f", "icon": "nachspeise.webp" },
+      { "german": "Getränk", "english": "drink / beverage", "grammar": "n", "icon": "getraenk.webp" },
+      { "german": "Kellner", "english": "waiter", "grammar": "m", "icon": "kellner.webp" },
+      { "german": "Rechnung", "english": "bill", "grammar": "f", "icon": "rechnung.webp" },
+      { "german": "Trinkgeld", "english": "tip", "grammar": "n", "icon": "trinkgeld.webp" },
+      { "german": "reservieren", "english": "to reserve / book", "grammar": "", "icon": "reservieren.webp" }
     ],
     "Ernährung": [
-      { "german": "vegetarisch", "english": "vegetarian", "grammar": "" },
-      { "german": "vegan", "english": "vegan", "grammar": "" },
-      { "german": "gesund", "english": "healthy", "grammar": "" },
-      { "german": "ungesund", "english": "unhealthy", "grammar": "" },
-      { "german": "Kalorien", "english": "calories", "grammar": "" },
-      { "german": "Vitamin", "english": "vitamin", "grammar": "n" },
-      { "german": "Allergie", "english": "allergy", "grammar": "f" },
-      { "german": "Diät", "english": "diet", "grammar": "f" },
-      { "german": "biologisch", "english": "organic", "grammar": "" },
-      { "german": "frisch", "english": "fresh", "grammar": "" }
+      { "german": "vegetarisch", "english": "vegetarian", "grammar": "", "icon": "vegetarisch.webp" },
+      { "german": "vegan", "english": "vegan", "grammar": "", "icon": "vegan.webp" },
+      { "german": "gesund", "english": "healthy", "grammar": "", "icon": "gesund.webp" },
+      { "german": "ungesund", "english": "unhealthy", "grammar": "", "icon": "ungesund.webp" },
+      { "german": "Kalorien", "english": "calories", "grammar": "", "icon": "kalorien.webp" },
+      { "german": "Vitamin", "english": "vitamin", "grammar": "n", "icon": "vitamin.webp" },
+      { "german": "Allergie", "english": "allergy", "grammar": "f", "icon": "allergie.webp" },
+      { "german": "Diät", "english": "diet", "grammar": "f", "icon": "diaet.webp" },
+      { "german": "biologisch", "english": "organic", "grammar": "", "icon": "biologisch.webp" },
+      { "german": "frisch", "english": "fresh", "grammar": "", "icon": "frisch.webp" }
     ]
   }
 }
