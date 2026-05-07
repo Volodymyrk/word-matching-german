@@ -22,7 +22,8 @@ def to_stem(german: str) -> str:
     """Derive asset filename stem from a German word."""
     s = german.lower()
     s = s.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
-    s = re.sub(r"[^a-z0-9]", "", s)
+    s = s.replace(" ", "_")
+    s = re.sub(r"[^a-z0-9_]", "", s)
     return s
 
 
@@ -45,6 +46,7 @@ def process_lesson(lesson_path: Path) -> None:
         data = json.load(f)
 
     changed = 0
+    icons_found = 0
     missing_icons: list[str] = []
     missing_audio: list[str] = []
 
@@ -60,6 +62,7 @@ def process_lesson(lesson_path: Path) -> None:
                 audio_path = AUDIO_DIR / f"{stem}.mp3"
 
                 if icon_path.exists():
+                    icons_found += 1
                     new_val = f"{stem}.webp"
                     if word.get("icon") != new_val:
                         word["icon"] = new_val
@@ -69,6 +72,10 @@ def process_lesson(lesson_path: Path) -> None:
 
                 if not audio_path.exists():
                     missing_audio.append(f"  MISSING audio: {stem}.mp3   ({german})")
+
+    if icons_found == 0:
+        print(f"  No changes — {lesson_path.name}. No icons for lesson found")
+        return
 
     if changed:
         with open(lesson_path, "w", encoding="utf-8") as f:

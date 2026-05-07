@@ -1,15 +1,10 @@
 <script>
   import { onMount } from 'svelte';
-  import { roman, dirLabel, levelLocked, finalLocked } from './theme.js';
+  import { roman, dirLabel, levelLocked, finalLevelLocked } from './theme.js';
 
   let { lesson, sections, progress, starThresholds = [1, 10, 20], onBack, onStart } = $props();
 
-  let finalPanelOpen = $state(false);
-  const FINAL = 'final';
-
-  function isDone(sectionId, dir) {
-    return !!progress[lesson.id]?.[sectionId]?.[String(dir)]?.done;
-  }
+  const FINAL_SECTION = { id: 'final', isFinal: true, wordCount: null };
 
   function bestScore(sectionId, dir) {
     return progress[lesson.id]?.[sectionId]?.[String(dir)]?.best ?? -1;
@@ -24,34 +19,27 @@
     return bestScore(sectionId, dir) >= starThresholds[1];
   }
 
-  const isFinalUnlocked = $derived(!finalLocked(lesson, sections, progress, starThresholds));
-
-  // One node per (section × direction): dir=1 first, then dir=0
-  const levels = $derived(sections.flatMap((section, i) => [
-    { section, sectionIdx: i, dir: 1 },
-    { section, sectionIdx: i, dir: 0 },
-  ]));
+  // Regular levels (dir=1 then dir=0 per section) followed by two final levels.
+  const levels = $derived([
+    ...sections.flatMap((section, i) => [
+      { section, sectionIdx: i, dir: 1, isFinal: false },
+      { section, sectionIdx: i, dir: 0, isFinal: false },
+    ]),
+    { section: FINAL_SECTION, sectionIdx: -1, dir: 1, isFinal: true },
+    { section: FINAL_SECTION, sectionIdx: -1, dir: 0, isFinal: true },
+  ]);
 
   const currentLevelKey = $derived.by(() => {
     for (const lv of levels) {
-      if (levelLocked(lesson, lv.sectionIdx, lv.dir, sections, progress, starThresholds)) continue;
+      const locked = lv.isFinal
+        ? finalLevelLocked(lesson, lv.dir, sections, progress, starThresholds)
+        : levelLocked(lesson, lv.sectionIdx, lv.dir, sections, progress, starThresholds);
+      if (locked) continue;
       if (!hasEnoughStars(lv.section.id, lv.dir)) return `${lv.section.id}:${lv.dir}`;
     }
-    if (isFinalUnlocked && (!isDone(FINAL, 0) || !isDone(FINAL, 1))) return FINAL;
     return null;
   });
 
-  const fAllDone   = $derived(hasEnoughStars(FINAL, 0) && hasEnoughStars(FINAL, 1));
-  const fIsCurrent = $derived(currentLevelKey === FINAL);
-  const fAlignRight = $derived(levels.length % 2 !== 0);
-
-  function startFinal(dir) {
-    onStart({ id: FINAL, isFinal: true }, dir);
-    finalPanelOpen = false;
-  }
-
-  // Refs to each circle element — index 0..levels.length-1 for level nodes,
-  // index levels.length for the final node.
   let circleEls = [];
   let sagaEl    = $state(null);
   let pathD     = $state('');
@@ -83,7 +71,6 @@
   }
 
   onMount(() => {
-    // Two rAF passes: first lets Svelte flush DOM, second waits for paint/layout.
     requestAnimationFrame(() => requestAnimationFrame(measurePath));
     const ro = new ResizeObserver(() => requestAnimationFrame(measurePath));
     ro.observe(sagaEl);
@@ -105,7 +92,6 @@
   </div>
 
   <div class="saga" bind:this={sagaEl}>
-    <!-- Path rendered first; bubbles (z-index:1) sit on top -->
     <svg class="path-svg" width="100%" height={pathH}>
       {#if pathD}
         <path d={pathD} stroke="#D4CDC0" stroke-width="2" stroke-dasharray="2 6" fill="none" stroke-linecap="round"/>
@@ -113,11 +99,13 @@
     </svg>
 
     {#each levels as lv, i}
-      {@const locked   = levelLocked(lesson, lv.sectionIdx, lv.dir, sections, progress, starThresholds)}
+      {@const locked   = lv.isFinal
+        ? finalLevelLocked(lesson, lv.dir, sections, progress, starThresholds)
+        : levelLocked(lesson, lv.sectionIdx, lv.dir, sections, progress, starThresholds)}
       {@const cleared  = hasEnoughStars(lv.section.id, lv.dir)}
       {@const isCurrent = currentLevelKey === `${lv.section.id}:${lv.dir}`}
       {@const stars    = starsFor(lv.section.id, lv.dir)}
-      {@const secName  = lv.section.id.split('/').pop()}
+      {@const secName  = lv.isFinal ? 'Finalrunde' : lv.section.id.split('/').pop()}
 
       <div class="node-row" class:right={i % 2 !== 0}>
         {#if isCurrent}
@@ -143,6 +131,11 @@
                 <rect x="5" y="11" width="14" height="9" rx="2" fill="#B0A89E"/>
                 <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#B0A89E" stroke-width="2" stroke-linecap="round"/>
               </svg>
+            {:else if lv.isFinal}
+              <svg width="26" height="26" viewBox="0 0 24 24">
+                <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
+                  fill={cleared ? '#2F8F6E' : isCurrent ? '#FFFFFF' : '#D49A4A'}/>
+              </svg>
             {:else}
               <span class="circle-numeral" style="color:{isCurrent ? '#FFFFFF' : cleared ? '#2F8F6E' : '#1F1D1A'}">{roman(lv.sectionIdx)}</span>
             {/if}
@@ -150,7 +143,7 @@
           <div class="node-info">
             <div class="node-label" style="color:{locked ? '#B0A89E' : '#1F1D1A'}">{secName}</div>
             {#if !locked}
-              <div class="node-sub">{dirLabel(lesson, lv.dir)} · {lv.section.wordCount} Wörter</div>
+              <div class="node-sub">{dirLabel(lesson, lv.dir)}{lv.section.wordCount ? ` · ${lv.section.wordCount} Wörter` : ''}</div>
               <div class="node-stars">
                 {#each [0, 1, 2] as st}
                   <svg width="10" height="10" viewBox="0 0 24 24">
@@ -164,73 +157,7 @@
         </button>
       </div>
     {/each}
-
-    <!-- Final node -->
-    <div class="node-row" class:right={fAlignRight}>
-      {#if fIsCurrent}
-        <div class="callout">weiter hier<div class="callout-arrow"></div></div>
-      {/if}
-      <button
-        class="node-btn"
-        class:locked={!isFinalUnlocked}
-        class:flipped={fAlignRight}
-        onclick={() => isFinalUnlocked && (finalPanelOpen = true)}
-      >
-        <div
-          class="circle circle-final"
-          bind:this={circleEls[levels.length]}
-          style="
-            background: {!isFinalUnlocked ? '#E8E3D9' : fAllDone ? '#E0F0E8' : fIsCurrent ? '#2F8F6E' : '#FFFFFF'};
-            border: 1.5px solid {!isFinalUnlocked ? '#E8E3D9' : (fAllDone || fIsCurrent) ? '#2F8F6E' : '#D4CDC0'};
-            box-shadow: {fIsCurrent ? '0 0 0 5px #E0F0E8, 0 1px 2px rgba(20,18,15,0.05)' : isFinalUnlocked ? '0 1px 3px rgba(20,18,15,0.07)' : 'none'};
-          "
-        >
-          {#if !isFinalUnlocked}
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <rect x="5" y="11" width="14" height="9" rx="2" fill="#B0A89E"/>
-              <path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#B0A89E" stroke-width="2.2" stroke-linecap="round"/>
-            </svg>
-          {:else}
-            <svg width="28" height="28" viewBox="0 0 24 24">
-              <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
-                fill={fAllDone ? '#2F8F6E' : '#D49A4A'}/>
-            </svg>
-          {/if}
-        </div>
-        <div class="node-info">
-          <div class="node-label" style="color:{!isFinalUnlocked ? '#B0A89E' : '#1F1D1A'}">Finalrunde</div>
-          {#if isFinalUnlocked}
-            <div class="node-stars">
-              {#each [0, 1, 2] as st}
-                {@const best = Math.max(starsFor(FINAL, 0), starsFor(FINAL, 1))}
-                <svg width="10" height="10" viewBox="0 0 24 24">
-                  <path d="M12 2.5l2.95 6.3 6.55.85-4.85 4.6 1.25 6.95L12 17.95 6.1 21.2l1.25-6.95L2.5 9.65l6.55-.85L12 2.5z"
-                    fill={st < best ? '#D49A4A' : '#E8E3D9'}/>
-                </svg>
-              {/each}
-            </div>
-          {/if}
-        </div>
-      </button>
-    </div>
   </div>
-
-  <!-- Direction picker only for final round -->
-  {#if finalPanelOpen}
-    <div class="dir-panel">
-      <div class="dir-panel-label">Finalrunde · Richtung wählen</div>
-      <div class="dir-btns">
-        {#each [1, 0] as dir}
-          {@const isDn = hasEnoughStars(FINAL, dir)}
-          <button class="dir-btn" class:done={isDn} onclick={() => startFinal(dir)}>
-            <span class="dir-btn-label">{dirLabel(lesson, dir)}</span>
-            {#if isDn}<span class="dir-check">✓</span>{/if}
-          </button>
-        {/each}
-      </div>
-      <button class="dir-cancel" onclick={() => finalPanelOpen = false}>Abbrechen</button>
-    </div>
-  {/if}
 </div>
 
 <style>
@@ -372,11 +299,6 @@
     transition: background 200ms, border-color 200ms, box-shadow 200ms;
   }
 
-  .circle-final {
-    width: 76px;
-    height: 76px;
-  }
-
   .circle-numeral {
     font-size: 1.2rem;
     font-weight: 700;
@@ -404,86 +326,4 @@
   }
 
   .node-stars { display: flex; gap: 2px; }
-
-  /* Direction picker for final round */
-  .dir-panel {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #FFFFFF;
-    border-top: 1px solid #E8E3D9;
-    box-shadow: 0 -4px 20px rgba(20,18,15,0.08);
-    padding: 1rem 1.25rem 2.5rem;
-    z-index: 10;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .dir-panel-label {
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: #B0A89E;
-    text-align: center;
-    margin-bottom: 0.9rem;
-  }
-
-  .dir-btns { display: flex; gap: 0.75rem; }
-
-  .dir-btn {
-    flex: 1;
-    appearance: none;
-    cursor: pointer;
-    background: #2F8F6E;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 12px;
-    padding: 0.85rem;
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-    box-shadow: 0 1px 2px rgba(20,18,15,0.08), 0 4px 12px rgba(20,18,15,0.06);
-    transition: transform 80ms, box-shadow 80ms;
-  }
-
-  .dir-btn:active {
-    transform: translateY(1px);
-    box-shadow: 0 1px 2px rgba(20,18,15,0.10) inset;
-  }
-
-  .dir-btn.done {
-    background: #E0F0E8;
-    color: #2F8F6E;
-    box-shadow: none;
-  }
-
-  .dir-btn-label {
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    font-family: ui-monospace, monospace;
-  }
-
-  .dir-check { font-size: 0.9rem; font-weight: 700; }
-
-  .dir-cancel {
-    appearance: none;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    width: 100%;
-    padding: 0.6rem;
-    margin-top: 0.4rem;
-    font-family: inherit;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #7A7269;
-    text-align: center;
-  }
 </style>

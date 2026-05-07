@@ -177,7 +177,9 @@
   }
 
   function computeNextLabel() {
-    if (selectedSection?.isFinal) return '';
+    if (selectedSection?.isFinal) {
+      return selectedDir === 1 ? `Finalrunde · ${dirLabel(selectedLesson, 0)}` : '';
+    }
     const idx = sections.findIndex(s => s.id === selectedSection?.id);
     if (idx === -1) return '';
     if (selectedDir === 1) {
@@ -185,7 +187,7 @@
     } else if (idx + 1 < sections.length) {
       return `${roman(idx + 1)} · ${dirLabel(selectedLesson, 1)}`;
     }
-    return 'Finalrunde';
+    return `Finalrunde · ${dirLabel(selectedLesson, 1)}`;
   }
 
   function endRound() {

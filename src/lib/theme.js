@@ -58,13 +58,17 @@ export function levelLocked(lesson, sectionIdx, dir, sections, progress, starThr
   }
 }
 
-// Final round unlocks when every section has both directions with ≥ 2 stars.
-export function finalLocked(lesson, sections, progress, starThresholds = [1, 10, 20]) {
+// Final level locking — mirrors the progressive pattern of regular levels.
+// dir=1: unlocks when the last section's dir=0 reaches ≥ 2 stars.
+// dir=0: unlocks when final dir=1 reaches ≥ 2 stars.
+export function finalLevelLocked(lesson, dir, sections, progress, starThresholds = [1, 10, 20]) {
   if (import.meta.env.DEV) return false;
   const lp = progress[lesson.id] || {};
   const twoStar = starThresholds[1];
-  return !sections.every(s => {
-    const sp = lp[s.id] || {};
-    return (sp['0']?.best ?? -1) >= twoStar && (sp['1']?.best ?? -1) >= twoStar;
-  });
+  if (dir === 1) {
+    const last = sections[sections.length - 1];
+    if (!last) return false;
+    return (lp[last.id]?.['0']?.best ?? -1) < twoStar;
+  }
+  return (lp['final']?.['1']?.best ?? -1) < twoStar;
 }
