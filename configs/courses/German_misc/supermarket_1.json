@@ -1,0 +1,246 @@
+{
+  "supermarket_essentials": {
+    "Lebensmittel": [
+      {
+        "english": "bread",
+        "grammar": "n",
+        "german": "Brot",
+        "icon": "brot.webp"
+      },
+      {
+        "english": "milk",
+        "grammar": "f",
+        "german": "Milch",
+        "icon": "milch.webp"
+      },
+      {
+        "english": "egg",
+        "grammar": "n",
+        "german": "Ei",
+        "icon": "ei.webp"
+      },
+      {
+        "english": "cheese",
+        "grammar": "m",
+        "german": "Käse",
+        "icon": "kaese.webp"
+      },
+      {
+        "english": "water",
+        "grammar": "n",
+        "german": "Wasser",
+        "icon": "wasser.webp"
+      },
+      {
+        "english": "butter",
+        "grammar": "f",
+        "german": "Butter",
+        "icon": "butter.webp"
+      },
+      {
+        "english": "apple",
+        "grammar": "m",
+        "german": "Apfel",
+        "icon": "apfel.webp"
+      },
+      {
+        "english": "banana",
+        "german": "Banane",
+        "grammar": "f",
+        "icon": "banane.webp"
+      },
+      {
+        "english": "meat",
+        "grammar": "n",
+        "german": "Fleisch",
+        "icon": "fleisch.webp"
+      },
+      {
+        "english": "vegetables",
+        "grammar": "n",
+        "german": "Gemüse",
+        "icon": "gemuese.webp"
+      }
+    ],
+    "Im Supermarkt": [
+      {
+        "english": "shopping cart",
+        "grammar": "m",
+        "german": "Einkaufswagen",
+        "icon": "einkaufswagen.webp"
+      },
+      {
+        "english": "basket",
+        "grammar": "m",
+        "german": "Korb",
+        "icon": "korb.webp"
+      },
+      {
+        "english": "bag",
+        "grammar": "f",
+        "german": "Tasche",
+        "icon": "tasche.webp"
+      },
+      {
+        "english": "receipt",
+        "grammar": "m",
+        "german": "Kassenbon",
+        "icon": "kassenbon.webp"
+      },
+      {
+        "english": "cash register",
+        "grammar": "f",
+        "german": "Kasse",
+        "icon": "kasse.webp"
+      },
+      {
+        "english": "price",
+        "grammar": "m",
+        "german": "Preis",
+        "icon": "preis.webp"
+      },
+      {
+        "english": "offer",
+        "grammar": "n",
+        "german": "Angebot",
+        "icon": "angebot.webp"
+      },
+      {
+        "english": "shelf",
+        "grammar": "n",
+        "german": "Regal",
+        "icon": "regal.webp"
+      },
+      {
+        "english": "customer",
+        "grammar": "m",
+        "german": "Kunde",
+        "icon": "kunde.webp"
+      }
+    ],
+    "Vorrat & Getränke": [
+      {
+        "english": "rice",
+        "grammar": "m",
+        "german": "Reis",
+        "icon": "reis.webp"
+      },
+      {
+        "english": "pasta",
+        "grammar": "f",
+        "german": "Nudeln",
+        "icon": "nudeln.webp"
+      },
+      {
+        "english": "sugar",
+        "grammar": "m",
+        "german": "Zucker",
+        "icon": "zucker.webp"
+      },
+      {
+        "english": "salt",
+        "grammar": "n",
+        "german": "Salz",
+        "icon": "salz.webp"
+      },
+      {
+        "english": "oil",
+        "grammar": "n",
+        "german": "Öl",
+        "icon": "oel.webp"
+      },
+      {
+        "english": "coffee",
+        "grammar": "m",
+        "german": "Kaffee",
+        "icon": "kaffee.webp"
+      },
+      {
+        "english": "tea",
+        "grammar": "m",
+        "german": "Tee",
+        "icon": "tee.webp"
+      },
+      {
+        "english": "juice",
+        "grammar": "m",
+        "german": "Saft",
+        "icon": "saft.webp"
+      },
+      {
+        "english": "flour",
+        "grammar": "n",
+        "german": "Mehl",
+        "icon": "mehl.webp"
+      },
+      {
+        "english": "honey",
+        "grammar": "m",
+        "german": "Honig",
+        "icon": "honig.webp"
+      }
+    ],
+    "Nützliches": [
+      {
+        "english": "change (money)",
+        "grammar": "n",
+        "german": "Kleingeld",
+        "icon": "kleingeld.webp"
+      },
+      {
+        "english": "credit card",
+        "grammar": "f",
+        "german": "Kreditkarte",
+        "icon": "kreditkarte.webp"
+      },
+      {
+        "english": "membership card",
+        "grammar": "f",
+        "german": "Kundenkarte",
+        "icon": "kundenkarte.webp"
+      },
+      {
+        "english": "opening hours",
+        "grammar": "f",
+        "german": "Öffnungszeiten",
+        "icon": "oeffnungszeiten.webp"
+      },
+      {
+        "english": "weight",
+        "grammar": "n",
+        "german": "Gewicht",
+        "icon": "gewicht.webp"
+      },
+      {
+        "english": "bottle",
+        "grammar": "f",
+        "german": "Flasche",
+        "icon": "flasche.webp"
+      },
+      {
+        "english": "can/tin",
+        "grammar": "f",
+        "german": "Dose",
+        "icon": "dose.webp"
+      },
+      {
+        "english": "glass",
+        "grammar": "n",
+        "german": "Glas",
+        "icon": "glas.webp"
+      },
+      {
+        "english": "department",
+        "grammar": "f",
+        "german": "Abteilung",
+        "icon": "abteilung.webp"
+      },
+      {
+        "english": "discount",
+        "grammar": "m",
+        "german": "Rabatt",
+        "icon": "rabatt.webp"
+      }
+    ]
+  }
+}

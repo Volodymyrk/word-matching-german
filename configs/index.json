@@ -1,44 +1,5 @@
 [
   {
-    "id": "de1",
-    "name": "Deutsch Lektion 1",
-    "emoji": "👋",
-    "vocab_file": "courses/German_1/german_1.json",
-    "languages": [
-      "german",
-      "english"
-    ],
-    "course_id": "german_1",
-    "course_name": "German Basics",
-    "course_emoji": "🇩🇪"
-  },
-  {
-    "id": "de2",
-    "name": "Supermarkt",
-    "emoji": "🛒",
-    "vocab_file": "courses/German_1/german_2.json",
-    "languages": [
-      "german",
-      "english"
-    ],
-    "course_id": "german_1",
-    "course_name": "German Basics",
-    "course_emoji": "🇩🇪"
-  },
-  {
-    "id": "de3",
-    "name": "Supermarkt II",
-    "emoji": "🛍️",
-    "vocab_file": "courses/German_1/german_3.json",
-    "languages": [
-      "german",
-      "english"
-    ],
-    "course_id": "german_1",
-    "course_name": "German Basics",
-    "course_emoji": "🇩🇪"
-  },
-  {
     "id": "goethe_a1_1",
     "name": "Persönliche Angaben",
     "emoji": "📖",
@@ -238,7 +199,10 @@
     "name": "Alltag und Tagesablauf",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson1.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -248,7 +212,10 @@
     "name": "Wohnen und Einrichtung",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson2.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -258,7 +225,10 @@
     "name": "Essen und Kochen",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson3.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -268,7 +238,10 @@
     "name": "Familie und soziales Leben",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson4.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -278,7 +251,10 @@
     "name": "Gesundheit",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson5.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -288,7 +264,10 @@
     "name": "Freizeit und Sport",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson6.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -298,7 +277,10 @@
     "name": "Reisen und Mobilität",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson7.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -308,7 +290,10 @@
     "name": "Arbeit und Beruf",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson8.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -318,7 +303,10 @@
     "name": "Schule und Bildung",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson9.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -328,7 +316,10 @@
     "name": "Einkaufen und Dienstleistungen",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson10.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -338,7 +329,10 @@
     "name": "Öffentliches Leben",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson11.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -348,7 +342,10 @@
     "name": "Natur und Umwelt",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson12.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -358,7 +355,10 @@
     "name": "Gefühle und Meinungen",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson13.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -368,7 +368,10 @@
     "name": "Kommunikation und Medien",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson14.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
@@ -378,9 +381,39 @@
     "name": "Kultur und Gesellschaft",
     "emoji": "📗",
     "vocab_file": "courses/Goethe_A2/DE_Goethe_A2_lesson15.json",
-    "languages": ["german", "english"],
+    "languages": [
+      "german",
+      "english"
+    ],
     "course_id": "goethe_a2",
     "course_name": "Goethe A2",
     "course_emoji": "📗"
-  }
+  },
+
+{
+    "id": "de_1",
+    "name": "Supermarket 1",
+    "emoji": "🇩🇪",
+    "vocab_file": "courses/German_misc/supermarket_1.json",
+    "languages": [
+      "german",
+      "english"
+    ],
+    "course_id": "german_misc",
+    "course_name": "German Special",
+    "course_emoji": "🇩🇪"
+  },
+  {
+    "id": "de_2",
+    "name": "Supermarket 2",
+    "emoji": "🇩🇪",
+    "vocab_file": "courses/German_misc/supermarket_2.json",
+    "languages": [
+      "german",
+      "english"
+    ],
+    "course_id": "german_misc",
+    "course_name": "German Special",
+    "course_emoji": "🇩🇪"
+  }  
 ]

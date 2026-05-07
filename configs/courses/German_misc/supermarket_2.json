@@ -1,0 +1,49 @@
+{
+  "shopping_lesson_2": {
+    "Spezialartikel": [
+      {"english": "detergent", "grammar": "n", "german": "Waschmittel", "icon": "waschmittel.webp"},
+      {"english": "frozen food", "grammar": "f", "german": "Tiefkühlkost", "icon": "tiefkuehlkost.webp"},
+      {"english": "dairy products", "grammar": "f", "german": "Milchprodukte", "icon": "milchprodukte.webp"},
+      {"english": "bakery", "grammar": "f", "german": "Bäckerei", "icon": "baeckerei.webp"},
+      {"english": "pastry", "grammar": "n", "german": "Gebäck", "icon": "gebaeck.webp"},
+      {"english": "spices", "grammar": "f", "german": "Gewürze", "icon": "gewuerze.webp"},
+      {"english": "cleaning supplies", "grammar": "n", "german": "Reinigungsmittel", "icon": "reinigungsmittel.webp"},
+      {"english": "toilet paper", "grammar": "n", "german": "Toilettenpapier", "icon": "toilettenpapier.webp"},
+      {"english": "soap", "grammar": "f", "german": "Seife", "icon": "seife.webp"}
+    ],
+    "Verben": [
+      {"english": "to pay", "grammar": "verb", "german": "bezahlen", "icon": "bezahlen.webp"},
+      {"english": "to search/look for", "grammar": "verb", "german": "suchen", "icon": "suchen.webp"},
+      {"english": "to weigh", "grammar": "verb", "german": "wiegen", "icon": "wiegen.webp"},
+      {"english": "to choose/select", "grammar": "verb", "german": "auswählen", "icon": "auswaehlen.webp"},
+      {"english": "to pack", "grammar": "verb", "german": "einpacken", "icon": "einpacken.webp"},
+      {"english": "to need", "grammar": "verb", "german": "brauchen", "icon": "brauchen.webp"},
+      {"english": "to exchange", "grammar": "verb", "german": "umtauschen", "icon": "umtauschen.webp"},
+      {"english": "to recommend", "grammar": "verb", "german": "empfehlen", "icon": "empfehlen.webp"},
+      {"english": "to save (money)", "grammar": "verb", "german": "sparen", "icon": "sparen.webp"}
+    ],
+    "Eigenschaften": [
+      {"english": "fresh", "grammar": "adj", "german": "frisch", "icon": "frisch.webp"},
+      {"english": "expensive", "grammar": "adj", "german": "teuer", "icon": "teuer.webp"},
+      {"english": "cheap", "grammar": "adj", "german": "billig", "icon": "billig.webp"},
+      {"english": "favorable/low-priced", "grammar": "adj", "german": "günstig", "icon": "guenstig.webp"},
+      {"english": "frozen", "grammar": "adj", "german": "tiefgekühlt", "icon": "tiefgekuehlt.webp"},
+      {"english": "organic", "grammar": "adj", "german": "biologisch", "icon": "biologisch.webp"},
+      {"english": "ripe", "grammar": "adj", "german": "reif", "icon": "reif.webp"},
+      {"english": "durable/long-lasting", "grammar": "adj", "german": "haltbar", "icon": "haltbar.webp"},
+      {"english": "empty", "grammar": "adj", "german": "leer", "icon": "leer.webp"},
+      {"english": "full", "grammar": "adj", "german": "voll", "icon": "voll.webp"}
+    ],
+    "Kassenbegriffe": [
+      {"english": "shopping list", "grammar": "f", "german": "Einkaufsliste", "icon": "einkaufsliste.webp"},
+      {"english": "expiration date", "grammar": "n", "german": "Verfallsdatum", "icon": "verfallsdatum.webp"},
+      {"english": "ingredient", "grammar": "f", "german": "Zutat", "icon": "zutat.webp"},
+      {"english": "packaging", "grammar": "f", "german": "Verpackung", "icon": "verpackung.webp"},
+      {"english": "change (return money)", "grammar": "n", "german": "Wechselgeld", "icon": "wechselgeld.webp"},
+      {"english": "bottle deposit", "grammar": "m", "german": "Pfand", "icon": "pfand.webp"},
+      {"english": "voucher/coupon", "grammar": "m", "german": "Gutschein", "icon": "gutschein.webp"},
+      {"english": "quantity", "grammar": "f", "german": "Menge", "icon": "menge.webp"},
+      {"english": "total amount", "grammar": "m", "german": "Gesamtbetrag", "icon": "gesamtbetrag.webp"}
+    ]
+  }
+}

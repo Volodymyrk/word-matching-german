@@ -1,52 +1,252 @@
 {
   "Gesundheit": {
     "Körperteile": [
-      { "german": "Herz", "english": "heart", "grammar": "n" },
-      { "german": "Lunge", "english": "lung", "grammar": "f" },
-      { "german": "Magen", "english": "stomach", "grammar": "m" },
-      { "german": "Rücken", "english": "back", "grammar": "m" },
-      { "german": "Hals", "english": "throat / neck", "grammar": "m" },
-      { "german": "Knie", "english": "knee", "grammar": "n" },
-      { "german": "Schulter", "english": "shoulder", "grammar": "f" },
-      { "german": "Ellbogen", "english": "elbow", "grammar": "m" },
-      { "german": "Handgelenk", "english": "wrist", "grammar": "n" },
-      { "german": "Knöchel", "english": "ankle", "grammar": "m" }
+      {
+        "german": "Herz",
+        "english": "heart",
+        "grammar": "n",
+        "icon": "herz.webp"
+      },
+      {
+        "german": "Lunge",
+        "english": "lung",
+        "grammar": "f",
+        "icon": "lunge.webp"
+      },
+      {
+        "german": "Magen",
+        "english": "stomach",
+        "grammar": "m",
+        "icon": "magen.webp"
+      },
+      {
+        "german": "Rücken",
+        "english": "back",
+        "grammar": "m",
+        "icon": "ruecken.webp"
+      },
+      {
+        "german": "Hals",
+        "english": "throat / neck",
+        "grammar": "m",
+        "icon": "hals.webp"
+      },
+      {
+        "german": "Knie",
+        "english": "knee",
+        "grammar": "n",
+        "icon": "knie.webp"
+      },
+      {
+        "german": "Schulter",
+        "english": "shoulder",
+        "grammar": "f",
+        "icon": "schulter.webp"
+      },
+      {
+        "german": "Ellbogen",
+        "english": "elbow",
+        "grammar": "m",
+        "icon": "ellbogen.webp"
+      },
+      {
+        "german": "Handgelenk",
+        "english": "wrist",
+        "grammar": "n",
+        "icon": "handgelenk.webp"
+      },
+      {
+        "german": "Knöchel",
+        "english": "ankle",
+        "grammar": "m",
+        "icon": "knoechel.webp"
+      }
     ],
     "Beschwerden": [
-      { "german": "Schmerz", "english": "pain", "grammar": "m" },
-      { "german": "Kopfschmerzen", "english": "headache", "grammar": "" },
-      { "german": "Bauchschmerzen", "english": "stomach ache", "grammar": "" },
-      { "german": "Fieber", "english": "fever / temperature", "grammar": "n" },
-      { "german": "Husten", "english": "cough", "grammar": "m" },
-      { "german": "Schnupfen", "english": "runny nose / cold", "grammar": "m" },
-      { "german": "Grippe", "english": "flu", "grammar": "f" },
-      { "german": "Übelkeit", "english": "nausea", "grammar": "f" },
-      { "german": "sich erkälten", "english": "to catch a cold", "grammar": "" },
-      { "german": "Schwindel", "english": "dizziness", "grammar": "m" }
+      {
+        "german": "Schmerz",
+        "english": "pain",
+        "grammar": "m",
+        "icon": "schmerz.webp"
+      },
+      {
+        "german": "Kopfschmerzen",
+        "english": "headache",
+        "grammar": "",
+        "icon": "kopfschmerzen.webp"
+      },
+      {
+        "german": "Bauchschmerzen",
+        "english": "stomach ache",
+        "grammar": "",
+        "icon": "bauchschmerzen.webp"
+      },
+      {
+        "german": "Fieber",
+        "english": "fever / temperature",
+        "grammar": "n",
+        "icon": "fieber.webp"
+      },
+      {
+        "german": "Husten",
+        "english": "cough",
+        "grammar": "m",
+        "icon": "husten.webp"
+      },
+      {
+        "german": "Schnupfen",
+        "english": "runny nose / cold",
+        "grammar": "m",
+        "icon": "schnupfen.webp"
+      },
+      {
+        "german": "Grippe",
+        "english": "flu",
+        "grammar": "f",
+        "icon": "grippe.webp"
+      },
+      {
+        "german": "Übelkeit",
+        "english": "nausea",
+        "grammar": "f",
+        "icon": "uebelkeit.webp"
+      },
+      {
+        "german": "sich erkälten",
+        "english": "to catch a cold",
+        "grammar": "",
+        "icon": "sich_erkaelten.webp"
+      },
+      {
+        "german": "Schwindel",
+        "english": "dizziness",
+        "grammar": "m",
+        "icon": "schwindel.webp"
+      }
     ],
     "Beim Arzt": [
-      { "german": "Arztpraxis", "english": "doctor's practice / surgery", "grammar": "f" },
-      { "german": "Medikament", "english": "medication", "grammar": "n" },
-      { "german": "Tablette", "english": "tablet / pill", "grammar": "f" },
-      { "german": "Krankenkasse", "english": "health insurance", "grammar": "f" },
-      { "german": "Krankenhaus", "english": "hospital", "grammar": "n" },
-      { "german": "Notaufnahme", "english": "A&E / emergency room", "grammar": "f" },
-      { "german": "Krankenwagen", "english": "ambulance", "grammar": "m" },
-      { "german": "impfen", "english": "to vaccinate", "grammar": "" },
-      { "german": "Überweisung", "english": "referral", "grammar": "f" },
-      { "german": "Blutdruck", "english": "blood pressure", "grammar": "m" }
+      {
+        "german": "Arztpraxis",
+        "english": "doctor's practice / surgery",
+        "grammar": "f",
+        "icon": "arztpraxis.webp"
+      },
+      {
+        "german": "Medikament",
+        "english": "medication",
+        "grammar": "n",
+        "icon": "medikament.webp"
+      },
+      {
+        "german": "Tablette",
+        "english": "tablet / pill",
+        "grammar": "f",
+        "icon": "tablette.webp"
+      },
+      {
+        "german": "Krankenkasse",
+        "english": "health insurance",
+        "grammar": "f",
+        "icon": "krankenkasse.webp"
+      },
+      {
+        "german": "Krankenhaus",
+        "english": "hospital",
+        "grammar": "n",
+        "icon": "krankenhaus.webp"
+      },
+      {
+        "german": "Notaufnahme",
+        "english": "A&E / emergency room",
+        "grammar": "f",
+        "icon": "notaufnahme.webp"
+      },
+      {
+        "german": "Krankenwagen",
+        "english": "ambulance",
+        "grammar": "m",
+        "icon": "krankenwagen.webp"
+      },
+      {
+        "german": "impfen",
+        "english": "to vaccinate",
+        "grammar": "",
+        "icon": "impfen.webp"
+      },
+      {
+        "german": "Überweisung",
+        "english": "referral",
+        "grammar": "f",
+        "icon": "ueberweisung.webp"
+      },
+      {
+        "german": "Blutdruck",
+        "english": "blood pressure",
+        "grammar": "m",
+        "icon": "blutdruck.webp"
+      }
     ],
     "Gesund leben": [
-      { "german": "Sport treiben", "english": "to do sport / exercise", "grammar": "" },
-      { "german": "sich bewegen", "english": "to move / be physically active", "grammar": "" },
-      { "german": "sich ausruhen", "english": "to rest / relax", "grammar": "" },
-      { "german": "Entspannung", "english": "relaxation", "grammar": "f" },
-      { "german": "Stress", "english": "stress", "grammar": "m" },
-      { "german": "Rauchen", "english": "smoking", "grammar": "n" },
-      { "german": "Alkohol", "english": "alcohol", "grammar": "m" },
-      { "german": "Schlaf", "english": "sleep", "grammar": "m" },
-      { "german": "Ernährung", "english": "nutrition / diet", "grammar": "f" },
-      { "german": "Vorsorge", "english": "prevention / precaution", "grammar": "f" }
+      {
+        "german": "Sport treiben",
+        "english": "to do sport / exercise",
+        "grammar": "",
+        "icon": "sport_treiben.webp"
+      },
+      {
+        "german": "sich bewegen",
+        "english": "to move / be physically active",
+        "grammar": "",
+        "icon": "sich_bewegen.webp"
+      },
+      {
+        "german": "sich ausruhen",
+        "english": "to rest / relax",
+        "grammar": "",
+        "icon": "sich_ausruhen.webp"
+      },
+      {
+        "german": "Entspannung",
+        "english": "relaxation",
+        "grammar": "f",
+        "icon": "entspannung.webp"
+      },
+      {
+        "german": "Stress",
+        "english": "stress",
+        "grammar": "m",
+        "icon": "stress.webp"
+      },
+      {
+        "german": "Rauchen",
+        "english": "smoking",
+        "grammar": "n",
+        "icon": "rauchen.webp"
+      },
+      {
+        "german": "Alkohol",
+        "english": "alcohol",
+        "grammar": "m",
+        "icon": "alkohol.webp"
+      },
+      {
+        "german": "Schlaf",
+        "english": "sleep",
+        "grammar": "m",
+        "icon": "schlaf.webp"
+      },
+      {
+        "german": "Ernährung",
+        "english": "nutrition / diet",
+        "grammar": "f",
+        "icon": "ernaehrung.webp"
+      },
+      {
+        "german": "Vorsorge",
+        "english": "prevention / precaution",
+        "grammar": "f",
+        "icon": "vorsorge.webp"
+      }
     ]
   }
 }

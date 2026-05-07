@@ -1,52 +1,221 @@
 {
   "Einkaufen und Dienstleistungen": {
     "Im Geschäft": [
-      { "german": "Supermarkt", "english": "supermarket", "grammar": "m" },
-      { "german": "Einkaufszentrum", "english": "shopping centre / mall", "grammar": "n" },
-      { "german": "Bäckerei", "english": "bakery", "grammar": "f" },
-      { "german": "Metzgerei", "english": "butcher's", "grammar": "f" },
-      { "german": "Apotheke", "english": "pharmacy", "grammar": "f" },
-      { "german": "Drogerie", "english": "drugstore / toiletries shop", "grammar": "f" },
-      { "german": "Sonderangebot", "english": "special offer", "grammar": "n" },
-      { "german": "Rabatt", "english": "discount", "grammar": "m" },
-      { "german": "Kassierer", "english": "cashier", "grammar": "m" },
-      { "german": "Öffnungszeiten", "english": "opening hours", "grammar": "" }
+      {
+        "german": "Supermarkt",
+        "english": "supermarket",
+        "grammar": "m"
+      },
+      {
+        "german": "Einkaufszentrum",
+        "english": "shopping centre / mall",
+        "grammar": "n"
+      },
+      {
+        "german": "Bäckerei",
+        "english": "bakery",
+        "grammar": "f",
+        "icon": "baeckerei.webp"
+      },
+      {
+        "german": "Metzgerei",
+        "english": "butcher's",
+        "grammar": "f"
+      },
+      {
+        "german": "Apotheke",
+        "english": "pharmacy",
+        "grammar": "f"
+      },
+      {
+        "german": "Drogerie",
+        "english": "drugstore / toiletries shop",
+        "grammar": "f"
+      },
+      {
+        "german": "Sonderangebot",
+        "english": "special offer",
+        "grammar": "n"
+      },
+      {
+        "german": "Rabatt",
+        "english": "discount",
+        "grammar": "m",
+        "icon": "rabatt.webp"
+      },
+      {
+        "german": "Kassierer",
+        "english": "cashier",
+        "grammar": "m"
+      },
+      {
+        "german": "Öffnungszeiten",
+        "english": "opening hours",
+        "grammar": "",
+        "icon": "oeffnungszeiten.webp"
+      }
     ],
     "Kleidung": [
-      { "german": "Hemd", "english": "shirt", "grammar": "n" },
-      { "german": "Bluse", "english": "blouse", "grammar": "f" },
-      { "german": "Hose", "english": "trousers", "grammar": "f" },
-      { "german": "Rock", "english": "skirt", "grammar": "m" },
-      { "german": "Kleid", "english": "dress", "grammar": "n" },
-      { "german": "Jacke", "english": "jacket", "grammar": "f" },
-      { "german": "Mantel", "english": "coat", "grammar": "m" },
-      { "german": "Schal", "english": "scarf", "grammar": "m" },
-      { "german": "Handschuhe", "english": "gloves", "grammar": "" },
-      { "german": "Größe", "english": "size", "grammar": "f" }
+      {
+        "german": "Hemd",
+        "english": "shirt",
+        "grammar": "n"
+      },
+      {
+        "german": "Bluse",
+        "english": "blouse",
+        "grammar": "f"
+      },
+      {
+        "german": "Hose",
+        "english": "trousers",
+        "grammar": "f"
+      },
+      {
+        "german": "Rock",
+        "english": "skirt",
+        "grammar": "m"
+      },
+      {
+        "german": "Kleid",
+        "english": "dress",
+        "grammar": "n"
+      },
+      {
+        "german": "Jacke",
+        "english": "jacket",
+        "grammar": "f"
+      },
+      {
+        "german": "Mantel",
+        "english": "coat",
+        "grammar": "m"
+      },
+      {
+        "german": "Schal",
+        "english": "scarf",
+        "grammar": "m"
+      },
+      {
+        "german": "Handschuhe",
+        "english": "gloves",
+        "grammar": ""
+      },
+      {
+        "german": "Größe",
+        "english": "size",
+        "grammar": "f"
+      }
     ],
     "Post und Bank": [
-      { "german": "Brief", "english": "letter", "grammar": "m" },
-      { "german": "Paket", "english": "parcel / package", "grammar": "n" },
-      { "german": "Briefmarke", "english": "stamp", "grammar": "f" },
-      { "german": "Postamt", "english": "post office", "grammar": "n" },
-      { "german": "Konto", "english": "bank account", "grammar": "n" },
-      { "german": "Überweisung", "english": "bank transfer", "grammar": "f" },
-      { "german": "Bargeld", "english": "cash", "grammar": "n" },
-      { "german": "Kreditkarte", "english": "credit card", "grammar": "f" },
-      { "german": "Geldautomat", "english": "ATM / cash machine", "grammar": "m" },
-      { "german": "abheben", "english": "to withdraw (money)", "grammar": "" }
+      {
+        "german": "Brief",
+        "english": "letter",
+        "grammar": "m"
+      },
+      {
+        "german": "Paket",
+        "english": "parcel / package",
+        "grammar": "n"
+      },
+      {
+        "german": "Briefmarke",
+        "english": "stamp",
+        "grammar": "f"
+      },
+      {
+        "german": "Postamt",
+        "english": "post office",
+        "grammar": "n"
+      },
+      {
+        "german": "Konto",
+        "english": "bank account",
+        "grammar": "n"
+      },
+      {
+        "german": "Überweisung",
+        "english": "bank transfer",
+        "grammar": "f",
+        "icon": "ueberweisung.webp"
+      },
+      {
+        "german": "Bargeld",
+        "english": "cash",
+        "grammar": "n"
+      },
+      {
+        "german": "Kreditkarte",
+        "english": "credit card",
+        "grammar": "f",
+        "icon": "kreditkarte.webp"
+      },
+      {
+        "german": "Geldautomat",
+        "english": "ATM / cash machine",
+        "grammar": "m"
+      },
+      {
+        "german": "abheben",
+        "english": "to withdraw (money)",
+        "grammar": ""
+      }
     ],
     "Zahlen und Bezahlen": [
-      { "german": "Preis", "english": "price", "grammar": "m" },
-      { "german": "Quittung", "english": "receipt", "grammar": "f" },
-      { "german": "Mehrwertsteuer", "english": "VAT / sales tax", "grammar": "f" },
-      { "german": "zahlen", "english": "to pay", "grammar": "" },
-      { "german": "Wechselgeld", "english": "change (money back)", "grammar": "n" },
-      { "german": "kostenlos", "english": "free of charge", "grammar": "" },
-      { "german": "Garantie", "english": "guarantee / warranty", "grammar": "f" },
-      { "german": "umtauschen", "english": "to exchange / return (goods)", "grammar": "" },
-      { "german": "sparen", "english": "to save (money)", "grammar": "" },
-      { "german": "ausgeben", "english": "to spend (money)", "grammar": "" }
+      {
+        "german": "Preis",
+        "english": "price",
+        "grammar": "m",
+        "icon": "preis.webp"
+      },
+      {
+        "german": "Quittung",
+        "english": "receipt",
+        "grammar": "f"
+      },
+      {
+        "german": "Mehrwertsteuer",
+        "english": "VAT / sales tax",
+        "grammar": "f"
+      },
+      {
+        "german": "zahlen",
+        "english": "to pay",
+        "grammar": ""
+      },
+      {
+        "german": "Wechselgeld",
+        "english": "change (money back)",
+        "grammar": "n",
+        "icon": "wechselgeld.webp"
+      },
+      {
+        "german": "kostenlos",
+        "english": "free of charge",
+        "grammar": ""
+      },
+      {
+        "german": "Garantie",
+        "english": "guarantee / warranty",
+        "grammar": "f"
+      },
+      {
+        "german": "umtauschen",
+        "english": "to exchange / return (goods)",
+        "grammar": "",
+        "icon": "umtauschen.webp"
+      },
+      {
+        "german": "sparen",
+        "english": "to save (money)",
+        "grammar": "",
+        "icon": "sparen.webp"
+      },
+      {
+        "german": "ausgeben",
+        "english": "to spend (money)",
+        "grammar": ""
+      }
     ]
   }
 }

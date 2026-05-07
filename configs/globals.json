@@ -1,5 +1,6 @@
 {
-  "round_seconds": 60,
+  "round_seconds": 120,
+  "time_bonus_threshold": 60, 
   "combo_seconds": 2,
   "combo_new_set_bonus_seconds": 2,
   "score_correct": 1,
