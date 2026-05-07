@@ -1,52 +1,252 @@
 {
   "Familie und soziales Leben": {
     "Lebensphasen": [
-      { "german": "Geburt", "english": "birth", "grammar": "f" },
-      { "german": "Kindheit", "english": "childhood", "grammar": "f" },
-      { "german": "Jugendliche", "english": "teenagers", "grammar": "" },
-      { "german": "Erwachsene", "english": "adult", "grammar": "" },
-      { "german": "Rente", "english": "pension", "grammar": "f" },
-      { "german": "heiraten", "english": "to get married", "grammar": "" },
-      { "german": "Hochzeit", "english": "wedding", "grammar": "f" },
-      { "german": "Scheidung", "english": "divorce", "grammar": "f" },
-      { "german": "Jubiläum", "english": "anniversary", "grammar": "n" },
-      { "german": "Lebensphase", "english": "stage of life", "grammar": "f" }
+      {
+        "german": "Geburt",
+        "english": "birth",
+        "grammar": "f",
+        "icon": "geburt.webp"
+      },
+      {
+        "german": "Kindheit",
+        "english": "childhood",
+        "grammar": "f",
+        "icon": "kindheit.webp"
+      },
+      {
+        "german": "Jugendliche",
+        "english": "teenagers",
+        "grammar": "",
+        "icon": "jugendliche.webp"
+      },
+      {
+        "german": "Erwachsene",
+        "english": "adult",
+        "grammar": "",
+        "icon": "erwachsene.webp"
+      },
+      {
+        "german": "Rente",
+        "english": "pension",
+        "grammar": "f",
+        "icon": "rente.webp"
+      },
+      {
+        "german": "heiraten",
+        "english": "to get married",
+        "grammar": "",
+        "icon": "heiraten.webp"
+      },
+      {
+        "german": "Hochzeit",
+        "english": "wedding",
+        "grammar": "f",
+        "icon": "hochzeit.webp"
+      },
+      {
+        "german": "Scheidung",
+        "english": "divorce",
+        "grammar": "f",
+        "icon": "scheidung.webp"
+      },
+      {
+        "german": "Jubiläum",
+        "english": "anniversary",
+        "grammar": "n",
+        "icon": "jubilaeum.webp"
+      },
+      {
+        "german": "Lebensphase",
+        "english": "stage of life",
+        "grammar": "f",
+        "icon": "lebensphase.webp"
+      }
     ],
     "Soziale Kontakte": [
-      { "german": "kennenlernen", "english": "to get to know", "grammar": "" },
-      { "german": "sich treffen", "english": "to meet", "grammar": "" },
-      { "german": "einladen", "english": "to invite", "grammar": "" },
-      { "german": "Einladung", "english": "invitation", "grammar": "f" },
-      { "german": "Feier", "english": "celebration / party", "grammar": "f" },
-      { "german": "Gast", "english": "guest", "grammar": "m" },
-      { "german": "Gastgeber", "english": "host", "grammar": "m" },
-      { "german": "Kontakt", "english": "contact", "grammar": "m" },
-      { "german": "besuchen", "english": "to visit", "grammar": "" },
-      { "german": "sich verabreden", "english": "to arrange to meet", "grammar": "" }
+      {
+        "german": "kennenlernen",
+        "english": "to get to know",
+        "grammar": "",
+        "icon": "kennenlernen.webp"
+      },
+      {
+        "german": "sich treffen",
+        "english": "to meet",
+        "grammar": "",
+        "icon": "sich_treffen.webp"
+      },
+      {
+        "german": "einladen",
+        "english": "to invite",
+        "grammar": "",
+        "icon": "einladen.webp"
+      },
+      {
+        "german": "Einladung",
+        "english": "invitation",
+        "grammar": "f",
+        "icon": "einladung.webp"
+      },
+      {
+        "german": "Feier",
+        "english": "celebration / party",
+        "grammar": "f",
+        "icon": "feier.webp"
+      },
+      {
+        "german": "Gast",
+        "english": "guest",
+        "grammar": "m",
+        "icon": "gast.webp"
+      },
+      {
+        "german": "Gastgeber",
+        "english": "host",
+        "grammar": "m",
+        "icon": "gastgeber.webp"
+      },
+      {
+        "german": "Kontakt",
+        "english": "contact",
+        "grammar": "m",
+        "icon": "kontakt.webp"
+      },
+      {
+        "german": "besuchen",
+        "english": "to visit",
+        "grammar": "",
+        "icon": "besuchen.webp"
+      },
+      {
+        "german": "sich verabreden",
+        "english": "to arrange to meet",
+        "grammar": "",
+        "icon": "sich_verabreden.webp"
+      }
     ],
     "Feste und Feiern": [
-      { "german": "Weihnachten", "english": "Christmas", "grammar": "n" },
-      { "german": "Ostern", "english": "Easter", "grammar": "n" },
-      { "german": "Silvester", "english": "New Year's Eve", "grammar": "n" },
-      { "german": "Karneval", "english": "carnival / Mardi Gras", "grammar": "m" },
-      { "german": "feiern", "english": "to celebrate", "grammar": "" },
-      { "german": "Geschenk", "english": "gift / present", "grammar": "n" },
-      { "german": "Glückwunsch", "english": "congratulations", "grammar": "m" },
-      { "german": "Prost", "english": "cheers", "grammar": "" },
-      { "german": "Wunsch", "english": "wish", "grammar": "m" },
-      { "german": "Geburtstagskuchen", "english": "birthday cake", "grammar": "m" }
+      {
+        "german": "Weihnachten",
+        "english": "Christmas",
+        "grammar": "n",
+        "icon": "weihnachten.webp"
+      },
+      {
+        "german": "Ostern",
+        "english": "Easter",
+        "grammar": "n",
+        "icon": "ostern.webp"
+      },
+      {
+        "german": "Silvester",
+        "english": "New Year's Eve",
+        "grammar": "n",
+        "icon": "silvester.webp"
+      },
+      {
+        "german": "Karneval",
+        "english": "carnival / Mardi Gras",
+        "grammar": "m",
+        "icon": "karneval.webp"
+      },
+      {
+        "german": "feiern",
+        "english": "to celebrate",
+        "grammar": "",
+        "icon": "feiern.webp"
+      },
+      {
+        "german": "Geschenk",
+        "english": "gift / present",
+        "grammar": "n",
+        "icon": "geschenk.webp"
+      },
+      {
+        "german": "Glückwunsch",
+        "english": "congratulations",
+        "grammar": "m",
+        "icon": "glueckwunsch.webp"
+      },
+      {
+        "german": "Prost",
+        "english": "cheers",
+        "grammar": "",
+        "icon": "prost.webp"
+      },
+      {
+        "german": "Wunsch",
+        "english": "wish",
+        "grammar": "m",
+        "icon": "wunsch.webp"
+      },
+      {
+        "german": "Geburtstagskuchen",
+        "english": "birthday cake",
+        "grammar": "m",
+        "icon": "geburtstagskuchen.webp"
+      }
     ],
     "Wichtige Adjektive": [
-      { "german": "stolz", "english": "proud", "grammar": "" },
-      { "german": "dankbar", "english": "grateful", "grammar": "" },
-      { "german": "neugierig", "english": "curious", "grammar": "" },
-      { "german": "ehrlich", "english": "honest", "grammar": "" },
-      { "german": "höflich", "english": "polite", "grammar": "" },
-      { "german": "sympathisch", "english": "likeable / pleasant", "grammar": "" },
-      { "german": "hilfsbereit", "english": "helpful", "grammar": "" },
-      { "german": "fleißig", "english": "hardworking / diligent", "grammar": "" },
-      { "german": "faul", "english": "lazy", "grammar": "" },
-      { "german": "geduldig", "english": "patient", "grammar": "" }
+      {
+        "german": "stolz",
+        "english": "proud",
+        "grammar": "",
+        "icon": "stolz.webp"
+      },
+      {
+        "german": "dankbar",
+        "english": "grateful",
+        "grammar": "",
+        "icon": "dankbar.webp"
+      },
+      {
+        "german": "neugierig",
+        "english": "curious",
+        "grammar": "",
+        "icon": "neugierig.webp"
+      },
+      {
+        "german": "ehrlich",
+        "english": "honest",
+        "grammar": "",
+        "icon": "ehrlich.webp"
+      },
+      {
+        "german": "höflich",
+        "english": "polite",
+        "grammar": "",
+        "icon": "hoeflich.webp"
+      },
+      {
+        "german": "sympathisch",
+        "english": "likeable / pleasant",
+        "grammar": "",
+        "icon": "sympathisch.webp"
+      },
+      {
+        "german": "hilfsbereit",
+        "english": "helpful",
+        "grammar": "",
+        "icon": "hilfsbereit.webp"
+      },
+      {
+        "german": "fleißig",
+        "english": "hardworking / diligent",
+        "grammar": "",
+        "icon": "fleissig.webp"
+      },
+      {
+        "german": "faul",
+        "english": "lazy",
+        "grammar": "",
+        "icon": "faul.webp"
+      },
+      {
+        "german": "geduldig",
+        "english": "patient",
+        "grammar": "",
+        "icon": "geduldig.webp"
+      }
     ]
   }
 }
