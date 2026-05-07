@@ -1,0 +1,52 @@
+{
+  "Alltag und Tagesablauf": {
+    "Tagesroutine": [
+      { "german": "aufwachen", "english": "to wake up", "grammar": "", "icon": "aufwachen.webp" },
+      { "german": "aufstehen", "english": "to get up", "grammar": "", "icon": "aufstehen.webp" },
+      { "german": "sich duschen", "english": "to shower", "grammar": "", "icon": "sich_duschen.webp" },
+      { "german": "frühstücken", "english": "to have breakfast", "grammar": "", "icon": "fruehstuecken.webp" },
+      { "german": "Frühstück", "english": "breakfast", "grammar": "n", "icon": "fruehstueck.webp" },
+      { "german": "Mittagessen", "english": "lunch", "grammar": "n", "icon": "mittagessen.webp" },
+      { "german": "Abendessen", "english": "dinner", "grammar": "n", "icon": "abendessen.webp" },
+      { "german": "Wecker", "english": "alarm clock", "grammar": "m", "icon": "wecker.webp" },
+      { "german": "Gewohnheit", "english": "habit", "grammar": "f", "icon": "gewohnheit.webp" },
+      { "german": "schlafen gehen", "english": "to go to bed", "grammar": "", "icon": "schlafen_gehen.webp" }
+    ],
+    "Haushalt": [
+      { "german": "Hausarbeit", "english": "housework", "grammar": "f", "icon": "hausarbeit.webp" },
+      { "german": "aufräumen", "english": "to tidy up", "grammar": "", "icon": "aufraeumen.webp" },
+      { "german": "putzen", "english": "to clean", "grammar": "", "icon": "putzen.webp" },
+      { "german": "waschen", "english": "to wash", "grammar": "", "icon": "waschen.webp" },
+      { "german": "bügeln", "english": "to iron", "grammar": "", "icon": "buegeln.webp" },
+      { "german": "einkaufen", "english": "to go shopping", "grammar": "", "icon": "einkaufen.webp" },
+      { "german": "Mülleimer", "english": "rubbish bin", "grammar": "m", "icon": "muelleimer.webp" },
+      { "german": "Spülmaschine", "english": "dishwasher", "grammar": "f", "icon": "spuelmaschine.webp" },
+      { "german": "Staubsauger", "english": "vacuum cleaner", "grammar": "m", "icon": "staubsauger.webp" },
+      { "german": "Wäsche", "english": "laundry", "grammar": "f", "icon": "waesche.webp" }
+    ],
+    "Zeit und Planung": [
+      { "german": "Termin", "english": "appointment", "grammar": "m", "icon": "termin.webp" },
+      { "german": "planen", "english": "to plan", "grammar": "", "icon": "planen.webp" },
+      { "german": "organisieren", "english": "to organise", "grammar": "", "icon": "organisieren.webp" },
+      { "german": "Kalender", "english": "calendar", "grammar": "m", "icon": "kalender.webp" },
+      { "german": "Alltag", "english": "everyday life", "grammar": "m", "icon": "alltag.webp" },
+      { "german": "Wochenende", "english": "weekend", "grammar": "n", "icon": "wochenende.webp" },
+      { "german": "Urlaub", "english": "holiday / vacation", "grammar": "m", "icon": "urlaub.webp" },
+      { "german": "rechtzeitig", "english": "on time / in time", "grammar": "", "icon": "rechtzeitig.webp" },
+      { "german": "pünktlich", "english": "punctual / on time", "grammar": "", "icon": "puenktlich.webp" },
+      { "german": "frei haben", "english": "to have time off", "grammar": "", "icon": "frei_haben.webp" }
+    ],
+    "Wichtige Verben": [
+      { "german": "beginnen", "english": "to begin", "grammar": "", "icon": "beginnen.webp" },
+      { "german": "beenden", "english": "to finish / end", "grammar": "", "icon": "beenden.webp" },
+      { "german": "vergessen", "english": "to forget", "grammar": "", "icon": "vergessen.webp" },
+      { "german": "erinnern", "english": "to remember / remind", "grammar": "", "icon": "erinnern.webp" },
+      { "german": "helfen", "english": "to help", "grammar": "", "icon": "helfen.webp" },
+      { "german": "brauchen", "english": "to need", "grammar": "", "icon": "brauchen.webp" },
+      { "german": "warten", "english": "to wait", "grammar": "", "icon": "warten.webp" },
+      { "german": "passieren", "english": "to happen", "grammar": "", "icon": "passieren.webp" },
+      { "german": "dauern", "english": "to last / take (time)", "grammar": "", "icon": "dauern.webp" },
+      { "german": "funktionieren", "english": "to work / function", "grammar": "", "icon": "funktionieren.webp" }
+    ]
+  }
+}

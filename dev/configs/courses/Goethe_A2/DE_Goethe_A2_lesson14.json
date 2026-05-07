@@ -1,0 +1,52 @@
+{
+  "Kommunikation und Medien": {
+    "Kommunikationsmittel": [
+      { "german": "Handy", "english": "mobile phone", "grammar": "n" },
+      { "german": "E-Mail", "english": "email", "grammar": "f" },
+      { "german": "Nachricht", "english": "message", "grammar": "f" },
+      { "german": "Anruf", "english": "(phone) call", "grammar": "m" },
+      { "german": "anrufen", "english": "to call / phone", "grammar": "" },
+      { "german": "schicken", "english": "to send", "grammar": "" },
+      { "german": "empfangen", "english": "to receive", "grammar": "" },
+      { "german": "Sprachnachricht", "english": "voice message", "grammar": "f" },
+      { "german": "Videoanruf", "english": "video call", "grammar": "m" },
+      { "german": "Passwort", "english": "password", "grammar": "n" }
+    ],
+    "Soziale Medien": [
+      { "german": "soziale Medien", "english": "social media", "grammar": "" },
+      { "german": "posten", "english": "to post", "grammar": "" },
+      { "german": "teilen", "english": "to share", "grammar": "" },
+      { "german": "liken", "english": "to like", "grammar": "" },
+      { "german": "kommentieren", "english": "to comment", "grammar": "" },
+      { "german": "folgen", "english": "to follow", "grammar": "" },
+      { "german": "Profil", "english": "profile", "grammar": "n" },
+      { "german": "Follower", "english": "follower", "grammar": "m" },
+      { "german": "online", "english": "online", "grammar": "" },
+      { "german": "herunterladen", "english": "to download", "grammar": "" }
+    ],
+    "Nachrichten und Information": [
+      { "german": "Nachrichten", "english": "news", "grammar": "" },
+      { "german": "Bericht", "english": "report", "grammar": "m" },
+      { "german": "Artikel", "english": "article", "grammar": "m" },
+      { "german": "Thema", "english": "topic / theme", "grammar": "n" },
+      { "german": "Schlagzeile", "english": "headline", "grammar": "f" },
+      { "german": "Meldung", "english": "news item / announcement", "grammar": "f" },
+      { "german": "aktuell", "english": "current / up-to-date", "grammar": "" },
+      { "german": "informieren", "english": "to inform", "grammar": "" },
+      { "german": "recherchieren", "english": "to research", "grammar": "" },
+      { "german": "Quelle", "english": "source", "grammar": "f" }
+    ],
+    "Telefon und Schriftverkehr": [
+      { "german": "wählen", "english": "to dial", "grammar": "" },
+      { "german": "Klingelton", "english": "ringtone", "grammar": "m" },
+      { "german": "Anrufbeantworter", "english": "answering machine", "grammar": "m" },
+      { "german": "besetzt", "english": "busy / engaged (line)", "grammar": "" },
+      { "german": "Empfang", "english": "reception / signal", "grammar": "m" },
+      { "german": "Absender", "english": "sender", "grammar": "m" },
+      { "german": "Betreff", "english": "subject (line)", "grammar": "m" },
+      { "german": "Anhang", "english": "attachment", "grammar": "m" },
+      { "german": "weiterleiten", "english": "to forward", "grammar": "" },
+      { "german": "beantworten", "english": "to reply / answer", "grammar": "" }
+    ]
+  }
+}

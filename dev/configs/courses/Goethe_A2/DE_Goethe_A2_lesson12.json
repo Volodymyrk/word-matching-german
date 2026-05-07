@@ -1,0 +1,52 @@
+{
+  "Natur und Umwelt": {
+    "Landschaft": [
+      { "german": "Wald", "english": "forest / woods", "grammar": "m", "icon": "wald.webp" },
+      { "german": "Fluss", "english": "river", "grammar": "m", "icon": "fluss.webp" },
+      { "german": "See", "english": "lake", "grammar": "m", "icon": "see.webp" },
+      { "german": "Hügel", "english": "hill", "grammar": "m", "icon": "huegel.webp" },
+      { "german": "Tal", "english": "valley", "grammar": "n", "icon": "tal.webp" },
+      { "german": "Wiese", "english": "meadow", "grammar": "f", "icon": "wiese.webp" },
+      { "german": "Feld", "english": "field", "grammar": "n", "icon": "feld.webp" },
+      { "german": "Küste", "english": "coast", "grammar": "f", "icon": "kueste.webp" },
+      { "german": "Insel", "english": "island", "grammar": "f", "icon": "insel.webp" },
+      { "german": "Wüste", "english": "desert", "grammar": "f", "icon": "wueste.webp" }
+    ],
+    "Tiere": [
+      { "german": "Pferd", "english": "horse", "grammar": "n", "icon": "pferd.webp" },
+      { "german": "Kuh", "english": "cow", "grammar": "f", "icon": "kuh.webp" },
+      { "german": "Schaf", "english": "sheep", "grammar": "n", "icon": "schaf.webp" },
+      { "german": "Schwein", "english": "pig", "grammar": "n", "icon": "schwein.webp" },
+      { "german": "Huhn", "english": "chicken", "grammar": "n", "icon": "huhn.webp" },
+      { "german": "Ente", "english": "duck", "grammar": "f", "icon": "ente.webp" },
+      { "german": "Adler", "english": "eagle", "grammar": "m", "icon": "adler.webp" },
+      { "german": "Fisch", "english": "fish", "grammar": "m", "icon": "fisch.webp" },
+      { "german": "Schlange", "english": "snake", "grammar": "f", "icon": "schlange.webp" },
+      { "german": "Insekt", "english": "insect", "grammar": "n", "icon": "insekt.webp" }
+    ],
+    "Wetter und Klima": [
+      { "german": "Gewitter", "english": "thunderstorm", "grammar": "n", "icon": "gewitter.webp" },
+      { "german": "Blitz", "english": "lightning", "grammar": "m", "icon": "blitz.webp" },
+      { "german": "Donner", "english": "thunder", "grammar": "m", "icon": "donner.webp" },
+      { "german": "Sturm", "english": "storm", "grammar": "m", "icon": "sturm.webp" },
+      { "german": "Nebel", "english": "fog", "grammar": "m", "icon": "nebel.webp" },
+      { "german": "Frost", "english": "frost", "grammar": "m", "icon": "frost.webp" },
+      { "german": "Temperatur", "english": "temperature", "grammar": "f", "icon": "temperatur.webp" },
+      { "german": "Grad", "english": "degree", "grammar": "m", "icon": "grad.webp" },
+      { "german": "Klima", "english": "climate", "grammar": "n", "icon": "klima.webp" },
+      { "german": "Jahreszeit", "english": "season", "grammar": "f", "icon": "jahreszeit.webp" }
+    ],
+    "Umwelt und Ökologie": [
+      { "german": "Umwelt", "english": "environment", "grammar": "f", "icon": "umwelt.webp" },
+      { "german": "Umweltschutz", "english": "environmental protection", "grammar": "m", "icon": "umweltschutz.webp" },
+      { "german": "Recycling", "english": "recycling", "grammar": "n", "icon": "recycling.webp" },
+      { "german": "Müll", "english": "rubbish / waste", "grammar": "m", "icon": "muell.webp" },
+      { "german": "Energie", "english": "energy", "grammar": "f", "icon": "energie.webp" },
+      { "german": "erneuerbar", "english": "renewable", "grammar": "", "icon": "erneuerbar.webp" },
+      { "german": "Klimawandel", "english": "climate change", "grammar": "m", "icon": "klimawandel.webp" },
+      { "german": "Verschmutzung", "english": "pollution", "grammar": "f", "icon": "verschmutzung.webp" },
+      { "german": "Naturkatastrophe", "english": "natural disaster", "grammar": "f", "icon": "naturkatastrophe.webp" },
+      { "german": "nachhaltig", "english": "sustainable", "grammar": "", "icon": "nachhaltig.webp" }
+    ]
+  }
+}

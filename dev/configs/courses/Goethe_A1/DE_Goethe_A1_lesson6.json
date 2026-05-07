@@ -1,0 +1,160 @@
+{
+  "Berufe und Arbeit": {
+    "Berufe": [
+      {
+        "english": "doctor (m)",
+        "grammar": "m",
+        "german": "Arzt"
+      },
+      {
+        "english": "doctor (f)",
+        "grammar": "f",
+        "german": "Ärztin"
+      },
+      {
+        "english": "teacher (m)",
+        "grammar": "m",
+        "german": "Lehrer"
+      },
+      {
+        "english": "teacher (f)",
+        "grammar": "f",
+        "german": "Lehrerin"
+      },
+      {
+        "english": "salesperson (m)",
+        "grammar": "m",
+        "german": "Verkäufer"
+      },
+      {
+        "english": "nurse (f)",
+        "grammar": "f",
+        "german": "Krankenschwester"
+      },
+      {
+        "english": "police officer (m)",
+        "grammar": "m",
+        "german": "Polizist"
+      },
+      {
+        "english": "chef (m)",
+        "grammar": "m",
+        "german": "Koch"
+      },
+      {
+        "english": "mechanic (m)",
+        "grammar": "m",
+        "german": "Mechaniker"
+      },
+      {
+        "english": "engineer (m)",
+        "grammar": "m",
+        "german": "Ingenieur"
+      }
+    ],
+    "Arbeitsplatz": [
+      {
+        "english": "work / job",
+        "grammar": "f",
+        "german": "Arbeit"
+      },
+      {
+        "english": "profession",
+        "grammar": "m",
+        "german": "Beruf"
+      },
+      {
+        "english": "office",
+        "grammar": "n",
+        "german": "Büro"
+      },
+      {
+        "english": "company / firm",
+        "grammar": "f",
+        "german": "Firma"
+      },
+      {
+        "english": "boss (m)",
+        "grammar": "m",
+        "german": "Chef"
+      },
+      {
+        "english": "colleague (m)",
+        "grammar": "m",
+        "german": "Kollege"
+      },
+      {
+        "english": "salary",
+        "grammar": "n",
+        "german": "Gehalt"
+      },
+      {
+        "english": "position / job opening",
+        "grammar": "f",
+        "german": "Stelle"
+      },
+      {
+        "english": "to work",
+        "grammar": "",
+        "german": "arbeiten"
+      },
+      {
+        "english": "to earn",
+        "grammar": "",
+        "german": "verdienen"
+      }
+    ],
+    "Ausbildung": [
+      {
+        "english": "school",
+        "grammar": "f",
+        "german": "Schule"
+      },
+      {
+        "english": "university",
+        "grammar": "f",
+        "german": "Universität"
+      },
+      {
+        "english": "student (m)",
+        "grammar": "m",
+        "german": "Student"
+      },
+      {
+        "english": "student (f)",
+        "grammar": "f",
+        "german": "Studentin"
+      },
+      {
+        "english": "studies / degree course",
+        "grammar": "n",
+        "german": "Studium"
+      },
+      {
+        "english": "course",
+        "grammar": "m",
+        "german": "Kurs"
+      },
+      {
+        "english": "to learn",
+        "grammar": "",
+        "german": "lernen"
+      },
+      {
+        "english": "to study",
+        "grammar": "",
+        "german": "studieren"
+      },
+      {
+        "english": "qualification / degree",
+        "grammar": "m",
+        "german": "Abschluss"
+      },
+      {
+        "english": "certificate / report",
+        "grammar": "n",
+        "german": "Zeugnis"
+      }
+    ]
+  }
+}

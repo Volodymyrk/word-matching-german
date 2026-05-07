@@ -1,0 +1,264 @@
+{
+  "Essen und Trinken": {
+    "Lebensmittel": [
+      {
+        "english": "bread",
+        "grammar": "n",
+        "german": "Brot"
+      },
+      {
+        "english": "butter",
+        "grammar": "f",
+        "german": "Butter"
+      },
+      {
+        "english": "egg",
+        "grammar": "n",
+        "german": "Ei"
+      },
+      {
+        "english": "cheese",
+        "grammar": "m",
+        "german": "Käse"
+      },
+      {
+        "english": "sausage",
+        "grammar": "f",
+        "german": "Wurst"
+      },
+      {
+        "english": "meat",
+        "grammar": "n",
+        "german": "Fleisch"
+      },
+      {
+        "english": "fish",
+        "grammar": "m",
+        "german": "Fisch"
+      },
+      {
+        "english": "vegetables",
+        "grammar": "n",
+        "german": "Gemüse"
+      },
+      {
+        "english": "fruit",
+        "grammar": "n",
+        "german": "Obst"
+      },
+      {
+        "english": "salad / lettuce",
+        "grammar": "m",
+        "german": "Salat"
+      }
+    ],
+    "Küche und Vorrat": [
+      {
+        "english": "salt",
+        "grammar": "n",
+        "german": "Salz"
+      },
+      {
+        "english": "sugar",
+        "grammar": "m",
+        "german": "Zucker"
+      },
+      {
+        "english": "flour",
+        "grammar": "n",
+        "german": "Mehl"
+      },
+      {
+        "english": "oil",
+        "grammar": "n",
+        "german": "Öl"
+      },
+      {
+        "english": "honey",
+        "grammar": "m",
+        "german": "Honig"
+      },
+      {
+        "english": "pepper",
+        "grammar": "m",
+        "german": "Pfeffer"
+      },
+      {
+        "english": "jam",
+        "grammar": "f",
+        "german": "Marmelade"
+      },
+      {
+        "english": "pasta / noodles",
+        "grammar": "f",
+        "german": "Nudeln"
+      },
+      {
+        "english": "rice",
+        "grammar": "m",
+        "german": "Reis"
+      },
+      {
+        "english": "yoghurt",
+        "grammar": "m",
+        "german": "Joghurt"
+      }
+    ],
+    "Getränke": [
+      {
+        "english": "water",
+        "grammar": "n",
+        "german": "Wasser"
+      },
+      {
+        "english": "coffee",
+        "grammar": "m",
+        "german": "Kaffee"
+      },
+      {
+        "english": "tea",
+        "grammar": "m",
+        "german": "Tee"
+      },
+      {
+        "english": "milk",
+        "grammar": "f",
+        "german": "Milch"
+      },
+      {
+        "english": "juice",
+        "grammar": "m",
+        "german": "Saft"
+      },
+      {
+        "english": "beer",
+        "grammar": "n",
+        "german": "Bier"
+      },
+      {
+        "english": "wine",
+        "grammar": "m",
+        "german": "Wein"
+      },
+      {
+        "english": "lemonade",
+        "grammar": "f",
+        "german": "Limonade"
+      },
+      {
+        "english": "cocoa",
+        "grammar": "m",
+        "german": "Kakao"
+      },
+      {
+        "english": "mineral water",
+        "grammar": "n",
+        "german": "Mineralwasser"
+      }
+    ],
+    "Mahlzeiten": [
+      {
+        "english": "breakfast",
+        "grammar": "n",
+        "german": "Frühstück"
+      },
+      {
+        "english": "lunch",
+        "grammar": "n",
+        "german": "Mittagessen"
+      },
+      {
+        "english": "dinner",
+        "grammar": "n",
+        "german": "Abendessen"
+      },
+      {
+        "english": "meal",
+        "grammar": "f",
+        "german": "Mahlzeit"
+      },
+      {
+        "english": "snack",
+        "grammar": "m",
+        "german": "Snack"
+      },
+      {
+        "english": "hunger",
+        "grammar": "m",
+        "german": "Hunger"
+      },
+      {
+        "english": "thirst",
+        "grammar": "m",
+        "german": "Durst"
+      },
+      {
+        "english": "to cook",
+        "grammar": "",
+        "german": "kochen"
+      },
+      {
+        "english": "to eat",
+        "grammar": "",
+        "german": "essen"
+      },
+      {
+        "english": "to drink",
+        "grammar": "",
+        "german": "trinken"
+      }
+    ],
+    "Im Restaurant": [
+      {
+        "english": "restaurant",
+        "grammar": "n",
+        "german": "Restaurant"
+      },
+      {
+        "english": "café",
+        "grammar": "n",
+        "german": "Café"
+      },
+      {
+        "english": "menu",
+        "grammar": "f",
+        "german": "Speisekarte"
+      },
+      {
+        "english": "order",
+        "grammar": "f",
+        "german": "Bestellung"
+      },
+      {
+        "english": "waiter",
+        "grammar": "m",
+        "german": "Kellner"
+      },
+      {
+        "english": "bill",
+        "grammar": "f",
+        "german": "Rechnung"
+      },
+      {
+        "english": "tip",
+        "grammar": "n",
+        "german": "Trinkgeld"
+      },
+      {
+        "english": "delicious",
+        "grammar": "",
+        "german": "lecker"
+      },
+      {
+        "english": "to order",
+        "grammar": "",
+        "german": "bestellen"
+      },
+      {
+        "english": "to pay",
+        "grammar": "",
+        "german": "zahlen"
+      }
+    ]
+  }
+}

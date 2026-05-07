@@ -1,0 +1,10 @@
+{
+  "name": "German Special",
+  "id_prefix": "de",
+  "emoji": "🇩🇪",
+  "languages": ["german", "english"],
+  "lessons": {
+    "german_2": { "id": "de2", "name": "Supermarkt",        "emoji": "🛒" },
+    "german_3": { "id": "de3", "name": "Supermarkt II",     "emoji": "🛍️" }
+  }
+}

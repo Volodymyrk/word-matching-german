@@ -1,0 +1,252 @@
+{
+  "Wohnen und Einrichtung": {
+    "Wohnungssuche": [
+      {
+        "german": "Vermieter",
+        "english": "landlord",
+        "grammar": "m",
+        "icon": "vermieter.webp"
+      },
+      {
+        "german": "Mieter",
+        "english": "tenant",
+        "grammar": "m",
+        "icon": "mieter.webp"
+      },
+      {
+        "german": "Mietvertrag",
+        "english": "rental contract",
+        "grammar": "m",
+        "icon": "mietvertrag.webp"
+      },
+      {
+        "german": "Kaution",
+        "english": "deposit",
+        "grammar": "f",
+        "icon": "kaution.webp"
+      },
+      {
+        "german": "Nebenkosten",
+        "english": "additional costs / utilities",
+        "grammar": "",
+        "icon": "nebenkosten.webp"
+      },
+      {
+        "german": "Quadratmeter",
+        "english": "square metre",
+        "grammar": "m",
+        "icon": "quadratmeter.webp"
+      },
+      {
+        "german": "Heizung",
+        "english": "heating",
+        "grammar": "f",
+        "icon": "heizung.webp"
+      },
+      {
+        "german": "einziehen",
+        "english": "to move in",
+        "grammar": "",
+        "icon": "einziehen.webp"
+      },
+      {
+        "german": "ausziehen",
+        "english": "to move out",
+        "grammar": "",
+        "icon": "ausziehen.webp"
+      },
+      {
+        "german": "Wohngemeinschaft",
+        "english": "shared flat / flatshare",
+        "grammar": "f",
+        "icon": "wohngemeinschaft.webp"
+      }
+    ],
+    "Einrichtung": [
+      {
+        "german": "Teppich",
+        "english": "carpet / rug",
+        "grammar": "m",
+        "icon": "teppich.webp"
+      },
+      {
+        "german": "Vorhang",
+        "english": "curtain",
+        "grammar": "m",
+        "icon": "vorhang.webp"
+      },
+      {
+        "german": "Schreibtisch",
+        "english": "desk",
+        "grammar": "m",
+        "icon": "schreibtisch.webp"
+      },
+      {
+        "german": "Kommode",
+        "english": "chest of drawers",
+        "grammar": "f",
+        "icon": "kommode.webp"
+      },
+      {
+        "german": "Bilderrahmen",
+        "english": "picture frame",
+        "grammar": "m",
+        "icon": "bilderrahmen.webp"
+      },
+      {
+        "german": "Kerze",
+        "english": "candle",
+        "grammar": "f",
+        "icon": "kerze.webp"
+      },
+      {
+        "german": "Pflanze",
+        "english": "plant",
+        "grammar": "f",
+        "icon": "pflanze.webp"
+      },
+      {
+        "german": "Dusche",
+        "english": "shower",
+        "grammar": "f",
+        "icon": "dusche.webp"
+      },
+      {
+        "german": "Waschbecken",
+        "english": "washbasin / sink",
+        "grammar": "n",
+        "icon": "waschbecken.webp"
+      },
+      {
+        "german": "Bücherregal",
+        "english": "bookshelf",
+        "grammar": "n",
+        "icon": "buecherregal.webp"
+      }
+    ],
+    "Nachbarschaft": [
+      {
+        "german": "Nachbarschaft",
+        "english": "neighbourhood",
+        "grammar": "f",
+        "icon": "nachbarschaft.webp"
+      },
+      {
+        "german": "Stockwerk",
+        "english": "floor / storey",
+        "grammar": "n",
+        "icon": "stockwerk.webp"
+      },
+      {
+        "german": "Erdgeschoss",
+        "english": "ground floor",
+        "grammar": "n",
+        "icon": "erdgeschoss.webp"
+      },
+      {
+        "german": "Aufzug",
+        "english": "lift / elevator",
+        "grammar": "m",
+        "icon": "aufzug.webp"
+      },
+      {
+        "german": "Klingel",
+        "english": "doorbell",
+        "grammar": "f",
+        "icon": "klingel.webp"
+      },
+      {
+        "german": "Briefkasten",
+        "english": "letterbox / mailbox",
+        "grammar": "m",
+        "icon": "briefkasten.webp"
+      },
+      {
+        "german": "Hausmeister",
+        "english": "caretaker / janitor",
+        "grammar": "m",
+        "icon": "hausmeister.webp"
+      },
+      {
+        "german": "Treppenhaus",
+        "english": "stairwell",
+        "grammar": "n",
+        "icon": "treppenhaus.webp"
+      },
+      {
+        "german": "Hof",
+        "english": "courtyard / yard",
+        "grammar": "m",
+        "icon": "hof.webp"
+      },
+      {
+        "german": "Tiefgarage",
+        "english": "underground car park",
+        "grammar": "f",
+        "icon": "tiefgarage.webp"
+      }
+    ],
+    "Probleme und Reparaturen": [
+      {
+        "german": "kaputt",
+        "english": "broken",
+        "grammar": "",
+        "icon": "kaputt.webp"
+      },
+      {
+        "german": "reparieren",
+        "english": "to repair",
+        "grammar": "",
+        "icon": "reparieren.webp"
+      },
+      {
+        "german": "Handwerker",
+        "english": "tradesperson / craftsman",
+        "grammar": "m",
+        "icon": "handwerker.webp"
+      },
+      {
+        "german": "Strom",
+        "english": "electricity / power",
+        "grammar": "m",
+        "icon": "strom.webp"
+      },
+      {
+        "german": "Lärm",
+        "english": "noise",
+        "grammar": "m",
+        "icon": "laerm.webp"
+      },
+      {
+        "german": "Schaden",
+        "english": "damage",
+        "grammar": "m",
+        "icon": "schaden.webp"
+      },
+      {
+        "german": "Feuchtigkeit",
+        "english": "damp / moisture",
+        "grammar": "f",
+        "icon": "feuchtigkeit.webp"
+      },
+      {
+        "german": "Schloss",
+        "english": "lock",
+        "grammar": "n",
+        "icon": "schloss.webp"
+      },
+      {
+        "german": "tropfen",
+        "english": "to drip / leak",
+        "grammar": "",
+        "icon": "tropfen.webp"
+      },
+      {
+        "german": "klingeln",
+        "english": "to ring (a doorbell)",
+        "grammar": "",
+        "icon": "klingeln.webp"
+      }
+    ]
+  }
+}

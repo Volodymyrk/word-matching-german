@@ -1,0 +1,52 @@
+{
+  "Schule und Bildung": {
+    "Schulfächer": [
+      { "german": "Mathematik", "english": "mathematics", "grammar": "f" },
+      { "german": "Geschichte", "english": "history", "grammar": "f" },
+      { "german": "Geographie", "english": "geography", "grammar": "f" },
+      { "german": "Biologie", "english": "biology", "grammar": "f" },
+      { "german": "Physik", "english": "physics", "grammar": "f" },
+      { "german": "Chemie", "english": "chemistry", "grammar": "f" },
+      { "german": "Kunst", "english": "art", "grammar": "f" },
+      { "german": "Informatik", "english": "computer science / IT", "grammar": "f" },
+      { "german": "Philosophie", "english": "philosophy", "grammar": "f" },
+      { "german": "Wirtschaft", "english": "economics / business studies", "grammar": "f" }
+    ],
+    "Schulalltag": [
+      { "german": "Unterricht", "english": "lesson / class", "grammar": "m" },
+      { "german": "Klasse", "english": "class / year group", "grammar": "f" },
+      { "german": "Hausaufgaben", "english": "homework", "grammar": "" },
+      { "german": "Prüfung", "english": "exam / test", "grammar": "f" },
+      { "german": "Note", "english": "grade / mark", "grammar": "f" },
+      { "german": "Schulhof", "english": "school yard / playground", "grammar": "m" },
+      { "german": "Stundenplan", "english": "timetable", "grammar": "m" },
+      { "german": "Ferien", "english": "school holidays", "grammar": "" },
+      { "german": "Nachhilfe", "english": "tutoring / extra lessons", "grammar": "f" },
+      { "german": "Abschlussprüfung", "english": "final exam", "grammar": "f" }
+    ],
+    "Lernmittel": [
+      { "german": "Heft", "english": "exercise book / notebook", "grammar": "n" },
+      { "german": "Bleistift", "english": "pencil", "grammar": "m" },
+      { "german": "Kugelschreiber", "english": "ballpoint pen", "grammar": "m" },
+      { "german": "Lineal", "english": "ruler", "grammar": "n" },
+      { "german": "Taschenrechner", "english": "calculator", "grammar": "m" },
+      { "german": "Wörterbuch", "english": "dictionary", "grammar": "n" },
+      { "german": "Tafel", "english": "blackboard", "grammar": "f" },
+      { "german": "Projektor", "english": "projector", "grammar": "m" },
+      { "german": "Laptop", "english": "laptop", "grammar": "m" },
+      { "german": "Tablet", "english": "tablet (device)", "grammar": "n" }
+    ],
+    "Bildungsweg": [
+      { "german": "Grundschule", "english": "primary school", "grammar": "f" },
+      { "german": "Gymnasium", "english": "grammar school / high school", "grammar": "n" },
+      { "german": "Berufsschule", "english": "vocational school", "grammar": "f" },
+      { "german": "Universität", "english": "university", "grammar": "f" },
+      { "german": "Studium", "english": "university studies", "grammar": "n" },
+      { "german": "Student", "english": "university student", "grammar": "m" },
+      { "german": "Abitur", "english": "school-leaving certificate", "grammar": "n" },
+      { "german": "Abschluss", "english": "degree / qualification", "grammar": "m" },
+      { "german": "Stipendium", "english": "scholarship", "grammar": "n" },
+      { "german": "Austauschprogramm", "english": "exchange programme", "grammar": "n" }
+    ]
+  }
+}
