@@ -1,52 +1,252 @@
 {
   "Arbeit und Beruf": {
     "Berufe": [
-      { "german": "Architekt", "english": "architect", "grammar": "m" },
-      { "german": "Ingenieur", "english": "engineer", "grammar": "m" },
-      { "german": "Mechaniker", "english": "mechanic", "grammar": "m" },
-      { "german": "Elektriker", "english": "electrician", "grammar": "m" },
-      { "german": "Buchhalter", "english": "accountant", "grammar": "m" },
-      { "german": "Journalist", "english": "journalist", "grammar": "m" },
-      { "german": "Anwalt", "english": "lawyer", "grammar": "m" },
-      { "german": "Pilot", "english": "pilot", "grammar": "m" },
-      { "german": "Informatiker", "english": "IT specialist", "grammar": "m" },
-      { "german": "Fotograf", "english": "photographer", "grammar": "m" }
+      {
+        "german": "Architekt",
+        "english": "architect",
+        "grammar": "m",
+        "icon": "architekt.webp"
+      },
+      {
+        "german": "Ingenieur",
+        "english": "engineer",
+        "grammar": "m",
+        "icon": "ingenieur.webp"
+      },
+      {
+        "german": "Mechaniker",
+        "english": "mechanic",
+        "grammar": "m",
+        "icon": "mechaniker.webp"
+      },
+      {
+        "german": "Elektriker",
+        "english": "electrician",
+        "grammar": "m",
+        "icon": "elektriker.webp"
+      },
+      {
+        "german": "Buchhalter",
+        "english": "accountant",
+        "grammar": "m",
+        "icon": "buchhalter.webp"
+      },
+      {
+        "german": "Journalist",
+        "english": "journalist",
+        "grammar": "m",
+        "icon": "journalist.webp"
+      },
+      {
+        "german": "Anwalt",
+        "english": "lawyer",
+        "grammar": "m",
+        "icon": "anwalt.webp"
+      },
+      {
+        "german": "Pilot",
+        "english": "pilot",
+        "grammar": "m",
+        "icon": "pilot.webp"
+      },
+      {
+        "german": "Informatiker",
+        "english": "IT specialist",
+        "grammar": "m",
+        "icon": "informatiker.webp"
+      },
+      {
+        "german": "Fotograf",
+        "english": "photographer",
+        "grammar": "m",
+        "icon": "fotograf.webp"
+      }
     ],
     "Am Arbeitsplatz": [
-      { "german": "Büro", "english": "office", "grammar": "n" },
-      { "german": "Besprechung", "english": "meeting", "grammar": "f" },
-      { "german": "Kollege", "english": "colleague", "grammar": "m" },
-      { "german": "Chef", "english": "boss / manager", "grammar": "m" },
-      { "german": "Gehalt", "english": "salary", "grammar": "n" },
-      { "german": "Überstunden", "english": "overtime", "grammar": "" },
-      { "german": "Pause", "english": "break", "grammar": "f" },
-      { "german": "Aufgabe", "english": "task", "grammar": "f" },
-      { "german": "Projekt", "english": "project", "grammar": "n" },
-      { "german": "Deadline", "english": "deadline", "grammar": "f" }
+      {
+        "german": "Büro",
+        "english": "office",
+        "grammar": "n",
+        "icon": "buero.webp"
+      },
+      {
+        "german": "Besprechung",
+        "english": "meeting",
+        "grammar": "f",
+        "icon": "besprechung.webp"
+      },
+      {
+        "german": "Kollege",
+        "english": "colleague",
+        "grammar": "m",
+        "icon": "kollege.webp"
+      },
+      {
+        "german": "Chef",
+        "english": "boss / manager",
+        "grammar": "m",
+        "icon": "chef.webp"
+      },
+      {
+        "german": "Gehalt",
+        "english": "salary",
+        "grammar": "n",
+        "icon": "gehalt.webp"
+      },
+      {
+        "german": "Überstunden",
+        "english": "overtime",
+        "grammar": "",
+        "icon": "ueberstunden.webp"
+      },
+      {
+        "german": "Pause",
+        "english": "break",
+        "grammar": "f",
+        "icon": "pause.webp"
+      },
+      {
+        "german": "Aufgabe",
+        "english": "task",
+        "grammar": "f",
+        "icon": "aufgabe.webp"
+      },
+      {
+        "german": "Projekt",
+        "english": "project",
+        "grammar": "n",
+        "icon": "projekt.webp"
+      },
+      {
+        "german": "Deadline",
+        "english": "deadline",
+        "grammar": "f",
+        "icon": "deadline.webp"
+      }
     ],
     "Arbeitsbedingungen": [
-      { "german": "Teilzeit", "english": "part-time", "grammar": "f" },
-      { "german": "Vollzeit", "english": "full-time", "grammar": "f" },
-      { "german": "Vertrag", "english": "contract", "grammar": "m" },
-      { "german": "kündigen", "english": "to resign / quit", "grammar": "" },
-      { "german": "entlassen", "english": "to dismiss / fire", "grammar": "" },
-      { "german": "Berufserfahrung", "english": "work experience", "grammar": "f" },
-      { "german": "Qualifikation", "english": "qualification", "grammar": "f" },
-      { "german": "selbstständig", "english": "self-employed", "grammar": "" },
-      { "german": "Homeoffice", "english": "working from home", "grammar": "n" },
-      { "german": "Gehaltserhöhung", "english": "pay rise", "grammar": "f" }
+      {
+        "german": "Teilzeit",
+        "english": "part-time",
+        "grammar": "f",
+        "icon": "teilzeit.webp"
+      },
+      {
+        "german": "Vollzeit",
+        "english": "full-time",
+        "grammar": "f",
+        "icon": "vollzeit.webp"
+      },
+      {
+        "german": "Vertrag",
+        "english": "contract",
+        "grammar": "m",
+        "icon": "vertrag.webp"
+      },
+      {
+        "german": "kündigen",
+        "english": "to resign / quit",
+        "grammar": "",
+        "icon": "kuendigen.webp"
+      },
+      {
+        "german": "entlassen",
+        "english": "to dismiss / fire",
+        "grammar": "",
+        "icon": "entlassen.webp"
+      },
+      {
+        "german": "Berufserfahrung",
+        "english": "work experience",
+        "grammar": "f",
+        "icon": "berufserfahrung.webp"
+      },
+      {
+        "german": "Qualifikation",
+        "english": "qualification",
+        "grammar": "f",
+        "icon": "qualifikation.webp"
+      },
+      {
+        "german": "selbstständig",
+        "english": "self-employed",
+        "grammar": "",
+        "icon": "selbststaendig.webp"
+      },
+      {
+        "german": "Homeoffice",
+        "english": "working from home",
+        "grammar": "n",
+        "icon": "homeoffice.webp"
+      },
+      {
+        "german": "Gehaltserhöhung",
+        "english": "pay rise",
+        "grammar": "f",
+        "icon": "gehaltserhoehung.webp"
+      }
     ],
     "Stellensuche": [
-      { "german": "Stellenanzeige", "english": "job advertisement", "grammar": "f" },
-      { "german": "sich bewerben", "english": "to apply (for a job)", "grammar": "" },
-      { "german": "Bewerbung", "english": "job application", "grammar": "f" },
-      { "german": "Lebenslauf", "english": "CV / résumé", "grammar": "m" },
-      { "german": "Vorstellungsgespräch", "english": "job interview", "grammar": "n" },
-      { "german": "Probezeit", "english": "probationary period", "grammar": "f" },
-      { "german": "Zeugnis", "english": "reference / certificate", "grammar": "n" },
-      { "german": "Ausbildung", "english": "apprenticeship / vocational training", "grammar": "f" },
-      { "german": "Praktikum", "english": "internship / work placement", "grammar": "n" },
-      { "german": "Karriere", "english": "career", "grammar": "f" }
+      {
+        "german": "Stellenanzeige",
+        "english": "job advertisement",
+        "grammar": "f",
+        "icon": "stellenanzeige.webp"
+      },
+      {
+        "german": "sich bewerben",
+        "english": "to apply (for a job)",
+        "grammar": "",
+        "icon": "sich_bewerben.webp"
+      },
+      {
+        "german": "Bewerbung",
+        "english": "job application",
+        "grammar": "f",
+        "icon": "bewerbung.webp"
+      },
+      {
+        "german": "Lebenslauf",
+        "english": "CV / résumé",
+        "grammar": "m",
+        "icon": "lebenslauf.webp"
+      },
+      {
+        "german": "Vorstellungsgespräch",
+        "english": "job interview",
+        "grammar": "n",
+        "icon": "vorstellungsgespraech.webp"
+      },
+      {
+        "german": "Probezeit",
+        "english": "probationary period",
+        "grammar": "f",
+        "icon": "probezeit.webp"
+      },
+      {
+        "german": "Zeugnis",
+        "english": "reference / certificate",
+        "grammar": "n",
+        "icon": "zeugnis.webp"
+      },
+      {
+        "german": "Ausbildung",
+        "english": "apprenticeship / vocational training",
+        "grammar": "f",
+        "icon": "ausbildung.webp"
+      },
+      {
+        "german": "Praktikum",
+        "english": "internship / work placement",
+        "grammar": "n",
+        "icon": "praktikum.webp"
+      },
+      {
+        "german": "Karriere",
+        "english": "career",
+        "grammar": "f",
+        "icon": "karriere.webp"
+      }
     ]
   }
 }
