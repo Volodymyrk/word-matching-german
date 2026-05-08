@@ -19,12 +19,14 @@ AUDIO_DIR   = Path("public/audio")
 
 
 def to_stem(german: str) -> str:
-    """Derive asset filename stem from a German word."""
+    """Derive asset filename stem from a German word (mirrors normalize_german in asset generator)."""
     s = german.lower()
-    s = s.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
+    for umlaut, rep in [("ä", "ae"), ("ö", "oe"), ("ü", "ue"), ("ß", "ss")]:
+        s = s.replace(umlaut, rep)
     s = s.replace(" ", "_")
-    s = re.sub(r"[^a-z0-9_]", "", s)
-    return s
+    s = re.sub(r"[^\w-]", "", s)
+    s = re.sub(r"_+", "_", s)
+    return s.strip("_")
 
 
 def pick(prompt: str, options: list[str]) -> str | None:

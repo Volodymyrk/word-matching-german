@@ -9,22 +9,26 @@
       {
         "english": "film / movie",
         "grammar": "m",
-        "german": "Film"
+        "german": "Film",
+        "icon": "film.webp"
       },
       {
         "english": "cinema",
         "grammar": "n",
-        "german": "Kino"
+        "german": "Kino",
+        "icon": "kino.webp"
       },
       {
         "english": "theatre",
         "grammar": "n",
-        "german": "Theater"
+        "german": "Theater",
+        "icon": "theater.webp"
       },
       {
         "english": "concert",
         "grammar": "n",
-        "german": "Konzert"
+        "german": "Konzert",
+        "icon": "konzert.webp"
       },
       {
         "english": "party",
@@ -56,27 +60,32 @@
       {
         "english": "football / soccer",
         "grammar": "m",
-        "german": "Fußball"
+        "german": "Fußball",
+        "icon": "fussball.webp"
       },
       {
         "english": "tennis",
         "grammar": "n",
-        "german": "Tennis"
+        "german": "Tennis",
+        "icon": "tennis.webp"
       },
       {
         "english": "swimming",
         "grammar": "n",
-        "german": "Schwimmen"
+        "german": "Schwimmen",
+        "icon": "schwimmen.webp"
       },
       {
         "english": "running / jogging",
         "grammar": "n",
-        "german": "Laufen"
+        "german": "Laufen",
+        "icon": "laufen.webp"
       },
       {
         "english": "gymnastics",
         "grammar": "n",
-        "german": "Turnen"
+        "german": "Turnen",
+        "icon": "turnen.webp"
       },
       {
         "english": "basketball",
@@ -138,7 +147,8 @@
       {
         "english": "to dance",
         "grammar": "",
-        "german": "tanzen"
+        "german": "tanzen",
+        "icon": "tanzen.webp"
       },
       {
         "english": "to sing",
@@ -148,12 +158,14 @@
       {
         "english": "to paint",
         "grammar": "",
-        "german": "malen"
+        "german": "malen",
+        "icon": "malen.webp"
       },
       {
         "english": "to photograph",
         "grammar": "",
-        "german": "fotografieren"
+        "german": "fotografieren",
+        "icon": "fotografieren.webp"
       }
     ]
   }

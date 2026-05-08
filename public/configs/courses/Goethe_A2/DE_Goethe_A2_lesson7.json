@@ -4,183 +4,218 @@
       {
         "german": "Zug",
         "english": "train",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "zug.webp"
       },
       {
         "german": "Bus",
         "english": "bus",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "bus.webp"
       },
       {
         "german": "U-Bahn",
         "english": "underground / metro",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "u-bahn.webp"
       },
       {
         "german": "Straßenbahn",
         "english": "tram",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "strassenbahn.webp"
       },
       {
         "german": "Taxi",
         "english": "taxi",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "taxi.webp"
       },
       {
         "german": "Schiff",
         "english": "ship / ferry",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "schiff.webp"
       },
       {
         "german": "Flugzeug",
         "english": "aeroplane",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "flugzeug.webp"
       },
       {
         "german": "Motorrad",
         "english": "motorbike",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "motorrad.webp"
       },
       {
         "german": "Roller",
         "english": "scooter",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "roller.webp"
       },
       {
         "german": "Mitfahrgelegenheit",
         "english": "carpool / rideshare",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "mitfahrgelegenheit.webp"
       }
     ],
     "Bahnhof und Flughafen": [
       {
         "german": "Gleis",
         "english": "platform / track",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "gleis.webp"
       },
       {
         "german": "Abfahrt",
         "english": "departure",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "abfahrt.webp"
       },
       {
         "german": "Ankunft",
         "english": "arrival",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "ankunft.webp"
       },
       {
         "german": "verspätet",
         "english": "delayed",
-        "grammar": ""
+        "grammar": "",
+        "icon": "verspaetet.webp"
       },
       {
         "german": "Fahrkarte",
         "english": "ticket (rail)",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "fahrkarte.webp"
       },
       {
         "german": "Fahrplan",
         "english": "timetable / schedule",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "fahrplan.webp"
       },
       {
         "german": "Gepäck",
         "english": "luggage",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "gepaeck.webp"
       },
       {
         "german": "Koffer",
         "english": "suitcase",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "koffer.webp"
       },
       {
         "german": "Reisepass",
         "english": "passport",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "reisepass.webp"
       },
       {
         "german": "Check-in",
         "english": "check-in",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "check-in.webp"
       }
     ],
     "Unterkunft": [
       {
         "german": "Hotel",
         "english": "hotel",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "hotel.webp"
       },
       {
         "german": "Pension",
         "english": "guesthouse / B&B",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "pension.webp"
       },
       {
         "german": "Jugendherberge",
         "english": "youth hostel",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "jugendherberge.webp"
       },
       {
         "german": "Campingplatz",
         "english": "campsite",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "campingplatz.webp"
       },
       {
         "german": "Einzelzimmer",
         "english": "single room",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "einzelzimmer.webp"
       },
       {
         "german": "Doppelzimmer",
         "english": "double room",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "doppelzimmer.webp"
       },
       {
         "german": "Rezeption",
         "english": "reception",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "rezeption.webp"
       },
       {
         "german": "buchen",
         "english": "to book",
-        "grammar": ""
+        "grammar": "",
+        "icon": "buchen.webp"
       },
       {
         "german": "Zimmerservice",
         "english": "room service",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "zimmerservice.webp"
       },
       {
         "german": "auschecken",
         "english": "to check out",
-        "grammar": ""
+        "grammar": "",
+        "icon": "auschecken.webp"
       }
     ],
     "Sehenswürdigkeiten": [
       {
         "german": "Sehenswürdigkeit",
         "english": "sight / tourist attraction",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "sehenswuerdigkeit.webp"
       },
       {
         "german": "Stadtführung",
         "english": "city tour / guided tour",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "stadtfuehrung.webp"
       },
       {
         "german": "Stadtplan",
         "english": "city map",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "stadtplan.webp"
       },
       {
         "german": "Tourismus",
         "english": "tourism",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "tourismus.webp"
       },
       {
         "german": "Denkmal",
         "english": "monument / memorial",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "denkmal.webp"
       },
       {
         "german": "Schloss",
@@ -191,22 +226,26 @@
       {
         "german": "Kirche",
         "english": "church",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "kirche.webp"
       },
       {
         "german": "Strand",
         "english": "beach",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "strand.webp"
       },
       {
         "german": "Berge",
         "english": "mountains",
-        "grammar": ""
+        "grammar": "",
+        "icon": "berge.webp"
       },
       {
         "german": "Souvenirshop",
         "english": "souvenir shop",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "souvenirshop.webp"
       }
     ]
   }
