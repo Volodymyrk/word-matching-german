@@ -1,52 +1,252 @@
 {
   "Gefühle und Meinungen": {
     "Gefühle": [
-      { "german": "Freude", "english": "joy", "grammar": "f" },
-      { "german": "Trauer", "english": "sadness / grief", "grammar": "f" },
-      { "german": "Angst", "english": "fear / anxiety", "grammar": "f" },
-      { "german": "Wut", "english": "anger", "grammar": "f" },
-      { "german": "Überraschung", "english": "surprise", "grammar": "f" },
-      { "german": "Enttäuschung", "english": "disappointment", "grammar": "f" },
-      { "german": "Begeisterung", "english": "enthusiasm", "grammar": "f" },
-      { "german": "Einsamkeit", "english": "loneliness", "grammar": "f" },
-      { "german": "Eifersucht", "english": "jealousy", "grammar": "f" },
-      { "german": "Scham", "english": "shame", "grammar": "f" }
+      {
+        "german": "Freude",
+        "english": "joy",
+        "grammar": "f",
+        "icon": "freude.webp"
+      },
+      {
+        "german": "Trauer",
+        "english": "sadness / grief",
+        "grammar": "f",
+        "icon": "trauer.webp"
+      },
+      {
+        "german": "Angst",
+        "english": "fear / anxiety",
+        "grammar": "f",
+        "icon": "angst.webp"
+      },
+      {
+        "german": "Wut",
+        "english": "anger",
+        "grammar": "f",
+        "icon": "wut.webp"
+      },
+      {
+        "german": "Überraschung",
+        "english": "surprise",
+        "grammar": "f",
+        "icon": "ueberraschung.webp"
+      },
+      {
+        "german": "Enttäuschung",
+        "english": "disappointment",
+        "grammar": "f",
+        "icon": "enttaeuschung.webp"
+      },
+      {
+        "german": "Begeisterung",
+        "english": "enthusiasm",
+        "grammar": "f",
+        "icon": "begeisterung.webp"
+      },
+      {
+        "german": "Einsamkeit",
+        "english": "loneliness",
+        "grammar": "f",
+        "icon": "einsamkeit.webp"
+      },
+      {
+        "german": "Eifersucht",
+        "english": "jealousy",
+        "grammar": "f",
+        "icon": "eifersucht.webp"
+      },
+      {
+        "german": "Scham",
+        "english": "shame",
+        "grammar": "f",
+        "icon": "scham.webp"
+      }
     ],
     "Charaktereigenschaften": [
-      { "german": "mutig", "english": "brave / courageous", "grammar": "" },
-      { "german": "schüchtern", "english": "shy", "grammar": "" },
-      { "german": "selbstbewusst", "english": "self-confident", "grammar": "" },
-      { "german": "verantwortungsbewusst", "english": "responsible", "grammar": "" },
-      { "german": "kreativ", "english": "creative", "grammar": "" },
-      { "german": "zuverlässig", "english": "reliable", "grammar": "" },
-      { "german": "ungeduldig", "english": "impatient", "grammar": "" },
-      { "german": "optimistisch", "english": "optimistic", "grammar": "" },
-      { "german": "pessimistisch", "english": "pessimistic", "grammar": "" },
-      { "german": "humorvoll", "english": "humorous / funny", "grammar": "" }
+      {
+        "german": "mutig",
+        "english": "brave / courageous",
+        "grammar": "",
+        "icon": "mutig.webp"
+      },
+      {
+        "german": "schüchtern",
+        "english": "shy",
+        "grammar": "",
+        "icon": "schuechtern.webp"
+      },
+      {
+        "german": "selbstbewusst",
+        "english": "self-confident",
+        "grammar": "",
+        "icon": "selbstbewusst.webp"
+      },
+      {
+        "german": "verantwortungsbewusst",
+        "english": "responsible",
+        "grammar": "",
+        "icon": "verantwortungsbewusst.webp"
+      },
+      {
+        "german": "kreativ",
+        "english": "creative",
+        "grammar": "",
+        "icon": "kreativ.webp"
+      },
+      {
+        "german": "zuverlässig",
+        "english": "reliable",
+        "grammar": "",
+        "icon": "zuverlaessig.webp"
+      },
+      {
+        "german": "ungeduldig",
+        "english": "impatient",
+        "grammar": "",
+        "icon": "ungeduldig.webp"
+      },
+      {
+        "german": "optimistisch",
+        "english": "optimistic",
+        "grammar": "",
+        "icon": "optimistisch.webp"
+      },
+      {
+        "german": "pessimistisch",
+        "english": "pessimistic",
+        "grammar": "",
+        "icon": "pessimistisch.webp"
+      },
+      {
+        "german": "humorvoll",
+        "english": "humorous / funny",
+        "grammar": "",
+        "icon": "humorvoll.webp"
+      }
     ],
     "Meinungen ausdrücken": [
-      { "german": "meinen", "english": "to think / be of the opinion", "grammar": "" },
-      { "german": "glauben", "english": "to believe", "grammar": "" },
-      { "german": "denken", "english": "to think", "grammar": "" },
-      { "german": "finden", "english": "to find / think", "grammar": "" },
-      { "german": "Meinung", "english": "opinion", "grammar": "f" },
-      { "german": "Ansicht", "english": "view / opinion", "grammar": "f" },
-      { "german": "Standpunkt", "english": "standpoint / point of view", "grammar": "m" },
-      { "german": "zustimmen", "english": "to agree", "grammar": "" },
-      { "german": "ablehnen", "english": "to reject / disagree", "grammar": "" },
-      { "german": "begründen", "english": "to justify / give reasons", "grammar": "" }
+      {
+        "german": "meinen",
+        "english": "to think / be of the opinion",
+        "grammar": "",
+        "icon": "meinen.webp"
+      },
+      {
+        "german": "glauben",
+        "english": "to believe",
+        "grammar": "",
+        "icon": "glauben.webp"
+      },
+      {
+        "german": "denken",
+        "english": "to think",
+        "grammar": "",
+        "icon": "denken.webp"
+      },
+      {
+        "german": "finden",
+        "english": "to find / think",
+        "grammar": "",
+        "icon": "finden.webp"
+      },
+      {
+        "german": "Meinung",
+        "english": "opinion",
+        "grammar": "f",
+        "icon": "meinung.webp"
+      },
+      {
+        "german": "Ansicht",
+        "english": "view / opinion",
+        "grammar": "f",
+        "icon": "ansicht.webp"
+      },
+      {
+        "german": "Standpunkt",
+        "english": "standpoint / point of view",
+        "grammar": "m",
+        "icon": "standpunkt.webp"
+      },
+      {
+        "german": "zustimmen",
+        "english": "to agree",
+        "grammar": "",
+        "icon": "zustimmen.webp"
+      },
+      {
+        "german": "ablehnen",
+        "english": "to reject / disagree",
+        "grammar": "",
+        "icon": "ablehnen.webp"
+      },
+      {
+        "german": "begründen",
+        "english": "to justify / give reasons",
+        "grammar": "",
+        "icon": "begruenden.webp"
+      }
     ],
     "Diskussion": [
-      { "german": "diskutieren", "english": "to discuss", "grammar": "" },
-      { "german": "argumentieren", "english": "to argue / make an argument", "grammar": "" },
-      { "german": "einerseits", "english": "on the one hand", "grammar": "" },
-      { "german": "andererseits", "english": "on the other hand", "grammar": "" },
-      { "german": "obwohl", "english": "although", "grammar": "" },
-      { "german": "trotzdem", "english": "nevertheless / still", "grammar": "" },
-      { "german": "deshalb", "english": "therefore / that's why", "grammar": "" },
-      { "german": "außerdem", "english": "moreover / besides", "grammar": "" },
-      { "german": "Beispiel", "english": "example", "grammar": "n" },
-      { "german": "Schluss", "english": "conclusion", "grammar": "m" }
+      {
+        "german": "diskutieren",
+        "english": "to discuss",
+        "grammar": "",
+        "icon": "diskutieren.webp"
+      },
+      {
+        "german": "argumentieren",
+        "english": "to argue / make an argument",
+        "grammar": "",
+        "icon": "argumentieren.webp"
+      },
+      {
+        "german": "einerseits",
+        "english": "on the one hand",
+        "grammar": "",
+        "icon": "einerseits.webp"
+      },
+      {
+        "german": "andererseits",
+        "english": "on the other hand",
+        "grammar": "",
+        "icon": "andererseits.webp"
+      },
+      {
+        "german": "obwohl",
+        "english": "although",
+        "grammar": "",
+        "icon": "obwohl.webp"
+      },
+      {
+        "german": "trotzdem",
+        "english": "nevertheless / still",
+        "grammar": "",
+        "icon": "trotzdem.webp"
+      },
+      {
+        "german": "deshalb",
+        "english": "therefore / that's why",
+        "grammar": "",
+        "icon": "deshalb.webp"
+      },
+      {
+        "german": "außerdem",
+        "english": "moreover / besides",
+        "grammar": "",
+        "icon": "ausserdem.webp"
+      },
+      {
+        "german": "Beispiel",
+        "english": "example",
+        "grammar": "n",
+        "icon": "beispiel.webp"
+      },
+      {
+        "german": "Schluss",
+        "english": "conclusion",
+        "grammar": "m",
+        "icon": "schluss.webp"
+      }
     ]
   }
 }

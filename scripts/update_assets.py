@@ -65,9 +65,8 @@ def process_lesson(lesson_path: Path) -> None:
 
                 if icon_path.exists():
                     icons_found += 1
-                    new_val = f"{stem}.webp"
-                    if word.get("icon") != new_val:
-                        word["icon"] = new_val
+                    if not word.get("icon"):
+                        word["icon"] = f"{stem}.webp"
                         changed += 1
                 else:
                     missing_icons.append(f"  MISSING icon:  {stem}.webp  ({german})")

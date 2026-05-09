@@ -1,52 +1,252 @@
 {
   "Kommunikation und Medien": {
     "Kommunikationsmittel": [
-      { "german": "Handy", "english": "mobile phone", "grammar": "n" },
-      { "german": "E-Mail", "english": "email", "grammar": "f" },
-      { "german": "Nachricht", "english": "message", "grammar": "f" },
-      { "german": "Anruf", "english": "(phone) call", "grammar": "m" },
-      { "german": "anrufen", "english": "to call / phone", "grammar": "" },
-      { "german": "schicken", "english": "to send", "grammar": "" },
-      { "german": "empfangen", "english": "to receive", "grammar": "" },
-      { "german": "Sprachnachricht", "english": "voice message", "grammar": "f" },
-      { "german": "Videoanruf", "english": "video call", "grammar": "m" },
-      { "german": "Passwort", "english": "password", "grammar": "n" }
+      {
+        "german": "Handy",
+        "english": "mobile phone",
+        "grammar": "n",
+        "icon": "handy.webp"
+      },
+      {
+        "german": "E-Mail",
+        "english": "email",
+        "grammar": "f",
+        "icon": "e-mail.webp"
+      },
+      {
+        "german": "Nachricht",
+        "english": "message",
+        "grammar": "f",
+        "icon": "nachricht.webp"
+      },
+      {
+        "german": "Anruf",
+        "english": "(phone) call",
+        "grammar": "m",
+        "icon": "anruf.webp"
+      },
+      {
+        "german": "anrufen",
+        "english": "to call / phone",
+        "grammar": "",
+        "icon": "anrufen.webp"
+      },
+      {
+        "german": "schicken",
+        "english": "to send",
+        "grammar": "",
+        "icon": "schicken.webp"
+      },
+      {
+        "german": "empfangen",
+        "english": "to receive",
+        "grammar": "",
+        "icon": "empfangen.webp"
+      },
+      {
+        "german": "Sprachnachricht",
+        "english": "voice message",
+        "grammar": "f",
+        "icon": "sprachnachricht.webp"
+      },
+      {
+        "german": "Videoanruf",
+        "english": "video call",
+        "grammar": "m",
+        "icon": "videoanruf.webp"
+      },
+      {
+        "german": "Passwort",
+        "english": "password",
+        "grammar": "n",
+        "icon": "passwort.webp"
+      }
     ],
     "Soziale Medien": [
-      { "german": "soziale Medien", "english": "social media", "grammar": "" },
-      { "german": "posten", "english": "to post", "grammar": "" },
-      { "german": "teilen", "english": "to share", "grammar": "" },
-      { "german": "liken", "english": "to like", "grammar": "" },
-      { "german": "kommentieren", "english": "to comment", "grammar": "" },
-      { "german": "folgen", "english": "to follow", "grammar": "" },
-      { "german": "Profil", "english": "profile", "grammar": "n" },
-      { "german": "Follower", "english": "follower", "grammar": "m" },
-      { "german": "online", "english": "online", "grammar": "" },
-      { "german": "herunterladen", "english": "to download", "grammar": "" }
+      {
+        "german": "soziale Medien",
+        "english": "social media",
+        "grammar": "",
+        "icon": "soziale_medien.webp"
+      },
+      {
+        "german": "posten",
+        "english": "to post",
+        "grammar": "",
+        "icon": "posten.webp"
+      },
+      {
+        "german": "teilen",
+        "english": "to share",
+        "grammar": "",
+        "icon": "teilen.webp"
+      },
+      {
+        "german": "liken",
+        "english": "to like",
+        "grammar": "",
+        "icon": "liken.webp"
+      },
+      {
+        "german": "kommentieren",
+        "english": "to comment",
+        "grammar": "",
+        "icon": "kommentieren.webp"
+      },
+      {
+        "german": "folgen",
+        "english": "to follow",
+        "grammar": "",
+        "icon": "folgen.webp"
+      },
+      {
+        "german": "Profil",
+        "english": "profile",
+        "grammar": "n",
+        "icon": "profil.webp"
+      },
+      {
+        "german": "Follower",
+        "english": "follower",
+        "grammar": "m",
+        "icon": "follower.webp"
+      },
+      {
+        "german": "online",
+        "english": "online",
+        "grammar": "",
+        "icon": "online.webp"
+      },
+      {
+        "german": "herunterladen",
+        "english": "to download",
+        "grammar": "",
+        "icon": "herunterladen.webp"
+      }
     ],
     "Nachrichten und Information": [
-      { "german": "Nachrichten", "english": "news", "grammar": "" },
-      { "german": "Bericht", "english": "report", "grammar": "m" },
-      { "german": "Artikel", "english": "article", "grammar": "m" },
-      { "german": "Thema", "english": "topic / theme", "grammar": "n" },
-      { "german": "Schlagzeile", "english": "headline", "grammar": "f" },
-      { "german": "Meldung", "english": "news item / announcement", "grammar": "f" },
-      { "german": "aktuell", "english": "current / up-to-date", "grammar": "" },
-      { "german": "informieren", "english": "to inform", "grammar": "" },
-      { "german": "recherchieren", "english": "to research", "grammar": "" },
-      { "german": "Quelle", "english": "source", "grammar": "f" }
+      {
+        "german": "Nachrichten",
+        "english": "news",
+        "grammar": "",
+        "icon": "nachrichten.webp"
+      },
+      {
+        "german": "Bericht",
+        "english": "report",
+        "grammar": "m",
+        "icon": "bericht.webp"
+      },
+      {
+        "german": "Artikel",
+        "english": "article",
+        "grammar": "m",
+        "icon": "artikel.webp"
+      },
+      {
+        "german": "Thema",
+        "english": "topic / theme",
+        "grammar": "n",
+        "icon": "thema.webp"
+      },
+      {
+        "german": "Schlagzeile",
+        "english": "headline",
+        "grammar": "f",
+        "icon": "schlagzeile.webp"
+      },
+      {
+        "german": "Meldung",
+        "english": "news item / announcement",
+        "grammar": "f",
+        "icon": "meldung.webp"
+      },
+      {
+        "german": "aktuell",
+        "english": "current / up-to-date",
+        "grammar": "",
+        "icon": "aktuell.webp"
+      },
+      {
+        "german": "informieren",
+        "english": "to inform",
+        "grammar": "",
+        "icon": "informieren.webp"
+      },
+      {
+        "german": "recherchieren",
+        "english": "to research",
+        "grammar": "",
+        "icon": "recherchieren.webp"
+      },
+      {
+        "german": "Quelle",
+        "english": "source",
+        "grammar": "f",
+        "icon": "quelle.webp"
+      }
     ],
     "Telefon und Schriftverkehr": [
-      { "german": "wählen", "english": "to dial", "grammar": "" },
-      { "german": "Klingelton", "english": "ringtone", "grammar": "m" },
-      { "german": "Anrufbeantworter", "english": "answering machine", "grammar": "m" },
-      { "german": "besetzt", "english": "busy / engaged (line)", "grammar": "" },
-      { "german": "Empfang", "english": "reception / signal", "grammar": "m" },
-      { "german": "Absender", "english": "sender", "grammar": "m" },
-      { "german": "Betreff", "english": "subject (line)", "grammar": "m" },
-      { "german": "Anhang", "english": "attachment", "grammar": "m" },
-      { "german": "weiterleiten", "english": "to forward", "grammar": "" },
-      { "german": "beantworten", "english": "to reply / answer", "grammar": "" }
+      {
+        "german": "wählen",
+        "english": "to dial",
+        "grammar": "",
+        "icon": "waehlen.webp"
+      },
+      {
+        "german": "Klingelton",
+        "english": "ringtone",
+        "grammar": "m",
+        "icon": "klingelton.webp"
+      },
+      {
+        "german": "Anrufbeantworter",
+        "english": "answering machine",
+        "grammar": "m",
+        "icon": "anrufbeantworter.webp"
+      },
+      {
+        "german": "besetzt",
+        "english": "busy / engaged (line)",
+        "grammar": "",
+        "icon": "besetzt.webp"
+      },
+      {
+        "german": "Empfang",
+        "english": "reception / signal",
+        "grammar": "m",
+        "icon": "empfang.webp"
+      },
+      {
+        "german": "Absender",
+        "english": "sender",
+        "grammar": "m",
+        "icon": "absender.webp"
+      },
+      {
+        "german": "Betreff",
+        "english": "subject (line)",
+        "grammar": "m",
+        "icon": "betreff.webp"
+      },
+      {
+        "german": "Anhang",
+        "english": "attachment",
+        "grammar": "m",
+        "icon": "anhang.webp"
+      },
+      {
+        "german": "weiterleiten",
+        "english": "to forward",
+        "grammar": "",
+        "icon": "weiterleiten.webp"
+      },
+      {
+        "german": "beantworten",
+        "english": "to reply / answer",
+        "grammar": "",
+        "icon": "beantworten.webp"
+      }
     ]
   }
 }

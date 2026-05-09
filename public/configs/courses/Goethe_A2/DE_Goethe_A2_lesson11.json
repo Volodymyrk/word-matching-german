@@ -1,52 +1,252 @@
 {
   "Öffentliches Leben": {
     "Stadtteile und Orte": [
-      { "german": "Innenstadt", "english": "city centre / downtown", "grammar": "f" },
-      { "german": "Vorort", "english": "suburb", "grammar": "m" },
-      { "german": "Bahnhof", "english": "train station", "grammar": "m" },
-      { "german": "Rathaus", "english": "town hall", "grammar": "n" },
-      { "german": "Marktplatz", "english": "market square", "grammar": "m" },
-      { "german": "Kreuzung", "english": "crossroads / intersection", "grammar": "f" },
-      { "german": "Brücke", "english": "bridge", "grammar": "f" },
-      { "german": "Platz", "english": "square / plaza", "grammar": "m" },
-      { "german": "Allee", "english": "avenue", "grammar": "f" },
-      { "german": "Viertel", "english": "district / quarter", "grammar": "n" }
+      {
+        "german": "Innenstadt",
+        "english": "city centre / downtown",
+        "grammar": "f",
+        "icon": "innenstadt.webp"
+      },
+      {
+        "german": "Vorort",
+        "english": "suburb",
+        "grammar": "m",
+        "icon": "vorort.webp"
+      },
+      {
+        "german": "Bahnhof",
+        "english": "train station",
+        "grammar": "m",
+        "icon": "bahnhof.webp"
+      },
+      {
+        "german": "Rathaus",
+        "english": "town hall",
+        "grammar": "n",
+        "icon": "rathaus.webp"
+      },
+      {
+        "german": "Marktplatz",
+        "english": "market square",
+        "grammar": "m",
+        "icon": "marktplatz.webp"
+      },
+      {
+        "german": "Kreuzung",
+        "english": "crossroads / intersection",
+        "grammar": "f",
+        "icon": "kreuzung.webp"
+      },
+      {
+        "german": "Brücke",
+        "english": "bridge",
+        "grammar": "f",
+        "icon": "bruecke.webp"
+      },
+      {
+        "german": "Platz",
+        "english": "square / plaza",
+        "grammar": "m",
+        "icon": "platz.webp"
+      },
+      {
+        "german": "Allee",
+        "english": "avenue",
+        "grammar": "f",
+        "icon": "allee.webp"
+      },
+      {
+        "german": "Viertel",
+        "english": "district / quarter",
+        "grammar": "n",
+        "icon": "viertel.webp"
+      }
     ],
     "Behörden und Ämter": [
-      { "german": "Amt", "english": "office / authority", "grammar": "n" },
-      { "german": "Einwohnermeldeamt", "english": "registration office", "grammar": "n" },
-      { "german": "Ausländerbehörde", "english": "immigration office", "grammar": "f" },
-      { "german": "Formular", "english": "form", "grammar": "n" },
-      { "german": "ausfüllen", "english": "to fill in / fill out", "grammar": "" },
-      { "german": "unterschreiben", "english": "to sign", "grammar": "" },
-      { "german": "beantragen", "english": "to apply for", "grammar": "" },
-      { "german": "Antrag", "english": "application / form", "grammar": "m" },
-      { "german": "Wartezimmer", "english": "waiting room", "grammar": "n" },
-      { "german": "Sprechstunde", "english": "office hours / consulting hours", "grammar": "f" }
+      {
+        "german": "Amt",
+        "english": "office / authority",
+        "grammar": "n",
+        "icon": "amt.webp"
+      },
+      {
+        "german": "Einwohnermeldeamt",
+        "english": "registration office",
+        "grammar": "n",
+        "icon": "einwohnermeldeamt.webp"
+      },
+      {
+        "german": "Ausländerbehörde",
+        "english": "immigration office",
+        "grammar": "f",
+        "icon": "auslaenderbehoerde.webp"
+      },
+      {
+        "german": "Formular",
+        "english": "form",
+        "grammar": "n",
+        "icon": "formular.webp"
+      },
+      {
+        "german": "ausfüllen",
+        "english": "to fill in / fill out",
+        "grammar": "",
+        "icon": "ausfuellen.webp"
+      },
+      {
+        "german": "unterschreiben",
+        "english": "to sign",
+        "grammar": "",
+        "icon": "unterschreiben.webp"
+      },
+      {
+        "german": "beantragen",
+        "english": "to apply for",
+        "grammar": "",
+        "icon": "beantragen.webp"
+      },
+      {
+        "german": "Antrag",
+        "english": "application / form",
+        "grammar": "m",
+        "icon": "antrag.webp"
+      },
+      {
+        "german": "Wartezimmer",
+        "english": "waiting room",
+        "grammar": "n",
+        "icon": "wartezimmer.webp"
+      },
+      {
+        "german": "Sprechstunde",
+        "english": "office hours / consulting hours",
+        "grammar": "f",
+        "icon": "sprechstunde.webp"
+      }
     ],
     "Verkehr": [
-      { "german": "Ampel", "english": "traffic lights", "grammar": "f" },
-      { "german": "Zebrastreifen", "english": "pedestrian crossing / zebra crossing", "grammar": "m" },
-      { "german": "Parkplatz", "english": "car park / parking space", "grammar": "m" },
-      { "german": "Fahrradweg", "english": "cycle path", "grammar": "m" },
-      { "german": "Fußgängerzone", "english": "pedestrian zone", "grammar": "f" },
-      { "german": "Stau", "english": "traffic jam", "grammar": "m" },
-      { "german": "Führerschein", "english": "driving licence", "grammar": "m" },
-      { "german": "tanken", "english": "to fill up (petrol)", "grammar": "" },
-      { "german": "Tankstelle", "english": "petrol station / gas station", "grammar": "f" },
-      { "german": "Tempolimit", "english": "speed limit", "grammar": "n" }
+      {
+        "german": "Ampel",
+        "english": "traffic lights",
+        "grammar": "f",
+        "icon": "ampel.webp"
+      },
+      {
+        "german": "Zebrastreifen",
+        "english": "pedestrian crossing / zebra crossing",
+        "grammar": "m",
+        "icon": "zebrastreifen.webp"
+      },
+      {
+        "german": "Parkplatz",
+        "english": "car park / parking space",
+        "grammar": "m",
+        "icon": "parkplatz.webp"
+      },
+      {
+        "german": "Fahrradweg",
+        "english": "cycle path",
+        "grammar": "m",
+        "icon": "fahrradweg.webp"
+      },
+      {
+        "german": "Fußgängerzone",
+        "english": "pedestrian zone",
+        "grammar": "f",
+        "icon": "fussgaengerzone.webp"
+      },
+      {
+        "german": "Stau",
+        "english": "traffic jam",
+        "grammar": "m",
+        "icon": "stau.webp"
+      },
+      {
+        "german": "Führerschein",
+        "english": "driving licence",
+        "grammar": "m",
+        "icon": "fuehrerschein.webp"
+      },
+      {
+        "german": "tanken",
+        "english": "to fill up (petrol)",
+        "grammar": "",
+        "icon": "tanken.webp"
+      },
+      {
+        "german": "Tankstelle",
+        "english": "petrol station / gas station",
+        "grammar": "f",
+        "icon": "tankstelle.webp"
+      },
+      {
+        "german": "Tempolimit",
+        "english": "speed limit",
+        "grammar": "n",
+        "icon": "tempolimit.webp"
+      }
     ],
     "Wichtige Dokumente": [
-      { "german": "Personalausweis", "english": "identity card", "grammar": "m" },
-      { "german": "Aufenthaltserlaubnis", "english": "residence permit", "grammar": "f" },
-      { "german": "Visum", "english": "visa", "grammar": "n" },
-      { "german": "Geburtsschein", "english": "birth certificate", "grammar": "m" },
-      { "german": "Versicherung", "english": "insurance", "grammar": "f" },
-      { "german": "Krankenversicherung", "english": "health insurance", "grammar": "f" },
-      { "german": "Stempel", "english": "stamp / seal", "grammar": "m" },
-      { "german": "gültig", "english": "valid", "grammar": "" },
-      { "german": "ablaufen", "english": "to expire", "grammar": "" },
-      { "german": "verlängern", "english": "to renew / extend", "grammar": "" }
+      {
+        "german": "Personalausweis",
+        "english": "identity card",
+        "grammar": "m",
+        "icon": "personalausweis.webp"
+      },
+      {
+        "german": "Aufenthaltserlaubnis",
+        "english": "residence permit",
+        "grammar": "f",
+        "icon": "aufenthaltserlaubnis.webp"
+      },
+      {
+        "german": "Visum",
+        "english": "visa",
+        "grammar": "n",
+        "icon": "visum.webp"
+      },
+      {
+        "german": "Geburtsschein",
+        "english": "birth certificate",
+        "grammar": "m",
+        "icon": "geburtsschein.webp"
+      },
+      {
+        "german": "Versicherung",
+        "english": "insurance",
+        "grammar": "f",
+        "icon": "versicherung.webp"
+      },
+      {
+        "german": "Krankenversicherung",
+        "english": "health insurance",
+        "grammar": "f",
+        "icon": "krankenversicherung.webp"
+      },
+      {
+        "german": "Stempel",
+        "english": "stamp / seal",
+        "grammar": "m",
+        "icon": "stempel.webp"
+      },
+      {
+        "german": "gültig",
+        "english": "valid",
+        "grammar": "",
+        "icon": "gueltig.webp"
+      },
+      {
+        "german": "ablaufen",
+        "english": "to expire",
+        "grammar": "",
+        "icon": "ablaufen.webp"
+      },
+      {
+        "german": "verlängern",
+        "english": "to renew / extend",
+        "grammar": "",
+        "icon": "verlaengern.webp"
+      }
     ]
   }
 }
