@@ -1,52 +1,252 @@
 {
   "Schule und Bildung": {
     "Schulfächer": [
-      { "german": "Mathematik", "english": "mathematics", "grammar": "f" },
-      { "german": "Geschichte", "english": "history", "grammar": "f" },
-      { "german": "Geographie", "english": "geography", "grammar": "f" },
-      { "german": "Biologie", "english": "biology", "grammar": "f" },
-      { "german": "Physik", "english": "physics", "grammar": "f" },
-      { "german": "Chemie", "english": "chemistry", "grammar": "f" },
-      { "german": "Kunst", "english": "art", "grammar": "f" },
-      { "german": "Informatik", "english": "computer science / IT", "grammar": "f" },
-      { "german": "Philosophie", "english": "philosophy", "grammar": "f" },
-      { "german": "Wirtschaft", "english": "economics / business studies", "grammar": "f" }
+      {
+        "german": "Mathematik",
+        "english": "mathematics",
+        "grammar": "f",
+        "icon": "mathematik.webp"
+      },
+      {
+        "german": "Geschichte",
+        "english": "history",
+        "grammar": "f",
+        "icon": "geschichte.webp"
+      },
+      {
+        "german": "Geographie",
+        "english": "geography",
+        "grammar": "f",
+        "icon": "geographie.webp"
+      },
+      {
+        "german": "Biologie",
+        "english": "biology",
+        "grammar": "f",
+        "icon": "biologie.webp"
+      },
+      {
+        "german": "Physik",
+        "english": "physics",
+        "grammar": "f",
+        "icon": "physik.webp"
+      },
+      {
+        "german": "Chemie",
+        "english": "chemistry",
+        "grammar": "f",
+        "icon": "chemie.webp"
+      },
+      {
+        "german": "Kunst",
+        "english": "art",
+        "grammar": "f",
+        "icon": "kunst.webp"
+      },
+      {
+        "german": "Informatik",
+        "english": "computer science / IT",
+        "grammar": "f",
+        "icon": "informatik.webp"
+      },
+      {
+        "german": "Philosophie",
+        "english": "philosophy",
+        "grammar": "f",
+        "icon": "philosophie.webp"
+      },
+      {
+        "german": "Wirtschaft",
+        "english": "economics / business studies",
+        "grammar": "f",
+        "icon": "wirtschaft.webp"
+      }
     ],
     "Schulalltag": [
-      { "german": "Unterricht", "english": "lesson / class", "grammar": "m" },
-      { "german": "Klasse", "english": "class / year group", "grammar": "f" },
-      { "german": "Hausaufgaben", "english": "homework", "grammar": "" },
-      { "german": "Prüfung", "english": "exam / test", "grammar": "f" },
-      { "german": "Note", "english": "grade / mark", "grammar": "f" },
-      { "german": "Schulhof", "english": "school yard / playground", "grammar": "m" },
-      { "german": "Stundenplan", "english": "timetable", "grammar": "m" },
-      { "german": "Ferien", "english": "school holidays", "grammar": "" },
-      { "german": "Nachhilfe", "english": "tutoring / extra lessons", "grammar": "f" },
-      { "german": "Abschlussprüfung", "english": "final exam", "grammar": "f" }
+      {
+        "german": "Unterricht",
+        "english": "lesson / class",
+        "grammar": "m",
+        "icon": "unterricht.webp"
+      },
+      {
+        "german": "Klasse",
+        "english": "class / year group",
+        "grammar": "f",
+        "icon": "klasse.webp"
+      },
+      {
+        "german": "Hausaufgaben",
+        "english": "homework",
+        "grammar": "",
+        "icon": "hausaufgaben.webp"
+      },
+      {
+        "german": "Prüfung",
+        "english": "exam / test",
+        "grammar": "f",
+        "icon": "pruefung.webp"
+      },
+      {
+        "german": "Note",
+        "english": "grade / mark",
+        "grammar": "f",
+        "icon": "note.webp"
+      },
+      {
+        "german": "Schulhof",
+        "english": "school yard / playground",
+        "grammar": "m",
+        "icon": "schulhof.webp"
+      },
+      {
+        "german": "Stundenplan",
+        "english": "timetable",
+        "grammar": "m",
+        "icon": "stundenplan.webp"
+      },
+      {
+        "german": "Ferien",
+        "english": "school holidays",
+        "grammar": "",
+        "icon": "ferien.webp"
+      },
+      {
+        "german": "Nachhilfe",
+        "english": "tutoring / extra lessons",
+        "grammar": "f",
+        "icon": "nachhilfe.webp"
+      },
+      {
+        "german": "Abschlussprüfung",
+        "english": "final exam",
+        "grammar": "f",
+        "icon": "abschlusspruefung.webp"
+      }
     ],
     "Lernmittel": [
-      { "german": "Heft", "english": "exercise book / notebook", "grammar": "n" },
-      { "german": "Bleistift", "english": "pencil", "grammar": "m" },
-      { "german": "Kugelschreiber", "english": "ballpoint pen", "grammar": "m" },
-      { "german": "Lineal", "english": "ruler", "grammar": "n" },
-      { "german": "Taschenrechner", "english": "calculator", "grammar": "m" },
-      { "german": "Wörterbuch", "english": "dictionary", "grammar": "n" },
-      { "german": "Tafel", "english": "blackboard", "grammar": "f" },
-      { "german": "Projektor", "english": "projector", "grammar": "m" },
-      { "german": "Laptop", "english": "laptop", "grammar": "m" },
-      { "german": "Tablet", "english": "tablet (device)", "grammar": "n" }
+      {
+        "german": "Heft",
+        "english": "exercise book / notebook",
+        "grammar": "n",
+        "icon": "heft.webp"
+      },
+      {
+        "german": "Bleistift",
+        "english": "pencil",
+        "grammar": "m",
+        "icon": "bleistift.webp"
+      },
+      {
+        "german": "Kugelschreiber",
+        "english": "ballpoint pen",
+        "grammar": "m",
+        "icon": "kugelschreiber.webp"
+      },
+      {
+        "german": "Lineal",
+        "english": "ruler",
+        "grammar": "n",
+        "icon": "lineal.webp"
+      },
+      {
+        "german": "Taschenrechner",
+        "english": "calculator",
+        "grammar": "m",
+        "icon": "taschenrechner.webp"
+      },
+      {
+        "german": "Wörterbuch",
+        "english": "dictionary",
+        "grammar": "n",
+        "icon": "woerterbuch.webp"
+      },
+      {
+        "german": "Tafel",
+        "english": "blackboard",
+        "grammar": "f",
+        "icon": "tafel.webp"
+      },
+      {
+        "german": "Projektor",
+        "english": "projector",
+        "grammar": "m",
+        "icon": "projektor.webp"
+      },
+      {
+        "german": "Laptop",
+        "english": "laptop",
+        "grammar": "m",
+        "icon": "laptop.webp"
+      },
+      {
+        "german": "Tablet",
+        "english": "tablet (device)",
+        "grammar": "n",
+        "icon": "tablet.webp"
+      }
     ],
     "Bildungsweg": [
-      { "german": "Grundschule", "english": "primary school", "grammar": "f" },
-      { "german": "Gymnasium", "english": "grammar school / high school", "grammar": "n" },
-      { "german": "Berufsschule", "english": "vocational school", "grammar": "f" },
-      { "german": "Universität", "english": "university", "grammar": "f" },
-      { "german": "Studium", "english": "university studies", "grammar": "n" },
-      { "german": "Student", "english": "university student", "grammar": "m" },
-      { "german": "Abitur", "english": "school-leaving certificate", "grammar": "n" },
-      { "german": "Abschluss", "english": "degree / qualification", "grammar": "m" },
-      { "german": "Stipendium", "english": "scholarship", "grammar": "n" },
-      { "german": "Austauschprogramm", "english": "exchange programme", "grammar": "n" }
+      {
+        "german": "Grundschule",
+        "english": "primary school",
+        "grammar": "f",
+        "icon": "grundschule.webp"
+      },
+      {
+        "german": "Gymnasium",
+        "english": "grammar school / high school",
+        "grammar": "n",
+        "icon": "gymnasium.webp"
+      },
+      {
+        "german": "Berufsschule",
+        "english": "vocational school",
+        "grammar": "f",
+        "icon": "berufsschule.webp"
+      },
+      {
+        "german": "Universität",
+        "english": "university",
+        "grammar": "f",
+        "icon": "universitaet.webp"
+      },
+      {
+        "german": "Studium",
+        "english": "university studies",
+        "grammar": "n",
+        "icon": "studium.webp"
+      },
+      {
+        "german": "Student",
+        "english": "university student",
+        "grammar": "m",
+        "icon": "student.webp"
+      },
+      {
+        "german": "Abitur",
+        "english": "school-leaving certificate",
+        "grammar": "n",
+        "icon": "abitur.webp"
+      },
+      {
+        "german": "Abschluss",
+        "english": "degree / qualification",
+        "grammar": "m",
+        "icon": "abschluss.webp"
+      },
+      {
+        "german": "Stipendium",
+        "english": "scholarship",
+        "grammar": "n",
+        "icon": "stipendium.webp"
+      },
+      {
+        "german": "Austauschprogramm",
+        "english": "exchange programme",
+        "grammar": "n",
+        "icon": "austauschprogramm.webp"
+      }
     ]
   }
 }

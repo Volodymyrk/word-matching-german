@@ -4,99 +4,118 @@
       {
         "german": "Kultur",
         "english": "culture",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "kultur.webp"
       },
       {
         "german": "Künstler",
         "english": "artist",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "kuenstler.webp"
       },
       {
         "german": "Gemälde",
         "english": "painting / picture",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "gemaelde.webp"
       },
       {
         "german": "Skulptur",
         "english": "sculpture",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "skulptur.webp"
       },
       {
         "german": "Literatur",
         "english": "literature",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "literatur.webp"
       },
       {
         "german": "Roman",
         "english": "novel",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "roman.webp"
       },
       {
         "german": "Gedicht",
         "english": "poem",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "gedicht.webp"
       },
       {
         "german": "Komponist",
         "english": "composer",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "komponist.webp"
       },
       {
         "german": "Orchester",
         "english": "orchestra",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "orchester.webp"
       },
       {
         "german": "Galerie",
         "english": "gallery",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "galerie.webp"
       }
     ],
     "Feste und Feiertage": [
       {
         "german": "Feiertag",
         "english": "public holiday",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "feiertag.webp"
       },
       {
         "german": "Nationalfeiertag",
         "english": "national holiday",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "nationalfeiertag.webp"
       },
       {
         "german": "Oktoberfest",
         "english": "Oktoberfest",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "oktoberfest.webp"
       },
       {
         "german": "Adventszeit",
         "english": "Advent season",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "adventszeit.webp"
       },
       {
         "german": "Weihnachtsmarkt",
         "english": "Christmas market",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "weihnachtsmarkt.webp"
       },
       {
         "german": "Fasching",
         "english": "carnival (southern Germany / Austria)",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "fasching.webp"
       },
       {
         "german": "Erntedankfest",
         "english": "harvest festival",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "erntedankfest.webp"
       },
       {
         "german": "Tradition",
         "english": "tradition",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "tradition.webp"
       },
       {
         "german": "Brauch",
         "english": "custom / tradition",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "brauch.webp"
       },
       {
         "german": "feiern",
@@ -109,104 +128,124 @@
       {
         "german": "Gesellschaft",
         "english": "society",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "gesellschaft.webp"
       },
       {
         "german": "Gemeinschaft",
         "english": "community",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "gemeinschaft.webp"
       },
       {
         "german": "Bürger",
         "english": "citizen",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "buerger.webp"
       },
       {
         "german": "Demokratie",
         "english": "democracy",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "demokratie.webp"
       },
       {
         "german": "Wahl",
         "english": "election",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "wahl.webp"
       },
       {
         "german": "Regierung",
         "english": "government",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "regierung.webp"
       },
       {
         "german": "Gesetz",
         "english": "law",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "gesetz.webp"
       },
       {
         "german": "Recht",
         "english": "right / entitlement",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "recht.webp"
       },
       {
         "german": "Pflicht",
         "english": "duty / obligation",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "pflicht.webp"
       },
       {
         "german": "Gleichberechtigung",
         "english": "equal rights / equality",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "gleichberechtigung.webp"
       }
     ],
     "Deutschland und Nachbarländer": [
       {
         "german": "Bundesland",
         "english": "federal state",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "bundesland.webp"
       },
       {
         "german": "Hauptstadt",
         "english": "capital city",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "hauptstadt.webp"
       },
       {
         "german": "Grenze",
         "english": "border",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "grenze.webp"
       },
       {
         "german": "Österreich",
         "english": "Austria",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "oesterreich.webp"
       },
       {
         "german": "Schweiz",
         "english": "Switzerland",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "schweiz.webp"
       },
       {
         "german": "Dialekt",
         "english": "dialect",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "dialekt.webp"
       },
       {
         "german": "Wiedervereinigung",
         "english": "reunification",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "wiedervereinigung.webp"
       },
       {
         "german": "Mauer",
         "english": "wall (e.g. Berlin Wall)",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "mauer.webp"
       },
       {
         "german": "Europäische Union",
         "english": "European Union",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "europaeische_union.webp"
       },
       {
         "german": "mehrsprachig",
         "english": "multilingual",
-        "grammar": ""
+        "grammar": "",
+        "icon": "mehrsprachig.webp"
       }
     ]
   }

@@ -4,12 +4,14 @@
       {
         "german": "Supermarkt",
         "english": "supermarket",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "supermarkt.webp"
       },
       {
         "german": "Einkaufszentrum",
         "english": "shopping centre / mall",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "einkaufszentrum.webp"
       },
       {
         "german": "Bäckerei",
@@ -20,22 +22,26 @@
       {
         "german": "Metzgerei",
         "english": "butcher's",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "metzgerei.webp"
       },
       {
         "german": "Apotheke",
         "english": "pharmacy",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "apotheke.webp"
       },
       {
         "german": "Drogerie",
         "english": "drugstore / toiletries shop",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "drogerie.webp"
       },
       {
         "german": "Sonderangebot",
         "english": "special offer",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "sonderangebot.webp"
       },
       {
         "german": "Rabatt",
@@ -46,7 +52,8 @@
       {
         "german": "Kassierer",
         "english": "cashier",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "kassierer.webp"
       },
       {
         "german": "Öffnungszeiten",
@@ -59,79 +66,94 @@
       {
         "german": "Hemd",
         "english": "shirt",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "hemd.webp"
       },
       {
         "german": "Bluse",
         "english": "blouse",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "bluse.webp"
       },
       {
         "german": "Hose",
         "english": "trousers",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "hose.webp"
       },
       {
         "german": "Rock",
         "english": "skirt",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "rock.webp"
       },
       {
         "german": "Kleid",
         "english": "dress",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "kleid.webp"
       },
       {
         "german": "Jacke",
         "english": "jacket",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "jacke.webp"
       },
       {
         "german": "Mantel",
         "english": "coat",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "mantel.webp"
       },
       {
         "german": "Schal",
         "english": "scarf",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "schal.webp"
       },
       {
         "german": "Handschuhe",
         "english": "gloves",
-        "grammar": ""
+        "grammar": "",
+        "icon": "handschuhe.webp"
       },
       {
         "german": "Größe",
         "english": "size",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "groesse.webp"
       }
     ],
     "Post und Bank": [
       {
         "german": "Brief",
         "english": "letter",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "brief.webp"
       },
       {
         "german": "Paket",
         "english": "parcel / package",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "paket.webp"
       },
       {
         "german": "Briefmarke",
         "english": "stamp",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "briefmarke.webp"
       },
       {
         "german": "Postamt",
         "english": "post office",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "postamt.webp"
       },
       {
         "german": "Konto",
         "english": "bank account",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "konto.webp"
       },
       {
         "german": "Überweisung",
@@ -142,7 +164,8 @@
       {
         "german": "Bargeld",
         "english": "cash",
-        "grammar": "n"
+        "grammar": "n",
+        "icon": "bargeld.webp"
       },
       {
         "german": "Kreditkarte",
@@ -153,12 +176,14 @@
       {
         "german": "Geldautomat",
         "english": "ATM / cash machine",
-        "grammar": "m"
+        "grammar": "m",
+        "icon": "geldautomat.webp"
       },
       {
         "german": "abheben",
         "english": "to withdraw (money)",
-        "grammar": ""
+        "grammar": "",
+        "icon": "abheben.webp"
       }
     ],
     "Zahlen und Bezahlen": [
@@ -171,17 +196,20 @@
       {
         "german": "Quittung",
         "english": "receipt",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "quittung.webp"
       },
       {
         "german": "Mehrwertsteuer",
         "english": "VAT / sales tax",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "mehrwertsteuer.webp"
       },
       {
         "german": "zahlen",
         "english": "to pay",
-        "grammar": ""
+        "grammar": "",
+        "icon": "zahlen.webp"
       },
       {
         "german": "Wechselgeld",
@@ -192,12 +220,14 @@
       {
         "german": "kostenlos",
         "english": "free of charge",
-        "grammar": ""
+        "grammar": "",
+        "icon": "kostenlos.webp"
       },
       {
         "german": "Garantie",
         "english": "guarantee / warranty",
-        "grammar": "f"
+        "grammar": "f",
+        "icon": "garantie.webp"
       },
       {
         "german": "umtauschen",
@@ -214,7 +244,8 @@
       {
         "german": "ausgeben",
         "english": "to spend (money)",
-        "grammar": ""
+        "grammar": "",
+        "icon": "ausgeben.webp"
       }
     ]
   }
