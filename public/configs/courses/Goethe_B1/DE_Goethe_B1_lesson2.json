@@ -1,0 +1,222 @@
+{
+  "Ausbildung und Studium": {
+    "Schulabschluss": [
+      {
+        "german": "das Zeugnis",
+        "english": "the report / certificate",
+        "grammar": "n",
+        "icon": "zeugnis.webp"
+      },
+      {
+        "german": "die Note",
+        "english": "the grade / mark",
+        "grammar": "f",
+        "icon": "note.webp"
+      },
+      {
+        "german": "bestehen",
+        "english": "to pass (an exam)",
+        "grammar": ""
+      },
+      {
+        "german": "durchfallen",
+        "english": "to fail (an exam)",
+        "grammar": ""
+      },
+      {
+        "german": "der Abschluss",
+        "english": "the qualification / degree",
+        "grammar": "m",
+        "icon": "abschluss.webp"
+      },
+      {
+        "german": "das Abitur",
+        "english": "the A-levels / university entrance qualification",
+        "grammar": "n",
+        "icon": "abitur.webp"
+      },
+      {
+        "german": "das Gymnasium",
+        "english": "the grammar school",
+        "grammar": "n",
+        "icon": "gymnasium.webp"
+      },
+      {
+        "german": "die Realschule",
+        "english": "the secondary school (intermediate)",
+        "grammar": "f"
+      },
+      {
+        "german": "die Hauptschule",
+        "english": "the lower secondary school",
+        "grammar": "f"
+      },
+      {
+        "german": "die Gesamtschule",
+        "english": "the comprehensive school",
+        "grammar": "f"
+      }
+    ],
+    "Berufsausbildung": [
+      {
+        "german": "die Ausbildung",
+        "english": "the apprenticeship / training",
+        "grammar": "f",
+        "icon": "ausbildung.webp"
+      },
+      {
+        "german": "der Ausbildungsplatz",
+        "english": "the apprenticeship position",
+        "grammar": "m"
+      },
+      {
+        "german": "der Azubi",
+        "english": "the trainee / apprentice",
+        "grammar": "m"
+      },
+      {
+        "german": "der Ausbilder",
+        "english": "the trainer / instructor",
+        "grammar": "m"
+      },
+      {
+        "german": "die Lehre",
+        "english": "the apprenticeship",
+        "grammar": "f"
+      },
+      {
+        "german": "der Betrieb",
+        "english": "the company / business",
+        "grammar": "m"
+      },
+      {
+        "german": "praktisch",
+        "english": "practical",
+        "grammar": ""
+      },
+      {
+        "german": "theoretisch",
+        "english": "theoretical",
+        "grammar": ""
+      },
+      {
+        "german": "die Berufsschule",
+        "english": "the vocational school",
+        "grammar": "f",
+        "icon": "berufsschule.webp"
+      },
+      {
+        "german": "der Gesellenbrief",
+        "english": "the journeyman's certificate",
+        "grammar": "m"
+      }
+    ],
+    "Studium": [
+      {
+        "german": "die Universität",
+        "english": "the university",
+        "grammar": "f",
+        "icon": "universitaet.webp"
+      },
+      {
+        "german": "das Studium",
+        "english": "the (university) studies",
+        "grammar": "n",
+        "icon": "studium.webp"
+      },
+      {
+        "german": "das Semester",
+        "english": "the semester",
+        "grammar": "n"
+      },
+      {
+        "german": "die Vorlesung",
+        "english": "the lecture",
+        "grammar": "f"
+      },
+      {
+        "german": "das Seminar",
+        "english": "the seminar",
+        "grammar": "n"
+      },
+      {
+        "german": "das Stipendium",
+        "english": "the scholarship",
+        "grammar": "n",
+        "icon": "stipendium.webp"
+      },
+      {
+        "german": "sich einschreiben",
+        "english": "to enrol / register",
+        "grammar": ""
+      },
+      {
+        "german": "der Bachelor",
+        "english": "the bachelor's degree",
+        "grammar": "m"
+      },
+      {
+        "german": "der Master",
+        "english": "the master's degree",
+        "grammar": "m"
+      },
+      {
+        "german": "die Hausarbeit",
+        "english": "the written assignment / essay",
+        "grammar": "f"
+      }
+    ],
+    "Weiterbildung": [
+      {
+        "german": "die Fortbildung",
+        "english": "the professional development / training",
+        "grammar": "f"
+      },
+      {
+        "german": "die Umschulung",
+        "english": "the retraining",
+        "grammar": "f"
+      },
+      {
+        "german": "das Zertifikat",
+        "english": "the certificate",
+        "grammar": "n"
+      },
+      {
+        "german": "berufsbegleitend",
+        "english": "part-time (alongside work)",
+        "grammar": ""
+      },
+      {
+        "german": "sich qualifizieren",
+        "english": "to qualify oneself",
+        "grammar": ""
+      },
+      {
+        "german": "der Workshop",
+        "english": "the workshop",
+        "grammar": "m"
+      },
+      {
+        "german": "die Volkshochschule",
+        "english": "the adult education centre",
+        "grammar": "f"
+      },
+      {
+        "german": "die Fachschule",
+        "english": "the technical college",
+        "grammar": "f"
+      },
+      {
+        "german": "das Fernstudium",
+        "english": "the distance learning",
+        "grammar": "n"
+      },
+      {
+        "german": "die Anerkennung",
+        "english": "the recognition (of qualifications)",
+        "grammar": "f"
+      }
+    ]
+  }
+}

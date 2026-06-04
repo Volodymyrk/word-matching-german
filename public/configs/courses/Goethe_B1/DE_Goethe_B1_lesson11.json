@@ -1,0 +1,222 @@
+{
+  "Medien und Internet": {
+    "Medien": [
+      {
+        "german": "die Zeitung",
+        "english": "the newspaper",
+        "grammar": "f"
+      },
+      {
+        "german": "die Zeitschrift",
+        "english": "the magazine",
+        "grammar": "f"
+      },
+      {
+        "german": "die Sendung",
+        "english": "the programme / broadcast",
+        "grammar": "f"
+      },
+      {
+        "german": "die Nachrichten",
+        "english": "the news",
+        "grammar": "",
+        "icon": "nachrichten.webp"
+      },
+      {
+        "german": "der Bericht",
+        "english": "the report",
+        "grammar": "m",
+        "icon": "bericht.webp"
+      },
+      {
+        "german": "die Meldung",
+        "english": "the news item / announcement",
+        "grammar": "f",
+        "icon": "meldung.webp"
+      },
+      {
+        "german": "der Moderator",
+        "english": "the presenter (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "der Podcast",
+        "english": "the podcast",
+        "grammar": "m"
+      },
+      {
+        "german": "die Werbung",
+        "english": "the advertising / advertisement",
+        "grammar": "f"
+      },
+      {
+        "german": "das Nachrichtenportal",
+        "english": "the news website",
+        "grammar": "n"
+      }
+    ],
+    "Internet": [
+      {
+        "german": "herunterladen",
+        "english": "to download",
+        "grammar": "",
+        "icon": "herunterladen.webp"
+      },
+      {
+        "german": "hochladen",
+        "english": "to upload",
+        "grammar": ""
+      },
+      {
+        "german": "die App",
+        "english": "the app",
+        "grammar": "f"
+      },
+      {
+        "german": "die Webseite",
+        "english": "the website",
+        "grammar": "f"
+      },
+      {
+        "german": "das Profil",
+        "english": "the profile",
+        "grammar": "n",
+        "icon": "profil.webp"
+      },
+      {
+        "german": "das Passwort",
+        "english": "the password",
+        "grammar": "n",
+        "icon": "passwort.webp"
+      },
+      {
+        "german": "die Datei",
+        "english": "the file",
+        "grammar": "f"
+      },
+      {
+        "german": "der Browser",
+        "english": "the browser",
+        "grammar": "m"
+      },
+      {
+        "german": "die WLAN-Verbindung",
+        "english": "the Wi-Fi connection",
+        "grammar": "f"
+      },
+      {
+        "german": "streamen",
+        "english": "to stream",
+        "grammar": ""
+      }
+    ],
+    "Soziale Medien": [
+      {
+        "german": "posten",
+        "english": "to post",
+        "grammar": "",
+        "icon": "posten.webp"
+      },
+      {
+        "german": "teilen",
+        "english": "to share",
+        "grammar": "",
+        "icon": "teilen.webp"
+      },
+      {
+        "german": "liken",
+        "english": "to like",
+        "grammar": "",
+        "icon": "liken.webp"
+      },
+      {
+        "german": "folgen",
+        "english": "to follow",
+        "grammar": "",
+        "icon": "folgen.webp"
+      },
+      {
+        "german": "der Kommentar",
+        "english": "the comment",
+        "grammar": "m"
+      },
+      {
+        "german": "der Hashtag",
+        "english": "the hashtag",
+        "grammar": "m"
+      },
+      {
+        "german": "der Kanal",
+        "english": "the channel",
+        "grammar": "m"
+      },
+      {
+        "german": "viral gehen",
+        "english": "to go viral",
+        "grammar": ""
+      },
+      {
+        "german": "der Influencer",
+        "english": "the influencer",
+        "grammar": "m"
+      },
+      {
+        "german": "die Direktnachricht",
+        "english": "the direct message",
+        "grammar": "f"
+      }
+    ],
+    "Datenschutz": [
+      {
+        "german": "der Datenschutz",
+        "english": "data protection",
+        "grammar": "m"
+      },
+      {
+        "german": "die Privatsphäre",
+        "english": "privacy",
+        "grammar": "f"
+      },
+      {
+        "german": "der Spam",
+        "english": "spam",
+        "grammar": "m"
+      },
+      {
+        "german": "der Hacker",
+        "english": "the hacker",
+        "grammar": "m"
+      },
+      {
+        "german": "verschlüsseln",
+        "english": "to encrypt",
+        "grammar": ""
+      },
+      {
+        "german": "der Virus",
+        "english": "the (computer) virus",
+        "grammar": "m"
+      },
+      {
+        "german": "sichern",
+        "english": "to back up / secure",
+        "grammar": ""
+      },
+      {
+        "german": "der Datenmissbrauch",
+        "english": "data misuse / abuse",
+        "grammar": "m"
+      },
+      {
+        "german": "die Sicherheitskopie",
+        "english": "the backup copy",
+        "grammar": "f"
+      },
+      {
+        "german": "anonym",
+        "english": "anonymous",
+        "grammar": ""
+      }
+    ]
+  }
+}

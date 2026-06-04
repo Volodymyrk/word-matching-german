@@ -1,0 +1,225 @@
+{
+  "Politik und Demokratie": {
+    "Demokratie": [
+      {
+        "german": "die Wahl",
+        "english": "the election",
+        "grammar": "f",
+        "icon": "wahl.webp"
+      },
+      {
+        "german": "wählen",
+        "english": "to vote / elect",
+        "grammar": "",
+        "icon": "waehlen.webp"
+      },
+      {
+        "german": "der Wähler",
+        "english": "the voter (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "das Parlament",
+        "english": "the parliament",
+        "grammar": "n"
+      },
+      {
+        "german": "der Bundestag",
+        "english": "the Bundestag (German parliament)",
+        "grammar": "m"
+      },
+      {
+        "german": "die Partei",
+        "english": "the (political) party",
+        "grammar": "f"
+      },
+      {
+        "german": "die Regierung",
+        "english": "the government",
+        "grammar": "f",
+        "icon": "regierung.webp"
+      },
+      {
+        "german": "der Bundeskanzler",
+        "english": "the Federal Chancellor (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "die Verfassung",
+        "english": "the constitution",
+        "grammar": "f"
+      },
+      {
+        "german": "die Opposition",
+        "english": "the opposition",
+        "grammar": "f"
+      }
+    ],
+    "Rechte und Pflichten": [
+      {
+        "german": "das Grundgesetz",
+        "english": "the Basic Law (German constitution)",
+        "grammar": "n"
+      },
+      {
+        "german": "die Meinungsfreiheit",
+        "english": "freedom of opinion / expression",
+        "grammar": "f"
+      },
+      {
+        "german": "die Pressefreiheit",
+        "english": "freedom of the press",
+        "grammar": "f"
+      },
+      {
+        "german": "das Wahlrecht",
+        "english": "the right to vote",
+        "grammar": "n"
+      },
+      {
+        "german": "die Steuern",
+        "english": "taxes",
+        "grammar": ""
+      },
+      {
+        "german": "der Personalausweis",
+        "english": "the identity card",
+        "grammar": "m",
+        "icon": "personalausweis.webp"
+      },
+      {
+        "german": "das Gesetz",
+        "english": "the law",
+        "grammar": "n",
+        "icon": "gesetz.webp"
+      },
+      {
+        "german": "die Pflicht",
+        "english": "the duty / obligation",
+        "grammar": "f",
+        "icon": "pflicht.webp"
+      },
+      {
+        "german": "das Recht",
+        "english": "the right / law",
+        "grammar": "n",
+        "icon": "recht.webp"
+      },
+      {
+        "german": "die Versammlungsfreiheit",
+        "english": "freedom of assembly",
+        "grammar": "f"
+      }
+    ],
+    "Internationale Politik": [
+      {
+        "german": "die EU",
+        "english": "the EU (European Union)",
+        "grammar": "f"
+      },
+      {
+        "german": "das Bündnis",
+        "english": "the alliance",
+        "grammar": "n"
+      },
+      {
+        "german": "die Diplomatie",
+        "english": "diplomacy",
+        "grammar": "f"
+      },
+      {
+        "german": "der Botschafter",
+        "english": "the ambassador (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "die Grenze",
+        "english": "the border",
+        "grammar": "f",
+        "icon": "grenze.webp"
+      },
+      {
+        "german": "der Konflikt",
+        "english": "the conflict",
+        "grammar": "m"
+      },
+      {
+        "german": "verhandeln",
+        "english": "to negotiate",
+        "grammar": ""
+      },
+      {
+        "german": "die Sanktion",
+        "english": "the sanction",
+        "grammar": "f"
+      },
+      {
+        "german": "der Friedensvertrag",
+        "english": "the peace treaty",
+        "grammar": "m"
+      },
+      {
+        "german": "der Gipfel",
+        "english": "the summit (meeting)",
+        "grammar": "m"
+      }
+    ],
+    "Verwaltung": [
+      {
+        "german": "das Amt",
+        "english": "the office / authority",
+        "grammar": "n",
+        "icon": "amt.webp"
+      },
+      {
+        "german": "beantragen",
+        "english": "to apply for",
+        "grammar": "",
+        "icon": "beantragen.webp"
+      },
+      {
+        "german": "der Antrag",
+        "english": "the application / request",
+        "grammar": "m",
+        "icon": "antrag.webp"
+      },
+      {
+        "german": "das Formular",
+        "english": "the form",
+        "grammar": "n",
+        "icon": "formular.webp"
+      },
+      {
+        "german": "ausfüllen",
+        "english": "to fill in / complete",
+        "grammar": "",
+        "icon": "ausfuellen.webp"
+      },
+      {
+        "german": "die Bürokratie",
+        "english": "bureaucracy",
+        "grammar": "f"
+      },
+      {
+        "german": "die Behörde",
+        "english": "the authority / government agency",
+        "grammar": "f"
+      },
+      {
+        "german": "der Beamte",
+        "english": "the civil servant (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "beglaubigen",
+        "english": "to certify / authenticate",
+        "grammar": ""
+      },
+      {
+        "german": "das Dokument",
+        "english": "the document",
+        "grammar": "n"
+      }
+    ]
+  }
+}

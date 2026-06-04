@@ -390,6 +390,207 @@
     "course_emoji": "📗"
   },
 
+  {
+    "id": "goethe_b1_1",
+    "name": "Arbeit und Bewerbung",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson1.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_2",
+    "name": "Ausbildung und Studium",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson2.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_3",
+    "name": "Familie und Generationen",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson3.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_4",
+    "name": "Wohnen und Nachbarschaft",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson4.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_5",
+    "name": "Gesundheit und Medizin",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson5.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_6",
+    "name": "Einkaufen und Konsum",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson6.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_7",
+    "name": "Essen und Ernährung",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson7.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_8",
+    "name": "Reisen und Transport",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson8.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_9",
+    "name": "Natur und Umwelt",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson9.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_10",
+    "name": "Freizeit und Sport",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson10.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_11",
+    "name": "Medien und Internet",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson11.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_12",
+    "name": "Kultur und Kunst",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson12.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_13",
+    "name": "Gesellschaft und Migration",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson13.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_14",
+    "name": "Politik und Demokratie",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson14.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_15",
+    "name": "Wirtschaft und Finanzen",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson15.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_16",
+    "name": "Technik und Digitales",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson16.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_17",
+    "name": "Recht und Ordnung",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson17.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_18",
+    "name": "Geographie und Geschichte",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson18.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_19",
+    "name": "Sprache und Ausdruck",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson19.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+  {
+    "id": "goethe_b1_20",
+    "name": "Öffentliche Dienste und Notfälle",
+    "emoji": "📘",
+    "vocab_file": "courses/Goethe_B1/DE_Goethe_B1_lesson20.json",
+    "languages": ["german", "english"],
+    "course_id": "goethe_b1",
+    "course_name": "Goethe B1",
+    "course_emoji": "📘"
+  },
+
 {
     "id": "de_1",
     "name": "Supermarket 1",

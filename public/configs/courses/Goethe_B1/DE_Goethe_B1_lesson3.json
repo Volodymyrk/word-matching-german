@@ -1,0 +1,216 @@
+{
+  "Familie und Generationen": {
+    "Verwandtschaft": [
+      {
+        "german": "die Verwandtschaft",
+        "english": "the relatives / family",
+        "grammar": "f"
+      },
+      {
+        "german": "der Onkel",
+        "english": "the uncle",
+        "grammar": "m"
+      },
+      {
+        "german": "die Tante",
+        "english": "the aunt",
+        "grammar": "f"
+      },
+      {
+        "german": "der Cousin",
+        "english": "the male cousin",
+        "grammar": "m"
+      },
+      {
+        "german": "die Cousine",
+        "english": "the female cousin",
+        "grammar": "f"
+      },
+      {
+        "german": "der Neffe",
+        "english": "the nephew",
+        "grammar": "m"
+      },
+      {
+        "german": "die Nichte",
+        "english": "the niece",
+        "grammar": "f"
+      },
+      {
+        "german": "die Schwiegermutter",
+        "english": "the mother-in-law",
+        "grammar": "f"
+      },
+      {
+        "german": "der Schwiegervater",
+        "english": "the father-in-law",
+        "grammar": "m"
+      },
+      {
+        "german": "die Geschwister",
+        "english": "the siblings",
+        "grammar": ""
+      }
+    ],
+    "Partnerschaft": [
+      {
+        "german": "zusammenziehen",
+        "english": "to move in together",
+        "grammar": ""
+      },
+      {
+        "german": "sich verloben",
+        "english": "to get engaged",
+        "grammar": ""
+      },
+      {
+        "german": "die Hochzeit",
+        "english": "the wedding",
+        "grammar": "f",
+        "icon": "hochzeit.webp"
+      },
+      {
+        "german": "sich scheiden lassen",
+        "english": "to get divorced",
+        "grammar": ""
+      },
+      {
+        "german": "getrennt",
+        "english": "separated",
+        "grammar": ""
+      },
+      {
+        "german": "die Beziehung",
+        "english": "the relationship",
+        "grammar": "f"
+      },
+      {
+        "german": "das Paar",
+        "english": "the couple",
+        "grammar": "n"
+      },
+      {
+        "german": "treu",
+        "english": "faithful / loyal",
+        "grammar": ""
+      },
+      {
+        "german": "die Ehe",
+        "english": "the marriage",
+        "grammar": "f"
+      },
+      {
+        "german": "der Lebenspartner",
+        "english": "the life partner",
+        "grammar": "m"
+      }
+    ],
+    "Erziehung": [
+      {
+        "german": "erziehen",
+        "english": "to raise / bring up",
+        "grammar": ""
+      },
+      {
+        "german": "die Erziehung",
+        "english": "the upbringing / education",
+        "grammar": "f"
+      },
+      {
+        "german": "aufwachsen",
+        "english": "to grow up",
+        "grammar": ""
+      },
+      {
+        "german": "bestrafen",
+        "english": "to punish",
+        "grammar": ""
+      },
+      {
+        "german": "belohnen",
+        "english": "to reward",
+        "grammar": ""
+      },
+      {
+        "german": "fördern",
+        "english": "to support / promote",
+        "grammar": ""
+      },
+      {
+        "german": "die Krippe",
+        "english": "the nursery / crèche",
+        "grammar": "f"
+      },
+      {
+        "german": "der Kindergarten",
+        "english": "the kindergarten",
+        "grammar": "m"
+      },
+      {
+        "german": "die Erzieherin",
+        "english": "the nursery teacher / educator (female)",
+        "grammar": "f"
+      },
+      {
+        "german": "selbstständig",
+        "english": "independent / self-reliant",
+        "grammar": "",
+        "icon": "selbststaendig.webp"
+      }
+    ],
+    "Generationen": [
+      {
+        "german": "die Rente",
+        "english": "the pension",
+        "grammar": "f",
+        "icon": "rente.webp"
+      },
+      {
+        "german": "der Rentner",
+        "english": "the pensioner (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "der Jugendliche",
+        "english": "the young person / teenager",
+        "grammar": "m",
+        "icon": "jugendliche.webp"
+      },
+      {
+        "german": "die Generation",
+        "english": "the generation",
+        "grammar": "f"
+      },
+      {
+        "german": "das Erwachsenwerden",
+        "english": "growing up / coming of age",
+        "grammar": "n"
+      },
+      {
+        "german": "die Pflegebedürftigkeit",
+        "english": "the need for care",
+        "grammar": "f"
+      },
+      {
+        "german": "die Lebenserwartung",
+        "english": "the life expectancy",
+        "grammar": "f"
+      },
+      {
+        "german": "das Pflegeheim",
+        "english": "the care home / nursing home",
+        "grammar": "n"
+      },
+      {
+        "german": "betreuen",
+        "english": "to care for / look after",
+        "grammar": ""
+      },
+      {
+        "german": "die Altersvorsorge",
+        "english": "the retirement provision",
+        "grammar": "f"
+      }
+    ]
+  }
+}

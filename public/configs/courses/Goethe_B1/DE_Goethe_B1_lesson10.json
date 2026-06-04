@@ -1,0 +1,222 @@
+{
+  "Freizeit und Sport": {
+    "Hobbys": [
+      {
+        "german": "basteln",
+        "english": "to do crafts / make things",
+        "grammar": "",
+        "icon": "basteln.webp"
+      },
+      {
+        "german": "sammeln",
+        "english": "to collect",
+        "grammar": "",
+        "icon": "sammeln.webp"
+      },
+      {
+        "german": "stricken",
+        "english": "to knit",
+        "grammar": ""
+      },
+      {
+        "german": "gärtnern",
+        "english": "to garden / do gardening",
+        "grammar": "",
+        "icon": "gaertnern.webp"
+      },
+      {
+        "german": "fotografieren",
+        "english": "to photograph / take photos",
+        "grammar": "",
+        "icon": "fotografieren.webp"
+      },
+      {
+        "german": "zeichnen",
+        "english": "to draw",
+        "grammar": ""
+      },
+      {
+        "german": "malen",
+        "english": "to paint",
+        "grammar": "",
+        "icon": "malen.webp"
+      },
+      {
+        "german": "musizieren",
+        "english": "to make music / play music",
+        "grammar": ""
+      },
+      {
+        "german": "klettern",
+        "english": "to climb",
+        "grammar": "",
+        "icon": "klettern.webp"
+      },
+      {
+        "german": "wandern",
+        "english": "to hike",
+        "grammar": "",
+        "icon": "wandern.webp"
+      }
+    ],
+    "Sport": [
+      {
+        "german": "der Sportverein",
+        "english": "the sports club",
+        "grammar": "m"
+      },
+      {
+        "german": "trainieren",
+        "english": "to train",
+        "grammar": ""
+      },
+      {
+        "german": "der Wettkampf",
+        "english": "the competition",
+        "grammar": "m"
+      },
+      {
+        "german": "siegen",
+        "english": "to win / be victorious",
+        "grammar": ""
+      },
+      {
+        "german": "die Meisterschaft",
+        "english": "the championship",
+        "grammar": "f"
+      },
+      {
+        "german": "das Stadion",
+        "english": "the stadium",
+        "grammar": "n"
+      },
+      {
+        "german": "der Trainer",
+        "english": "the coach / trainer (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "die Niederlage",
+        "english": "the defeat",
+        "grammar": "f"
+      },
+      {
+        "german": "das Ergebnis",
+        "english": "the result / score",
+        "grammar": "n"
+      },
+      {
+        "german": "die Mannschaft",
+        "english": "the team",
+        "grammar": "f",
+        "icon": "mannschaft.webp"
+      }
+    ],
+    "Outdoor": [
+      {
+        "german": "das Zelt",
+        "english": "the tent",
+        "grammar": "n"
+      },
+      {
+        "german": "der Rucksack",
+        "english": "the backpack / rucksack",
+        "grammar": "m"
+      },
+      {
+        "german": "zelten",
+        "english": "to camp",
+        "grammar": ""
+      },
+      {
+        "german": "das Kanu",
+        "english": "the canoe",
+        "grammar": "n"
+      },
+      {
+        "german": "segeln",
+        "english": "to sail",
+        "grammar": ""
+      },
+      {
+        "german": "tauchen",
+        "english": "to dive",
+        "grammar": ""
+      },
+      {
+        "german": "das Skifahren",
+        "english": "skiing",
+        "grammar": "n",
+        "icon": "skifahren.webp"
+      },
+      {
+        "german": "Rad fahren",
+        "english": "to cycle",
+        "grammar": ""
+      },
+      {
+        "german": "surfen",
+        "english": "to surf",
+        "grammar": ""
+      },
+      {
+        "german": "der Wanderweg",
+        "english": "the hiking trail",
+        "grammar": "m"
+      }
+    ],
+    "Vereinsleben": [
+      {
+        "german": "der Verein",
+        "english": "the club / association",
+        "grammar": "m"
+      },
+      {
+        "german": "beitreten",
+        "english": "to join (a club)",
+        "grammar": ""
+      },
+      {
+        "german": "der Beitrag",
+        "english": "the membership fee / contribution",
+        "grammar": "m"
+      },
+      {
+        "german": "das Vereinsmitglied",
+        "english": "the club member",
+        "grammar": "n"
+      },
+      {
+        "german": "ehrenamtlich",
+        "english": "voluntary / honorary",
+        "grammar": ""
+      },
+      {
+        "german": "freiwillig",
+        "english": "voluntary",
+        "grammar": ""
+      },
+      {
+        "german": "sich engagieren",
+        "english": "to get involved / be committed",
+        "grammar": ""
+      },
+      {
+        "german": "die Gemeinschaft",
+        "english": "the community",
+        "grammar": "f",
+        "icon": "gemeinschaft.webp"
+      },
+      {
+        "german": "der Mitgliedsausweis",
+        "english": "the membership card",
+        "grammar": "m"
+      },
+      {
+        "german": "die Satzung",
+        "english": "the statutes / bylaws",
+        "grammar": "f"
+      }
+    ]
+  }
+}

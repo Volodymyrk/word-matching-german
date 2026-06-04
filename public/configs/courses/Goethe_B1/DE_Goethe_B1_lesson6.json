@@ -1,0 +1,229 @@
+{
+  "Einkaufen und Konsum": {
+    "Geschäfte": [
+      {
+        "german": "das Einkaufszentrum",
+        "english": "the shopping centre",
+        "grammar": "n",
+        "icon": "einkaufszentrum.webp"
+      },
+      {
+        "german": "der Discounter",
+        "english": "the discount supermarket",
+        "grammar": "m"
+      },
+      {
+        "german": "das Kaufhaus",
+        "english": "the department store",
+        "grammar": "n"
+      },
+      {
+        "german": "die Boutique",
+        "english": "the boutique",
+        "grammar": "f"
+      },
+      {
+        "german": "die Apotheke",
+        "english": "the pharmacy / chemist's",
+        "grammar": "f",
+        "icon": "apotheke.webp"
+      },
+      {
+        "german": "die Metzgerei",
+        "english": "the butcher's",
+        "grammar": "f",
+        "icon": "metzgerei.webp"
+      },
+      {
+        "german": "die Bäckerei",
+        "english": "the bakery",
+        "grammar": "f",
+        "icon": "baeckerei.webp"
+      },
+      {
+        "german": "der Markt",
+        "english": "the market",
+        "grammar": "m"
+      },
+      {
+        "german": "der Fachmarkt",
+        "english": "the specialist store",
+        "grammar": "m"
+      },
+      {
+        "german": "der Online-Shop",
+        "english": "the online shop",
+        "grammar": "m"
+      }
+    ],
+    "Kleidung": [
+      {
+        "german": "der Mantel",
+        "english": "the coat",
+        "grammar": "m",
+        "icon": "mantel.webp"
+      },
+      {
+        "german": "die Bluse",
+        "english": "the blouse",
+        "grammar": "f",
+        "icon": "bluse.webp"
+      },
+      {
+        "german": "das Hemd",
+        "english": "the shirt",
+        "grammar": "n",
+        "icon": "hemd.webp"
+      },
+      {
+        "german": "der Pullover",
+        "english": "the jumper / pullover",
+        "grammar": "m"
+      },
+      {
+        "german": "der Anzug",
+        "english": "the suit",
+        "grammar": "m"
+      },
+      {
+        "german": "die Stiefel",
+        "english": "the boots",
+        "grammar": ""
+      },
+      {
+        "german": "der Schal",
+        "english": "the scarf",
+        "grammar": "m",
+        "icon": "schal.webp"
+      },
+      {
+        "german": "die Größe",
+        "english": "the size",
+        "grammar": "f",
+        "icon": "groesse.webp"
+      },
+      {
+        "german": "anprobieren",
+        "english": "to try on",
+        "grammar": ""
+      },
+      {
+        "german": "der Stoff",
+        "english": "the fabric / material",
+        "grammar": "m"
+      }
+    ],
+    "Kaufen und bezahlen": [
+      {
+        "german": "der Rabatt",
+        "english": "the discount",
+        "grammar": "m",
+        "icon": "rabatt.webp"
+      },
+      {
+        "german": "die Quittung",
+        "english": "the receipt",
+        "grammar": "f",
+        "icon": "quittung.webp"
+      },
+      {
+        "german": "das Sonderangebot",
+        "english": "the special offer",
+        "grammar": "n",
+        "icon": "sonderangebot.webp"
+      },
+      {
+        "german": "reklamieren",
+        "english": "to make a complaint / claim",
+        "grammar": ""
+      },
+      {
+        "german": "der Umtausch",
+        "english": "the exchange",
+        "grammar": "m"
+      },
+      {
+        "german": "zurückgeben",
+        "english": "to return (goods)",
+        "grammar": ""
+      },
+      {
+        "german": "die Ratenzahlung",
+        "english": "payment by instalments",
+        "grammar": "f"
+      },
+      {
+        "german": "bar bezahlen",
+        "english": "to pay in cash",
+        "grammar": ""
+      },
+      {
+        "german": "die Kreditkarte",
+        "english": "the credit card",
+        "grammar": "f",
+        "icon": "kreditkarte.webp"
+      },
+      {
+        "german": "die Rechnung",
+        "english": "the invoice / bill",
+        "grammar": "f",
+        "icon": "rechnung.webp"
+      }
+    ],
+    "Konsum und Qualität": [
+      {
+        "german": "die Marke",
+        "english": "the brand",
+        "grammar": "f"
+      },
+      {
+        "german": "vergleichen",
+        "english": "to compare",
+        "grammar": ""
+      },
+      {
+        "german": "nachhaltig",
+        "english": "sustainable",
+        "grammar": "",
+        "icon": "nachhaltig.webp"
+      },
+      {
+        "german": "gebraucht",
+        "english": "second-hand / used",
+        "grammar": ""
+      },
+      {
+        "german": "das Schnäppchen",
+        "english": "the bargain",
+        "grammar": "n"
+      },
+      {
+        "german": "die Garantie",
+        "english": "the guarantee / warranty",
+        "grammar": "f",
+        "icon": "garantie.webp"
+      },
+      {
+        "german": "günstig",
+        "english": "cheap / affordable",
+        "grammar": "",
+        "icon": "guenstig.webp"
+      },
+      {
+        "german": "der Verbraucher",
+        "english": "the consumer",
+        "grammar": "m"
+      },
+      {
+        "german": "der Kundenservice",
+        "english": "the customer service",
+        "grammar": "m"
+      },
+      {
+        "german": "die Lieferung",
+        "english": "the delivery",
+        "grammar": "f"
+      }
+    ]
+  }
+}

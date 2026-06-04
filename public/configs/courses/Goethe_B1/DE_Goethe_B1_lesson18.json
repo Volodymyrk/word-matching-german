@@ -1,0 +1,218 @@
+{
+  "Geographie und Geschichte": {
+    "Europa und Geographie": [
+      {
+        "german": "der Kontinent",
+        "english": "the continent",
+        "grammar": "m"
+      },
+      {
+        "german": "die Hauptstadt",
+        "english": "the capital city",
+        "grammar": "f",
+        "icon": "hauptstadt.webp"
+      },
+      {
+        "german": "das Gebiet",
+        "english": "the area / territory",
+        "grammar": "n"
+      },
+      {
+        "german": "die Region",
+        "english": "the region",
+        "grammar": "f"
+      },
+      {
+        "german": "die Bevölkerung",
+        "english": "the population",
+        "grammar": "f"
+      },
+      {
+        "german": "der Einwohner",
+        "english": "the inhabitant (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "das Klima",
+        "english": "the climate",
+        "grammar": "n",
+        "icon": "klima.webp"
+      },
+      {
+        "german": "die Fläche",
+        "english": "the area / surface",
+        "grammar": "f"
+      },
+      {
+        "german": "der Bundesstaat",
+        "english": "the federal state",
+        "grammar": "m"
+      },
+      {
+        "german": "das Bundesland",
+        "english": "the (German) federal state",
+        "grammar": "n",
+        "icon": "bundesland.webp"
+      }
+    ],
+    "Deutsche Geschichte": [
+      {
+        "german": "die Republik",
+        "english": "the republic",
+        "grammar": "f"
+      },
+      {
+        "german": "die Diktatur",
+        "english": "the dictatorship",
+        "grammar": "f"
+      },
+      {
+        "german": "die Revolution",
+        "english": "the revolution",
+        "grammar": "f"
+      },
+      {
+        "german": "der Krieg",
+        "english": "the war",
+        "grammar": "m"
+      },
+      {
+        "german": "der Frieden",
+        "english": "peace",
+        "grammar": "m"
+      },
+      {
+        "german": "die Wiedervereinigung",
+        "english": "reunification",
+        "grammar": "f",
+        "icon": "wiedervereinigung.webp"
+      },
+      {
+        "german": "das Denkmal",
+        "english": "the monument / memorial",
+        "grammar": "n",
+        "icon": "denkmal.webp"
+      },
+      {
+        "german": "die Einigung",
+        "english": "unification",
+        "grammar": "f"
+      },
+      {
+        "german": "die Mauer",
+        "english": "the (Berlin) Wall",
+        "grammar": "f",
+        "icon": "mauer.webp"
+      },
+      {
+        "german": "das Gedenkstätte",
+        "english": "the memorial site",
+        "grammar": "n"
+      }
+    ],
+    "Weltgeschichte": [
+      {
+        "german": "die Antike",
+        "english": "antiquity / ancient times",
+        "grammar": "f"
+      },
+      {
+        "german": "das Mittelalter",
+        "english": "the Middle Ages",
+        "grammar": "n"
+      },
+      {
+        "german": "die Neuzeit",
+        "english": "the modern era",
+        "grammar": "f"
+      },
+      {
+        "german": "die Entdeckung",
+        "english": "the discovery",
+        "grammar": "f"
+      },
+      {
+        "german": "die Industrialisierung",
+        "english": "industrialisation",
+        "grammar": "f"
+      },
+      {
+        "german": "das Erbe",
+        "english": "the heritage / legacy",
+        "grammar": "n"
+      },
+      {
+        "german": "die Zivilisation",
+        "english": "civilisation",
+        "grammar": "f"
+      },
+      {
+        "german": "die Epoche",
+        "english": "the epoch / era",
+        "grammar": "f"
+      },
+      {
+        "german": "das Jahrhundert",
+        "english": "the century",
+        "grammar": "n"
+      },
+      {
+        "german": "historisch",
+        "english": "historical",
+        "grammar": ""
+      }
+    ],
+    "Kulturelle Unterschiede": [
+      {
+        "german": "anpassen",
+        "english": "to adapt",
+        "grammar": ""
+      },
+      {
+        "german": "die Vielfalt",
+        "english": "diversity",
+        "grammar": "f"
+      },
+      {
+        "german": "das Vorurteil",
+        "english": "the prejudice",
+        "grammar": "n"
+      },
+      {
+        "german": "stereotypisch",
+        "english": "stereotypical",
+        "grammar": ""
+      },
+      {
+        "german": "die Weltanschauung",
+        "english": "the worldview",
+        "grammar": "f"
+      },
+      {
+        "german": "das Klischee",
+        "english": "the cliché / stereotype",
+        "grammar": "n"
+      },
+      {
+        "german": "die Gemeinsamkeit",
+        "english": "the common ground / similarity",
+        "grammar": "f"
+      },
+      {
+        "german": "der Unterschied",
+        "english": "the difference",
+        "grammar": "m"
+      },
+      {
+        "german": "vergleichen",
+        "english": "to compare",
+        "grammar": ""
+      },
+      {
+        "german": "der Austausch",
+        "english": "the exchange",
+        "grammar": "m"
+      }
+    ]
+  }
+}
