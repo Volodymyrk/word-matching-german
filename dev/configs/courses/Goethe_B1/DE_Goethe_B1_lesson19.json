@@ -1,0 +1,218 @@
+{
+  "Sprache und Ausdruck": {
+    "Sprachkenntnisse": [
+      {
+        "german": "die Muttersprache",
+        "english": "the mother tongue / native language",
+        "grammar": "f"
+      },
+      {
+        "german": "die Fremdsprache",
+        "english": "the foreign language",
+        "grammar": "f"
+      },
+      {
+        "german": "fließend",
+        "english": "fluent",
+        "grammar": ""
+      },
+      {
+        "german": "der Akzent",
+        "english": "the accent",
+        "grammar": "m"
+      },
+      {
+        "german": "der Dialekt",
+        "english": "the dialect",
+        "grammar": "m",
+        "icon": "dialekt.webp"
+      },
+      {
+        "german": "dolmetschen",
+        "english": "to interpret (orally)",
+        "grammar": ""
+      },
+      {
+        "german": "übersetzen",
+        "english": "to translate",
+        "grammar": ""
+      },
+      {
+        "german": "die Aussprache",
+        "english": "pronunciation",
+        "grammar": "f"
+      },
+      {
+        "german": "der Wortschatz",
+        "english": "vocabulary",
+        "grammar": "m"
+      },
+      {
+        "german": "die Grammatik",
+        "english": "grammar",
+        "grammar": "f"
+      }
+    ],
+    "Schriftliche Kommunikation": [
+      {
+        "german": "verfassen",
+        "english": "to write / compose",
+        "grammar": ""
+      },
+      {
+        "german": "das Anschreiben",
+        "english": "the cover letter",
+        "grammar": "n"
+      },
+      {
+        "german": "beilegen",
+        "english": "to enclose",
+        "grammar": ""
+      },
+      {
+        "german": "aufsetzen",
+        "english": "to draft (a letter)",
+        "grammar": ""
+      },
+      {
+        "german": "die Notiz",
+        "english": "the note",
+        "grammar": "f"
+      },
+      {
+        "german": "das Protokoll",
+        "english": "the minutes / protocol",
+        "grammar": "n"
+      },
+      {
+        "german": "zusammenfassen",
+        "english": "to summarise",
+        "grammar": ""
+      },
+      {
+        "german": "erläutern",
+        "english": "to explain / elaborate",
+        "grammar": ""
+      },
+      {
+        "german": "beschreiben",
+        "english": "to describe",
+        "grammar": ""
+      },
+      {
+        "german": "begründen",
+        "english": "to justify / give reasons",
+        "grammar": "",
+        "icon": "begruenden.webp"
+      }
+    ],
+    "Mündliche Kommunikation": [
+      {
+        "german": "debattieren",
+        "english": "to debate",
+        "grammar": ""
+      },
+      {
+        "german": "argumentieren",
+        "english": "to argue / make a case",
+        "grammar": "",
+        "icon": "argumentieren.webp"
+      },
+      {
+        "german": "überzeugen",
+        "english": "to convince / persuade",
+        "grammar": ""
+      },
+      {
+        "german": "widersprechen",
+        "english": "to contradict / disagree",
+        "grammar": ""
+      },
+      {
+        "german": "zustimmen",
+        "english": "to agree",
+        "grammar": "",
+        "icon": "zustimmen.webp"
+      },
+      {
+        "german": "der Kompromiss",
+        "english": "the compromise",
+        "grammar": "m"
+      },
+      {
+        "german": "vermitteln",
+        "english": "to mediate",
+        "grammar": ""
+      },
+      {
+        "german": "das Missverständnis",
+        "english": "the misunderstanding",
+        "grammar": "n"
+      },
+      {
+        "german": "klären",
+        "english": "to clarify",
+        "grammar": ""
+      },
+      {
+        "german": "betonen",
+        "english": "to emphasise",
+        "grammar": ""
+      }
+    ],
+    "Redemittel": [
+      {
+        "german": "meiner Meinung nach",
+        "english": "in my opinion",
+        "grammar": ""
+      },
+      {
+        "german": "einerseits",
+        "english": "on the one hand",
+        "grammar": "",
+        "icon": "einerseits.webp"
+      },
+      {
+        "german": "andererseits",
+        "english": "on the other hand",
+        "grammar": "",
+        "icon": "andererseits.webp"
+      },
+      {
+        "german": "im Gegensatz zu",
+        "english": "in contrast to",
+        "grammar": ""
+      },
+      {
+        "german": "jedoch",
+        "english": "however / yet",
+        "grammar": ""
+      },
+      {
+        "german": "allerdings",
+        "english": "however / admittedly",
+        "grammar": ""
+      },
+      {
+        "german": "dennoch",
+        "english": "nevertheless",
+        "grammar": ""
+      },
+      {
+        "german": "zwar",
+        "english": "admittedly / granted",
+        "grammar": ""
+      },
+      {
+        "german": "schließlich",
+        "english": "finally / after all",
+        "grammar": ""
+      },
+      {
+        "german": "im Hinblick auf",
+        "english": "with regard to / regarding",
+        "grammar": ""
+      }
+    ]
+  }
+}

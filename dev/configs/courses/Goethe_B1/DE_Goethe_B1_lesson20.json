@@ -1,0 +1,215 @@
+{
+  "Öffentliche Dienste und Notfälle": {
+    "Öffentliche Dienste": [
+      {
+        "german": "das Rathaus",
+        "english": "the town hall",
+        "grammar": "n",
+        "icon": "rathaus.webp"
+      },
+      {
+        "german": "das Finanzamt",
+        "english": "the tax office",
+        "grammar": "n"
+      },
+      {
+        "german": "das Jobcenter",
+        "english": "the job centre",
+        "grammar": "n"
+      },
+      {
+        "german": "das Standesamt",
+        "english": "the registry office",
+        "grammar": "n"
+      },
+      {
+        "german": "das Einwohnermeldeamt",
+        "english": "the residents' registration office",
+        "grammar": "n",
+        "icon": "einwohnermeldeamt.webp"
+      },
+      {
+        "german": "die Sozialhilfe",
+        "english": "social welfare / benefits",
+        "grammar": "f"
+      },
+      {
+        "german": "das Bürgeramt",
+        "english": "the citizens' office",
+        "grammar": "n"
+      },
+      {
+        "german": "der ÖPNV",
+        "english": "public transport",
+        "grammar": "m"
+      },
+      {
+        "german": "anmelden",
+        "english": "to register / sign up",
+        "grammar": ""
+      },
+      {
+        "german": "abmelden",
+        "english": "to deregister / sign off",
+        "grammar": ""
+      }
+    ],
+    "Notfälle": [
+      {
+        "german": "der Notruf",
+        "english": "the emergency call",
+        "grammar": "m"
+      },
+      {
+        "german": "die Feuerwehr",
+        "english": "the fire brigade",
+        "grammar": "f"
+      },
+      {
+        "german": "der Rettungsdienst",
+        "english": "the emergency services",
+        "grammar": "m"
+      },
+      {
+        "german": "der Notarzt",
+        "english": "the emergency doctor (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "die erste Hilfe",
+        "english": "first aid",
+        "grammar": "f"
+      },
+      {
+        "german": "bewusstlos",
+        "english": "unconscious",
+        "grammar": ""
+      },
+      {
+        "german": "die Gefahr",
+        "english": "the danger",
+        "grammar": "f"
+      },
+      {
+        "german": "alarmieren",
+        "english": "to alert / call out",
+        "grammar": ""
+      },
+      {
+        "german": "verletzt",
+        "english": "injured",
+        "grammar": ""
+      },
+      {
+        "german": "retten",
+        "english": "to rescue / save",
+        "grammar": ""
+      }
+    ],
+    "Katastrophen": [
+      {
+        "german": "das Erdbeben",
+        "english": "the earthquake",
+        "grammar": "n"
+      },
+      {
+        "german": "der Sturm",
+        "english": "the storm",
+        "grammar": "m",
+        "icon": "sturm.webp"
+      },
+      {
+        "german": "die Überschwemmung",
+        "english": "the flood",
+        "grammar": "f"
+      },
+      {
+        "german": "evakuieren",
+        "english": "to evacuate",
+        "grammar": ""
+      },
+      {
+        "german": "die Evakuierung",
+        "english": "evacuation",
+        "grammar": "f"
+      },
+      {
+        "german": "warnen",
+        "english": "to warn",
+        "grammar": ""
+      },
+      {
+        "german": "die Soforthilfe",
+        "english": "immediate aid / emergency relief",
+        "grammar": "f"
+      },
+      {
+        "german": "der Schutzraum",
+        "english": "the shelter",
+        "grammar": "m"
+      },
+      {
+        "german": "der Krisenstab",
+        "english": "the crisis team",
+        "grammar": "m"
+      },
+      {
+        "german": "der Zivilschutz",
+        "english": "civil defence / emergency preparedness",
+        "grammar": "m"
+      }
+    ],
+    "Versicherungen": [
+      {
+        "german": "die Haftpflichtversicherung",
+        "english": "third-party liability insurance",
+        "grammar": "f"
+      },
+      {
+        "german": "die Unfallversicherung",
+        "english": "accident insurance",
+        "grammar": "f"
+      },
+      {
+        "german": "die Lebensversicherung",
+        "english": "life insurance",
+        "grammar": "f"
+      },
+      {
+        "german": "der Versicherungsfall",
+        "english": "the insurance claim / event",
+        "grammar": "m"
+      },
+      {
+        "german": "die Police",
+        "english": "the insurance policy",
+        "grammar": "f"
+      },
+      {
+        "german": "melden",
+        "english": "to report",
+        "grammar": ""
+      },
+      {
+        "german": "die Prämie",
+        "english": "the premium",
+        "grammar": "f"
+      },
+      {
+        "german": "die Selbstbeteiligung",
+        "english": "the excess / deductible",
+        "grammar": "f"
+      },
+      {
+        "german": "erstatten",
+        "english": "to reimburse / refund",
+        "grammar": ""
+      },
+      {
+        "german": "die Schadensmeldung",
+        "english": "the damage report",
+        "grammar": "f"
+      }
+    ]
+  }
+}

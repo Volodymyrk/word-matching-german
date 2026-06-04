@@ -1,0 +1,229 @@
+{
+  "Essen und Ernährung": {
+    "Zutaten und Lebensmittel": [
+      {
+        "german": "das Gewürz",
+        "english": "the spice / seasoning",
+        "grammar": "n",
+        "icon": "gewuerz.webp"
+      },
+      {
+        "german": "das Mehl",
+        "english": "the flour",
+        "grammar": "n",
+        "icon": "mehl.webp"
+      },
+      {
+        "german": "die Sahne",
+        "english": "the cream",
+        "grammar": "f"
+      },
+      {
+        "german": "der Essig",
+        "english": "the vinegar",
+        "grammar": "m",
+        "icon": "essig.webp"
+      },
+      {
+        "german": "das Olivenöl",
+        "english": "the olive oil",
+        "grammar": "n"
+      },
+      {
+        "german": "das Lammfleisch",
+        "english": "the lamb (meat)",
+        "grammar": "n"
+      },
+      {
+        "german": "die Meeresfrüchte",
+        "english": "the seafood",
+        "grammar": ""
+      },
+      {
+        "german": "die Hülsenfrüchte",
+        "english": "the pulses / legumes",
+        "grammar": ""
+      },
+      {
+        "german": "das Vollkornbrot",
+        "english": "the wholegrain bread",
+        "grammar": "n"
+      },
+      {
+        "german": "die Süßigkeit",
+        "english": "the sweet / candy",
+        "grammar": "f"
+      }
+    ],
+    "Kochen und Zubereiten": [
+      {
+        "german": "braten",
+        "english": "to fry / roast",
+        "grammar": "",
+        "icon": "braten.webp"
+      },
+      {
+        "german": "schmoren",
+        "english": "to braise / stew",
+        "grammar": ""
+      },
+      {
+        "german": "schälen",
+        "english": "to peel",
+        "grammar": ""
+      },
+      {
+        "german": "mischen",
+        "english": "to mix",
+        "grammar": "",
+        "icon": "mischen.webp"
+      },
+      {
+        "german": "erhitzen",
+        "english": "to heat up",
+        "grammar": ""
+      },
+      {
+        "german": "würzen",
+        "english": "to season",
+        "grammar": ""
+      },
+      {
+        "german": "hacken",
+        "english": "to chop",
+        "grammar": ""
+      },
+      {
+        "german": "reiben",
+        "english": "to grate",
+        "grammar": ""
+      },
+      {
+        "german": "die Pfanne",
+        "english": "the frying pan",
+        "grammar": "f",
+        "icon": "pfanne.webp"
+      },
+      {
+        "german": "der Topf",
+        "english": "the pot / saucepan",
+        "grammar": "m",
+        "icon": "topf.webp"
+      }
+    ],
+    "Restaurant": [
+      {
+        "german": "bestellen",
+        "english": "to order",
+        "grammar": "",
+        "icon": "bestellen.webp"
+      },
+      {
+        "german": "die Speisekarte",
+        "english": "the menu",
+        "grammar": "f",
+        "icon": "speisekarte.webp"
+      },
+      {
+        "german": "die Vorspeise",
+        "english": "the starter",
+        "grammar": "f",
+        "icon": "vorspeise.webp"
+      },
+      {
+        "german": "das Hauptgericht",
+        "english": "the main course",
+        "grammar": "n",
+        "icon": "hauptgericht.webp"
+      },
+      {
+        "german": "das Dessert",
+        "english": "the dessert",
+        "grammar": "n"
+      },
+      {
+        "german": "das Trinkgeld",
+        "english": "the tip",
+        "grammar": "n",
+        "icon": "trinkgeld.webp"
+      },
+      {
+        "german": "reservieren",
+        "english": "to reserve / book a table",
+        "grammar": "",
+        "icon": "reservieren.webp"
+      },
+      {
+        "german": "der Kellner",
+        "english": "the waiter (male)",
+        "grammar": "m",
+        "icon": "kellner.webp"
+      },
+      {
+        "german": "die Tagesempfehlung",
+        "english": "the dish of the day",
+        "grammar": "f"
+      },
+      {
+        "german": "vegetarisch",
+        "english": "vegetarian",
+        "grammar": "",
+        "icon": "vegetarisch.webp"
+      }
+    ],
+    "Ernährung und Diät": [
+      {
+        "german": "das Protein",
+        "english": "the protein",
+        "grammar": "n"
+      },
+      {
+        "german": "das Fett",
+        "english": "the fat",
+        "grammar": "n"
+      },
+      {
+        "german": "das Kohlenhydrat",
+        "english": "the carbohydrate",
+        "grammar": "n"
+      },
+      {
+        "german": "die Kalorie",
+        "english": "the calorie",
+        "grammar": "f"
+      },
+      {
+        "german": "vegan",
+        "english": "vegan",
+        "grammar": "",
+        "icon": "vegan.webp"
+      },
+      {
+        "german": "glutenfrei",
+        "english": "gluten-free",
+        "grammar": ""
+      },
+      {
+        "german": "laktosefrei",
+        "english": "lactose-free",
+        "grammar": ""
+      },
+      {
+        "german": "die Unverträglichkeit",
+        "english": "the intolerance",
+        "grammar": "f"
+      },
+      {
+        "german": "die Diät",
+        "english": "the diet",
+        "grammar": "f",
+        "icon": "diaet.webp"
+      },
+      {
+        "german": "ausgewogen ernähren",
+        "english": "to eat a balanced diet",
+        "grammar": ""
+      }
+    ]
+  }
+}

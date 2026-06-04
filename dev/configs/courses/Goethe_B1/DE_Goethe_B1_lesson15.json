@@ -1,0 +1,215 @@
+{
+  "Wirtschaft und Finanzen": {
+    "Geld und Bank": [
+      {
+        "german": "das Konto",
+        "english": "the (bank) account",
+        "grammar": "n",
+        "icon": "konto.webp"
+      },
+      {
+        "german": "die Überweisung",
+        "english": "the bank transfer",
+        "grammar": "f"
+      },
+      {
+        "german": "abheben",
+        "english": "to withdraw (money)",
+        "grammar": "",
+        "icon": "abheben.webp"
+      },
+      {
+        "german": "einzahlen",
+        "english": "to deposit / pay in",
+        "grammar": ""
+      },
+      {
+        "german": "der Zinssatz",
+        "english": "the interest rate",
+        "grammar": "m"
+      },
+      {
+        "german": "der Kredit",
+        "english": "the loan / credit",
+        "grammar": "m"
+      },
+      {
+        "german": "die Schulden",
+        "english": "the debts",
+        "grammar": ""
+      },
+      {
+        "german": "die Hypothek",
+        "english": "the mortgage",
+        "grammar": "f"
+      },
+      {
+        "german": "die Währung",
+        "english": "the currency",
+        "grammar": "f"
+      },
+      {
+        "german": "die Inflation",
+        "english": "inflation",
+        "grammar": "f"
+      }
+    ],
+    "Unternehmen": [
+      {
+        "german": "das Unternehmen",
+        "english": "the company / enterprise",
+        "grammar": "n"
+      },
+      {
+        "german": "gründen",
+        "english": "to found / establish",
+        "grammar": ""
+      },
+      {
+        "german": "der Umsatz",
+        "english": "the turnover / revenue",
+        "grammar": "m"
+      },
+      {
+        "german": "der Gewinn",
+        "english": "the profit",
+        "grammar": "m"
+      },
+      {
+        "german": "der Verlust",
+        "english": "the loss",
+        "grammar": "m"
+      },
+      {
+        "german": "die Aktie",
+        "english": "the share / stock",
+        "grammar": "f"
+      },
+      {
+        "german": "investieren",
+        "english": "to invest",
+        "grammar": ""
+      },
+      {
+        "german": "fusionieren",
+        "english": "to merge",
+        "grammar": ""
+      },
+      {
+        "german": "die Insolvenz",
+        "english": "insolvency / bankruptcy",
+        "grammar": "f"
+      },
+      {
+        "german": "der Konkurrent",
+        "english": "the competitor (male)",
+        "grammar": "m"
+      }
+    ],
+    "Wirtschaft": [
+      {
+        "german": "die Konjunktur",
+        "english": "the economic situation / business cycle",
+        "grammar": "f"
+      },
+      {
+        "german": "das Wachstum",
+        "english": "growth",
+        "grammar": "n"
+      },
+      {
+        "german": "die Rezession",
+        "english": "the recession",
+        "grammar": "f"
+      },
+      {
+        "german": "die Arbeitslosigkeit",
+        "english": "unemployment",
+        "grammar": "f"
+      },
+      {
+        "german": "exportieren",
+        "english": "to export",
+        "grammar": ""
+      },
+      {
+        "german": "importieren",
+        "english": "to import",
+        "grammar": ""
+      },
+      {
+        "german": "die Nachfrage",
+        "english": "demand",
+        "grammar": "f"
+      },
+      {
+        "german": "das Angebot",
+        "english": "the supply / offer",
+        "grammar": "n",
+        "icon": "angebot.webp"
+      },
+      {
+        "german": "der Handel",
+        "english": "trade / commerce",
+        "grammar": "m"
+      },
+      {
+        "german": "der Markt",
+        "english": "the market",
+        "grammar": "m"
+      }
+    ],
+    "Verbraucherschutz": [
+      {
+        "german": "die Reklamation",
+        "english": "the complaint / claim",
+        "grammar": "f"
+      },
+      {
+        "german": "der Verbraucherschutz",
+        "english": "consumer protection",
+        "grammar": "m"
+      },
+      {
+        "german": "die Haftung",
+        "english": "liability",
+        "grammar": "f"
+      },
+      {
+        "german": "entschädigen",
+        "english": "to compensate",
+        "grammar": ""
+      },
+      {
+        "german": "die Beschwerde",
+        "english": "the complaint",
+        "grammar": "f"
+      },
+      {
+        "german": "die AGB",
+        "english": "the terms and conditions",
+        "grammar": ""
+      },
+      {
+        "german": "das Kleingedruckte",
+        "english": "the small print",
+        "grammar": "n"
+      },
+      {
+        "german": "die Rückerstattung",
+        "english": "the refund / reimbursement",
+        "grammar": "f"
+      },
+      {
+        "german": "die Gewährleistung",
+        "english": "the statutory guarantee",
+        "grammar": "f"
+      },
+      {
+        "german": "widersprechen",
+        "english": "to object / contradict",
+        "grammar": ""
+      }
+    ]
+  }
+}

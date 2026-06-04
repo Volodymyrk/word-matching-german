@@ -1,0 +1,213 @@
+{
+  "Recht und Ordnung": {
+    "Vergehen": [
+      {
+        "german": "stehlen",
+        "english": "to steal",
+        "grammar": ""
+      },
+      {
+        "german": "der Diebstahl",
+        "english": "theft",
+        "grammar": "m"
+      },
+      {
+        "german": "betrügen",
+        "english": "to deceive / cheat",
+        "grammar": ""
+      },
+      {
+        "german": "der Betrug",
+        "english": "fraud / deception",
+        "grammar": "m"
+      },
+      {
+        "german": "verletzen",
+        "english": "to injure / violate",
+        "grammar": ""
+      },
+      {
+        "german": "bedrohen",
+        "english": "to threaten",
+        "grammar": ""
+      },
+      {
+        "german": "die Sachbeschädigung",
+        "english": "criminal damage",
+        "grammar": "f"
+      },
+      {
+        "german": "fahrlässig",
+        "english": "negligent / careless",
+        "grammar": ""
+      },
+      {
+        "german": "einbrechen",
+        "english": "to break in / burgle",
+        "grammar": ""
+      },
+      {
+        "german": "der Einbruch",
+        "english": "the break-in / burglary",
+        "grammar": "m"
+      }
+    ],
+    "Strafverfolgung": [
+      {
+        "german": "die Polizei",
+        "english": "the police",
+        "grammar": "f"
+      },
+      {
+        "german": "verhaften",
+        "english": "to arrest",
+        "grammar": ""
+      },
+      {
+        "german": "die Verhaftung",
+        "english": "the arrest",
+        "grammar": "f"
+      },
+      {
+        "german": "anklagen",
+        "english": "to charge / accuse",
+        "grammar": ""
+      },
+      {
+        "german": "die Anklage",
+        "english": "the charge / indictment",
+        "grammar": "f"
+      },
+      {
+        "german": "das Gericht",
+        "english": "the court",
+        "grammar": "n"
+      },
+      {
+        "german": "der Richter",
+        "english": "the judge (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "das Urteil",
+        "english": "the verdict / judgement",
+        "grammar": "n"
+      },
+      {
+        "german": "der Zeuge",
+        "english": "the witness (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "die Aussage",
+        "english": "the statement / testimony",
+        "grammar": "f"
+      }
+    ],
+    "Strafe": [
+      {
+        "german": "verurteilen",
+        "english": "to convict / sentence",
+        "grammar": ""
+      },
+      {
+        "german": "die Geldstrafe",
+        "english": "the fine",
+        "grammar": "f"
+      },
+      {
+        "german": "die Bewährung",
+        "english": "probation",
+        "grammar": "f"
+      },
+      {
+        "german": "die Freiheitsstrafe",
+        "english": "the custodial sentence",
+        "grammar": "f"
+      },
+      {
+        "german": "das Gefängnis",
+        "english": "the prison",
+        "grammar": "n"
+      },
+      {
+        "german": "unschuldig",
+        "english": "innocent",
+        "grammar": ""
+      },
+      {
+        "german": "schuldig",
+        "english": "guilty",
+        "grammar": ""
+      },
+      {
+        "german": "die Buße",
+        "english": "the penance / fine",
+        "grammar": "f"
+      },
+      {
+        "german": "die Strafe",
+        "english": "the punishment / penalty",
+        "grammar": "f"
+      },
+      {
+        "german": "der Strafbefehl",
+        "english": "the penalty order",
+        "grammar": "m"
+      }
+    ],
+    "Zivilrecht": [
+      {
+        "german": "der Anwalt",
+        "english": "the lawyer (male)",
+        "grammar": "m",
+        "icon": "anwalt.webp"
+      },
+      {
+        "german": "klagen",
+        "english": "to sue / take legal action",
+        "grammar": ""
+      },
+      {
+        "german": "die Klage",
+        "english": "the lawsuit / legal action",
+        "grammar": "f"
+      },
+      {
+        "german": "haften",
+        "english": "to be liable",
+        "grammar": ""
+      },
+      {
+        "german": "die Haftpflicht",
+        "english": "the third-party liability",
+        "grammar": "f"
+      },
+      {
+        "german": "das Testament",
+        "english": "the will / testament",
+        "grammar": "n"
+      },
+      {
+        "german": "erben",
+        "english": "to inherit",
+        "grammar": ""
+      },
+      {
+        "german": "das Erbe",
+        "english": "the inheritance",
+        "grammar": "n"
+      },
+      {
+        "german": "der Notar",
+        "english": "the notary (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "unterzeichnen",
+        "english": "to sign",
+        "grammar": ""
+      }
+    ]
+  }
+}

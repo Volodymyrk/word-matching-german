@@ -1,0 +1,216 @@
+{
+  "Gesellschaft und Migration": {
+    "Soziales Leben": [
+      {
+        "german": "die Gemeinschaft",
+        "english": "the community",
+        "grammar": "f",
+        "icon": "gemeinschaft.webp"
+      },
+      {
+        "german": "der Verband",
+        "english": "the association / federation",
+        "grammar": "m"
+      },
+      {
+        "german": "die Organisation",
+        "english": "the organisation",
+        "grammar": "f"
+      },
+      {
+        "german": "das Sozialwesen",
+        "english": "the social welfare / services",
+        "grammar": "n"
+      },
+      {
+        "german": "solidarisch",
+        "english": "in solidarity / supportive",
+        "grammar": ""
+      },
+      {
+        "german": "unterstützen",
+        "english": "to support",
+        "grammar": ""
+      },
+      {
+        "german": "die Wohlfahrt",
+        "english": "welfare",
+        "grammar": "f"
+      },
+      {
+        "german": "die Hilfsbereitschaft",
+        "english": "willingness to help / helpfulness",
+        "grammar": "f"
+      },
+      {
+        "german": "das Ehrenamt",
+        "english": "voluntary work / honorary office",
+        "grammar": "n"
+      },
+      {
+        "german": "die Zivilgesellschaft",
+        "english": "civil society",
+        "grammar": "f"
+      }
+    ],
+    "Gleichberechtigung": [
+      {
+        "german": "die Gleichstellung",
+        "english": "equality / equal rights",
+        "grammar": "f"
+      },
+      {
+        "german": "die Diskriminierung",
+        "english": "discrimination",
+        "grammar": "f"
+      },
+      {
+        "german": "benachteiligen",
+        "english": "to disadvantage / discriminate against",
+        "grammar": ""
+      },
+      {
+        "german": "die Chancengleichheit",
+        "english": "equal opportunities",
+        "grammar": "f"
+      },
+      {
+        "german": "die Minderheit",
+        "english": "the minority",
+        "grammar": "f"
+      },
+      {
+        "german": "schützen",
+        "english": "to protect",
+        "grammar": ""
+      },
+      {
+        "german": "die Würde",
+        "english": "dignity",
+        "grammar": "f"
+      },
+      {
+        "german": "tolerieren",
+        "english": "to tolerate",
+        "grammar": ""
+      },
+      {
+        "german": "respektieren",
+        "english": "to respect",
+        "grammar": ""
+      },
+      {
+        "german": "die Vielfalt",
+        "english": "diversity",
+        "grammar": "f"
+      }
+    ],
+    "Migration": [
+      {
+        "german": "der Migrant",
+        "english": "the migrant (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "das Asyl",
+        "english": "asylum",
+        "grammar": "n"
+      },
+      {
+        "german": "der Flüchtling",
+        "english": "the refugee",
+        "grammar": "m"
+      },
+      {
+        "german": "aufnehmen",
+        "english": "to take in / receive",
+        "grammar": ""
+      },
+      {
+        "german": "einbürgern",
+        "english": "to naturalise",
+        "grammar": ""
+      },
+      {
+        "german": "die Staatsbürgerschaft",
+        "english": "citizenship",
+        "grammar": "f"
+      },
+      {
+        "german": "die Aufenthaltserlaubnis",
+        "english": "the residence permit",
+        "grammar": "f",
+        "icon": "aufenthaltserlaubnis.webp"
+      },
+      {
+        "german": "willkommen",
+        "english": "welcome",
+        "grammar": ""
+      },
+      {
+        "german": "die Integration",
+        "english": "integration",
+        "grammar": "f"
+      },
+      {
+        "german": "die Heimat",
+        "english": "the home / homeland",
+        "grammar": "f"
+      }
+    ],
+    "Werte und Normen": [
+      {
+        "german": "der Wert",
+        "english": "the value",
+        "grammar": "m"
+      },
+      {
+        "german": "die Norm",
+        "english": "the norm / standard",
+        "grammar": "f"
+      },
+      {
+        "german": "die Sitte",
+        "english": "the custom / convention",
+        "grammar": "f"
+      },
+      {
+        "german": "anpassen",
+        "english": "to adapt / adjust",
+        "grammar": ""
+      },
+      {
+        "german": "die Tradition",
+        "english": "the tradition",
+        "grammar": "f",
+        "icon": "tradition.webp"
+      },
+      {
+        "german": "der Brauch",
+        "english": "the custom / tradition",
+        "grammar": "m",
+        "icon": "brauch.webp"
+      },
+      {
+        "german": "offen",
+        "english": "open / open-minded",
+        "grammar": ""
+      },
+      {
+        "german": "die Toleranz",
+        "english": "tolerance",
+        "grammar": "f"
+      },
+      {
+        "german": "kulturell",
+        "english": "cultural",
+        "grammar": ""
+      },
+      {
+        "german": "interkulturell",
+        "english": "intercultural",
+        "grammar": ""
+      }
+    ]
+  }
+}

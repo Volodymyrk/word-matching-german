@@ -1,0 +1,216 @@
+{
+  "Gesundheit und Medizin": {
+    "Verletzungen und Beschwerden": [
+      {
+        "german": "die Verletzung",
+        "english": "the injury",
+        "grammar": "f"
+      },
+      {
+        "german": "die Wunde",
+        "english": "the wound",
+        "grammar": "f"
+      },
+      {
+        "german": "der Knochen",
+        "english": "the bone",
+        "grammar": "m"
+      },
+      {
+        "german": "der Bruch",
+        "english": "the fracture / break",
+        "grammar": "m"
+      },
+      {
+        "german": "die Verbrennung",
+        "english": "the burn",
+        "grammar": "f"
+      },
+      {
+        "german": "allergisch",
+        "english": "allergic",
+        "grammar": ""
+      },
+      {
+        "german": "das Asthma",
+        "english": "the asthma",
+        "grammar": "n"
+      },
+      {
+        "german": "der Blutdruck",
+        "english": "the blood pressure",
+        "grammar": "m",
+        "icon": "blutdruck.webp"
+      },
+      {
+        "german": "der Herzinfarkt",
+        "english": "the heart attack",
+        "grammar": "m"
+      },
+      {
+        "german": "der Schlaganfall",
+        "english": "the stroke",
+        "grammar": "m"
+      }
+    ],
+    "Arzt und Behandlung": [
+      {
+        "german": "das Rezept",
+        "english": "the prescription",
+        "grammar": "n"
+      },
+      {
+        "german": "die Überweisung",
+        "english": "the referral",
+        "grammar": "f",
+        "icon": "ueberweisung.webp"
+      },
+      {
+        "german": "untersuchen",
+        "english": "to examine",
+        "grammar": ""
+      },
+      {
+        "german": "die Untersuchung",
+        "english": "the examination / check-up",
+        "grammar": "f"
+      },
+      {
+        "german": "die Behandlung",
+        "english": "the treatment",
+        "grammar": "f"
+      },
+      {
+        "german": "der Facharzt",
+        "english": "the specialist (doctor)",
+        "grammar": "m"
+      },
+      {
+        "german": "die Diagnose",
+        "english": "the diagnosis",
+        "grammar": "f"
+      },
+      {
+        "german": "das Symptom",
+        "english": "the symptom",
+        "grammar": "n"
+      },
+      {
+        "german": "chronisch",
+        "english": "chronic",
+        "grammar": ""
+      },
+      {
+        "german": "die Nebenwirkung",
+        "english": "the side effect",
+        "grammar": "f"
+      }
+    ],
+    "Krankenhaus": [
+      {
+        "german": "die Operation",
+        "english": "the operation / surgery",
+        "grammar": "f"
+      },
+      {
+        "german": "operieren",
+        "english": "to operate on",
+        "grammar": ""
+      },
+      {
+        "german": "die Narkose",
+        "english": "the anaesthesia",
+        "grammar": "f"
+      },
+      {
+        "german": "die Intensivstation",
+        "english": "the intensive care unit",
+        "grammar": "f"
+      },
+      {
+        "german": "die Pflegerin",
+        "english": "the nurse (female)",
+        "grammar": "f"
+      },
+      {
+        "german": "der Chirurg",
+        "english": "the surgeon (male)",
+        "grammar": "m"
+      },
+      {
+        "german": "entlassen werden",
+        "english": "to be discharged (from hospital)",
+        "grammar": ""
+      },
+      {
+        "german": "die Krankenhausstation",
+        "english": "the hospital ward",
+        "grammar": "f"
+      },
+      {
+        "german": "die Reha",
+        "english": "the rehabilitation",
+        "grammar": "f"
+      },
+      {
+        "german": "sich erholen",
+        "english": "to recover",
+        "grammar": ""
+      }
+    ],
+    "Gesund leben": [
+      {
+        "german": "die Vorsorge",
+        "english": "the prevention / precaution",
+        "grammar": "f",
+        "icon": "vorsorge.webp"
+      },
+      {
+        "german": "die Vorsorgeuntersuchung",
+        "english": "the preventive check-up",
+        "grammar": "f"
+      },
+      {
+        "german": "impfen",
+        "english": "to vaccinate",
+        "grammar": "",
+        "icon": "impfen.webp"
+      },
+      {
+        "german": "die Impfung",
+        "english": "the vaccination",
+        "grammar": "f"
+      },
+      {
+        "german": "ausgewogen",
+        "english": "balanced",
+        "grammar": ""
+      },
+      {
+        "german": "die Sucht",
+        "english": "the addiction",
+        "grammar": "f"
+      },
+      {
+        "german": "süchtig",
+        "english": "addicted",
+        "grammar": ""
+      },
+      {
+        "german": "das Wohlbefinden",
+        "english": "the well-being",
+        "grammar": "n"
+      },
+      {
+        "german": "präventiv",
+        "english": "preventive",
+        "grammar": ""
+      },
+      {
+        "german": "bewusst leben",
+        "english": "to live mindfully / consciously",
+        "grammar": ""
+      }
+    ]
+  }
+}
