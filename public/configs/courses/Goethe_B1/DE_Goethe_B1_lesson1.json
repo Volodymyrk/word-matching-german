@@ -2,13 +2,13 @@
   "Arbeit und Bewerbung": {
     "Stellensuche": [
       {
-        "german": "die Stelle",
-        "english": "the position / job",
+        "german": "Stelle",
+        "english": "position / job",
         "grammar": "f"
       },
       {
-        "german": "die Stellenanzeige",
-        "english": "the job advertisement",
+        "german": "Stellenanzeige",
+        "english": "job advertisement",
         "grammar": "f",
         "icon": "stellenanzeige.webp"
       },
@@ -19,20 +19,21 @@
         "icon": "sich_bewerben.webp"
       },
       {
-        "german": "die Bewerbung",
-        "english": "the job application",
+        "german": "Bewerbung",
+        "english": "job application",
         "grammar": "f",
-        "icon": "bewerbung.webp"
+        "icon": "bewerbung.webp",
+        "hard_icon": true
       },
       {
-        "german": "der Lebenslauf",
-        "english": "the CV / résumé",
+        "german": "Lebenslauf",
+        "english": "CV / résumé",
         "grammar": "m",
         "icon": "lebenslauf.webp"
       },
       {
-        "german": "das Vorstellungsgespräch",
-        "english": "the job interview",
+        "german": "Vorstellungsgespräch",
+        "english": "job interview",
         "grammar": "n",
         "icon": "vorstellungsgespraech.webp"
       },
@@ -48,34 +49,35 @@
         "icon": "ablehnen.webp"
       },
       {
-        "german": "der Arbeitgeber",
-        "english": "the employer",
+        "german": "Arbeitgeber",
+        "english": "employer",
         "grammar": "m"
       },
       {
-        "german": "der Arbeitnehmer",
-        "english": "the employee",
+        "german": "Arbeitnehmer",
+        "english": "employee",
         "grammar": "m"
       }
     ],
     "Arbeitsvertrag": [
       {
-        "german": "der Vertrag",
-        "english": "the contract",
+        "german": "Vertrag",
+        "english": "contract",
         "grammar": "m",
         "icon": "vertrag.webp"
       },
       {
-        "german": "das Gehalt",
-        "english": "the salary",
+        "german": "Gehalt",
+        "english": "salary",
         "grammar": "n",
         "icon": "gehalt.webp"
       },
       {
-        "german": "die Probezeit",
-        "english": "the probationary period",
+        "german": "Probezeit",
+        "english": "probationary period",
         "grammar": "f",
-        "icon": "probezeit.webp"
+        "icon": "probezeit.webp",
+        "hard_icon": true
       },
       {
         "german": "kündigen",
@@ -87,57 +89,60 @@
         "german": "entlassen",
         "english": "to dismiss / make redundant",
         "grammar": "",
-        "icon": "entlassen.webp"
+        "icon": "entlassen.webp",
+        "hard_icon": true
       },
       {
-        "german": "die Gehaltserhöhung",
-        "english": "the pay rise",
+        "german": "Gehaltserhöhung",
+        "english": "pay rise",
         "grammar": "f"
       },
       {
-        "german": "die Sozialversicherung",
-        "english": "the social insurance",
+        "german": "Sozialversicherung",
+        "english": "social insurance",
         "grammar": "f"
       },
       {
-        "german": "der Lohn",
-        "english": "the wage",
+        "german": "Lohn",
+        "english": "wage",
         "grammar": "m"
       },
       {
-        "german": "die Krankenversicherung",
-        "english": "the health insurance",
+        "german": "Krankenversicherung",
+        "english": "health insurance",
         "grammar": "f",
-        "icon": "krankenversicherung.webp"
+        "icon": "krankenversicherung.webp",
+        "hard_icon": true
       },
       {
-        "german": "die Rentenversicherung",
-        "english": "the pension insurance",
+        "german": "Rentenversicherung",
+        "english": "pension insurance",
         "grammar": "f"
       }
     ],
     "Arbeitsumfeld": [
       {
-        "german": "die Abteilung",
-        "english": "the department",
+        "german": "Abteilung",
+        "english": "department",
         "grammar": "f",
-        "icon": "abteilung.webp"
+        "icon": "abteilung.webp",
+        "hard_icon": true
       },
       {
-        "german": "der Kollege",
-        "english": "the colleague (male)",
+        "german": "Kollege",
+        "english": "colleague (male)",
         "grammar": "m",
         "icon": "kollege.webp"
       },
       {
-        "german": "die Besprechung",
-        "english": "the meeting",
+        "german": "Besprechung",
+        "english": "meeting",
         "grammar": "f",
         "icon": "besprechung.webp"
       },
       {
-        "german": "die Aufgabe",
-        "english": "the task / duty",
+        "german": "Aufgabe",
+        "english": "task / duty",
         "grammar": "f",
         "icon": "aufgabe.webp"
       },
@@ -147,61 +152,64 @@
         "grammar": ""
       },
       {
-        "german": "die Zusammenarbeit",
-        "english": "the cooperation / teamwork",
+        "german": "Zusammenarbeit",
+        "english": "cooperation / teamwork",
         "grammar": "f"
       },
       {
-        "german": "der Vorgesetzte",
-        "english": "the superior / manager",
+        "german": "Vorgesetzte",
+        "english": "superior / manager",
         "grammar": "m"
       },
       {
-        "german": "die Belegschaft",
-        "english": "the workforce / staff",
+        "german": "Belegschaft",
+        "english": "workforce / staff",
         "grammar": "f"
       },
       {
-        "german": "die Konferenz",
-        "english": "the conference",
+        "german": "Konferenz",
+        "english": "conference",
         "grammar": "f"
       },
       {
-        "german": "der Betriebsrat",
-        "english": "the works council",
+        "german": "Betriebsrat",
+        "english": "works council",
         "grammar": "m"
       }
     ],
     "Arbeitszeit": [
       {
-        "german": "die Überstunde",
-        "english": "the overtime hour",
+        "german": "Überstunde",
+        "english": "overtime hour",
         "grammar": "f"
       },
       {
-        "german": "die Schicht",
-        "english": "the shift",
+        "german": "Schicht",
+        "english": "shift",
         "grammar": "f"
       },
       {
-        "german": "der Feierabend",
-        "english": "the end of the working day",
+        "german": "Feierabend",
+        "english": "end of the working day",
         "grammar": "m"
       },
       {
-        "german": "die Teilzeit",
+        "german": "Teilzeit",
         "english": "part-time",
         "grammar": "f",
-        "icon": "teilzeit.webp"
+        "icon": "teilzeit.webp",
+        "conflicts": ["Vollzeit"],
+        "hard_icon": true
       },
       {
-        "german": "die Vollzeit",
+        "german": "Vollzeit",
         "english": "full-time",
         "grammar": "f",
-        "icon": "vollzeit.webp"
+        "icon": "vollzeit.webp",
+        "hard_icon": true
       },
       {
-        "german": "das Homeoffice",
+        "german": "Homeoffice",
         "english": "working from home",
         "grammar": "n",
         "icon": "homeoffice.webp"
@@ -212,19 +220,19 @@
         "grammar": ""
       },
       {
-        "german": "die Arbeitszeit",
-        "english": "the working hours",
+        "german": "Arbeitszeit",
+        "english": "working hours",
         "grammar": "f"
       },
       {
-        "german": "die Pause",
-        "english": "the break",
+        "german": "Pause",
+        "english": "break",
         "grammar": "f",
         "icon": "pause.webp"
       },
       {
-        "german": "das Arbeitsverhältnis",
-        "english": "the employment relationship",
+        "german": "Arbeitsverhältnis",
+        "english": "employment relationship",
         "grammar": "n"
       }
     ]

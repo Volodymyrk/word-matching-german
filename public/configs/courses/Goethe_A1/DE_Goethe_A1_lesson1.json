@@ -56,7 +56,8 @@
       {
         "english": "name",
         "grammar": "m",
-        "german": "Name"
+        "german": "Name",
+        "conflicts": ["Vorname", "Nachname"]
       },
       {
         "english": "first name",
@@ -200,7 +201,8 @@
       {
         "english": "friend (m)",
         "grammar": "m",
-        "german": "Freund"
+        "german": "Freund",
+        "conflicts": ["Freundin"]
       },
       {
         "english": "friend (f)",

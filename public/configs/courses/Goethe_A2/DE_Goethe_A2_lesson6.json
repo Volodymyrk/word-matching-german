@@ -17,7 +17,8 @@
         "german": "Schwimmen",
         "english": "swimming",
         "grammar": "n",
-        "icon": "schwimmen.webp"
+        "icon": "schwimmen.webp",
+        "conflicts": ["Schwimmbad"]
       },
       {
         "german": "Radfahren",
@@ -239,7 +240,8 @@
         "german": "Veranstaltung",
         "english": "event",
         "grammar": "f",
-        "icon": "veranstaltung.webp"
+        "icon": "veranstaltung.webp",
+        "hard_icon": true
       },
       {
         "german": "Aufführung",

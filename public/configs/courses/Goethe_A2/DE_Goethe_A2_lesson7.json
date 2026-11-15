@@ -85,7 +85,8 @@
         "german": "verspätet",
         "english": "delayed",
         "grammar": "",
-        "icon": "verspaetet.webp"
+        "icon": "verspaetet.webp",
+        "hard_icon": true
       },
       {
         "german": "Fahrkarte",
@@ -153,13 +154,16 @@
         "german": "Einzelzimmer",
         "english": "single room",
         "grammar": "n",
-        "icon": "einzelzimmer.webp"
+        "icon": "einzelzimmer.webp",
+        "conflicts": ["Doppelzimmer"],
+        "hard_icon": true
       },
       {
         "german": "Doppelzimmer",
         "english": "double room",
         "grammar": "n",
-        "icon": "doppelzimmer.webp"
+        "icon": "doppelzimmer.webp",
+        "hard_icon": true
       },
       {
         "german": "Rezeption",
@@ -171,7 +175,8 @@
         "german": "buchen",
         "english": "to book",
         "grammar": "",
-        "icon": "buchen.webp"
+        "icon": "buchen.webp",
+        "hard_icon": true
       },
       {
         "german": "Zimmerservice",

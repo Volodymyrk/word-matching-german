@@ -2,56 +2,56 @@
   "Essen und Ernährung": {
     "Zutaten und Lebensmittel": [
       {
-        "german": "das Gewürz",
-        "english": "the spice / seasoning",
+        "german": "Gewürz",
+        "english": "spice / seasoning",
         "grammar": "n",
         "icon": "gewuerz.webp"
       },
       {
-        "german": "das Mehl",
-        "english": "the flour",
+        "german": "Mehl",
+        "english": "flour",
         "grammar": "n",
         "icon": "mehl.webp"
       },
       {
-        "german": "die Sahne",
-        "english": "the cream",
+        "german": "Sahne",
+        "english": "cream",
         "grammar": "f"
       },
       {
-        "german": "der Essig",
-        "english": "the vinegar",
+        "german": "Essig",
+        "english": "vinegar",
         "grammar": "m",
         "icon": "essig.webp"
       },
       {
-        "german": "das Olivenöl",
-        "english": "the olive oil",
+        "german": "Olivenöl",
+        "english": "olive oil",
         "grammar": "n"
       },
       {
-        "german": "das Lammfleisch",
-        "english": "the lamb (meat)",
+        "german": "Lammfleisch",
+        "english": "lamb (meat)",
         "grammar": "n"
       },
       {
-        "german": "die Meeresfrüchte",
-        "english": "the seafood",
+        "german": "Meeresfrüchte",
+        "english": "seafood",
         "grammar": ""
       },
       {
-        "german": "die Hülsenfrüchte",
-        "english": "the pulses / legumes",
+        "german": "Hülsenfrüchte",
+        "english": "pulses / legumes",
         "grammar": ""
       },
       {
-        "german": "das Vollkornbrot",
-        "english": "the wholegrain bread",
+        "german": "Vollkornbrot",
+        "english": "wholegrain bread",
         "grammar": "n"
       },
       {
-        "german": "die Süßigkeit",
-        "english": "the sweet / candy",
+        "german": "Süßigkeit",
+        "english": "sweet / candy",
         "grammar": "f"
       }
     ],
@@ -99,14 +99,14 @@
         "grammar": ""
       },
       {
-        "german": "die Pfanne",
-        "english": "the frying pan",
+        "german": "Pfanne",
+        "english": "frying pan",
         "grammar": "f",
         "icon": "pfanne.webp"
       },
       {
-        "german": "der Topf",
-        "english": "the pot / saucepan",
+        "german": "Topf",
+        "english": "pot / saucepan",
         "grammar": "m",
         "icon": "topf.webp"
       }
@@ -116,34 +116,35 @@
         "german": "bestellen",
         "english": "to order",
         "grammar": "",
-        "icon": "bestellen.webp"
+        "icon": "bestellen.webp",
+        "hard_icon": true
       },
       {
-        "german": "die Speisekarte",
-        "english": "the menu",
+        "german": "Speisekarte",
+        "english": "menu",
         "grammar": "f",
         "icon": "speisekarte.webp"
       },
       {
-        "german": "die Vorspeise",
-        "english": "the starter",
+        "german": "Vorspeise",
+        "english": "starter",
         "grammar": "f",
         "icon": "vorspeise.webp"
       },
       {
-        "german": "das Hauptgericht",
-        "english": "the main course",
+        "german": "Hauptgericht",
+        "english": "main course",
         "grammar": "n",
         "icon": "hauptgericht.webp"
       },
       {
-        "german": "das Dessert",
-        "english": "the dessert",
+        "german": "Dessert",
+        "english": "dessert",
         "grammar": "n"
       },
       {
-        "german": "das Trinkgeld",
-        "english": "the tip",
+        "german": "Trinkgeld",
+        "english": "tip",
         "grammar": "n",
         "icon": "trinkgeld.webp"
       },
@@ -154,49 +155,52 @@
         "icon": "reservieren.webp"
       },
       {
-        "german": "der Kellner",
-        "english": "the waiter (male)",
+        "german": "Kellner",
+        "english": "waiter (male)",
         "grammar": "m",
         "icon": "kellner.webp"
       },
       {
-        "german": "die Tagesempfehlung",
-        "english": "the dish of the day",
+        "german": "Tagesempfehlung",
+        "english": "dish of the day",
         "grammar": "f"
       },
       {
         "german": "vegetarisch",
         "english": "vegetarian",
         "grammar": "",
-        "icon": "vegetarisch.webp"
+        "icon": "vegetarisch.webp",
+        "conflicts": ["vegan"],
+        "hard_icon": true
       }
     ],
     "Ernährung und Diät": [
       {
-        "german": "das Protein",
-        "english": "the protein",
+        "german": "Protein",
+        "english": "protein",
         "grammar": "n"
       },
       {
-        "german": "das Fett",
-        "english": "the fat",
+        "german": "Fett",
+        "english": "fat",
         "grammar": "n"
       },
       {
-        "german": "das Kohlenhydrat",
-        "english": "the carbohydrate",
+        "german": "Kohlenhydrat",
+        "english": "carbohydrate",
         "grammar": "n"
       },
       {
-        "german": "die Kalorie",
-        "english": "the calorie",
+        "german": "Kalorie",
+        "english": "calorie",
         "grammar": "f"
       },
       {
         "german": "vegan",
         "english": "vegan",
         "grammar": "",
-        "icon": "vegan.webp"
+        "icon": "vegan.webp",
+        "hard_icon": true
       },
       {
         "german": "glutenfrei",
@@ -209,15 +213,16 @@
         "grammar": ""
       },
       {
-        "german": "die Unverträglichkeit",
-        "english": "the intolerance",
+        "german": "Unverträglichkeit",
+        "english": "intolerance",
         "grammar": "f"
       },
       {
-        "german": "die Diät",
-        "english": "the diet",
+        "german": "Diät",
+        "english": "diet",
         "grammar": "f",
-        "icon": "diaet.webp"
+        "icon": "diaet.webp",
+        "conflicts": ["ausgewogen ernähren"]
       },
       {
         "german": "ausgewogen ernähren",

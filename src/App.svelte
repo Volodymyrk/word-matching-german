@@ -1,6 +1,6 @@
 <script>
   import { onMount, onDestroy, tick } from 'svelte';
-  import { fetchGlobals, fetchLessons, fetchSections, fetchSectionWords, createRound } from './lib/vocab.js';
+  import { fetchGlobals, fetchLessons, fetchSections, fetchSectionWords, createDeck, createRound } from './lib/vocab.js';
   import { logScore, getBestScore, getProgress, markPlay } from './lib/history.js';
   import { dirLabel, roman } from './lib/theme.js';
   import ScreenCourses  from './lib/ScreenCourses.svelte';
@@ -104,6 +104,7 @@
     return selectedSection.id.split('/').pop();
   });
 
+  let deck                 = null;
   let timerInterval        = null;
   let wrongTimeout         = null;
   let comboPrimedTimeout   = null;
@@ -229,7 +230,8 @@
     clearTimeout(wrongTimeout);
     const config    = gameConfig;
     const sectionId = selectedSection?.isFinal ? null : selectedSection?.id;
-    const data      = await createRound(config, sectionId);
+    deck            = await createDeck(config, sectionId);
+    const data      = createRound(deck);
     displayCards      = data.displayCards;
     targetWords       = data.targetWords;
     matchedIds        = new Set();
@@ -258,8 +260,7 @@
     setsCompleted++;
     if (setsCompleted >= setsPerRound) { roundCompleted = true; endRound(); return; }
     await tick();
-    const sectionId = selectedSection?.isFinal ? null : selectedSection?.id;
-    const data      = await createRound(gameConfig, sectionId);
+    const data      = createRound(deck);
     displayCards    = data.displayCards;
     targetWords     = data.targetWords;
     matchedIds      = new Set();
@@ -443,7 +444,7 @@
             <div class="card-inner">
               {#if boardLang === 'english' && card.icon}
                 <img class="card-icon" src="{import.meta.env.BASE_URL}icons/{card.icon}" alt={card.base}/>
-                {#if !clickedIds.has(card.icon)}
+                {#if card.hardIcon || !clickedIds.has(card.icon)}
                   <span class="card-icon-label">{card.base}</span>
                 {/if}
               {:else}
@@ -480,6 +481,9 @@
           >
             {#if targetLang === 'english' && iconCard?.icon}
               <img class="target-icon" src="{import.meta.env.BASE_URL}icons/{iconCard.icon}" alt={word}/>
+              {#if iconCard.hardIcon}
+                <span class="target-icon-label">{word}</span>
+              {/if}
             {:else}
               {#if article}
                 <span class="target-article">{article}</span>
@@ -859,6 +863,16 @@
     text-align: center;
   }
 
+  .target-icon-label {
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: rgba(31, 29, 26, .7);
+    line-height: 1.2;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .target-icon {
     width: 100px;
     height: 100px;

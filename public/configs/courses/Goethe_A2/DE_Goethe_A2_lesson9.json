@@ -59,7 +59,8 @@
         "german": "Wirtschaft",
         "english": "economics / business studies",
         "grammar": "f",
-        "icon": "wirtschaft.webp"
+        "icon": "wirtschaft.webp",
+        "hard_icon": true
       }
     ],
     "Schulalltag": [
@@ -103,7 +104,8 @@
         "german": "Stundenplan",
         "english": "timetable",
         "grammar": "m",
-        "icon": "stundenplan.webp"
+        "icon": "stundenplan.webp",
+        "hard_icon": true
       },
       {
         "german": "Ferien",
@@ -209,7 +211,8 @@
         "german": "Universität",
         "english": "university",
         "grammar": "f",
-        "icon": "universitaet.webp"
+        "icon": "universitaet.webp",
+        "conflicts": ["Studium", "Student"]
       },
       {
         "german": "Studium",

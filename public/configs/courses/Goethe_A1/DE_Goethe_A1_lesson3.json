@@ -14,7 +14,8 @@
       {
         "english": "room",
         "grammar": "n",
-        "german": "Zimmer"
+        "german": "Zimmer",
+        "conflicts": ["Wohnzimmer"]
       },
       {
         "english": "bedroom",

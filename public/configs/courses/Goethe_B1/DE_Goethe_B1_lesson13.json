@@ -2,25 +2,26 @@
   "Gesellschaft und Migration": {
     "Soziales Leben": [
       {
-        "german": "die Gemeinschaft",
-        "english": "the community",
+        "german": "Gemeinschaft",
+        "english": "community",
         "grammar": "f",
         "icon": "gemeinschaft.webp"
       },
       {
-        "german": "der Verband",
-        "english": "the association / federation",
+        "german": "Verband",
+        "english": "association / federation",
         "grammar": "m"
       },
       {
-        "german": "die Organisation",
-        "english": "the organisation",
+        "german": "Organisation",
+        "english": "organisation",
         "grammar": "f"
       },
       {
-        "german": "das Sozialwesen",
-        "english": "the social welfare / services",
-        "grammar": "n"
+        "german": "Sozialwesen",
+        "english": "social welfare / services",
+        "grammar": "n",
+        "conflicts": ["Wohlfahrt"]
       },
       {
         "german": "solidarisch",
@@ -33,34 +34,34 @@
         "grammar": ""
       },
       {
-        "german": "die Wohlfahrt",
+        "german": "Wohlfahrt",
         "english": "welfare",
         "grammar": "f"
       },
       {
-        "german": "die Hilfsbereitschaft",
+        "german": "Hilfsbereitschaft",
         "english": "willingness to help / helpfulness",
         "grammar": "f"
       },
       {
-        "german": "das Ehrenamt",
+        "german": "Ehrenamt",
         "english": "voluntary work / honorary office",
         "grammar": "n"
       },
       {
-        "german": "die Zivilgesellschaft",
+        "german": "Zivilgesellschaft",
         "english": "civil society",
         "grammar": "f"
       }
     ],
     "Gleichberechtigung": [
       {
-        "german": "die Gleichstellung",
+        "german": "Gleichstellung",
         "english": "equality / equal rights",
         "grammar": "f"
       },
       {
-        "german": "die Diskriminierung",
+        "german": "Diskriminierung",
         "english": "discrimination",
         "grammar": "f"
       },
@@ -70,13 +71,13 @@
         "grammar": ""
       },
       {
-        "german": "die Chancengleichheit",
+        "german": "Chancengleichheit",
         "english": "equal opportunities",
         "grammar": "f"
       },
       {
-        "german": "die Minderheit",
-        "english": "the minority",
+        "german": "Minderheit",
+        "english": "minority",
         "grammar": "f"
       },
       {
@@ -85,7 +86,7 @@
         "grammar": ""
       },
       {
-        "german": "die Würde",
+        "german": "Würde",
         "english": "dignity",
         "grammar": "f"
       },
@@ -100,25 +101,25 @@
         "grammar": ""
       },
       {
-        "german": "die Vielfalt",
+        "german": "Vielfalt",
         "english": "diversity",
         "grammar": "f"
       }
     ],
     "Migration": [
       {
-        "german": "der Migrant",
-        "english": "the migrant (male)",
+        "german": "Migrant",
+        "english": "migrant (male)",
         "grammar": "m"
       },
       {
-        "german": "das Asyl",
+        "german": "Asyl",
         "english": "asylum",
         "grammar": "n"
       },
       {
-        "german": "der Flüchtling",
-        "english": "the refugee",
+        "german": "Flüchtling",
+        "english": "refugee",
         "grammar": "m"
       },
       {
@@ -132,13 +133,13 @@
         "grammar": ""
       },
       {
-        "german": "die Staatsbürgerschaft",
+        "german": "Staatsbürgerschaft",
         "english": "citizenship",
         "grammar": "f"
       },
       {
-        "german": "die Aufenthaltserlaubnis",
-        "english": "the residence permit",
+        "german": "Aufenthaltserlaubnis",
+        "english": "residence permit",
         "grammar": "f",
         "icon": "aufenthaltserlaubnis.webp"
       },
@@ -148,30 +149,30 @@
         "grammar": ""
       },
       {
-        "german": "die Integration",
+        "german": "Integration",
         "english": "integration",
         "grammar": "f"
       },
       {
-        "german": "die Heimat",
-        "english": "the home / homeland",
+        "german": "Heimat",
+        "english": "home / homeland",
         "grammar": "f"
       }
     ],
     "Werte und Normen": [
       {
-        "german": "der Wert",
-        "english": "the value",
+        "german": "Wert",
+        "english": "value",
         "grammar": "m"
       },
       {
-        "german": "die Norm",
-        "english": "the norm / standard",
+        "german": "Norm",
+        "english": "norm / standard",
         "grammar": "f"
       },
       {
-        "german": "die Sitte",
-        "english": "the custom / convention",
+        "german": "Sitte",
+        "english": "custom / convention",
         "grammar": "f"
       },
       {
@@ -180,14 +181,15 @@
         "grammar": ""
       },
       {
-        "german": "die Tradition",
-        "english": "the tradition",
+        "german": "Tradition",
+        "english": "tradition",
         "grammar": "f",
-        "icon": "tradition.webp"
+        "icon": "tradition.webp",
+        "conflicts": ["Brauch"]
       },
       {
-        "german": "der Brauch",
-        "english": "the custom / tradition",
+        "german": "Brauch",
+        "english": "custom / tradition",
         "grammar": "m",
         "icon": "brauch.webp"
       },
@@ -197,7 +199,7 @@
         "grammar": ""
       },
       {
-        "german": "die Toleranz",
+        "german": "Toleranz",
         "english": "tolerance",
         "grammar": "f"
       },

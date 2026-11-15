@@ -2,8 +2,8 @@
   "Technik und Digitales": {
     "Computer und Software": [
       {
-        "german": "das Betriebssystem",
-        "english": "the operating system",
+        "german": "Betriebssystem",
+        "english": "operating system",
         "grammar": "n"
       },
       {
@@ -17,8 +17,8 @@
         "grammar": ""
       },
       {
-        "german": "das Programm",
-        "english": "the programme / software",
+        "german": "Programm",
+        "english": "programme / software",
         "grammar": "n",
         "icon": "programm.webp"
       },
@@ -30,7 +30,8 @@
       {
         "german": "speichern",
         "english": "to save",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Speicher"]
       },
       {
         "german": "löschen",
@@ -38,43 +39,44 @@
         "grammar": ""
       },
       {
-        "german": "der Speicher",
-        "english": "the memory / storage",
+        "german": "Speicher",
+        "english": "memory / storage",
         "grammar": "m"
       },
       {
-        "german": "die Schnittstelle",
-        "english": "the interface",
+        "german": "Schnittstelle",
+        "english": "interface",
         "grammar": "f"
       },
       {
         "german": "aktuell",
         "english": "current / up-to-date",
         "grammar": "",
-        "icon": "aktuell.webp"
+        "icon": "aktuell.webp",
+        "hard_icon": true
       }
     ],
     "Geräte": [
       {
-        "german": "das Smartphone",
-        "english": "the smartphone",
+        "german": "Smartphone",
+        "english": "smartphone",
         "grammar": "n"
       },
       {
-        "german": "der Laptop",
-        "english": "the laptop",
+        "german": "Laptop",
+        "english": "laptop",
         "grammar": "m",
         "icon": "laptop.webp"
       },
       {
-        "german": "das Tablet",
-        "english": "the tablet",
+        "german": "Tablet",
+        "english": "tablet",
         "grammar": "n",
         "icon": "tablet.webp"
       },
       {
-        "german": "der Drucker",
-        "english": "the printer",
+        "german": "Drucker",
+        "english": "printer",
         "grammar": "m"
       },
       {
@@ -83,23 +85,23 @@
         "grammar": ""
       },
       {
-        "german": "der Akku",
-        "english": "the battery / rechargeable battery",
+        "german": "Akku",
+        "english": "battery / rechargeable battery",
         "grammar": "m"
       },
       {
-        "german": "der Kopfhörer",
-        "english": "the headphones",
+        "german": "Kopfhörer",
+        "english": "headphones",
         "grammar": "m"
       },
       {
-        "german": "die Tastatur",
-        "english": "the keyboard",
+        "german": "Tastatur",
+        "english": "keyboard",
         "grammar": "f"
       },
       {
-        "german": "der Bildschirm",
-        "english": "the screen / monitor",
+        "german": "Bildschirm",
+        "english": "screen / monitor",
         "grammar": "m"
       },
       {
@@ -110,13 +112,13 @@
     ],
     "Automatisierung": [
       {
-        "german": "die künstliche Intelligenz",
+        "german": "künstliche Intelligenz",
         "english": "artificial intelligence",
         "grammar": "f"
       },
       {
-        "german": "der Roboter",
-        "english": "the robot",
+        "german": "Roboter",
+        "english": "robot",
         "grammar": "m"
       },
       {
@@ -125,13 +127,13 @@
         "grammar": ""
       },
       {
-        "german": "die Produktion",
+        "german": "Produktion",
         "english": "production / manufacturing",
         "grammar": "f"
       },
       {
-        "german": "die Maschine",
-        "english": "the machine",
+        "german": "Maschine",
+        "english": "machine",
         "grammar": "f"
       },
       {
@@ -145,7 +147,7 @@
         "grammar": ""
       },
       {
-        "german": "die Automatisierung",
+        "german": "Automatisierung",
         "english": "automation",
         "grammar": "f"
       },
@@ -155,32 +157,32 @@
         "grammar": ""
       },
       {
-        "german": "die Vernetzung",
+        "german": "Vernetzung",
         "english": "networking / interconnection",
         "grammar": "f"
       }
     ],
     "Technische Berufe": [
       {
-        "german": "der Ingenieur",
-        "english": "the engineer (male)",
+        "german": "Ingenieur",
+        "english": "engineer (male)",
         "grammar": "m",
         "icon": "ingenieur.webp"
       },
       {
-        "german": "der Techniker",
-        "english": "the technician (male)",
+        "german": "Techniker",
+        "english": "technician (male)",
         "grammar": "m"
       },
       {
-        "german": "der Elektriker",
-        "english": "the electrician (male)",
+        "german": "Elektriker",
+        "english": "electrician (male)",
         "grammar": "m",
         "icon": "elektriker.webp"
       },
       {
-        "german": "der Mechaniker",
-        "english": "the mechanic (male)",
+        "german": "Mechaniker",
+        "english": "mechanic (male)",
         "grammar": "m",
         "icon": "mechaniker.webp"
       },
@@ -201,19 +203,19 @@
         "grammar": ""
       },
       {
-        "german": "der Schaden",
-        "english": "the damage",
+        "german": "Schaden",
+        "english": "damage",
         "grammar": "m",
         "icon": "schaden.webp"
       },
       {
-        "german": "die Werkstatt",
-        "english": "the workshop / garage",
+        "german": "Werkstatt",
+        "english": "workshop / garage",
         "grammar": "f"
       },
       {
-        "german": "die Wartung",
-        "english": "the maintenance / servicing",
+        "german": "Wartung",
+        "english": "maintenance / servicing",
         "grammar": "f"
       }
     ]

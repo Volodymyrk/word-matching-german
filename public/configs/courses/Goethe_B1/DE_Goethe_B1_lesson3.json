@@ -2,53 +2,54 @@
   "Familie und Generationen": {
     "Verwandtschaft": [
       {
-        "german": "die Verwandtschaft",
-        "english": "the relatives / family",
+        "german": "Verwandtschaft",
+        "english": "relatives / family",
         "grammar": "f"
       },
       {
-        "german": "der Onkel",
-        "english": "the uncle",
+        "german": "Onkel",
+        "english": "uncle",
         "grammar": "m"
       },
       {
-        "german": "die Tante",
-        "english": "the aunt",
+        "german": "Tante",
+        "english": "aunt",
         "grammar": "f"
       },
       {
-        "german": "der Cousin",
-        "english": "the male cousin",
+        "german": "Cousin",
+        "english": "male cousin",
+        "grammar": "m",
+        "conflicts": ["Cousine"]
+      },
+      {
+        "german": "Cousine",
+        "english": "female cousin",
+        "grammar": "f"
+      },
+      {
+        "german": "Neffe",
+        "english": "nephew",
         "grammar": "m"
       },
       {
-        "german": "die Cousine",
-        "english": "the female cousin",
+        "german": "Nichte",
+        "english": "niece",
         "grammar": "f"
       },
       {
-        "german": "der Neffe",
-        "english": "the nephew",
+        "german": "Schwiegermutter",
+        "english": "mother-in-law",
+        "grammar": "f"
+      },
+      {
+        "german": "Schwiegervater",
+        "english": "father-in-law",
         "grammar": "m"
       },
       {
-        "german": "die Nichte",
-        "english": "the niece",
-        "grammar": "f"
-      },
-      {
-        "german": "die Schwiegermutter",
-        "english": "the mother-in-law",
-        "grammar": "f"
-      },
-      {
-        "german": "der Schwiegervater",
-        "english": "the father-in-law",
-        "grammar": "m"
-      },
-      {
-        "german": "die Geschwister",
-        "english": "the siblings",
+        "german": "Geschwister",
+        "english": "siblings",
         "grammar": ""
       }
     ],
@@ -64,8 +65,8 @@
         "grammar": ""
       },
       {
-        "german": "die Hochzeit",
-        "english": "the wedding",
+        "german": "Hochzeit",
+        "english": "wedding",
         "grammar": "f",
         "icon": "hochzeit.webp"
       },
@@ -80,13 +81,13 @@
         "grammar": ""
       },
       {
-        "german": "die Beziehung",
-        "english": "the relationship",
+        "german": "Beziehung",
+        "english": "relationship",
         "grammar": "f"
       },
       {
-        "german": "das Paar",
-        "english": "the couple",
+        "german": "Paar",
+        "english": "couple",
         "grammar": "n"
       },
       {
@@ -95,13 +96,13 @@
         "grammar": ""
       },
       {
-        "german": "die Ehe",
-        "english": "the marriage",
+        "german": "Ehe",
+        "english": "marriage",
         "grammar": "f"
       },
       {
-        "german": "der Lebenspartner",
-        "english": "the life partner",
+        "german": "Lebenspartner",
+        "english": "life partner",
         "grammar": "m"
       }
     ],
@@ -112,8 +113,8 @@
         "grammar": ""
       },
       {
-        "german": "die Erziehung",
-        "english": "the upbringing / education",
+        "german": "Erziehung",
+        "english": "upbringing / education",
         "grammar": "f"
       },
       {
@@ -137,68 +138,70 @@
         "grammar": ""
       },
       {
-        "german": "die Krippe",
-        "english": "the nursery / crèche",
+        "german": "Krippe",
+        "english": "nursery / crèche",
         "grammar": "f"
       },
       {
-        "german": "der Kindergarten",
-        "english": "the kindergarten",
+        "german": "Kindergarten",
+        "english": "kindergarten",
         "grammar": "m"
       },
       {
-        "german": "die Erzieherin",
-        "english": "the nursery teacher / educator (female)",
+        "german": "Erzieherin",
+        "english": "nursery teacher / educator (female)",
         "grammar": "f"
       },
       {
         "german": "selbstständig",
         "english": "independent / self-reliant",
         "grammar": "",
-        "icon": "selbststaendig.webp"
+        "icon": "selbststaendig.webp",
+        "hard_icon": true
       }
     ],
     "Generationen": [
       {
-        "german": "die Rente",
-        "english": "the pension",
+        "german": "Rente",
+        "english": "pension",
         "grammar": "f",
-        "icon": "rente.webp"
+        "icon": "rente.webp",
+        "hard_icon": true
       },
       {
-        "german": "der Rentner",
-        "english": "the pensioner (male)",
+        "german": "Rentner",
+        "english": "pensioner (male)",
         "grammar": "m"
       },
       {
-        "german": "der Jugendliche",
-        "english": "the young person / teenager",
+        "german": "Jugendliche",
+        "english": "young person / teenager",
         "grammar": "m",
         "icon": "jugendliche.webp"
       },
       {
-        "german": "die Generation",
-        "english": "the generation",
+        "german": "Generation",
+        "english": "generation",
         "grammar": "f"
       },
       {
-        "german": "das Erwachsenwerden",
+        "german": "Erwachsenwerden",
         "english": "growing up / coming of age",
         "grammar": "n"
       },
       {
-        "german": "die Pflegebedürftigkeit",
-        "english": "the need for care",
+        "german": "Pflegebedürftigkeit",
+        "english": "need for care",
         "grammar": "f"
       },
       {
-        "german": "die Lebenserwartung",
-        "english": "the life expectancy",
+        "german": "Lebenserwartung",
+        "english": "life expectancy",
         "grammar": "f"
       },
       {
-        "german": "das Pflegeheim",
-        "english": "the care home / nursing home",
+        "german": "Pflegeheim",
+        "english": "care home / nursing home",
         "grammar": "n"
       },
       {
@@ -207,8 +210,8 @@
         "grammar": ""
       },
       {
-        "german": "die Altersvorsorge",
-        "english": "the retirement provision",
+        "german": "Altersvorsorge",
+        "english": "retirement provision",
         "grammar": "f"
       }
     ]

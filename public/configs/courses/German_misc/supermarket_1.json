@@ -197,13 +197,15 @@
         "english": "membership card",
         "grammar": "f",
         "german": "Kundenkarte",
-        "icon": "kundenkarte.webp"
+        "icon": "kundenkarte.webp",
+        "hard_icon": true
       },
       {
         "english": "opening hours",
         "grammar": "f",
         "german": "Öffnungszeiten",
-        "icon": "oeffnungszeiten.webp"
+        "icon": "oeffnungszeiten.webp",
+        "hard_icon": true
       },
       {
         "english": "weight",
@@ -233,13 +235,15 @@
         "english": "department",
         "grammar": "f",
         "german": "Abteilung",
-        "icon": "abteilung.webp"
+        "icon": "abteilung.webp",
+        "hard_icon": true
       },
       {
         "english": "discount",
         "grammar": "m",
         "german": "Rabatt",
-        "icon": "rabatt.webp"
+        "icon": "rabatt.webp",
+        "hard_icon": true
       }
     ]
   }

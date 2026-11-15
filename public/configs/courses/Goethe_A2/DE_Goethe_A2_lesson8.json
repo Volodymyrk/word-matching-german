@@ -115,13 +115,15 @@
         "german": "Projekt",
         "english": "project",
         "grammar": "n",
-        "icon": "projekt.webp"
+        "icon": "projekt.webp",
+        "hard_icon": true
       },
       {
         "german": "Deadline",
         "english": "deadline",
         "grammar": "f",
-        "icon": "deadline.webp"
+        "icon": "deadline.webp",
+        "hard_icon": true
       }
     ],
     "Arbeitsbedingungen": [
@@ -129,13 +131,16 @@
         "german": "Teilzeit",
         "english": "part-time",
         "grammar": "f",
-        "icon": "teilzeit.webp"
+        "icon": "teilzeit.webp",
+        "conflicts": ["Vollzeit"],
+        "hard_icon": true
       },
       {
         "german": "Vollzeit",
         "english": "full-time",
         "grammar": "f",
-        "icon": "vollzeit.webp"
+        "icon": "vollzeit.webp",
+        "hard_icon": true
       },
       {
         "german": "Vertrag",
@@ -153,13 +158,15 @@
         "german": "entlassen",
         "english": "to dismiss / fire",
         "grammar": "",
-        "icon": "entlassen.webp"
+        "icon": "entlassen.webp",
+        "hard_icon": true
       },
       {
         "german": "Berufserfahrung",
         "english": "work experience",
         "grammar": "f",
-        "icon": "berufserfahrung.webp"
+        "icon": "berufserfahrung.webp",
+        "conflicts": ["Qualifikation"]
       },
       {
         "german": "Qualifikation",
@@ -171,7 +178,8 @@
         "german": "selbstständig",
         "english": "self-employed",
         "grammar": "",
-        "icon": "selbststaendig.webp"
+        "icon": "selbststaendig.webp",
+        "hard_icon": true
       },
       {
         "german": "Homeoffice",
@@ -183,7 +191,8 @@
         "german": "Gehaltserhöhung",
         "english": "pay rise",
         "grammar": "f",
-        "icon": "gehaltserhoehung.webp"
+        "icon": "gehaltserhoehung.webp",
+        "hard_icon": true
       }
     ],
     "Stellensuche": [
@@ -203,7 +212,8 @@
         "german": "Bewerbung",
         "english": "job application",
         "grammar": "f",
-        "icon": "bewerbung.webp"
+        "icon": "bewerbung.webp",
+        "hard_icon": true
       },
       {
         "german": "Lebenslauf",
@@ -221,7 +231,8 @@
         "german": "Probezeit",
         "english": "probationary period",
         "grammar": "f",
-        "icon": "probezeit.webp"
+        "icon": "probezeit.webp",
+        "hard_icon": true
       },
       {
         "german": "Zeugnis",
@@ -233,7 +244,8 @@
         "german": "Ausbildung",
         "english": "apprenticeship / vocational training",
         "grammar": "f",
-        "icon": "ausbildung.webp"
+        "icon": "ausbildung.webp",
+        "conflicts": ["Praktikum"]
       },
       {
         "german": "Praktikum",

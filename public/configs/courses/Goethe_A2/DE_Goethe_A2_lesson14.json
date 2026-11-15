@@ -17,13 +17,15 @@
         "german": "Nachricht",
         "english": "message",
         "grammar": "f",
-        "icon": "nachricht.webp"
+        "icon": "nachricht.webp",
+        "conflicts": ["Sprachnachricht", "Nachrichten"]
       },
       {
         "german": "Anruf",
         "english": "(phone) call",
         "grammar": "m",
-        "icon": "anruf.webp"
+        "icon": "anruf.webp",
+        "conflicts": ["anrufen", "Videoanruf"]
       },
       {
         "german": "anrufen",
@@ -35,13 +37,15 @@
         "german": "schicken",
         "english": "to send",
         "grammar": "",
-        "icon": "schicken.webp"
+        "icon": "schicken.webp",
+        "conflicts": ["Absender"]
       },
       {
         "german": "empfangen",
         "english": "to receive",
         "grammar": "",
-        "icon": "empfangen.webp"
+        "icon": "empfangen.webp",
+        "conflicts": ["Empfang"]
       },
       {
         "german": "Sprachnachricht",
@@ -73,13 +77,16 @@
         "german": "posten",
         "english": "to post",
         "grammar": "",
-        "icon": "posten.webp"
+        "icon": "posten.webp",
+        "conflicts": ["teilen"],
+        "hard_icon": true
       },
       {
         "german": "teilen",
         "english": "to share",
         "grammar": "",
-        "icon": "teilen.webp"
+        "icon": "teilen.webp",
+        "hard_icon": true
       },
       {
         "german": "liken",
@@ -91,19 +98,22 @@
         "german": "kommentieren",
         "english": "to comment",
         "grammar": "",
-        "icon": "kommentieren.webp"
+        "icon": "kommentieren.webp",
+        "hard_icon": true
       },
       {
         "german": "folgen",
         "english": "to follow",
         "grammar": "",
-        "icon": "folgen.webp"
+        "icon": "folgen.webp",
+        "hard_icon": true
       },
       {
         "german": "Profil",
         "english": "profile",
         "grammar": "n",
-        "icon": "profil.webp"
+        "icon": "profil.webp",
+        "hard_icon": true
       },
       {
         "german": "Follower",
@@ -115,7 +125,8 @@
         "german": "online",
         "english": "online",
         "grammar": "",
-        "icon": "online.webp"
+        "icon": "online.webp",
+        "hard_icon": true
       },
       {
         "german": "herunterladen",
@@ -129,7 +140,8 @@
         "german": "Nachrichten",
         "english": "news",
         "grammar": "",
-        "icon": "nachrichten.webp"
+        "icon": "nachrichten.webp",
+        "conflicts": ["Meldung"]
       },
       {
         "german": "Bericht",
@@ -159,19 +171,22 @@
         "german": "Meldung",
         "english": "news item / announcement",
         "grammar": "f",
-        "icon": "meldung.webp"
+        "icon": "meldung.webp",
+        "hard_icon": true
       },
       {
         "german": "aktuell",
         "english": "current / up-to-date",
         "grammar": "",
-        "icon": "aktuell.webp"
+        "icon": "aktuell.webp",
+        "hard_icon": true
       },
       {
         "german": "informieren",
         "english": "to inform",
         "grammar": "",
-        "icon": "informieren.webp"
+        "icon": "informieren.webp",
+        "hard_icon": true
       },
       {
         "german": "recherchieren",
@@ -209,7 +224,8 @@
         "german": "besetzt",
         "english": "busy / engaged (line)",
         "grammar": "",
-        "icon": "besetzt.webp"
+        "icon": "besetzt.webp",
+        "hard_icon": true
       },
       {
         "german": "Empfang",
@@ -239,13 +255,16 @@
         "german": "weiterleiten",
         "english": "to forward",
         "grammar": "",
-        "icon": "weiterleiten.webp"
+        "icon": "weiterleiten.webp",
+        "conflicts": ["beantworten"],
+        "hard_icon": true
       },
       {
         "german": "beantworten",
         "english": "to reply / answer",
         "grammar": "",
-        "icon": "beantworten.webp"
+        "icon": "beantworten.webp",
+        "hard_icon": true
       }
     ]
   }

@@ -2,6 +2,12 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Sister projects — wrong repo warning
+
+This is the **word-matching game** (Svelte frontend). There is a separate sister project for **icon and audio asset generation** that lives in a different folder.
+
+**If the user asks about generating icons, generating audio, image generation pipelines, batch generation, skipping/flagging icons, or any asset-generation workflow beyond `update_assets.py` — they are very likely in the wrong project.** Tell them this before exploring or making any changes, and ask them to confirm they want to proceed here.
+
 ## Commands
 
 ```bash
@@ -77,14 +83,15 @@ Key derived state: `courses` (grouped from lessons), `courseLessons`, `livesLeft
 
 Navigation functions: `selectCourse()` → lessons, `selectLesson()` → saga, `startGame(section, dir)` → preview, `startGameFromPreview()` → game, `quitToSaga()` → saga, `handleContinue()` → saga, `handleRetry()` → game, `endRound()` → complete.
 
-`loadRound()` passes `sectionId = selectedSection?.isFinal ? null : selectedSection?.id` to `createRound` (null = all words = final round).
+`loadRound()` builds a `deck = await createDeck(config, sectionId)` once per game (`sectionId = selectedSection?.isFinal ? null : selectedSection?.id`, null = all words = final round); each set (incl. `loadNextRound()`) calls `createRound(deck)` synchronously.
 
 Timer via `setInterval`, combo bar via `{#key comboRestartKey}` to replay CSS `drain` animation, wrong/perfect-set flashes via `setTimeout`. Lives system: `globals.lives` wrong answers allowed before game over.
 
 **`src/lib/vocab.js`** — pure JS data layer:
 - `fetchLessons()` → loads `index.json` and `globals.json`, returns `{ lessons, globals }`
 - `fetchSections(lesson)` → returns `[{ id: "lessonKey/sectionKey", wordCount }]`
-- `createRound(config, sectionId=null)` → picks random pairs for 9 sets of 6 cards; null means all words
+- `createDeck(config, sectionId=null)` → loads pairs (vocab JSON cached per file), builds a symmetric conflict map (explicit `conflicts` + identical base/target text) and a shuffled target queue
+- `createRound(deck)` → one set of 6 cards: 3 targets taken from the queue (every word asked before repeats), 3 random distractors; no two conflicting words in the same set (relaxed only for tiny/over-constrained sections)
 
 **`src/lib/history.js`** — localStorage under key `word_matching_history`:
 - `markPlay(lessonId, sectionId, dir, score)` — records play; `sectionId` is `'final'` for final round
@@ -187,7 +194,13 @@ All data lives under `public/configs/` and is served as static files.
 ```
 `grammar` holds noun gender (`m`/`f`/`n`) or a label like `"Adj."` for adjectives; empty string for phrases/particles. German articles are derived from the gender: `m` → "der", `f` → "die", `n` → "das".
 
-Section IDs are `"lessonKey/sectionKey"` (e.g. `"lesson_4/Grundwörter"`). Final round uses `sectionId = null` in `createRound`.
+Optional per-item fields:
+- `"conflicts": ["frühstücken"]` — German words from the **same lesson file** that must never appear in the same set (board or target panel). Symmetric: listing one side is enough.
+- `"hard_icon": true` — icon is too abstract on its own; its text label is always shown (board label never hides, target panel shows the word under the icon).
+
+`uv run scripts/find_conflicts.py --out report.md` lists candidates for both fields (stem/English overlap, similar prompts from the asset generator's `prompts_history.json`, abstract prompts) for manual review.
+
+Section IDs are `"lessonKey/sectionKey"` (e.g. `"lesson_4/Grundwörter"`). Final round uses `sectionId = null` in `createDeck`.
 
 **Courses & lessons:**
 - `courses/German_1/` — de1 (Deutsch Lektion 1), de2 (Supermarkt), de3 (Supermarkt II)

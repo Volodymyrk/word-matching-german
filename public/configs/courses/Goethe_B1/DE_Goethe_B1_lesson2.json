@@ -2,14 +2,15 @@
   "Ausbildung und Studium": {
     "Schulabschluss": [
       {
-        "german": "das Zeugnis",
-        "english": "the report / certificate",
+        "german": "Zeugnis",
+        "english": "report / certificate",
         "grammar": "n",
-        "icon": "zeugnis.webp"
+        "icon": "zeugnis.webp",
+        "conflicts": ["Zertifikat"]
       },
       {
-        "german": "die Note",
-        "english": "the grade / mark",
+        "german": "Note",
+        "english": "grade / mark",
         "grammar": "f",
         "icon": "note.webp"
       },
@@ -24,69 +25,72 @@
         "grammar": ""
       },
       {
-        "german": "der Abschluss",
-        "english": "the qualification / degree",
+        "german": "Abschluss",
+        "english": "qualification / degree",
         "grammar": "m",
         "icon": "abschluss.webp"
       },
       {
-        "german": "das Abitur",
-        "english": "the A-levels / university entrance qualification",
+        "german": "Abitur",
+        "english": "A-levels / university entrance qualification",
         "grammar": "n",
         "icon": "abitur.webp"
       },
       {
-        "german": "das Gymnasium",
-        "english": "the grammar school",
+        "german": "Gymnasium",
+        "english": "grammar school",
         "grammar": "n",
         "icon": "gymnasium.webp"
       },
       {
-        "german": "die Realschule",
-        "english": "the secondary school (intermediate)",
+        "german": "Realschule",
+        "english": "secondary school (intermediate)",
+        "grammar": "f",
+        "conflicts": ["Hauptschule"]
+      },
+      {
+        "german": "Hauptschule",
+        "english": "lower secondary school",
         "grammar": "f"
       },
       {
-        "german": "die Hauptschule",
-        "english": "the lower secondary school",
-        "grammar": "f"
-      },
-      {
-        "german": "die Gesamtschule",
-        "english": "the comprehensive school",
+        "german": "Gesamtschule",
+        "english": "comprehensive school",
         "grammar": "f"
       }
     ],
     "Berufsausbildung": [
       {
-        "german": "die Ausbildung",
-        "english": "the apprenticeship / training",
+        "german": "Ausbildung",
+        "english": "apprenticeship / training",
         "grammar": "f",
-        "icon": "ausbildung.webp"
+        "icon": "ausbildung.webp",
+        "conflicts": ["Lehre", "Ausbildungsplatz"]
       },
       {
-        "german": "der Ausbildungsplatz",
-        "english": "the apprenticeship position",
+        "german": "Ausbildungsplatz",
+        "english": "apprenticeship position",
+        "grammar": "m",
+        "conflicts": ["Lehre"]
+      },
+      {
+        "german": "Azubi",
+        "english": "trainee / apprentice",
         "grammar": "m"
       },
       {
-        "german": "der Azubi",
-        "english": "the trainee / apprentice",
+        "german": "Ausbilder",
+        "english": "trainer / instructor",
         "grammar": "m"
       },
       {
-        "german": "der Ausbilder",
-        "english": "the trainer / instructor",
-        "grammar": "m"
-      },
-      {
-        "german": "die Lehre",
-        "english": "the apprenticeship",
+        "german": "Lehre",
+        "english": "apprenticeship",
         "grammar": "f"
       },
       {
-        "german": "der Betrieb",
-        "english": "the company / business",
+        "german": "Betrieb",
+        "english": "company / business",
         "grammar": "m"
       },
       {
@@ -100,48 +104,49 @@
         "grammar": ""
       },
       {
-        "german": "die Berufsschule",
-        "english": "the vocational school",
+        "german": "Berufsschule",
+        "english": "vocational school",
         "grammar": "f",
         "icon": "berufsschule.webp"
       },
       {
-        "german": "der Gesellenbrief",
-        "english": "the journeyman's certificate",
-        "grammar": "m"
+        "german": "Gesellenbrief",
+        "english": "journeyman's certificate",
+        "grammar": "m",
+        "conflicts": ["Zertifikat"]
       }
     ],
     "Studium": [
       {
-        "german": "die Universität",
-        "english": "the university",
+        "german": "Universität",
+        "english": "university",
         "grammar": "f",
         "icon": "universitaet.webp"
       },
       {
-        "german": "das Studium",
-        "english": "the (university) studies",
+        "german": "Studium",
+        "english": "(university) studies",
         "grammar": "n",
         "icon": "studium.webp"
       },
       {
-        "german": "das Semester",
-        "english": "the semester",
+        "german": "Semester",
+        "english": "semester",
         "grammar": "n"
       },
       {
-        "german": "die Vorlesung",
-        "english": "the lecture",
+        "german": "Vorlesung",
+        "english": "lecture",
         "grammar": "f"
       },
       {
-        "german": "das Seminar",
-        "english": "the seminar",
+        "german": "Seminar",
+        "english": "seminar",
         "grammar": "n"
       },
       {
-        "german": "das Stipendium",
-        "english": "the scholarship",
+        "german": "Stipendium",
+        "english": "scholarship",
         "grammar": "n",
         "icon": "stipendium.webp"
       },
@@ -151,35 +156,35 @@
         "grammar": ""
       },
       {
-        "german": "der Bachelor",
-        "english": "the bachelor's degree",
+        "german": "Bachelor",
+        "english": "bachelor's degree",
         "grammar": "m"
       },
       {
-        "german": "der Master",
-        "english": "the master's degree",
+        "german": "Master",
+        "english": "master's degree",
         "grammar": "m"
       },
       {
-        "german": "die Hausarbeit",
-        "english": "the written assignment / essay",
+        "german": "Hausarbeit",
+        "english": "written assignment / essay",
         "grammar": "f"
       }
     ],
     "Weiterbildung": [
       {
-        "german": "die Fortbildung",
-        "english": "the professional development / training",
+        "german": "Fortbildung",
+        "english": "professional development / training",
         "grammar": "f"
       },
       {
-        "german": "die Umschulung",
-        "english": "the retraining",
+        "german": "Umschulung",
+        "english": "retraining",
         "grammar": "f"
       },
       {
-        "german": "das Zertifikat",
-        "english": "the certificate",
+        "german": "Zertifikat",
+        "english": "certificate",
         "grammar": "n"
       },
       {
@@ -193,28 +198,28 @@
         "grammar": ""
       },
       {
-        "german": "der Workshop",
-        "english": "the workshop",
+        "german": "Workshop",
+        "english": "workshop",
         "grammar": "m"
       },
       {
-        "german": "die Volkshochschule",
-        "english": "the adult education centre",
+        "german": "Volkshochschule",
+        "english": "adult education centre",
         "grammar": "f"
       },
       {
-        "german": "die Fachschule",
-        "english": "the technical college",
+        "german": "Fachschule",
+        "english": "technical college",
         "grammar": "f"
       },
       {
-        "german": "das Fernstudium",
-        "english": "the distance learning",
+        "german": "Fernstudium",
+        "english": "distance learning",
         "grammar": "n"
       },
       {
-        "german": "die Anerkennung",
-        "english": "the recognition (of qualifications)",
+        "german": "Anerkennung",
+        "english": "recognition (of qualifications)",
         "grammar": "f"
       }
     ]

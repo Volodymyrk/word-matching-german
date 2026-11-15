@@ -4,7 +4,8 @@
       {
         "english": "doctor (m)",
         "grammar": "m",
-        "german": "Arzt"
+        "german": "Arzt",
+        "conflicts": ["Ärztin"]
       },
       {
         "english": "doctor (f)",
@@ -14,7 +15,8 @@
       {
         "english": "teacher (m)",
         "grammar": "m",
-        "german": "Lehrer"
+        "german": "Lehrer",
+        "conflicts": ["Lehrerin"]
       },
       {
         "english": "teacher (f)",
@@ -56,7 +58,8 @@
       {
         "english": "work / job",
         "grammar": "f",
-        "german": "Arbeit"
+        "german": "Arbeit",
+        "conflicts": ["arbeiten"]
       },
       {
         "english": "profession",
@@ -118,7 +121,8 @@
       {
         "english": "student (m)",
         "grammar": "m",
-        "german": "Student"
+        "german": "Student",
+        "conflicts": ["Studentin"]
       },
       {
         "english": "student (f)",
