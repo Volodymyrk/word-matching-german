@@ -44,12 +44,14 @@
       {
         "english": "parents",
         "grammar": "",
-        "german": "Eltern"
+        "german": "Eltern",
+        "conflicts": ["Mutter", "Vater"]
       },
       {
         "english": "siblings",
         "grammar": "",
-        "german": "Geschwister"
+        "german": "Geschwister",
+        "conflicts": ["Bruder", "Schwester"]
       }
     ],
     "Großfamilie": [
@@ -57,7 +59,7 @@
         "english": "grandmother",
         "grammar": "f",
         "german": "Großmutter",
-        "conflicts": ["Oma"]
+        "conflicts": ["Oma", "Großvater"]
       },
       {
         "english": "grandfather",

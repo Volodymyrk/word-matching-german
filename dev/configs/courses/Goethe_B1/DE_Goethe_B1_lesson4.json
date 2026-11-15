@@ -11,7 +11,8 @@
         "german": "Vermieter",
         "english": "landlord",
         "grammar": "m",
-        "icon": "vermieter.webp"
+        "icon": "vermieter.webp",
+        "conflicts": ["Mieter"]
       },
       {
         "german": "Mieter",
@@ -29,7 +30,8 @@
         "german": "Mietvertrag",
         "english": "tenancy agreement",
         "grammar": "m",
-        "icon": "mietvertrag.webp"
+        "icon": "mietvertrag.webp",
+        "conflicts": ["Vermieter"]
       },
       {
         "german": "Wohnungsanzeige",
@@ -69,7 +71,8 @@
         "german": "Erdgeschoss",
         "english": "ground floor",
         "grammar": "n",
-        "icon": "erdgeschoss.webp"
+        "icon": "erdgeschoss.webp",
+        "conflicts": ["Obergeschoss"]
       },
       {
         "german": "Obergeschoss",
@@ -94,7 +97,8 @@
       {
         "german": "Terrasse",
         "english": "terrace / patio",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Balkon"]
       },
       {
         "german": "Balkon",
@@ -105,7 +109,8 @@
         "german": "Treppenhaus",
         "english": "stairwell",
         "grammar": "n",
-        "icon": "treppenhaus.webp"
+        "icon": "treppenhaus.webp",
+        "conflicts": ["Aufzug"]
       },
       {
         "german": "Aufzug",
@@ -123,12 +128,14 @@
       {
         "german": "Möbel",
         "english": "piece of furniture",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Schrank", "Regal", "Couch"]
       },
       {
         "german": "Schrank",
         "english": "wardrobe / cupboard",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Regal"]
       },
       {
         "german": "Regal",
@@ -155,12 +162,14 @@
       {
         "german": "einrichten",
         "english": "to furnish / set up",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Ausstattung"]
       },
       {
         "german": "umziehen",
         "english": "to move house",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["einziehen", "ausziehen"]
       },
       {
         "german": "renovieren",
@@ -199,7 +208,8 @@
         "german": "Wohngemeinschaft",
         "english": "shared flat / house share",
         "grammar": "f",
-        "icon": "wohngemeinschaft.webp"
+        "icon": "wohngemeinschaft.webp",
+        "conflicts": ["gemeinschaftlich"]
       },
       {
         "german": "gemeinschaftlich",
@@ -215,7 +225,8 @@
       {
         "german": "Etage",
         "english": "floor / storey",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Obergeschoss", "Erdgeschoss"]
       },
       {
         "german": "Eigentum",

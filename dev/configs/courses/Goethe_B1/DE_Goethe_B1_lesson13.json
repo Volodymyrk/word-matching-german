@@ -5,12 +5,14 @@
         "german": "Gemeinschaft",
         "english": "community",
         "grammar": "f",
-        "icon": "gemeinschaft.webp"
+        "icon": "gemeinschaft.webp",
+        "hard_icon": true
       },
       {
         "german": "Verband",
         "english": "association / federation",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Organisation"]
       },
       {
         "german": "Organisation",
@@ -31,7 +33,8 @@
       {
         "german": "unterstützen",
         "english": "to support",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Hilfsbereitschaft"]
       },
       {
         "german": "Wohlfahrt",
@@ -46,7 +49,8 @@
       {
         "german": "Ehrenamt",
         "english": "voluntary work / honorary office",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Hilfsbereitschaft"]
       },
       {
         "german": "Zivilgesellschaft",
@@ -58,12 +62,14 @@
       {
         "german": "Gleichstellung",
         "english": "equality / equal rights",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Chancengleichheit"]
       },
       {
         "german": "Diskriminierung",
         "english": "discrimination",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["benachteiligen"]
       },
       {
         "german": "benachteiligen",
@@ -93,7 +99,8 @@
       {
         "german": "tolerieren",
         "english": "to tolerate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Toleranz"]
       },
       {
         "german": "respektieren",
@@ -110,12 +117,14 @@
       {
         "german": "Migrant",
         "english": "migrant (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Flüchtling"]
       },
       {
         "german": "Asyl",
         "english": "asylum",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Flüchtling"]
       },
       {
         "german": "Flüchtling",
@@ -125,12 +134,14 @@
       {
         "german": "aufnehmen",
         "english": "to take in / receive",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["willkommen"]
       },
       {
         "german": "einbürgern",
         "english": "to naturalise",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Staatsbürgerschaft"]
       },
       {
         "german": "Staatsbürgerschaft",
@@ -151,7 +162,8 @@
       {
         "german": "Integration",
         "english": "integration",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["anpassen"]
       },
       {
         "german": "Heimat",
@@ -163,7 +175,8 @@
       {
         "german": "Wert",
         "english": "value",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Norm"]
       },
       {
         "german": "Norm",
@@ -173,7 +186,8 @@
       {
         "german": "Sitte",
         "english": "custom / convention",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Brauch", "Tradition"]
       },
       {
         "german": "anpassen",
@@ -185,13 +199,15 @@
         "english": "tradition",
         "grammar": "f",
         "icon": "tradition.webp",
-        "conflicts": ["Brauch"]
+        "conflicts": ["Brauch"],
+        "hard_icon": true
       },
       {
         "german": "Brauch",
         "english": "custom / tradition",
         "grammar": "m",
-        "icon": "brauch.webp"
+        "icon": "brauch.webp",
+        "hard_icon": true
       },
       {
         "german": "offen",
@@ -206,7 +222,8 @@
       {
         "german": "kulturell",
         "english": "cultural",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["interkulturell"]
       },
       {
         "german": "interkulturell",

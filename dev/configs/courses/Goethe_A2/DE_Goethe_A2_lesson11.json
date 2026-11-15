@@ -5,13 +5,15 @@
         "german": "Innenstadt",
         "english": "city centre / downtown",
         "grammar": "f",
-        "icon": "innenstadt.webp"
+        "icon": "innenstadt.webp",
+        "conflicts": ["Viertel"]
       },
       {
         "german": "Vorort",
         "english": "suburb",
         "grammar": "m",
-        "icon": "vorort.webp"
+        "icon": "vorort.webp",
+        "conflicts": ["Viertel"]
       },
       {
         "german": "Bahnhof",
@@ -29,13 +31,15 @@
         "german": "Marktplatz",
         "english": "market square",
         "grammar": "m",
-        "icon": "marktplatz.webp"
+        "icon": "marktplatz.webp",
+        "conflicts": ["Platz"]
       },
       {
         "german": "Kreuzung",
         "english": "crossroads / intersection",
         "grammar": "f",
-        "icon": "kreuzung.webp"
+        "icon": "kreuzung.webp",
+        "conflicts": ["Platz"]
       },
       {
         "german": "Brücke",
@@ -59,7 +63,8 @@
         "german": "Viertel",
         "english": "district / quarter",
         "grammar": "n",
-        "icon": "viertel.webp"
+        "icon": "viertel.webp",
+        "hard_icon": true
       }
     ],
     "Behörden und Ämter": [
@@ -67,7 +72,9 @@
         "german": "Amt",
         "english": "office / authority",
         "grammar": "n",
-        "icon": "amt.webp"
+        "icon": "amt.webp",
+        "conflicts": ["Rathaus", "Einwohnermeldeamt"],
+        "hard_icon": true
       },
       {
         "german": "Einwohnermeldeamt",
@@ -80,14 +87,15 @@
         "english": "immigration office",
         "grammar": "f",
         "icon": "auslaenderbehoerde.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Aufenthaltserlaubnis", "Visum"]
       },
       {
         "german": "Formular",
         "english": "form",
         "grammar": "n",
         "icon": "formular.webp",
-        "conflicts": ["Antrag"]
+        "conflicts": ["Antrag", "ausfüllen", "beantragen"]
       },
       {
         "german": "ausfüllen",
@@ -111,7 +119,8 @@
         "german": "Antrag",
         "english": "application / form",
         "grammar": "m",
-        "icon": "antrag.webp"
+        "icon": "antrag.webp",
+        "conflicts": ["beantragen"]
       },
       {
         "german": "Wartezimmer",
@@ -144,7 +153,8 @@
         "german": "Parkplatz",
         "english": "car park / parking space",
         "grammar": "m",
-        "icon": "parkplatz.webp"
+        "icon": "parkplatz.webp",
+        "conflicts": ["Stau"]
       },
       {
         "german": "Fahrradweg",
@@ -156,7 +166,8 @@
         "german": "Fußgängerzone",
         "english": "pedestrian zone",
         "grammar": "f",
-        "icon": "fussgaengerzone.webp"
+        "icon": "fussgaengerzone.webp",
+        "conflicts": ["Zebrastreifen"]
       },
       {
         "german": "Stau",
@@ -174,7 +185,8 @@
         "german": "tanken",
         "english": "to fill up (petrol)",
         "grammar": "",
-        "icon": "tanken.webp"
+        "icon": "tanken.webp",
+        "conflicts": ["Tankstelle"]
       },
       {
         "german": "Tankstelle",
@@ -194,7 +206,8 @@
         "german": "Personalausweis",
         "english": "identity card",
         "grammar": "m",
-        "icon": "personalausweis.webp"
+        "icon": "personalausweis.webp",
+        "conflicts": ["Führerschein"]
       },
       {
         "german": "Aufenthaltserlaubnis",
@@ -207,7 +220,8 @@
         "german": "Visum",
         "english": "visa",
         "grammar": "n",
-        "icon": "visum.webp"
+        "icon": "visum.webp",
+        "conflicts": ["Stempel"]
       },
       {
         "german": "Geburtsschein",

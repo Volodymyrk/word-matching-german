@@ -4,7 +4,8 @@
       {
         "german": "Zeitung",
         "english": "newspaper",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Zeitschrift", "Nachrichten"]
       },
       {
         "german": "Zeitschrift",
@@ -27,7 +28,8 @@
         "german": "Bericht",
         "english": "report",
         "grammar": "m",
-        "icon": "bericht.webp"
+        "icon": "bericht.webp",
+        "conflicts": ["Meldung"]
       },
       {
         "german": "Meldung",
@@ -63,7 +65,8 @@
         "german": "herunterladen",
         "english": "to download",
         "grammar": "",
-        "icon": "herunterladen.webp"
+        "icon": "herunterladen.webp",
+        "conflicts": ["hochladen"]
       },
       {
         "german": "hochladen",
@@ -78,7 +81,8 @@
       {
         "german": "Webseite",
         "english": "website",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Browser"]
       },
       {
         "german": "Profil",
@@ -120,7 +124,7 @@
         "english": "to post",
         "grammar": "",
         "icon": "posten.webp",
-        "conflicts": ["teilen"],
+        "conflicts": ["teilen", "hochladen"],
         "hard_icon": true
       },
       {
@@ -178,7 +182,8 @@
       {
         "german": "Datenschutz",
         "english": "data protection",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Privatsphäre"]
       },
       {
         "german": "Privatsphäre",
@@ -193,12 +198,14 @@
       {
         "german": "Hacker",
         "english": "hacker",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Virus"]
       },
       {
         "german": "verschlüsseln",
         "english": "to encrypt",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Passwort"]
       },
       {
         "german": "Virus",
@@ -208,7 +215,8 @@
       {
         "german": "sichern",
         "english": "to back up / secure",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Sicherheitskopie"]
       },
       {
         "german": "Datenmissbrauch",

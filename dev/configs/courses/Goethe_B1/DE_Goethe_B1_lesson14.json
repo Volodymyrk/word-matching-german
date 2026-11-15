@@ -5,7 +5,8 @@
         "german": "Wahl",
         "english": "election",
         "grammar": "f",
-        "icon": "wahl.webp"
+        "icon": "wahl.webp",
+        "conflicts": ["wählen"]
       },
       {
         "german": "wählen",
@@ -17,12 +18,14 @@
       {
         "german": "Wähler",
         "english": "voter (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["wählen"]
       },
       {
         "german": "Parlament",
         "english": "parliament",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Bundestag"]
       },
       {
         "german": "Bundestag",
@@ -44,12 +47,14 @@
       {
         "german": "Bundeskanzler",
         "english": "Federal Chancellor (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Regierung"]
       },
       {
         "german": "Verfassung",
         "english": "constitution",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Grundgesetz"]
       },
       {
         "german": "Opposition",
@@ -66,17 +71,20 @@
       {
         "german": "Meinungsfreiheit",
         "english": "freedom of opinion / expression",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Pressefreiheit", "Versammlungsfreiheit"]
       },
       {
         "german": "Pressefreiheit",
         "english": "freedom of the press",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Versammlungsfreiheit"]
       },
       {
         "german": "Wahlrecht",
         "english": "right to vote",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Wahl"]
       },
       {
         "german": "Steuern",
@@ -93,13 +101,16 @@
         "german": "Gesetz",
         "english": "law",
         "grammar": "n",
-        "icon": "gesetz.webp"
+        "icon": "gesetz.webp",
+        "conflicts": ["Recht"]
       },
       {
         "german": "Pflicht",
         "english": "duty / obligation",
         "grammar": "f",
-        "icon": "pflicht.webp"
+        "icon": "pflicht.webp",
+        "conflicts": ["Recht"],
+        "hard_icon": true
       },
       {
         "german": "Recht",
@@ -128,7 +139,8 @@
       {
         "german": "Diplomatie",
         "english": "diplomacy",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Botschafter"]
       },
       {
         "german": "Botschafter",
@@ -149,7 +161,8 @@
       {
         "german": "verhandeln",
         "english": "to negotiate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Diplomatie"]
       },
       {
         "german": "Sanktion",
@@ -172,7 +185,8 @@
         "german": "Amt",
         "english": "office / authority",
         "grammar": "n",
-        "icon": "amt.webp"
+        "icon": "amt.webp",
+        "conflicts": ["Behörde"]
       },
       {
         "german": "beantragen",
@@ -184,13 +198,15 @@
         "german": "Antrag",
         "english": "application / request",
         "grammar": "m",
-        "icon": "antrag.webp"
+        "icon": "antrag.webp",
+        "conflicts": ["beantragen", "Formular"]
       },
       {
         "german": "Formular",
         "english": "form",
         "grammar": "n",
-        "icon": "formular.webp"
+        "icon": "formular.webp",
+        "conflicts": ["ausfüllen", "Dokument"]
       },
       {
         "german": "ausfüllen",
@@ -201,7 +217,8 @@
       {
         "german": "Bürokratie",
         "english": "bureaucracy",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Behörde"]
       },
       {
         "german": "Behörde",
@@ -216,7 +233,8 @@
       {
         "german": "beglaubigen",
         "english": "to certify / authenticate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Dokument"]
       },
       {
         "german": "Dokument",

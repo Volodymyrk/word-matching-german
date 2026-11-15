@@ -14,7 +14,8 @@
       {
         "english": "sentence",
         "grammar": "m",
-        "german": "Satz"
+        "german": "Satz",
+        "conflicts": ["Text"]
       },
       {
         "english": "text",
@@ -34,7 +35,8 @@
       {
         "english": "to practise",
         "grammar": "",
-        "german": "üben"
+        "german": "üben",
+        "conflicts": ["wiederholen"]
       },
       {
         "english": "to explain",
@@ -44,7 +46,8 @@
       {
         "english": "to correct",
         "grammar": "",
-        "german": "korrigieren"
+        "german": "korrigieren",
+        "conflicts": ["Fehler"]
       },
       {
         "english": "mistake / error",
@@ -71,12 +74,14 @@
       {
         "english": "website",
         "grammar": "f",
-        "german": "Website"
+        "german": "Website",
+        "conflicts": ["Internet"]
       },
       {
         "english": "app",
         "grammar": "f",
-        "german": "App"
+        "german": "App",
+        "conflicts": ["Smartphone"]
       },
       {
         "english": "photo",

@@ -5,7 +5,8 @@
         "german": "Rathaus",
         "english": "town hall",
         "grammar": "n",
-        "icon": "rathaus.webp"
+        "icon": "rathaus.webp",
+        "conflicts": ["Bürgeramt"]
       },
       {
         "german": "Finanzamt",
@@ -26,7 +27,8 @@
         "german": "Einwohnermeldeamt",
         "english": "residents' registration office",
         "grammar": "n",
-        "icon": "einwohnermeldeamt.webp"
+        "icon": "einwohnermeldeamt.webp",
+        "conflicts": ["Bürgeramt"]
       },
       {
         "german": "Sozialhilfe",
@@ -46,7 +48,8 @@
       {
         "german": "anmelden",
         "english": "to register / sign up",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["abmelden"]
       },
       {
         "german": "abmelden",
@@ -58,17 +61,20 @@
       {
         "german": "Notruf",
         "english": "emergency call",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["alarmieren"]
       },
       {
         "german": "Feuerwehr",
         "english": "fire brigade",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Rettungsdienst"]
       },
       {
         "german": "Rettungsdienst",
         "english": "emergency services",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Notarzt"]
       },
       {
         "german": "Notarzt",
@@ -78,7 +84,8 @@
       {
         "german": "erste Hilfe",
         "english": "first aid",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Notarzt"]
       },
       {
         "german": "bewusstlos",
@@ -88,7 +95,8 @@
       {
         "german": "Gefahr",
         "english": "danger",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["warnen"]
       },
       {
         "german": "alarmieren",
@@ -103,7 +111,8 @@
       {
         "german": "retten",
         "english": "to rescue / save",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Rettungsdienst"]
       }
     ],
     "Katastrophen": [
@@ -126,7 +135,8 @@
       {
         "german": "evakuieren",
         "english": "to evacuate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Evakuierung"]
       },
       {
         "german": "Evakuierung",
@@ -141,12 +151,14 @@
       {
         "german": "Soforthilfe",
         "english": "immediate aid / emergency relief",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["erste Hilfe"]
       },
       {
         "german": "Schutzraum",
         "english": "shelter",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Zivilschutz"]
       },
       {
         "german": "Krisenstab",
@@ -163,12 +175,14 @@
       {
         "german": "Haftpflichtversicherung",
         "english": "third-party liability insurance",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Unfallversicherung", "Lebensversicherung"]
       },
       {
         "german": "Unfallversicherung",
         "english": "accident insurance",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Lebensversicherung"]
       },
       {
         "german": "Lebensversicherung",
@@ -178,12 +192,14 @@
       {
         "german": "Versicherungsfall",
         "english": "insurance claim / event",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Schadensmeldung"]
       },
       {
         "german": "Police",
         "english": "insurance policy",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Prämie"]
       },
       {
         "german": "melden",

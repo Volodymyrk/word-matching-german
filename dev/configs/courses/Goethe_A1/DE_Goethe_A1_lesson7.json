@@ -4,13 +4,15 @@
       {
         "english": "music",
         "grammar": "f",
-        "german": "Musik"
+        "german": "Musik",
+        "conflicts": ["Konzert"]
       },
       {
         "english": "film / movie",
         "grammar": "m",
         "german": "Film",
-        "icon": "film.webp"
+        "icon": "film.webp",
+        "conflicts": ["Kino"]
       },
       {
         "english": "cinema",
@@ -22,7 +24,8 @@
         "english": "theatre",
         "grammar": "n",
         "german": "Theater",
-        "icon": "theater.webp"
+        "icon": "theater.webp",
+        "conflicts": ["Konzert"]
       },
       {
         "english": "concert",
@@ -38,7 +41,8 @@
       {
         "english": "sport",
         "grammar": "m",
-        "german": "Sport"
+        "german": "Sport",
+        "conflicts": ["Fitness", "Fußball", "Tennis", "Schwimmen", "Laufen", "Turnen", "Basketball", "Volleyball"]
       },
       {
         "english": "game",
@@ -49,7 +53,8 @@
       {
         "english": "hobby",
         "grammar": "n",
-        "german": "Hobby"
+        "german": "Hobby",
+        "conflicts": ["Freizeit"]
       },
       {
         "english": "free time / leisure",
@@ -80,7 +85,8 @@
         "english": "running / jogging",
         "grammar": "n",
         "german": "Laufen",
-        "icon": "laufen.webp"
+        "icon": "laufen.webp",
+        "conflicts": ["spazieren"]
       },
       {
         "english": "gymnastics",
@@ -91,7 +97,8 @@
       {
         "english": "basketball",
         "grammar": "m",
-        "german": "Basketball"
+        "german": "Basketball",
+        "conflicts": ["Volleyball"]
       },
       {
         "english": "volleyball",
@@ -106,7 +113,8 @@
       {
         "english": "to train",
         "grammar": "",
-        "german": "trainieren"
+        "german": "trainieren",
+        "conflicts": ["Fitness"]
       },
       {
         "english": "fitness",

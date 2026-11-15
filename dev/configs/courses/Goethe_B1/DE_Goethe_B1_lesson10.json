@@ -5,7 +5,8 @@
         "german": "basteln",
         "english": "to do crafts / make things",
         "grammar": "",
-        "icon": "basteln.webp"
+        "icon": "basteln.webp",
+        "conflicts": ["stricken"]
       },
       {
         "german": "sammeln",
@@ -33,7 +34,8 @@
       {
         "german": "zeichnen",
         "english": "to draw",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["malen"]
       },
       {
         "german": "malen",
@@ -50,13 +52,15 @@
         "german": "klettern",
         "english": "to climb",
         "grammar": "",
-        "icon": "klettern.webp"
+        "icon": "klettern.webp",
+        "conflicts": ["wandern"]
       },
       {
         "german": "wandern",
         "english": "to hike",
         "grammar": "",
-        "icon": "wandern.webp"
+        "icon": "wandern.webp",
+        "conflicts": ["Wanderweg"]
       }
     ],
     "Sport": [
@@ -73,7 +77,8 @@
       {
         "german": "Wettkampf",
         "english": "competition",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Meisterschaft"]
       },
       {
         "german": "siegen",
@@ -93,7 +98,8 @@
       {
         "german": "Trainer",
         "english": "coach / trainer (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["trainieren"]
       },
       {
         "german": "Niederlage",
@@ -109,7 +115,8 @@
         "german": "Mannschaft",
         "english": "team",
         "grammar": "f",
-        "icon": "mannschaft.webp"
+        "icon": "mannschaft.webp",
+        "conflicts": ["Sportverein"]
       }
     ],
     "Outdoor": [
@@ -132,7 +139,8 @@
       {
         "german": "Kanu",
         "english": "canoe",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["segeln"]
       },
       {
         "german": "segeln",
@@ -142,7 +150,8 @@
       {
         "german": "tauchen",
         "english": "to dive",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["surfen"]
       },
       {
         "german": "Skifahren",
@@ -170,12 +179,14 @@
       {
         "german": "Verein",
         "english": "club / association",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Sportverein", "Vereinsmitglied"]
       },
       {
         "german": "beitreten",
         "english": "to join (a club)",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Vereinsmitglied"]
       },
       {
         "german": "Beitrag",
@@ -201,18 +212,21 @@
       {
         "german": "sich engagieren",
         "english": "to get involved / be committed",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["ehrenamtlich"]
       },
       {
         "german": "Gemeinschaft",
         "english": "community",
         "grammar": "f",
-        "icon": "gemeinschaft.webp"
+        "icon": "gemeinschaft.webp",
+        "conflicts": ["Verein"]
       },
       {
         "german": "Mitgliedsausweis",
         "english": "membership card",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Vereinsmitglied"]
       },
       {
         "german": "Satzung",

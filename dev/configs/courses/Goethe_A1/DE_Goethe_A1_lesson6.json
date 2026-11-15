@@ -31,7 +31,8 @@
       {
         "english": "nurse (f)",
         "grammar": "f",
-        "german": "Krankenschwester"
+        "german": "Krankenschwester",
+        "conflicts": ["Ärztin"]
       },
       {
         "english": "police officer (m)",
@@ -64,7 +65,8 @@
       {
         "english": "profession",
         "grammar": "m",
-        "german": "Beruf"
+        "german": "Beruf",
+        "conflicts": ["Arbeit"]
       },
       {
         "english": "office",
@@ -74,7 +76,8 @@
       {
         "english": "company / firm",
         "grammar": "f",
-        "german": "Firma"
+        "german": "Firma",
+        "conflicts": ["Büro"]
       },
       {
         "english": "boss (m)",
@@ -89,12 +92,14 @@
       {
         "english": "salary",
         "grammar": "n",
-        "german": "Gehalt"
+        "german": "Gehalt",
+        "conflicts": ["verdienen"]
       },
       {
         "english": "position / job opening",
         "grammar": "f",
-        "german": "Stelle"
+        "german": "Stelle",
+        "conflicts": ["Arbeit"]
       },
       {
         "english": "to work",
@@ -116,7 +121,8 @@
       {
         "english": "university",
         "grammar": "f",
-        "german": "Universität"
+        "german": "Universität",
+        "conflicts": ["Studium"]
       },
       {
         "english": "student (m)",
@@ -132,7 +138,8 @@
       {
         "english": "studies / degree course",
         "grammar": "n",
-        "german": "Studium"
+        "german": "Studium",
+        "conflicts": ["studieren"]
       },
       {
         "english": "course",
@@ -142,7 +149,8 @@
       {
         "english": "to learn",
         "grammar": "",
-        "german": "lernen"
+        "german": "lernen",
+        "conflicts": ["studieren"]
       },
       {
         "english": "to study",
@@ -152,7 +160,8 @@
       {
         "english": "qualification / degree",
         "grammar": "m",
-        "german": "Abschluss"
+        "german": "Abschluss",
+        "conflicts": ["Zeugnis"]
       },
       {
         "english": "certificate / report",

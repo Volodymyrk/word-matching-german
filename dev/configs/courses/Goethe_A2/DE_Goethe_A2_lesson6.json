@@ -5,13 +5,15 @@
         "german": "Fußball",
         "english": "football / soccer",
         "grammar": "m",
-        "icon": "fussball.webp"
+        "icon": "fussball.webp",
+        "conflicts": ["Mannschaft", "Sportplatz"]
       },
       {
         "german": "Tennis",
         "english": "tennis",
         "grammar": "n",
-        "icon": "tennis.webp"
+        "icon": "tennis.webp",
+        "conflicts": ["Schläger"]
       },
       {
         "german": "Schwimmen",
@@ -24,19 +26,22 @@
         "german": "Radfahren",
         "english": "cycling",
         "grammar": "n",
-        "icon": "radfahren.webp"
+        "icon": "radfahren.webp",
+        "conflicts": ["Fahrrad"]
       },
       {
         "german": "Laufen",
         "english": "running / jogging",
         "grammar": "n",
-        "icon": "laufen.webp"
+        "icon": "laufen.webp",
+        "conflicts": ["Sportschuhe"]
       },
       {
         "german": "Wandern",
         "english": "hiking",
         "grammar": "n",
-        "icon": "wandern.webp"
+        "icon": "wandern.webp",
+        "conflicts": ["Klettern"]
       },
       {
         "german": "Klettern",
@@ -54,7 +59,8 @@
         "german": "Turnen",
         "english": "gymnastics",
         "grammar": "n",
-        "icon": "turnen.webp"
+        "icon": "turnen.webp",
+        "conflicts": ["Yoga"]
       },
       {
         "german": "Yoga",
@@ -92,7 +98,8 @@
         "german": "Trikot",
         "english": "jersey / kit",
         "grammar": "n",
-        "icon": "trikot.webp"
+        "icon": "trikot.webp",
+        "conflicts": ["Trainingsanzug"]
       },
       {
         "german": "Helm",
@@ -192,31 +199,36 @@
         "german": "Kino",
         "english": "cinema",
         "grammar": "n",
-        "icon": "kino.webp"
+        "icon": "kino.webp",
+        "conflicts": ["Film", "Eintrittskarte"]
       },
       {
         "german": "Theater",
         "english": "theatre",
         "grammar": "n",
-        "icon": "theater.webp"
+        "icon": "theater.webp",
+        "conflicts": ["Aufführung", "Konzert"]
       },
       {
         "german": "Konzert",
         "english": "concert",
         "grammar": "n",
-        "icon": "konzert.webp"
+        "icon": "konzert.webp",
+        "conflicts": ["Musik machen"]
       },
       {
         "german": "Museum",
         "english": "museum",
         "grammar": "n",
-        "icon": "museum.webp"
+        "icon": "museum.webp",
+        "conflicts": ["Ausstellung"]
       },
       {
         "german": "Ausstellung",
         "english": "exhibition",
         "grammar": "f",
-        "icon": "ausstellung.webp"
+        "icon": "ausstellung.webp",
+        "conflicts": ["Veranstaltung"]
       },
       {
         "german": "Film",
@@ -234,7 +246,9 @@
         "german": "Programm",
         "english": "programme",
         "grammar": "n",
-        "icon": "programm.webp"
+        "icon": "programm.webp",
+        "conflicts": ["Veranstaltung"],
+        "hard_icon": true
       },
       {
         "german": "Veranstaltung",

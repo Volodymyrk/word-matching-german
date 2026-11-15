@@ -37,7 +37,7 @@
         "english": "knee",
         "grammar": "n",
         "icon": "knie.webp",
-        "conflicts": ["Knöchel"]
+        "conflicts": ["Knöchel", "Ellbogen"]
       },
       {
         "german": "Schulter",
@@ -50,7 +50,8 @@
         "german": "Ellbogen",
         "english": "elbow",
         "grammar": "m",
-        "icon": "ellbogen.webp"
+        "icon": "ellbogen.webp",
+        "conflicts": ["Handgelenk"]
       },
       {
         "german": "Handgelenk",
@@ -71,7 +72,9 @@
         "german": "Schmerz",
         "english": "pain",
         "grammar": "m",
-        "icon": "schmerz.webp"
+        "icon": "schmerz.webp",
+        "conflicts": ["Kopfschmerzen", "Bauchschmerzen"],
+        "hard_icon": true
       },
       {
         "german": "Kopfschmerzen",
@@ -89,7 +92,8 @@
         "german": "Fieber",
         "english": "fever / temperature",
         "grammar": "n",
-        "icon": "fieber.webp"
+        "icon": "fieber.webp",
+        "conflicts": ["Grippe"]
       },
       {
         "german": "Husten",
@@ -101,13 +105,15 @@
         "german": "Schnupfen",
         "english": "runny nose / cold",
         "grammar": "m",
-        "icon": "schnupfen.webp"
+        "icon": "schnupfen.webp",
+        "conflicts": ["sich erkälten"]
       },
       {
         "german": "Grippe",
         "english": "flu",
         "grammar": "f",
-        "icon": "grippe.webp"
+        "icon": "grippe.webp",
+        "conflicts": ["sich erkälten"]
       },
       {
         "german": "Übelkeit",
@@ -134,14 +140,15 @@
         "english": "doctor's practice / surgery",
         "grammar": "f",
         "icon": "arztpraxis.webp",
-        "conflicts": ["Krankenkasse"],
+        "conflicts": ["Krankenkasse", "Krankenhaus"],
         "hard_icon": true
       },
       {
         "german": "Medikament",
         "english": "medication",
         "grammar": "n",
-        "icon": "medikament.webp"
+        "icon": "medikament.webp",
+        "conflicts": ["Tablette"]
       },
       {
         "german": "Tablette",
@@ -160,13 +167,15 @@
         "german": "Krankenhaus",
         "english": "hospital",
         "grammar": "n",
-        "icon": "krankenhaus.webp"
+        "icon": "krankenhaus.webp",
+        "conflicts": ["Notaufnahme"]
       },
       {
         "german": "Notaufnahme",
         "english": "A&E / emergency room",
         "grammar": "f",
-        "icon": "notaufnahme.webp"
+        "icon": "notaufnahme.webp",
+        "conflicts": ["Krankenwagen"]
       },
       {
         "german": "Krankenwagen",
@@ -226,7 +235,8 @@
         "german": "Stress",
         "english": "stress",
         "grammar": "m",
-        "icon": "stress.webp"
+        "icon": "stress.webp",
+        "hard_icon": true
       },
       {
         "german": "Rauchen",
@@ -244,7 +254,8 @@
         "german": "Schlaf",
         "english": "sleep",
         "grammar": "m",
-        "icon": "schlaf.webp"
+        "icon": "schlaf.webp",
+        "conflicts": ["sich ausruhen"]
       },
       {
         "german": "Ernährung",
@@ -256,7 +267,8 @@
         "german": "Vorsorge",
         "english": "prevention / precaution",
         "grammar": "f",
-        "icon": "vorsorge.webp"
+        "icon": "vorsorge.webp",
+        "hard_icon": true
       }
     ]
   }

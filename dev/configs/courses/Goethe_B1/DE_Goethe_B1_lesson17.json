@@ -4,17 +4,20 @@
       {
         "german": "stehlen",
         "english": "to steal",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Diebstahl"]
       },
       {
         "german": "Diebstahl",
         "english": "theft",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Einbruch"]
       },
       {
         "german": "betrügen",
         "english": "to deceive / cheat",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Betrug"]
       },
       {
         "german": "Betrug",
@@ -44,7 +47,8 @@
       {
         "german": "einbrechen",
         "english": "to break in / burgle",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Einbruch"]
       },
       {
         "german": "Einbruch",
@@ -56,7 +60,8 @@
       {
         "german": "Polizei",
         "english": "police",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["verhaften"]
       },
       {
         "german": "verhaften",
@@ -83,22 +88,26 @@
       {
         "german": "Gericht",
         "english": "court",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Richter"]
       },
       {
         "german": "Richter",
         "english": "judge (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Urteil"]
       },
       {
         "german": "Urteil",
         "english": "verdict / judgement",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["verurteilen"]
       },
       {
         "german": "Zeuge",
         "english": "witness (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Aussage"]
       },
       {
         "german": "Aussage",
@@ -116,7 +125,7 @@
         "german": "Geldstrafe",
         "english": "fine",
         "grammar": "f",
-        "conflicts": ["Buße"]
+        "conflicts": ["Buße", "Strafe"]
       },
       {
         "german": "Bewährung",
@@ -126,7 +135,8 @@
       {
         "german": "Freiheitsstrafe",
         "english": "custodial sentence",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Gefängnis"]
       },
       {
         "german": "Gefängnis",
@@ -151,7 +161,8 @@
       {
         "german": "Strafe",
         "english": "punishment / penalty",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Strafbefehl", "Freiheitsstrafe"]
       },
       {
         "german": "Strafbefehl",
@@ -180,7 +191,8 @@
       {
         "german": "haften",
         "english": "to be liable",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Haftpflicht"]
       },
       {
         "german": "Haftpflicht",
@@ -190,7 +202,8 @@
       {
         "german": "Testament",
         "english": "will / testament",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["erben"]
       },
       {
         "german": "erben",

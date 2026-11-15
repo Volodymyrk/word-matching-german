@@ -5,7 +5,8 @@
         "german": "Geburt",
         "english": "birth",
         "grammar": "f",
-        "icon": "geburt.webp"
+        "icon": "geburt.webp",
+        "conflicts": ["Kindheit"]
       },
       {
         "german": "Kindheit",
@@ -36,7 +37,8 @@
         "german": "heiraten",
         "english": "to get married",
         "grammar": "",
-        "icon": "heiraten.webp"
+        "icon": "heiraten.webp",
+        "conflicts": ["Hochzeit", "Scheidung"]
       },
       {
         "german": "Hochzeit",
@@ -61,7 +63,8 @@
         "german": "Lebensphase",
         "english": "stage of life",
         "grammar": "f",
-        "icon": "lebensphase.webp"
+        "icon": "lebensphase.webp",
+        "hard_icon": true
       }
     ],
     "Soziale Kontakte": [
@@ -97,13 +100,14 @@
         "english": "celebration / party",
         "grammar": "f",
         "icon": "feier.webp",
-        "conflicts": ["feiern"]
+        "conflicts": ["feiern", "Jubiläum"]
       },
       {
         "german": "Gast",
         "english": "guest",
         "grammar": "m",
-        "icon": "gast.webp"
+        "icon": "gast.webp",
+        "conflicts": ["Gastgeber"]
       },
       {
         "german": "Gastgeber",
@@ -115,13 +119,15 @@
         "german": "Kontakt",
         "english": "contact",
         "grammar": "m",
-        "icon": "kontakt.webp"
+        "icon": "kontakt.webp",
+        "hard_icon": true
       },
       {
         "german": "besuchen",
         "english": "to visit",
         "grammar": "",
-        "icon": "besuchen.webp"
+        "icon": "besuchen.webp",
+        "conflicts": ["Gast"]
       },
       {
         "german": "sich verabreden",
@@ -148,7 +154,8 @@
         "german": "Silvester",
         "english": "New Year's Eve",
         "grammar": "n",
-        "icon": "silvester.webp"
+        "icon": "silvester.webp",
+        "conflicts": ["Prost", "feiern"]
       },
       {
         "german": "Karneval",
@@ -160,7 +167,8 @@
         "german": "feiern",
         "english": "to celebrate",
         "grammar": "",
-        "icon": "feiern.webp"
+        "icon": "feiern.webp",
+        "conflicts": ["Prost"]
       },
       {
         "german": "Geschenk",
@@ -185,7 +193,8 @@
         "german": "Wunsch",
         "english": "wish",
         "grammar": "m",
-        "icon": "wunsch.webp"
+        "icon": "wunsch.webp",
+        "hard_icon": true
       },
       {
         "german": "Geburtstagskuchen",
@@ -207,7 +216,8 @@
         "english": "grateful",
         "grammar": "",
         "icon": "dankbar.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["ehrlich"]
       },
       {
         "german": "neugierig",
@@ -241,7 +251,8 @@
         "german": "hilfsbereit",
         "english": "helpful",
         "grammar": "",
-        "icon": "hilfsbereit.webp"
+        "icon": "hilfsbereit.webp",
+        "conflicts": ["höflich"]
       },
       {
         "german": "fleißig",

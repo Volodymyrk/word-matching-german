@@ -29,7 +29,8 @@
         "english": "water",
         "grammar": "n",
         "german": "Wasser",
-        "icon": "wasser.webp"
+        "icon": "wasser.webp",
+        "conflicts": ["Glas"]
       },
       {
         "english": "butter",
@@ -67,7 +68,8 @@
         "english": "shopping cart",
         "grammar": "m",
         "german": "Einkaufswagen",
-        "icon": "einkaufswagen.webp"
+        "icon": "einkaufswagen.webp",
+        "conflicts": ["Korb"]
       },
       {
         "english": "basket",
@@ -79,7 +81,8 @@
         "english": "bag",
         "grammar": "f",
         "german": "Tasche",
-        "icon": "tasche.webp"
+        "icon": "tasche.webp",
+        "conflicts": ["Kunde"]
       },
       {
         "english": "receipt",
@@ -103,7 +106,8 @@
         "english": "offer",
         "grammar": "n",
         "german": "Angebot",
-        "icon": "angebot.webp"
+        "icon": "angebot.webp",
+        "conflicts": ["Rabatt"]
       },
       {
         "english": "shelf",
@@ -135,7 +139,8 @@
         "english": "sugar",
         "grammar": "m",
         "german": "Zucker",
-        "icon": "zucker.webp"
+        "icon": "zucker.webp",
+        "conflicts": ["Salz"]
       },
       {
         "english": "salt",
@@ -159,7 +164,8 @@
         "english": "tea",
         "grammar": "m",
         "german": "Tee",
-        "icon": "tee.webp"
+        "icon": "tee.webp",
+        "conflicts": ["Kaffee"]
       },
       {
         "english": "juice",
@@ -191,7 +197,8 @@
         "english": "credit card",
         "grammar": "f",
         "german": "Kreditkarte",
-        "icon": "kreditkarte.webp"
+        "icon": "kreditkarte.webp",
+        "conflicts": ["Kundenkarte"]
       },
       {
         "english": "membership card",
@@ -217,7 +224,8 @@
         "english": "bottle",
         "grammar": "f",
         "german": "Flasche",
-        "icon": "flasche.webp"
+        "icon": "flasche.webp",
+        "conflicts": ["Öl"]
       },
       {
         "english": "can/tin",

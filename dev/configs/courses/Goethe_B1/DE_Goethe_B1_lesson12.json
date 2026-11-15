@@ -5,13 +5,15 @@
         "german": "Konzert",
         "english": "concert",
         "grammar": "n",
-        "icon": "konzert.webp"
+        "icon": "konzert.webp",
+        "conflicts": ["Bühne"]
       },
       {
         "german": "Orchester",
         "english": "orchestra",
         "grammar": "n",
-        "icon": "orchester.webp"
+        "icon": "orchester.webp",
+        "conflicts": ["Dirigent"]
       },
       {
         "german": "Dirigent",
@@ -27,7 +29,8 @@
         "german": "Aufführung",
         "english": "performance",
         "grammar": "f",
-        "icon": "auffuehrung.webp"
+        "icon": "auffuehrung.webp",
+        "conflicts": ["Bühne"]
       },
       {
         "german": "Probe",
@@ -43,7 +46,8 @@
       {
         "german": "Rhythmus",
         "english": "rhythm",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Melodie"]
       },
       {
         "german": "Melodie",
@@ -65,7 +69,8 @@
       {
         "german": "Darsteller",
         "english": "actor / performer (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Rolle"]
       },
       {
         "german": "Regisseur",
@@ -95,7 +100,8 @@
       {
         "german": "Kritik",
         "english": "review / critique",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Rezension"]
       },
       {
         "german": "Soundtrack",
@@ -118,7 +124,8 @@
       {
         "german": "Kurzgeschichte",
         "english": "short story",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Roman"]
       },
       {
         "german": "Autor",
@@ -138,7 +145,8 @@
       {
         "german": "Figur",
         "english": "character / figure",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Rolle"]
       },
       {
         "german": "veröffentlichen",
@@ -201,7 +209,8 @@
       {
         "german": "anstoßen",
         "english": "to toast / clink glasses",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["feiern"]
       },
       {
         "german": "Weihnachtsmarkt",
@@ -213,12 +222,14 @@
         "german": "Karneval",
         "english": "carnival",
         "grammar": "m",
-        "icon": "karneval.webp"
+        "icon": "karneval.webp",
+        "conflicts": ["Volksfest"]
       },
       {
         "german": "Volksfest",
         "english": "folk festival / fair",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Weihnachtsmarkt"]
       }
     ]
   }

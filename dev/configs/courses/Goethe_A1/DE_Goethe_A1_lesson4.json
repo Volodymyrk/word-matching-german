@@ -24,7 +24,8 @@
       {
         "english": "sausage",
         "grammar": "f",
-        "german": "Wurst"
+        "german": "Wurst",
+        "conflicts": ["Fleisch"]
       },
       {
         "english": "meat",
@@ -39,7 +40,8 @@
       {
         "english": "vegetables",
         "grammar": "n",
-        "german": "Gemüse"
+        "german": "Gemüse",
+        "conflicts": ["Salat"]
       },
       {
         "english": "fruit",
@@ -61,7 +63,8 @@
       {
         "english": "sugar",
         "grammar": "m",
-        "german": "Zucker"
+        "german": "Zucker",
+        "conflicts": ["Salz"]
       },
       {
         "english": "flour",
@@ -114,7 +117,8 @@
       {
         "english": "coffee",
         "grammar": "m",
-        "german": "Kaffee"
+        "german": "Kaffee",
+        "conflicts": ["Kakao"]
       },
       {
         "english": "tea",
@@ -130,7 +134,7 @@
         "english": "juice",
         "grammar": "m",
         "german": "Saft",
-        "conflicts": ["Frühstück"]
+        "conflicts": ["Frühstück", "Limonade"]
       },
       {
         "english": "beer",
@@ -177,7 +181,8 @@
       {
         "english": "meal",
         "grammar": "f",
-        "german": "Mahlzeit"
+        "german": "Mahlzeit",
+        "conflicts": ["Frühstück", "Mittagessen", "Abendessen", "Snack"]
       },
       {
         "english": "snack",
@@ -187,12 +192,14 @@
       {
         "english": "hunger",
         "grammar": "m",
-        "german": "Hunger"
+        "german": "Hunger",
+        "conflicts": ["essen"]
       },
       {
         "english": "thirst",
         "grammar": "m",
-        "german": "Durst"
+        "german": "Durst",
+        "conflicts": ["trinken"]
       },
       {
         "english": "to cook",
@@ -214,7 +221,8 @@
       {
         "english": "restaurant",
         "grammar": "n",
-        "german": "Restaurant"
+        "german": "Restaurant",
+        "conflicts": ["Café"]
       },
       {
         "english": "café",
@@ -240,7 +248,8 @@
       {
         "english": "bill",
         "grammar": "f",
-        "german": "Rechnung"
+        "german": "Rechnung",
+        "conflicts": ["zahlen", "Trinkgeld"]
       },
       {
         "english": "tip",

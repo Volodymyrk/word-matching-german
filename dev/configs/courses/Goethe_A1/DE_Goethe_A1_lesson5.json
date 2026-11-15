@@ -14,7 +14,8 @@
       {
         "english": "dress",
         "grammar": "n",
-        "german": "Kleid"
+        "german": "Kleid",
+        "conflicts": ["Rock"]
       },
       {
         "english": "skirt",
@@ -29,12 +30,14 @@
       {
         "english": "coat",
         "grammar": "m",
-        "german": "Mantel"
+        "german": "Mantel",
+        "conflicts": ["Jacke"]
       },
       {
         "english": "shoe",
         "grammar": "m",
-        "german": "Schuh"
+        "german": "Schuh",
+        "conflicts": ["Stiefel"]
       },
       {
         "english": "boot",
@@ -108,7 +111,8 @@
       {
         "english": "shop / store",
         "grammar": "n",
-        "german": "Geschäft"
+        "german": "Geschäft",
+        "conflicts": ["Laden"]
       },
       {
         "english": "store / shop",
@@ -128,7 +132,8 @@
       {
         "english": "price",
         "grammar": "",
-        "german": "Preis"
+        "german": "Preis",
+        "conflicts": ["kosten"]
       },
       {
         "english": "money",
@@ -138,7 +143,8 @@
       {
         "english": "to buy",
         "grammar": "",
-        "german": "kaufen"
+        "german": "kaufen",
+        "conflicts": ["bezahlen", "verkaufen"]
       },
       {
         "english": "to sell",

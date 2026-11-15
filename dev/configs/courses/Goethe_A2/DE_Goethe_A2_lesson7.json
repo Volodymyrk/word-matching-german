@@ -5,19 +5,22 @@
         "german": "Zug",
         "english": "train",
         "grammar": "m",
-        "icon": "zug.webp"
+        "icon": "zug.webp",
+        "conflicts": ["U-Bahn", "Straßenbahn"]
       },
       {
         "german": "Bus",
         "english": "bus",
         "grammar": "m",
-        "icon": "bus.webp"
+        "icon": "bus.webp",
+        "conflicts": ["Straßenbahn"]
       },
       {
         "german": "U-Bahn",
         "english": "underground / metro",
         "grammar": "f",
-        "icon": "u-bahn.webp"
+        "icon": "u-bahn.webp",
+        "conflicts": ["Straßenbahn"]
       },
       {
         "german": "Straßenbahn",
@@ -29,7 +32,8 @@
         "german": "Taxi",
         "english": "taxi",
         "grammar": "n",
-        "icon": "taxi.webp"
+        "icon": "taxi.webp",
+        "conflicts": ["Mitfahrgelegenheit"]
       },
       {
         "german": "Schiff",
@@ -41,13 +45,15 @@
         "german": "Flugzeug",
         "english": "aeroplane",
         "grammar": "n",
-        "icon": "flugzeug.webp"
+        "icon": "flugzeug.webp",
+        "conflicts": ["Abfahrt", "Ankunft"]
       },
       {
         "german": "Motorrad",
         "english": "motorbike",
         "grammar": "n",
-        "icon": "motorrad.webp"
+        "icon": "motorrad.webp",
+        "conflicts": ["Roller"]
       },
       {
         "german": "Roller",
@@ -67,13 +73,15 @@
         "german": "Gleis",
         "english": "platform / track",
         "grammar": "n",
-        "icon": "gleis.webp"
+        "icon": "gleis.webp",
+        "conflicts": ["Zug"]
       },
       {
         "german": "Abfahrt",
         "english": "departure",
         "grammar": "f",
-        "icon": "abfahrt.webp"
+        "icon": "abfahrt.webp",
+        "conflicts": ["Ankunft"]
       },
       {
         "german": "Ankunft",
@@ -104,13 +112,15 @@
         "german": "Gepäck",
         "english": "luggage",
         "grammar": "n",
-        "icon": "gepaeck.webp"
+        "icon": "gepaeck.webp",
+        "conflicts": ["Koffer", "Check-in"]
       },
       {
         "german": "Koffer",
         "english": "suitcase",
         "grammar": "m",
-        "icon": "koffer.webp"
+        "icon": "koffer.webp",
+        "conflicts": ["Check-in", "auschecken"]
       },
       {
         "german": "Reisepass",
@@ -130,13 +140,15 @@
         "german": "Hotel",
         "english": "hotel",
         "grammar": "n",
-        "icon": "hotel.webp"
+        "icon": "hotel.webp",
+        "conflicts": ["Pension", "Jugendherberge"]
       },
       {
         "german": "Pension",
         "english": "guesthouse / B&B",
         "grammar": "f",
-        "icon": "pension.webp"
+        "icon": "pension.webp",
+        "conflicts": ["Jugendherberge"]
       },
       {
         "german": "Jugendherberge",
@@ -169,7 +181,8 @@
         "german": "Rezeption",
         "english": "reception",
         "grammar": "f",
-        "icon": "rezeption.webp"
+        "icon": "rezeption.webp",
+        "conflicts": ["Check-in", "auschecken"]
       },
       {
         "german": "buchen",
@@ -196,13 +209,15 @@
         "german": "Sehenswürdigkeit",
         "english": "sight / tourist attraction",
         "grammar": "f",
-        "icon": "sehenswuerdigkeit.webp"
+        "icon": "sehenswuerdigkeit.webp",
+        "conflicts": ["Tourismus", "Denkmal"]
       },
       {
         "german": "Stadtführung",
         "english": "city tour / guided tour",
         "grammar": "f",
-        "icon": "stadtfuehrung.webp"
+        "icon": "stadtfuehrung.webp",
+        "conflicts": ["Tourismus"]
       },
       {
         "german": "Stadtplan",

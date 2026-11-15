@@ -4,7 +4,8 @@
       {
         "german": "Muttersprache",
         "english": "mother tongue / native language",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Fremdsprache"]
       },
       {
         "german": "Fremdsprache",
@@ -19,7 +20,8 @@
       {
         "german": "Akzent",
         "english": "accent",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Dialekt", "Aussprache"]
       },
       {
         "german": "Dialekt",
@@ -31,7 +33,8 @@
       {
         "german": "dolmetschen",
         "english": "to interpret (orally)",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["übersetzen"]
       },
       {
         "german": "übersetzen",
@@ -58,7 +61,8 @@
       {
         "german": "verfassen",
         "english": "to write / compose",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["aufsetzen"]
       },
       {
         "german": "Anschreiben",
@@ -78,7 +82,8 @@
       {
         "german": "Notiz",
         "english": "note",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Protokoll"]
       },
       {
         "german": "Protokoll",
@@ -93,7 +98,8 @@
       {
         "german": "erläutern",
         "english": "to explain / elaborate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["beschreiben", "klären"]
       },
       {
         "german": "beschreiben",
@@ -112,7 +118,8 @@
       {
         "german": "debattieren",
         "english": "to debate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["argumentieren"]
       },
       {
         "german": "argumentieren",
@@ -124,7 +131,8 @@
       {
         "german": "überzeugen",
         "english": "to convince / persuade",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["argumentieren"]
       },
       {
         "german": "widersprechen",
@@ -145,7 +153,8 @@
       {
         "german": "vermitteln",
         "english": "to mediate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Kompromiss"]
       },
       {
         "german": "Missverständnis",
@@ -192,12 +201,14 @@
       {
         "german": "jedoch",
         "english": "however / yet",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["allerdings", "dennoch"]
       },
       {
         "german": "allerdings",
         "english": "however / admittedly",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["zwar", "dennoch"]
       },
       {
         "german": "dennoch",
