@@ -61,8 +61,8 @@
     ],
     "Sport": [
       {
-        "german": "der Sportverein",
-        "english": "the sports club",
+        "german": "Sportverein",
+        "english": "sports club",
         "grammar": "m"
       },
       {
@@ -71,8 +71,8 @@
         "grammar": ""
       },
       {
-        "german": "der Wettkampf",
-        "english": "the competition",
+        "german": "Wettkampf",
+        "english": "competition",
         "grammar": "m"
       },
       {
@@ -81,46 +81,47 @@
         "grammar": ""
       },
       {
-        "german": "die Meisterschaft",
-        "english": "the championship",
+        "german": "Meisterschaft",
+        "english": "championship",
         "grammar": "f"
       },
       {
-        "german": "das Stadion",
-        "english": "the stadium",
+        "german": "Stadion",
+        "english": "stadium",
         "grammar": "n"
       },
       {
-        "german": "der Trainer",
-        "english": "the coach / trainer (male)",
+        "german": "Trainer",
+        "english": "coach / trainer (male)",
         "grammar": "m"
       },
       {
-        "german": "die Niederlage",
-        "english": "the defeat",
+        "german": "Niederlage",
+        "english": "defeat",
         "grammar": "f"
       },
       {
-        "german": "das Ergebnis",
-        "english": "the result / score",
+        "german": "Ergebnis",
+        "english": "result / score",
         "grammar": "n"
       },
       {
-        "german": "die Mannschaft",
-        "english": "the team",
+        "german": "Mannschaft",
+        "english": "team",
         "grammar": "f",
         "icon": "mannschaft.webp"
       }
     ],
     "Outdoor": [
       {
-        "german": "das Zelt",
-        "english": "the tent",
-        "grammar": "n"
+        "german": "Zelt",
+        "english": "tent",
+        "grammar": "n",
+        "conflicts": ["zelten"]
       },
       {
-        "german": "der Rucksack",
-        "english": "the backpack / rucksack",
+        "german": "Rucksack",
+        "english": "backpack / rucksack",
         "grammar": "m"
       },
       {
@@ -129,8 +130,8 @@
         "grammar": ""
       },
       {
-        "german": "das Kanu",
-        "english": "the canoe",
+        "german": "Kanu",
+        "english": "canoe",
         "grammar": "n"
       },
       {
@@ -144,7 +145,7 @@
         "grammar": ""
       },
       {
-        "german": "das Skifahren",
+        "german": "Skifahren",
         "english": "skiing",
         "grammar": "n",
         "icon": "skifahren.webp"
@@ -160,15 +161,15 @@
         "grammar": ""
       },
       {
-        "german": "der Wanderweg",
-        "english": "the hiking trail",
+        "german": "Wanderweg",
+        "english": "hiking trail",
         "grammar": "m"
       }
     ],
     "Vereinsleben": [
       {
-        "german": "der Verein",
-        "english": "the club / association",
+        "german": "Verein",
+        "english": "club / association",
         "grammar": "m"
       },
       {
@@ -177,19 +178,20 @@
         "grammar": ""
       },
       {
-        "german": "der Beitrag",
-        "english": "the membership fee / contribution",
+        "german": "Beitrag",
+        "english": "membership fee / contribution",
         "grammar": "m"
       },
       {
-        "german": "das Vereinsmitglied",
-        "english": "the club member",
+        "german": "Vereinsmitglied",
+        "english": "club member",
         "grammar": "n"
       },
       {
         "german": "ehrenamtlich",
         "english": "voluntary / honorary",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["freiwillig"]
       },
       {
         "german": "freiwillig",
@@ -202,19 +204,19 @@
         "grammar": ""
       },
       {
-        "german": "die Gemeinschaft",
-        "english": "the community",
+        "german": "Gemeinschaft",
+        "english": "community",
         "grammar": "f",
         "icon": "gemeinschaft.webp"
       },
       {
-        "german": "der Mitgliedsausweis",
-        "english": "the membership card",
+        "german": "Mitgliedsausweis",
+        "english": "membership card",
         "grammar": "m"
       },
       {
-        "german": "die Satzung",
-        "english": "the statutes / bylaws",
+        "german": "Satzung",
+        "english": "statutes / bylaws",
         "grammar": "f"
       }
     ]

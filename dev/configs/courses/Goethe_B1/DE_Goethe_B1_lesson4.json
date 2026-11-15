@@ -2,37 +2,38 @@
   "Wohnen und Nachbarschaft": {
     "Wohnungssuche": [
       {
-        "german": "die Miete",
-        "english": "the rent",
-        "grammar": "f"
+        "german": "Miete",
+        "english": "rent",
+        "grammar": "f",
+        "conflicts": ["Mieter"]
       },
       {
-        "german": "der Vermieter",
-        "english": "the landlord",
+        "german": "Vermieter",
+        "english": "landlord",
         "grammar": "m",
         "icon": "vermieter.webp"
       },
       {
-        "german": "der Mieter",
-        "english": "the tenant",
+        "german": "Mieter",
+        "english": "tenant",
         "grammar": "m",
         "icon": "mieter.webp"
       },
       {
-        "german": "die Kaution",
-        "english": "the deposit",
+        "german": "Kaution",
+        "english": "deposit",
         "grammar": "f",
         "icon": "kaution.webp"
       },
       {
-        "german": "der Mietvertrag",
-        "english": "the tenancy agreement",
+        "german": "Mietvertrag",
+        "english": "tenancy agreement",
         "grammar": "m",
         "icon": "mietvertrag.webp"
       },
       {
-        "german": "die Wohnungsanzeige",
-        "english": "the property advertisement",
+        "german": "Wohnungsanzeige",
+        "english": "property advertisement",
         "grammar": "f"
       },
       {
@@ -44,107 +45,111 @@
         "german": "einziehen",
         "english": "to move in",
         "grammar": "",
-        "icon": "einziehen.webp"
+        "icon": "einziehen.webp",
+        "conflicts": ["ausziehen"],
+        "hard_icon": true
       },
       {
         "german": "ausziehen",
         "english": "to move out",
         "grammar": "",
-        "icon": "ausziehen.webp"
+        "icon": "ausziehen.webp",
+        "hard_icon": true
       },
       {
-        "german": "die Nebenkosten",
-        "english": "the additional costs / utilities",
+        "german": "Nebenkosten",
+        "english": "additional costs / utilities",
         "grammar": "",
-        "icon": "nebenkosten.webp"
+        "icon": "nebenkosten.webp",
+        "hard_icon": true
       }
     ],
     "Haus und Gebäude": [
       {
-        "german": "das Erdgeschoss",
-        "english": "the ground floor",
+        "german": "Erdgeschoss",
+        "english": "ground floor",
         "grammar": "n",
         "icon": "erdgeschoss.webp"
       },
       {
-        "german": "das Obergeschoss",
-        "english": "the upper floor",
+        "german": "Obergeschoss",
+        "english": "upper floor",
         "grammar": "n"
       },
       {
-        "german": "der Keller",
-        "english": "the cellar / basement",
+        "german": "Keller",
+        "english": "cellar / basement",
         "grammar": "m"
       },
       {
-        "german": "der Dachboden",
-        "english": "the attic / loft",
+        "german": "Dachboden",
+        "english": "attic / loft",
         "grammar": "m"
       },
       {
-        "german": "der Flur",
-        "english": "the hallway / corridor",
+        "german": "Flur",
+        "english": "hallway / corridor",
         "grammar": "m"
       },
       {
-        "german": "die Terrasse",
-        "english": "the terrace / patio",
+        "german": "Terrasse",
+        "english": "terrace / patio",
         "grammar": "f"
       },
       {
-        "german": "der Balkon",
-        "english": "the balcony",
+        "german": "Balkon",
+        "english": "balcony",
         "grammar": "m"
       },
       {
-        "german": "das Treppenhaus",
-        "english": "the stairwell",
+        "german": "Treppenhaus",
+        "english": "stairwell",
         "grammar": "n",
         "icon": "treppenhaus.webp"
       },
       {
-        "german": "der Aufzug",
-        "english": "the lift / elevator",
+        "german": "Aufzug",
+        "english": "lift / elevator",
         "grammar": "m",
         "icon": "aufzug.webp"
       },
       {
-        "german": "die Garage",
-        "english": "the garage",
+        "german": "Garage",
+        "english": "garage",
         "grammar": "f"
       }
     ],
     "Einrichtung": [
       {
-        "german": "das Möbel",
-        "english": "the piece of furniture",
+        "german": "Möbel",
+        "english": "piece of furniture",
         "grammar": "n"
       },
       {
-        "german": "der Schrank",
-        "english": "the wardrobe / cupboard",
+        "german": "Schrank",
+        "english": "wardrobe / cupboard",
         "grammar": "m"
       },
       {
-        "german": "das Regal",
-        "english": "the shelf / bookcase",
+        "german": "Regal",
+        "english": "shelf / bookcase",
         "grammar": "n",
         "icon": "regal.webp"
       },
       {
-        "german": "die Couch",
-        "english": "the sofa / couch",
+        "german": "Couch",
+        "english": "sofa / couch",
         "grammar": "f"
       },
       {
-        "german": "der Teppich",
-        "english": "the carpet / rug",
+        "german": "Teppich",
+        "english": "carpet / rug",
         "grammar": "m",
         "icon": "teppich.webp"
       },
       {
-        "german": "die Gardine",
-        "english": "the curtain",
+        "german": "Gardine",
+        "english": "curtain",
         "grammar": "f"
       },
       {
@@ -163,25 +168,25 @@
         "grammar": ""
       },
       {
-        "german": "die Ausstattung",
-        "english": "the furnishings / equipment",
+        "german": "Ausstattung",
+        "english": "furnishings / equipment",
         "grammar": "f"
       }
     ],
     "Nachbarschaft": [
       {
-        "german": "der Nachbar",
-        "english": "the neighbour (male)",
+        "german": "Nachbar",
+        "english": "neighbour (male)",
         "grammar": "m"
       },
       {
-        "german": "die Hausordnung",
-        "english": "the house rules",
+        "german": "Hausordnung",
+        "english": "house rules",
         "grammar": "f"
       },
       {
-        "german": "der Lärm",
-        "english": "the noise",
+        "german": "Lärm",
+        "english": "noise",
         "grammar": "m",
         "icon": "laerm.webp"
       },
@@ -191,8 +196,8 @@
         "grammar": ""
       },
       {
-        "german": "die Wohngemeinschaft",
-        "english": "the shared flat / house share",
+        "german": "Wohngemeinschaft",
+        "english": "shared flat / house share",
         "grammar": "f",
         "icon": "wohngemeinschaft.webp"
       },
@@ -202,24 +207,24 @@
         "grammar": ""
       },
       {
-        "german": "der Hausmeister",
-        "english": "the caretaker / janitor",
+        "german": "Hausmeister",
+        "english": "caretaker / janitor",
         "grammar": "m",
         "icon": "hausmeister.webp"
       },
       {
-        "german": "die Etage",
-        "english": "the floor / storey",
+        "german": "Etage",
+        "english": "floor / storey",
         "grammar": "f"
       },
       {
-        "german": "das Eigentum",
-        "english": "the property / ownership",
+        "german": "Eigentum",
+        "english": "property / ownership",
         "grammar": "n"
       },
       {
-        "german": "die Wohnsiedlung",
-        "english": "the housing estate",
+        "german": "Wohnsiedlung",
+        "english": "housing estate",
         "grammar": "f"
       }
     ]

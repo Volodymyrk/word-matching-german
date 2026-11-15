@@ -2,103 +2,104 @@
   "Einkaufen und Konsum": {
     "Geschäfte": [
       {
-        "german": "das Einkaufszentrum",
-        "english": "the shopping centre",
+        "german": "Einkaufszentrum",
+        "english": "shopping centre",
         "grammar": "n",
         "icon": "einkaufszentrum.webp"
       },
       {
-        "german": "der Discounter",
-        "english": "the discount supermarket",
-        "grammar": "m"
+        "german": "Discounter",
+        "english": "discount supermarket",
+        "grammar": "m",
+        "conflicts": ["Rabatt"]
       },
       {
-        "german": "das Kaufhaus",
-        "english": "the department store",
+        "german": "Kaufhaus",
+        "english": "department store",
         "grammar": "n"
       },
       {
-        "german": "die Boutique",
-        "english": "the boutique",
+        "german": "Boutique",
+        "english": "boutique",
         "grammar": "f"
       },
       {
-        "german": "die Apotheke",
-        "english": "the pharmacy / chemist's",
+        "german": "Apotheke",
+        "english": "pharmacy / chemist's",
         "grammar": "f",
         "icon": "apotheke.webp"
       },
       {
-        "german": "die Metzgerei",
-        "english": "the butcher's",
+        "german": "Metzgerei",
+        "english": "butcher's",
         "grammar": "f",
         "icon": "metzgerei.webp"
       },
       {
-        "german": "die Bäckerei",
-        "english": "the bakery",
+        "german": "Bäckerei",
+        "english": "bakery",
         "grammar": "f",
         "icon": "baeckerei.webp"
       },
       {
-        "german": "der Markt",
-        "english": "the market",
+        "german": "Markt",
+        "english": "market",
         "grammar": "m"
       },
       {
-        "german": "der Fachmarkt",
-        "english": "the specialist store",
+        "german": "Fachmarkt",
+        "english": "specialist store",
         "grammar": "m"
       },
       {
-        "german": "der Online-Shop",
-        "english": "the online shop",
+        "german": "Online-Shop",
+        "english": "online shop",
         "grammar": "m"
       }
     ],
     "Kleidung": [
       {
-        "german": "der Mantel",
-        "english": "the coat",
+        "german": "Mantel",
+        "english": "coat",
         "grammar": "m",
         "icon": "mantel.webp"
       },
       {
-        "german": "die Bluse",
-        "english": "the blouse",
+        "german": "Bluse",
+        "english": "blouse",
         "grammar": "f",
         "icon": "bluse.webp"
       },
       {
-        "german": "das Hemd",
-        "english": "the shirt",
+        "german": "Hemd",
+        "english": "shirt",
         "grammar": "n",
         "icon": "hemd.webp"
       },
       {
-        "german": "der Pullover",
-        "english": "the jumper / pullover",
+        "german": "Pullover",
+        "english": "jumper / pullover",
         "grammar": "m"
       },
       {
-        "german": "der Anzug",
-        "english": "the suit",
+        "german": "Anzug",
+        "english": "suit",
         "grammar": "m"
       },
       {
-        "german": "die Stiefel",
-        "english": "the boots",
+        "german": "Stiefel",
+        "english": "boots",
         "grammar": ""
       },
       {
-        "german": "der Schal",
-        "english": "the scarf",
+        "german": "Schal",
+        "english": "scarf",
         "grammar": "m",
         "icon": "schal.webp"
       },
       {
-        "german": "die Größe",
-        "english": "the size",
+        "german": "Größe",
+        "english": "size",
         "grammar": "f",
         "icon": "groesse.webp"
       },
@@ -108,29 +109,32 @@
         "grammar": ""
       },
       {
-        "german": "der Stoff",
-        "english": "the fabric / material",
+        "german": "Stoff",
+        "english": "fabric / material",
         "grammar": "m"
       }
     ],
     "Kaufen und bezahlen": [
       {
-        "german": "der Rabatt",
-        "english": "the discount",
+        "german": "Rabatt",
+        "english": "discount",
         "grammar": "m",
-        "icon": "rabatt.webp"
+        "icon": "rabatt.webp",
+        "conflicts": ["Sonderangebot"],
+        "hard_icon": true
       },
       {
-        "german": "die Quittung",
-        "english": "the receipt",
+        "german": "Quittung",
+        "english": "receipt",
         "grammar": "f",
         "icon": "quittung.webp"
       },
       {
-        "german": "das Sonderangebot",
-        "english": "the special offer",
+        "german": "Sonderangebot",
+        "english": "special offer",
         "grammar": "n",
-        "icon": "sonderangebot.webp"
+        "icon": "sonderangebot.webp",
+        "hard_icon": true
       },
       {
         "german": "reklamieren",
@@ -138,8 +142,8 @@
         "grammar": ""
       },
       {
-        "german": "der Umtausch",
-        "english": "the exchange",
+        "german": "Umtausch",
+        "english": "exchange",
         "grammar": "m"
       },
       {
@@ -148,7 +152,7 @@
         "grammar": ""
       },
       {
-        "german": "die Ratenzahlung",
+        "german": "Ratenzahlung",
         "english": "payment by instalments",
         "grammar": "f"
       },
@@ -158,22 +162,22 @@
         "grammar": ""
       },
       {
-        "german": "die Kreditkarte",
-        "english": "the credit card",
+        "german": "Kreditkarte",
+        "english": "credit card",
         "grammar": "f",
         "icon": "kreditkarte.webp"
       },
       {
-        "german": "die Rechnung",
-        "english": "the invoice / bill",
+        "german": "Rechnung",
+        "english": "invoice / bill",
         "grammar": "f",
         "icon": "rechnung.webp"
       }
     ],
     "Konsum und Qualität": [
       {
-        "german": "die Marke",
-        "english": "the brand",
+        "german": "Marke",
+        "english": "brand",
         "grammar": "f"
       },
       {
@@ -185,7 +189,8 @@
         "german": "nachhaltig",
         "english": "sustainable",
         "grammar": "",
-        "icon": "nachhaltig.webp"
+        "icon": "nachhaltig.webp",
+        "hard_icon": true
       },
       {
         "german": "gebraucht",
@@ -193,35 +198,37 @@
         "grammar": ""
       },
       {
-        "german": "das Schnäppchen",
-        "english": "the bargain",
+        "german": "Schnäppchen",
+        "english": "bargain",
         "grammar": "n"
       },
       {
-        "german": "die Garantie",
-        "english": "the guarantee / warranty",
+        "german": "Garantie",
+        "english": "guarantee / warranty",
         "grammar": "f",
-        "icon": "garantie.webp"
+        "icon": "garantie.webp",
+        "hard_icon": true
       },
       {
         "german": "günstig",
         "english": "cheap / affordable",
         "grammar": "",
-        "icon": "guenstig.webp"
+        "icon": "guenstig.webp",
+        "hard_icon": true
       },
       {
-        "german": "der Verbraucher",
-        "english": "the consumer",
+        "german": "Verbraucher",
+        "english": "consumer",
         "grammar": "m"
       },
       {
-        "german": "der Kundenservice",
-        "english": "the customer service",
+        "german": "Kundenservice",
+        "english": "customer service",
         "grammar": "m"
       },
       {
-        "german": "die Lieferung",
-        "english": "the delivery",
+        "german": "Lieferung",
+        "english": "delivery",
         "grammar": "f"
       }
     ]

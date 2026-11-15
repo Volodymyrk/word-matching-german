@@ -29,7 +29,8 @@
         "german": "Nebenkosten",
         "english": "additional costs / utilities",
         "grammar": "",
-        "icon": "nebenkosten.webp"
+        "icon": "nebenkosten.webp",
+        "hard_icon": true
       },
       {
         "german": "Quadratmeter",
@@ -47,13 +48,16 @@
         "german": "einziehen",
         "english": "to move in",
         "grammar": "",
-        "icon": "einziehen.webp"
+        "icon": "einziehen.webp",
+        "conflicts": ["ausziehen"],
+        "hard_icon": true
       },
       {
         "german": "ausziehen",
         "english": "to move out",
         "grammar": "",
-        "icon": "ausziehen.webp"
+        "icon": "ausziehen.webp",
+        "hard_icon": true
       },
       {
         "german": "Wohngemeinschaft",
@@ -153,7 +157,8 @@
         "german": "Klingel",
         "english": "doorbell",
         "grammar": "f",
-        "icon": "klingel.webp"
+        "icon": "klingel.webp",
+        "conflicts": ["klingeln"]
       },
       {
         "german": "Briefkasten",

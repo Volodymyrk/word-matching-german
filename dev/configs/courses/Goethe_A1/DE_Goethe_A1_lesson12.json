@@ -14,12 +14,14 @@
       {
         "english": "rain",
         "grammar": "m",
-        "german": "Regen"
+        "german": "Regen",
+        "conflicts": ["regnen"]
       },
       {
         "english": "snow",
         "grammar": "m",
-        "german": "Schnee"
+        "german": "Schnee",
+        "conflicts": ["schneien"]
       },
       {
         "english": "wind",

@@ -2,57 +2,60 @@
   "Medien und Internet": {
     "Medien": [
       {
-        "german": "die Zeitung",
-        "english": "the newspaper",
+        "german": "Zeitung",
+        "english": "newspaper",
         "grammar": "f"
       },
       {
-        "german": "die Zeitschrift",
-        "english": "the magazine",
+        "german": "Zeitschrift",
+        "english": "magazine",
         "grammar": "f"
       },
       {
-        "german": "die Sendung",
-        "english": "the programme / broadcast",
+        "german": "Sendung",
+        "english": "programme / broadcast",
         "grammar": "f"
       },
       {
-        "german": "die Nachrichten",
-        "english": "the news",
+        "german": "Nachrichten",
+        "english": "news",
         "grammar": "",
-        "icon": "nachrichten.webp"
+        "icon": "nachrichten.webp",
+        "conflicts": ["Meldung", "Nachrichtenportal"]
       },
       {
-        "german": "der Bericht",
-        "english": "the report",
+        "german": "Bericht",
+        "english": "report",
         "grammar": "m",
         "icon": "bericht.webp"
       },
       {
-        "german": "die Meldung",
-        "english": "the news item / announcement",
+        "german": "Meldung",
+        "english": "news item / announcement",
         "grammar": "f",
-        "icon": "meldung.webp"
+        "icon": "meldung.webp",
+        "hard_icon": true
       },
       {
-        "german": "der Moderator",
-        "english": "the presenter (male)",
+        "german": "Moderator",
+        "english": "presenter (male)",
         "grammar": "m"
       },
       {
-        "german": "der Podcast",
-        "english": "the podcast",
+        "german": "Podcast",
+        "english": "podcast",
         "grammar": "m"
       },
       {
-        "german": "die Werbung",
-        "english": "the advertising / advertisement",
+        "german": "Werbung",
+        "english": "advertising / advertisement",
         "grammar": "f"
       },
       {
-        "german": "das Nachrichtenportal",
-        "english": "the news website",
-        "grammar": "n"
+        "german": "Nachrichtenportal",
+        "english": "news website",
+        "grammar": "n",
+        "conflicts": ["Webseite"]
       }
     ],
     "Internet": [
@@ -68,40 +71,41 @@
         "grammar": ""
       },
       {
-        "german": "die App",
-        "english": "the app",
+        "german": "App",
+        "english": "app",
         "grammar": "f"
       },
       {
-        "german": "die Webseite",
-        "english": "the website",
+        "german": "Webseite",
+        "english": "website",
         "grammar": "f"
       },
       {
-        "german": "das Profil",
-        "english": "the profile",
+        "german": "Profil",
+        "english": "profile",
         "grammar": "n",
-        "icon": "profil.webp"
+        "icon": "profil.webp",
+        "hard_icon": true
       },
       {
-        "german": "das Passwort",
-        "english": "the password",
+        "german": "Passwort",
+        "english": "password",
         "grammar": "n",
         "icon": "passwort.webp"
       },
       {
-        "german": "die Datei",
-        "english": "the file",
+        "german": "Datei",
+        "english": "file",
         "grammar": "f"
       },
       {
-        "german": "der Browser",
-        "english": "the browser",
+        "german": "Browser",
+        "english": "browser",
         "grammar": "m"
       },
       {
-        "german": "die WLAN-Verbindung",
-        "english": "the Wi-Fi connection",
+        "german": "WLAN-Verbindung",
+        "english": "Wi-Fi connection",
         "grammar": "f"
       },
       {
@@ -115,13 +119,16 @@
         "german": "posten",
         "english": "to post",
         "grammar": "",
-        "icon": "posten.webp"
+        "icon": "posten.webp",
+        "conflicts": ["teilen"],
+        "hard_icon": true
       },
       {
         "german": "teilen",
         "english": "to share",
         "grammar": "",
-        "icon": "teilen.webp"
+        "icon": "teilen.webp",
+        "hard_icon": true
       },
       {
         "german": "liken",
@@ -133,21 +140,22 @@
         "german": "folgen",
         "english": "to follow",
         "grammar": "",
-        "icon": "folgen.webp"
+        "icon": "folgen.webp",
+        "hard_icon": true
       },
       {
-        "german": "der Kommentar",
-        "english": "the comment",
+        "german": "Kommentar",
+        "english": "comment",
         "grammar": "m"
       },
       {
-        "german": "der Hashtag",
-        "english": "the hashtag",
+        "german": "Hashtag",
+        "english": "hashtag",
         "grammar": "m"
       },
       {
-        "german": "der Kanal",
-        "english": "the channel",
+        "german": "Kanal",
+        "english": "channel",
         "grammar": "m"
       },
       {
@@ -156,35 +164,35 @@
         "grammar": ""
       },
       {
-        "german": "der Influencer",
-        "english": "the influencer",
+        "german": "Influencer",
+        "english": "influencer",
         "grammar": "m"
       },
       {
-        "german": "die Direktnachricht",
-        "english": "the direct message",
+        "german": "Direktnachricht",
+        "english": "direct message",
         "grammar": "f"
       }
     ],
     "Datenschutz": [
       {
-        "german": "der Datenschutz",
+        "german": "Datenschutz",
         "english": "data protection",
         "grammar": "m"
       },
       {
-        "german": "die Privatsphäre",
+        "german": "Privatsphäre",
         "english": "privacy",
         "grammar": "f"
       },
       {
-        "german": "der Spam",
+        "german": "Spam",
         "english": "spam",
         "grammar": "m"
       },
       {
-        "german": "der Hacker",
-        "english": "the hacker",
+        "german": "Hacker",
+        "english": "hacker",
         "grammar": "m"
       },
       {
@@ -193,8 +201,8 @@
         "grammar": ""
       },
       {
-        "german": "der Virus",
-        "english": "the (computer) virus",
+        "german": "Virus",
+        "english": "(computer) virus",
         "grammar": "m"
       },
       {
@@ -203,13 +211,13 @@
         "grammar": ""
       },
       {
-        "german": "der Datenmissbrauch",
+        "german": "Datenmissbrauch",
         "english": "data misuse / abuse",
         "grammar": "m"
       },
       {
-        "german": "die Sicherheitskopie",
-        "english": "the backup copy",
+        "german": "Sicherheitskopie",
+        "english": "backup copy",
         "grammar": "f"
       },
       {

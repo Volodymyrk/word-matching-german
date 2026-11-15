@@ -71,7 +71,8 @@
       {
         "english": "to call out",
         "grammar": "",
-        "german": "rufen"
+        "german": "rufen",
+        "conflicts": ["anrufen"]
       },
       {
         "english": "to call (phone)",

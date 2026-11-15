@@ -2,14 +2,14 @@
   "Wirtschaft und Finanzen": {
     "Geld und Bank": [
       {
-        "german": "das Konto",
-        "english": "the (bank) account",
+        "german": "Konto",
+        "english": "(bank) account",
         "grammar": "n",
         "icon": "konto.webp"
       },
       {
-        "german": "die Überweisung",
-        "english": "the bank transfer",
+        "german": "Überweisung",
+        "english": "bank transfer",
         "grammar": "f"
       },
       {
@@ -24,40 +24,40 @@
         "grammar": ""
       },
       {
-        "german": "der Zinssatz",
-        "english": "the interest rate",
+        "german": "Zinssatz",
+        "english": "interest rate",
         "grammar": "m"
       },
       {
-        "german": "der Kredit",
-        "english": "the loan / credit",
+        "german": "Kredit",
+        "english": "loan / credit",
         "grammar": "m"
       },
       {
-        "german": "die Schulden",
-        "english": "the debts",
+        "german": "Schulden",
+        "english": "debts",
         "grammar": ""
       },
       {
-        "german": "die Hypothek",
-        "english": "the mortgage",
+        "german": "Hypothek",
+        "english": "mortgage",
         "grammar": "f"
       },
       {
-        "german": "die Währung",
-        "english": "the currency",
+        "german": "Währung",
+        "english": "currency",
         "grammar": "f"
       },
       {
-        "german": "die Inflation",
+        "german": "Inflation",
         "english": "inflation",
         "grammar": "f"
       }
     ],
     "Unternehmen": [
       {
-        "german": "das Unternehmen",
-        "english": "the company / enterprise",
+        "german": "Unternehmen",
+        "english": "company / enterprise",
         "grammar": "n"
       },
       {
@@ -66,23 +66,23 @@
         "grammar": ""
       },
       {
-        "german": "der Umsatz",
-        "english": "the turnover / revenue",
+        "german": "Umsatz",
+        "english": "turnover / revenue",
         "grammar": "m"
       },
       {
-        "german": "der Gewinn",
-        "english": "the profit",
+        "german": "Gewinn",
+        "english": "profit",
         "grammar": "m"
       },
       {
-        "german": "der Verlust",
-        "english": "the loss",
+        "german": "Verlust",
+        "english": "loss",
         "grammar": "m"
       },
       {
-        "german": "die Aktie",
-        "english": "the share / stock",
+        "german": "Aktie",
+        "english": "share / stock",
         "grammar": "f"
       },
       {
@@ -96,34 +96,34 @@
         "grammar": ""
       },
       {
-        "german": "die Insolvenz",
+        "german": "Insolvenz",
         "english": "insolvency / bankruptcy",
         "grammar": "f"
       },
       {
-        "german": "der Konkurrent",
-        "english": "the competitor (male)",
+        "german": "Konkurrent",
+        "english": "competitor (male)",
         "grammar": "m"
       }
     ],
     "Wirtschaft": [
       {
-        "german": "die Konjunktur",
-        "english": "the economic situation / business cycle",
+        "german": "Konjunktur",
+        "english": "economic situation / business cycle",
         "grammar": "f"
       },
       {
-        "german": "das Wachstum",
+        "german": "Wachstum",
         "english": "growth",
         "grammar": "n"
       },
       {
-        "german": "die Rezession",
-        "english": "the recession",
+        "german": "Rezession",
+        "english": "recession",
         "grammar": "f"
       },
       {
-        "german": "die Arbeitslosigkeit",
+        "german": "Arbeitslosigkeit",
         "english": "unemployment",
         "grammar": "f"
       },
@@ -138,40 +138,41 @@
         "grammar": ""
       },
       {
-        "german": "die Nachfrage",
+        "german": "Nachfrage",
         "english": "demand",
         "grammar": "f"
       },
       {
-        "german": "das Angebot",
-        "english": "the supply / offer",
+        "german": "Angebot",
+        "english": "supply / offer",
         "grammar": "n",
         "icon": "angebot.webp"
       },
       {
-        "german": "der Handel",
+        "german": "Handel",
         "english": "trade / commerce",
         "grammar": "m"
       },
       {
-        "german": "der Markt",
-        "english": "the market",
+        "german": "Markt",
+        "english": "market",
         "grammar": "m"
       }
     ],
     "Verbraucherschutz": [
       {
-        "german": "die Reklamation",
-        "english": "the complaint / claim",
-        "grammar": "f"
+        "german": "Reklamation",
+        "english": "complaint / claim",
+        "grammar": "f",
+        "conflicts": ["Beschwerde"]
       },
       {
-        "german": "der Verbraucherschutz",
+        "german": "Verbraucherschutz",
         "english": "consumer protection",
         "grammar": "m"
       },
       {
-        "german": "die Haftung",
+        "german": "Haftung",
         "english": "liability",
         "grammar": "f"
       },
@@ -181,28 +182,28 @@
         "grammar": ""
       },
       {
-        "german": "die Beschwerde",
-        "english": "the complaint",
+        "german": "Beschwerde",
+        "english": "complaint",
         "grammar": "f"
       },
       {
-        "german": "die AGB",
-        "english": "the terms and conditions",
+        "german": "AGB",
+        "english": "terms and conditions",
         "grammar": ""
       },
       {
-        "german": "das Kleingedruckte",
-        "english": "the small print",
+        "german": "Kleingedruckte",
+        "english": "small print",
         "grammar": "n"
       },
       {
-        "german": "die Rückerstattung",
-        "english": "the refund / reimbursement",
+        "german": "Rückerstattung",
+        "english": "refund / reimbursement",
         "grammar": "f"
       },
       {
-        "german": "die Gewährleistung",
-        "english": "the statutory guarantee",
+        "german": "Gewährleistung",
+        "english": "statutory guarantee",
         "grammar": "f"
       },
       {

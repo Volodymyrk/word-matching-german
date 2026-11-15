@@ -2,83 +2,84 @@
   "Kultur und Kunst": {
     "Musik": [
       {
-        "german": "das Konzert",
-        "english": "the concert",
+        "german": "Konzert",
+        "english": "concert",
         "grammar": "n",
         "icon": "konzert.webp"
       },
       {
-        "german": "das Orchester",
-        "english": "the orchestra",
+        "german": "Orchester",
+        "english": "orchestra",
         "grammar": "n",
         "icon": "orchester.webp"
       },
       {
-        "german": "der Dirigent",
-        "english": "the conductor (male)",
+        "german": "Dirigent",
+        "english": "conductor (male)",
         "grammar": "m"
       },
       {
-        "german": "die Bühne",
-        "english": "the stage",
+        "german": "Bühne",
+        "english": "stage",
         "grammar": "f"
       },
       {
-        "german": "die Aufführung",
-        "english": "the performance",
+        "german": "Aufführung",
+        "english": "performance",
         "grammar": "f",
         "icon": "auffuehrung.webp"
       },
       {
-        "german": "die Probe",
-        "english": "the rehearsal",
-        "grammar": "f"
+        "german": "Probe",
+        "english": "rehearsal",
+        "grammar": "f",
+        "conflicts": ["proben"]
       },
       {
-        "german": "der Chor",
-        "english": "the choir",
+        "german": "Chor",
+        "english": "choir",
         "grammar": "m"
       },
       {
-        "german": "der Rhythmus",
-        "english": "the rhythm",
+        "german": "Rhythmus",
+        "english": "rhythm",
         "grammar": "m"
       },
       {
-        "german": "die Melodie",
-        "english": "the melody",
+        "german": "Melodie",
+        "english": "melody",
         "grammar": "f"
       },
       {
-        "german": "die Tournee",
-        "english": "the tour",
+        "german": "Tournee",
+        "english": "tour",
         "grammar": "f"
       }
     ],
     "Theater und Film": [
       {
-        "german": "die Premiere",
-        "english": "the premiere",
+        "german": "Premiere",
+        "english": "premiere",
         "grammar": "f"
       },
       {
-        "german": "der Darsteller",
-        "english": "the actor / performer (male)",
+        "german": "Darsteller",
+        "english": "actor / performer (male)",
         "grammar": "m"
       },
       {
-        "german": "der Regisseur",
-        "english": "the director (male)",
+        "german": "Regisseur",
+        "english": "director (male)",
         "grammar": "m"
       },
       {
-        "german": "das Drehbuch",
-        "english": "the screenplay / script",
+        "german": "Drehbuch",
+        "english": "screenplay / script",
         "grammar": "n"
       },
       {
-        "german": "die Rolle",
-        "english": "the role / part",
+        "german": "Rolle",
+        "english": "role / part",
         "grammar": "f"
       },
       {
@@ -92,51 +93,51 @@
         "grammar": ""
       },
       {
-        "german": "die Kritik",
-        "english": "the review / critique",
+        "german": "Kritik",
+        "english": "review / critique",
         "grammar": "f"
       },
       {
-        "german": "der Soundtrack",
-        "english": "the soundtrack",
+        "german": "Soundtrack",
+        "english": "soundtrack",
         "grammar": "m"
       },
       {
-        "german": "die Leinwand",
-        "english": "the screen / canvas",
+        "german": "Leinwand",
+        "english": "screen / canvas",
         "grammar": "f"
       }
     ],
     "Literatur": [
       {
-        "german": "der Roman",
-        "english": "the novel",
+        "german": "Roman",
+        "english": "novel",
         "grammar": "m",
         "icon": "roman.webp"
       },
       {
-        "german": "die Kurzgeschichte",
-        "english": "the short story",
+        "german": "Kurzgeschichte",
+        "english": "short story",
         "grammar": "f"
       },
       {
-        "german": "der Autor",
-        "english": "the author (male)",
+        "german": "Autor",
+        "english": "author (male)",
         "grammar": "m"
       },
       {
-        "german": "das Kapitel",
-        "english": "the chapter",
+        "german": "Kapitel",
+        "english": "chapter",
         "grammar": "n"
       },
       {
-        "german": "die Handlung",
-        "english": "the plot / storyline",
+        "german": "Handlung",
+        "english": "plot / storyline",
         "grammar": "f"
       },
       {
-        "german": "die Figur",
-        "english": "the character / figure",
+        "german": "Figur",
+        "english": "character / figure",
         "grammar": "f"
       },
       {
@@ -145,33 +146,34 @@
         "grammar": ""
       },
       {
-        "german": "der Verlag",
-        "english": "the publishing house",
+        "german": "Verlag",
+        "english": "publishing house",
         "grammar": "m"
       },
       {
-        "german": "die Rezension",
-        "english": "the book review",
+        "german": "Rezension",
+        "english": "book review",
         "grammar": "f"
       },
       {
-        "german": "das Genre",
-        "english": "the genre",
+        "german": "Genre",
+        "english": "genre",
         "grammar": "n"
       }
     ],
     "Feste und Feiern": [
       {
-        "german": "das Jubiläum",
-        "english": "the anniversary / jubilee",
+        "german": "Jubiläum",
+        "english": "anniversary / jubilee",
         "grammar": "n",
         "icon": "jubilaeum.webp"
       },
       {
-        "german": "die Einladung",
-        "english": "the invitation",
+        "german": "Einladung",
+        "english": "invitation",
         "grammar": "f",
-        "icon": "einladung.webp"
+        "icon": "einladung.webp",
+        "conflicts": ["einladen"]
       },
       {
         "german": "feiern",
@@ -180,8 +182,8 @@
         "icon": "feiern.webp"
       },
       {
-        "german": "der Gast",
-        "english": "the guest",
+        "german": "Gast",
+        "english": "guest",
         "grammar": "m",
         "icon": "gast.webp"
       },
@@ -192,8 +194,8 @@
         "icon": "einladen.webp"
       },
       {
-        "german": "das Buffet",
-        "english": "the buffet",
+        "german": "Buffet",
+        "english": "buffet",
         "grammar": "n"
       },
       {
@@ -202,20 +204,20 @@
         "grammar": ""
       },
       {
-        "german": "der Weihnachtsmarkt",
-        "english": "the Christmas market",
+        "german": "Weihnachtsmarkt",
+        "english": "Christmas market",
         "grammar": "m",
         "icon": "weihnachtsmarkt.webp"
       },
       {
-        "german": "der Karneval",
-        "english": "the carnival",
+        "german": "Karneval",
+        "english": "carnival",
         "grammar": "m",
         "icon": "karneval.webp"
       },
       {
-        "german": "das Volksfest",
-        "english": "the folk festival / fair",
+        "german": "Volksfest",
+        "english": "folk festival / fair",
         "grammar": "n"
       }
     ]

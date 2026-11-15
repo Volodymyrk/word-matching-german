@@ -2,13 +2,13 @@
   "Sprache und Ausdruck": {
     "Sprachkenntnisse": [
       {
-        "german": "die Muttersprache",
-        "english": "the mother tongue / native language",
+        "german": "Muttersprache",
+        "english": "mother tongue / native language",
         "grammar": "f"
       },
       {
-        "german": "die Fremdsprache",
-        "english": "the foreign language",
+        "german": "Fremdsprache",
+        "english": "foreign language",
         "grammar": "f"
       },
       {
@@ -17,15 +17,16 @@
         "grammar": ""
       },
       {
-        "german": "der Akzent",
-        "english": "the accent",
+        "german": "Akzent",
+        "english": "accent",
         "grammar": "m"
       },
       {
-        "german": "der Dialekt",
-        "english": "the dialect",
+        "german": "Dialekt",
+        "english": "dialect",
         "grammar": "m",
-        "icon": "dialekt.webp"
+        "icon": "dialekt.webp",
+        "hard_icon": true
       },
       {
         "german": "dolmetschen",
@@ -38,17 +39,17 @@
         "grammar": ""
       },
       {
-        "german": "die Aussprache",
+        "german": "Aussprache",
         "english": "pronunciation",
         "grammar": "f"
       },
       {
-        "german": "der Wortschatz",
+        "german": "Wortschatz",
         "english": "vocabulary",
         "grammar": "m"
       },
       {
-        "german": "die Grammatik",
+        "german": "Grammatik",
         "english": "grammar",
         "grammar": "f"
       }
@@ -60,8 +61,8 @@
         "grammar": ""
       },
       {
-        "german": "das Anschreiben",
-        "english": "the cover letter",
+        "german": "Anschreiben",
+        "english": "cover letter",
         "grammar": "n"
       },
       {
@@ -75,13 +76,13 @@
         "grammar": ""
       },
       {
-        "german": "die Notiz",
-        "english": "the note",
+        "german": "Notiz",
+        "english": "note",
         "grammar": "f"
       },
       {
-        "german": "das Protokoll",
-        "english": "the minutes / protocol",
+        "german": "Protokoll",
+        "english": "minutes / protocol",
         "grammar": "n"
       },
       {
@@ -103,7 +104,8 @@
         "german": "begründen",
         "english": "to justify / give reasons",
         "grammar": "",
-        "icon": "begruenden.webp"
+        "icon": "begruenden.webp",
+        "hard_icon": true
       }
     ],
     "Mündliche Kommunikation": [
@@ -116,7 +118,8 @@
         "german": "argumentieren",
         "english": "to argue / make a case",
         "grammar": "",
-        "icon": "argumentieren.webp"
+        "icon": "argumentieren.webp",
+        "hard_icon": true
       },
       {
         "german": "überzeugen",
@@ -135,8 +138,8 @@
         "icon": "zustimmen.webp"
       },
       {
-        "german": "der Kompromiss",
-        "english": "the compromise",
+        "german": "Kompromiss",
+        "english": "compromise",
         "grammar": "m"
       },
       {
@@ -145,8 +148,8 @@
         "grammar": ""
       },
       {
-        "german": "das Missverständnis",
-        "english": "the misunderstanding",
+        "german": "Missverständnis",
+        "english": "misunderstanding",
         "grammar": "n"
       },
       {
@@ -170,13 +173,16 @@
         "german": "einerseits",
         "english": "on the one hand",
         "grammar": "",
-        "icon": "einerseits.webp"
+        "icon": "einerseits.webp",
+        "conflicts": ["andererseits"],
+        "hard_icon": true
       },
       {
         "german": "andererseits",
         "english": "on the other hand",
         "grammar": "",
-        "icon": "andererseits.webp"
+        "icon": "andererseits.webp",
+        "hard_icon": true
       },
       {
         "german": "im Gegensatz zu",

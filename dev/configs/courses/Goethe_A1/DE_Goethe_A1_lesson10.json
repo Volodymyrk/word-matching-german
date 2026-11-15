@@ -170,7 +170,8 @@
       {
         "english": "morning",
         "grammar": "m",
-        "german": "Morgen"
+        "german": "Morgen",
+        "conflicts": ["morgen", "Vormittag"]
       },
       {
         "english": "late morning",

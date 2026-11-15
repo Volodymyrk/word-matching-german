@@ -24,7 +24,8 @@
       {
         "english": "difficult",
         "grammar": "",
-        "german": "schwierig"
+        "german": "schwierig",
+        "conflicts": ["schwer"]
       },
       {
         "english": "easy / simple",

@@ -43,7 +43,8 @@
       {
         "english": "game",
         "grammar": "n",
-        "german": "Spiel"
+        "german": "Spiel",
+        "conflicts": ["spielen"]
       },
       {
         "english": "hobby",

@@ -29,7 +29,8 @@
         "german": "Rente",
         "english": "pension",
         "grammar": "f",
-        "icon": "rente.webp"
+        "icon": "rente.webp",
+        "hard_icon": true
       },
       {
         "german": "heiraten",
@@ -47,7 +48,8 @@
         "german": "Scheidung",
         "english": "divorce",
         "grammar": "f",
-        "icon": "scheidung.webp"
+        "icon": "scheidung.webp",
+        "hard_icon": true
       },
       {
         "german": "Jubiläum",
@@ -67,19 +69,22 @@
         "german": "kennenlernen",
         "english": "to get to know",
         "grammar": "",
-        "icon": "kennenlernen.webp"
+        "icon": "kennenlernen.webp",
+        "hard_icon": true
       },
       {
         "german": "sich treffen",
         "english": "to meet",
         "grammar": "",
-        "icon": "sich_treffen.webp"
+        "icon": "sich_treffen.webp",
+        "conflicts": ["sich verabreden", "kennenlernen"]
       },
       {
         "german": "einladen",
         "english": "to invite",
         "grammar": "",
-        "icon": "einladen.webp"
+        "icon": "einladen.webp",
+        "conflicts": ["Einladung"]
       },
       {
         "german": "Einladung",
@@ -91,7 +96,8 @@
         "german": "Feier",
         "english": "celebration / party",
         "grammar": "f",
-        "icon": "feier.webp"
+        "icon": "feier.webp",
+        "conflicts": ["feiern"]
       },
       {
         "german": "Gast",
@@ -121,7 +127,8 @@
         "german": "sich verabreden",
         "english": "to arrange to meet",
         "grammar": "",
-        "icon": "sich_verabreden.webp"
+        "icon": "sich_verabreden.webp",
+        "hard_icon": true
       }
     ],
     "Feste und Feiern": [
@@ -165,7 +172,8 @@
         "german": "Glückwunsch",
         "english": "congratulations",
         "grammar": "m",
-        "icon": "glueckwunsch.webp"
+        "icon": "glueckwunsch.webp",
+        "hard_icon": true
       },
       {
         "german": "Prost",
@@ -191,37 +199,43 @@
         "german": "stolz",
         "english": "proud",
         "grammar": "",
-        "icon": "stolz.webp"
+        "icon": "stolz.webp",
+        "hard_icon": true
       },
       {
         "german": "dankbar",
         "english": "grateful",
         "grammar": "",
-        "icon": "dankbar.webp"
+        "icon": "dankbar.webp",
+        "hard_icon": true
       },
       {
         "german": "neugierig",
         "english": "curious",
         "grammar": "",
-        "icon": "neugierig.webp"
+        "icon": "neugierig.webp",
+        "hard_icon": true
       },
       {
         "german": "ehrlich",
         "english": "honest",
         "grammar": "",
-        "icon": "ehrlich.webp"
+        "icon": "ehrlich.webp",
+        "hard_icon": true
       },
       {
         "german": "höflich",
         "english": "polite",
         "grammar": "",
-        "icon": "hoeflich.webp"
+        "icon": "hoeflich.webp",
+        "hard_icon": true
       },
       {
         "german": "sympathisch",
         "english": "likeable / pleasant",
         "grammar": "",
-        "icon": "sympathisch.webp"
+        "icon": "sympathisch.webp",
+        "hard_icon": true
       },
       {
         "german": "hilfsbereit",
@@ -233,7 +247,8 @@
         "german": "fleißig",
         "english": "hardworking / diligent",
         "grammar": "",
-        "icon": "fleissig.webp"
+        "icon": "fleissig.webp",
+        "hard_icon": true
       },
       {
         "german": "faul",
@@ -245,7 +260,8 @@
         "german": "geduldig",
         "english": "patient",
         "grammar": "",
-        "icon": "geduldig.webp"
+        "icon": "geduldig.webp",
+        "hard_icon": true
       }
     ]
   }

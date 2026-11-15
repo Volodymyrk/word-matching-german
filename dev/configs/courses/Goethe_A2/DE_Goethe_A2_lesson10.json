@@ -41,13 +41,16 @@
         "german": "Sonderangebot",
         "english": "special offer",
         "grammar": "n",
-        "icon": "sonderangebot.webp"
+        "icon": "sonderangebot.webp",
+        "hard_icon": true
       },
       {
         "german": "Rabatt",
         "english": "discount",
         "grammar": "m",
-        "icon": "rabatt.webp"
+        "icon": "rabatt.webp",
+        "conflicts": ["Sonderangebot"],
+        "hard_icon": true
       },
       {
         "german": "Kassierer",
@@ -59,7 +62,8 @@
         "german": "Öffnungszeiten",
         "english": "opening hours",
         "grammar": "",
-        "icon": "oeffnungszeiten.webp"
+        "icon": "oeffnungszeiten.webp",
+        "hard_icon": true
       }
     ],
     "Kleidung": [
@@ -129,7 +133,8 @@
         "german": "Brief",
         "english": "letter",
         "grammar": "m",
-        "icon": "brief.webp"
+        "icon": "brief.webp",
+        "conflicts": ["Briefmarke"]
       },
       {
         "german": "Paket",
@@ -153,19 +158,22 @@
         "german": "Konto",
         "english": "bank account",
         "grammar": "n",
-        "icon": "konto.webp"
+        "icon": "konto.webp",
+        "conflicts": ["Kreditkarte"]
       },
       {
         "german": "Überweisung",
         "english": "bank transfer",
         "grammar": "f",
-        "icon": "ueberweisung.webp"
+        "icon": "ueberweisung.webp",
+        "hard_icon": true
       },
       {
         "german": "Bargeld",
         "english": "cash",
         "grammar": "n",
-        "icon": "bargeld.webp"
+        "icon": "bargeld.webp",
+        "conflicts": ["Geldautomat"]
       },
       {
         "german": "Kreditkarte",
@@ -191,7 +199,8 @@
         "german": "Preis",
         "english": "price",
         "grammar": "m",
-        "icon": "preis.webp"
+        "icon": "preis.webp",
+        "conflicts": ["kostenlos"]
       },
       {
         "german": "Quittung",
@@ -221,19 +230,22 @@
         "german": "kostenlos",
         "english": "free of charge",
         "grammar": "",
-        "icon": "kostenlos.webp"
+        "icon": "kostenlos.webp",
+        "hard_icon": true
       },
       {
         "german": "Garantie",
         "english": "guarantee / warranty",
         "grammar": "f",
-        "icon": "garantie.webp"
+        "icon": "garantie.webp",
+        "hard_icon": true
       },
       {
         "german": "umtauschen",
         "english": "to exchange / return (goods)",
         "grammar": "",
-        "icon": "umtauschen.webp"
+        "icon": "umtauschen.webp",
+        "hard_icon": true
       },
       {
         "german": "sparen",

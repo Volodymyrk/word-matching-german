@@ -25,7 +25,7 @@
       { "german": "Messer", "english": "knife", "grammar": "n", "icon": "messer.webp" }
     ],
     "Im Restaurant": [
-      { "german": "bestellen", "english": "to order", "grammar": "", "icon": "bestellen.webp" },
+      { "german": "bestellen", "english": "to order", "grammar": "", "icon": "bestellen.webp", "hard_icon": true },
       { "german": "Speisekarte", "english": "menu", "grammar": "f", "icon": "speisekarte.webp" },
       { "german": "Vorspeise", "english": "starter", "grammar": "f", "icon": "vorspeise.webp" },
       { "german": "Hauptgericht", "english": "main course", "grammar": "n", "icon": "hauptgericht.webp" },
@@ -37,15 +37,15 @@
       { "german": "reservieren", "english": "to reserve / book", "grammar": "", "icon": "reservieren.webp" }
     ],
     "Ernährung": [
-      { "german": "vegetarisch", "english": "vegetarian", "grammar": "", "icon": "vegetarisch.webp" },
-      { "german": "vegan", "english": "vegan", "grammar": "", "icon": "vegan.webp" },
-      { "german": "gesund", "english": "healthy", "grammar": "", "icon": "gesund.webp" },
-      { "german": "ungesund", "english": "unhealthy", "grammar": "", "icon": "ungesund.webp" },
-      { "german": "Kalorien", "english": "calories", "grammar": "", "icon": "kalorien.webp" },
+      { "german": "vegetarisch", "english": "vegetarian", "grammar": "", "icon": "vegetarisch.webp", "conflicts": ["vegan"], "hard_icon": true },
+      { "german": "vegan", "english": "vegan", "grammar": "", "icon": "vegan.webp", "hard_icon": true },
+      { "german": "gesund", "english": "healthy", "grammar": "", "icon": "gesund.webp", "conflicts": ["ungesund"], "hard_icon": true },
+      { "german": "ungesund", "english": "unhealthy", "grammar": "", "icon": "ungesund.webp", "hard_icon": true },
+      { "german": "Kalorien", "english": "calories", "grammar": "", "icon": "kalorien.webp", "hard_icon": true },
       { "german": "Vitamin", "english": "vitamin", "grammar": "n", "icon": "vitamin.webp" },
       { "german": "Allergie", "english": "allergy", "grammar": "f", "icon": "allergie.webp" },
       { "german": "Diät", "english": "diet", "grammar": "f", "icon": "diaet.webp" },
-      { "german": "biologisch", "english": "organic", "grammar": "", "icon": "biologisch.webp" },
+      { "german": "biologisch", "english": "organic", "grammar": "", "icon": "biologisch.webp", "hard_icon": true },
       { "german": "frisch", "english": "fresh", "grammar": "", "icon": "frisch.webp" }
     ]
   }

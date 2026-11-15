@@ -29,7 +29,8 @@
         "german": "Literatur",
         "english": "literature",
         "grammar": "f",
-        "icon": "literatur.webp"
+        "icon": "literatur.webp",
+        "conflicts": ["Roman"]
       },
       {
         "german": "Roman",
@@ -67,7 +68,8 @@
         "german": "Feiertag",
         "english": "public holiday",
         "grammar": "m",
-        "icon": "feiertag.webp"
+        "icon": "feiertag.webp",
+        "hard_icon": true
       },
       {
         "german": "Nationalfeiertag",
@@ -109,7 +111,8 @@
         "german": "Tradition",
         "english": "tradition",
         "grammar": "f",
-        "icon": "tradition.webp"
+        "icon": "tradition.webp",
+        "conflicts": ["Brauch"]
       },
       {
         "german": "Brauch",
@@ -171,7 +174,8 @@
         "german": "Recht",
         "english": "right / entitlement",
         "grammar": "n",
-        "icon": "recht.webp"
+        "icon": "recht.webp",
+        "hard_icon": true
       },
       {
         "german": "Pflicht",
@@ -221,7 +225,8 @@
         "german": "Dialekt",
         "english": "dialect",
         "grammar": "m",
-        "icon": "dialekt.webp"
+        "icon": "dialekt.webp",
+        "hard_icon": true
       },
       {
         "german": "Wiedervereinigung",
@@ -245,7 +250,8 @@
         "german": "mehrsprachig",
         "english": "multilingual",
         "grammar": "",
-        "icon": "mehrsprachig.webp"
+        "icon": "mehrsprachig.webp",
+        "hard_icon": true
       }
     ]
   }

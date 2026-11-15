@@ -17,7 +17,8 @@
         "german": "Magen",
         "english": "stomach",
         "grammar": "m",
-        "icon": "magen.webp"
+        "icon": "magen.webp",
+        "conflicts": ["Bauchschmerzen"]
       },
       {
         "german": "Rücken",
@@ -35,13 +36,15 @@
         "german": "Knie",
         "english": "knee",
         "grammar": "n",
-        "icon": "knie.webp"
+        "icon": "knie.webp",
+        "conflicts": ["Knöchel"]
       },
       {
         "german": "Schulter",
         "english": "shoulder",
         "grammar": "f",
-        "icon": "schulter.webp"
+        "icon": "schulter.webp",
+        "conflicts": ["Handgelenk"]
       },
       {
         "german": "Ellbogen",
@@ -53,7 +56,8 @@
         "german": "Handgelenk",
         "english": "wrist",
         "grammar": "n",
-        "icon": "handgelenk.webp"
+        "icon": "handgelenk.webp",
+        "conflicts": ["Knöchel"]
       },
       {
         "german": "Knöchel",
@@ -129,7 +133,9 @@
         "german": "Arztpraxis",
         "english": "doctor's practice / surgery",
         "grammar": "f",
-        "icon": "arztpraxis.webp"
+        "icon": "arztpraxis.webp",
+        "conflicts": ["Krankenkasse"],
+        "hard_icon": true
       },
       {
         "german": "Medikament",
@@ -147,7 +153,8 @@
         "german": "Krankenkasse",
         "english": "health insurance",
         "grammar": "f",
-        "icon": "krankenkasse.webp"
+        "icon": "krankenkasse.webp",
+        "hard_icon": true
       },
       {
         "german": "Krankenhaus",
@@ -177,7 +184,8 @@
         "german": "Überweisung",
         "english": "referral",
         "grammar": "f",
-        "icon": "ueberweisung.webp"
+        "icon": "ueberweisung.webp",
+        "hard_icon": true
       },
       {
         "german": "Blutdruck",
@@ -191,7 +199,8 @@
         "german": "Sport treiben",
         "english": "to do sport / exercise",
         "grammar": "",
-        "icon": "sport_treiben.webp"
+        "icon": "sport_treiben.webp",
+        "conflicts": ["sich bewegen"]
       },
       {
         "german": "sich bewegen",
@@ -203,13 +212,15 @@
         "german": "sich ausruhen",
         "english": "to rest / relax",
         "grammar": "",
-        "icon": "sich_ausruhen.webp"
+        "icon": "sich_ausruhen.webp",
+        "conflicts": ["Entspannung"]
       },
       {
         "german": "Entspannung",
         "english": "relaxation",
         "grammar": "f",
-        "icon": "entspannung.webp"
+        "icon": "entspannung.webp",
+        "hard_icon": true
       },
       {
         "german": "Stress",

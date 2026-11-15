@@ -108,7 +108,8 @@
       {
         "english": "water",
         "grammar": "n",
-        "german": "Wasser"
+        "german": "Wasser",
+        "conflicts": ["Mineralwasser"]
       },
       {
         "english": "coffee",
@@ -128,7 +129,8 @@
       {
         "english": "juice",
         "grammar": "m",
-        "german": "Saft"
+        "german": "Saft",
+        "conflicts": ["Frühstück"]
       },
       {
         "english": "beer",
@@ -227,7 +229,8 @@
       {
         "english": "order",
         "grammar": "f",
-        "german": "Bestellung"
+        "german": "Bestellung",
+        "conflicts": ["bestellen"]
       },
       {
         "english": "waiter",

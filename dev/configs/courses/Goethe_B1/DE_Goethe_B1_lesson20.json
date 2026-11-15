@@ -2,44 +2,44 @@
   "Öffentliche Dienste und Notfälle": {
     "Öffentliche Dienste": [
       {
-        "german": "das Rathaus",
-        "english": "the town hall",
+        "german": "Rathaus",
+        "english": "town hall",
         "grammar": "n",
         "icon": "rathaus.webp"
       },
       {
-        "german": "das Finanzamt",
-        "english": "the tax office",
+        "german": "Finanzamt",
+        "english": "tax office",
         "grammar": "n"
       },
       {
-        "german": "das Jobcenter",
-        "english": "the job centre",
+        "german": "Jobcenter",
+        "english": "job centre",
         "grammar": "n"
       },
       {
-        "german": "das Standesamt",
-        "english": "the registry office",
+        "german": "Standesamt",
+        "english": "registry office",
         "grammar": "n"
       },
       {
-        "german": "das Einwohnermeldeamt",
-        "english": "the residents' registration office",
+        "german": "Einwohnermeldeamt",
+        "english": "residents' registration office",
         "grammar": "n",
         "icon": "einwohnermeldeamt.webp"
       },
       {
-        "german": "die Sozialhilfe",
+        "german": "Sozialhilfe",
         "english": "social welfare / benefits",
         "grammar": "f"
       },
       {
-        "german": "das Bürgeramt",
-        "english": "the citizens' office",
+        "german": "Bürgeramt",
+        "english": "citizens' office",
         "grammar": "n"
       },
       {
-        "german": "der ÖPNV",
+        "german": "ÖPNV",
         "english": "public transport",
         "grammar": "m"
       },
@@ -56,27 +56,27 @@
     ],
     "Notfälle": [
       {
-        "german": "der Notruf",
-        "english": "the emergency call",
+        "german": "Notruf",
+        "english": "emergency call",
         "grammar": "m"
       },
       {
-        "german": "die Feuerwehr",
-        "english": "the fire brigade",
+        "german": "Feuerwehr",
+        "english": "fire brigade",
         "grammar": "f"
       },
       {
-        "german": "der Rettungsdienst",
-        "english": "the emergency services",
+        "german": "Rettungsdienst",
+        "english": "emergency services",
         "grammar": "m"
       },
       {
-        "german": "der Notarzt",
-        "english": "the emergency doctor (male)",
+        "german": "Notarzt",
+        "english": "emergency doctor (male)",
         "grammar": "m"
       },
       {
-        "german": "die erste Hilfe",
+        "german": "erste Hilfe",
         "english": "first aid",
         "grammar": "f"
       },
@@ -86,8 +86,8 @@
         "grammar": ""
       },
       {
-        "german": "die Gefahr",
-        "english": "the danger",
+        "german": "Gefahr",
+        "english": "danger",
         "grammar": "f"
       },
       {
@@ -108,19 +108,19 @@
     ],
     "Katastrophen": [
       {
-        "german": "das Erdbeben",
-        "english": "the earthquake",
+        "german": "Erdbeben",
+        "english": "earthquake",
         "grammar": "n"
       },
       {
-        "german": "der Sturm",
-        "english": "the storm",
+        "german": "Sturm",
+        "english": "storm",
         "grammar": "m",
         "icon": "sturm.webp"
       },
       {
-        "german": "die Überschwemmung",
-        "english": "the flood",
+        "german": "Überschwemmung",
+        "english": "flood",
         "grammar": "f"
       },
       {
@@ -129,7 +129,7 @@
         "grammar": ""
       },
       {
-        "german": "die Evakuierung",
+        "german": "Evakuierung",
         "english": "evacuation",
         "grammar": "f"
       },
@@ -139,65 +139,66 @@
         "grammar": ""
       },
       {
-        "german": "die Soforthilfe",
+        "german": "Soforthilfe",
         "english": "immediate aid / emergency relief",
         "grammar": "f"
       },
       {
-        "german": "der Schutzraum",
-        "english": "the shelter",
+        "german": "Schutzraum",
+        "english": "shelter",
         "grammar": "m"
       },
       {
-        "german": "der Krisenstab",
-        "english": "the crisis team",
+        "german": "Krisenstab",
+        "english": "crisis team",
         "grammar": "m"
       },
       {
-        "german": "der Zivilschutz",
+        "german": "Zivilschutz",
         "english": "civil defence / emergency preparedness",
         "grammar": "m"
       }
     ],
     "Versicherungen": [
       {
-        "german": "die Haftpflichtversicherung",
+        "german": "Haftpflichtversicherung",
         "english": "third-party liability insurance",
         "grammar": "f"
       },
       {
-        "german": "die Unfallversicherung",
+        "german": "Unfallversicherung",
         "english": "accident insurance",
         "grammar": "f"
       },
       {
-        "german": "die Lebensversicherung",
+        "german": "Lebensversicherung",
         "english": "life insurance",
         "grammar": "f"
       },
       {
-        "german": "der Versicherungsfall",
-        "english": "the insurance claim / event",
+        "german": "Versicherungsfall",
+        "english": "insurance claim / event",
         "grammar": "m"
       },
       {
-        "german": "die Police",
-        "english": "the insurance policy",
+        "german": "Police",
+        "english": "insurance policy",
         "grammar": "f"
       },
       {
         "german": "melden",
         "english": "to report",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Schadensmeldung"]
       },
       {
-        "german": "die Prämie",
-        "english": "the premium",
+        "german": "Prämie",
+        "english": "premium",
         "grammar": "f"
       },
       {
-        "german": "die Selbstbeteiligung",
-        "english": "the excess / deductible",
+        "german": "Selbstbeteiligung",
+        "english": "excess / deductible",
         "grammar": "f"
       },
       {
@@ -206,8 +207,8 @@
         "grammar": ""
       },
       {
-        "german": "die Schadensmeldung",
-        "english": "the damage report",
+        "german": "Schadensmeldung",
+        "english": "damage report",
         "grammar": "f"
       }
     ]

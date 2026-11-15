@@ -2,167 +2,167 @@
   "Natur und Umwelt": {
     "Landschaft": [
       {
-        "german": "das Tal",
-        "english": "the valley",
+        "german": "Tal",
+        "english": "valley",
         "grammar": "n",
         "icon": "tal.webp"
       },
       {
-        "german": "der Hügel",
-        "english": "the hill",
+        "german": "Hügel",
+        "english": "hill",
         "grammar": "m",
         "icon": "huegel.webp"
       },
       {
-        "german": "die Ebene",
-        "english": "the plain / flatland",
+        "german": "Ebene",
+        "english": "plain / flatland",
         "grammar": "f"
       },
       {
-        "german": "die Küste",
-        "english": "the coast",
+        "german": "Küste",
+        "english": "coast",
         "grammar": "f",
         "icon": "kueste.webp"
       },
       {
-        "german": "die Insel",
-        "english": "the island",
+        "german": "Insel",
+        "english": "island",
         "grammar": "f",
         "icon": "insel.webp"
       },
       {
-        "german": "der Wasserfall",
-        "english": "the waterfall",
+        "german": "Wasserfall",
+        "english": "waterfall",
         "grammar": "m"
       },
       {
-        "german": "die Wiese",
-        "english": "the meadow",
+        "german": "Wiese",
+        "english": "meadow",
         "grammar": "f",
         "icon": "wiese.webp"
       },
       {
-        "german": "das Moor",
-        "english": "the moor / bog",
+        "german": "Moor",
+        "english": "moor / bog",
         "grammar": "n"
       },
       {
-        "german": "das Gebirge",
-        "english": "the mountain range",
+        "german": "Gebirge",
+        "english": "mountain range",
         "grammar": "n"
       },
       {
-        "german": "die Quelle",
-        "english": "the spring / source",
+        "german": "Quelle",
+        "english": "spring / source",
         "grammar": "f",
         "icon": "quelle.webp"
       }
     ],
     "Tiere": [
       {
-        "german": "der Adler",
-        "english": "the eagle",
+        "german": "Adler",
+        "english": "eagle",
         "grammar": "m",
         "icon": "adler.webp"
       },
       {
-        "german": "die Eule",
-        "english": "the owl",
+        "german": "Eule",
+        "english": "owl",
         "grammar": "f"
       },
       {
-        "german": "der Fuchs",
-        "english": "the fox",
+        "german": "Fuchs",
+        "english": "fox",
         "grammar": "m"
       },
       {
-        "german": "die Fledermaus",
-        "english": "the bat",
+        "german": "Fledermaus",
+        "english": "bat",
         "grammar": "f"
       },
       {
-        "german": "der Igel",
-        "english": "the hedgehog",
+        "german": "Igel",
+        "english": "hedgehog",
         "grammar": "m"
       },
       {
-        "german": "der Wolf",
-        "english": "the wolf",
+        "german": "Wolf",
+        "english": "wolf",
         "grammar": "m"
       },
       {
-        "german": "das Wildschwein",
-        "english": "the wild boar",
+        "german": "Wildschwein",
+        "english": "wild boar",
         "grammar": "n"
       },
       {
-        "german": "der Biber",
-        "english": "the beaver",
+        "german": "Biber",
+        "english": "beaver",
         "grammar": "m"
       },
       {
-        "german": "der Hirsch",
-        "english": "the deer / stag",
+        "german": "Hirsch",
+        "english": "deer / stag",
         "grammar": "m"
       },
       {
-        "german": "die Libelle",
-        "english": "the dragonfly",
+        "german": "Libelle",
+        "english": "dragonfly",
         "grammar": "f"
       }
     ],
     "Umweltprobleme": [
       {
-        "german": "der Klimawandel",
+        "german": "Klimawandel",
         "english": "climate change",
         "grammar": "m",
         "icon": "klimawandel.webp"
       },
       {
-        "german": "die Erderwärmung",
+        "german": "Erderwärmung",
         "english": "global warming",
         "grammar": "f"
       },
       {
-        "german": "das Treibhausgas",
-        "english": "the greenhouse gas",
+        "german": "Treibhausgas",
+        "english": "greenhouse gas",
         "grammar": "n"
       },
       {
-        "german": "die Umweltverschmutzung",
+        "german": "Umweltverschmutzung",
         "english": "environmental pollution",
         "grammar": "f"
       },
       {
-        "german": "die Abgase",
-        "english": "the exhaust fumes / emissions",
+        "german": "Abgase",
+        "english": "exhaust fumes / emissions",
         "grammar": ""
       },
       {
-        "german": "die Überschwemmung",
-        "english": "the flood",
+        "german": "Überschwemmung",
+        "english": "flood",
         "grammar": "f"
       },
       {
-        "german": "der Waldbrand",
-        "english": "the forest fire",
+        "german": "Waldbrand",
+        "english": "forest fire",
         "grammar": "m"
       },
       {
-        "german": "die Naturkatastrophe",
-        "english": "the natural disaster",
+        "german": "Naturkatastrophe",
+        "english": "natural disaster",
         "grammar": "f",
         "icon": "naturkatastrophe.webp"
       },
       {
-        "german": "der Müll",
-        "english": "the rubbish / waste",
+        "german": "Müll",
+        "english": "rubbish / waste",
         "grammar": "m",
         "icon": "muell.webp"
       },
       {
-        "german": "die Artenvielfalt",
-        "english": "the biodiversity",
+        "german": "Artenvielfalt",
+        "english": "biodiversity",
         "grammar": "f"
       }
     ],
@@ -171,26 +171,27 @@
         "german": "erneuerbar",
         "english": "renewable",
         "grammar": "",
-        "icon": "erneuerbar.webp"
+        "icon": "erneuerbar.webp",
+        "hard_icon": true
       },
       {
-        "german": "die Solarenergie",
+        "german": "Solarenergie",
         "english": "solar energy",
         "grammar": "f"
       },
       {
-        "german": "die Windkraft",
+        "german": "Windkraft",
         "english": "wind power",
         "grammar": "f"
       },
       {
-        "german": "der Naturschutz",
+        "german": "Naturschutz",
         "english": "nature conservation",
         "grammar": "m"
       },
       {
-        "german": "die Energiewende",
-        "english": "the energy transition",
+        "german": "Energiewende",
+        "english": "energy transition",
         "grammar": "f"
       },
       {
@@ -199,19 +200,19 @@
         "grammar": ""
       },
       {
-        "german": "das Recycling",
+        "german": "Recycling",
         "english": "recycling",
         "grammar": "n",
         "icon": "recycling.webp"
       },
       {
-        "german": "das Elektroauto",
-        "english": "the electric car",
+        "german": "Elektroauto",
+        "english": "electric car",
         "grammar": "n"
       },
       {
-        "german": "der Biomüll",
-        "english": "the organic waste",
+        "german": "Biomüll",
+        "english": "organic waste",
         "grammar": "m"
       },
       {

@@ -11,7 +11,8 @@
         "german": "Trauer",
         "english": "sadness / grief",
         "grammar": "f",
-        "icon": "trauer.webp"
+        "icon": "trauer.webp",
+        "conflicts": ["Scham"]
       },
       {
         "german": "Angst",
@@ -79,13 +80,15 @@
         "german": "selbstbewusst",
         "english": "self-confident",
         "grammar": "",
-        "icon": "selbstbewusst.webp"
+        "icon": "selbstbewusst.webp",
+        "hard_icon": true
       },
       {
         "german": "verantwortungsbewusst",
         "english": "responsible",
         "grammar": "",
-        "icon": "verantwortungsbewusst.webp"
+        "icon": "verantwortungsbewusst.webp",
+        "hard_icon": true
       },
       {
         "german": "kreativ",
@@ -97,25 +100,30 @@
         "german": "zuverlässig",
         "english": "reliable",
         "grammar": "",
-        "icon": "zuverlaessig.webp"
+        "icon": "zuverlaessig.webp",
+        "hard_icon": true
       },
       {
         "german": "ungeduldig",
         "english": "impatient",
         "grammar": "",
-        "icon": "ungeduldig.webp"
+        "icon": "ungeduldig.webp",
+        "hard_icon": true
       },
       {
         "german": "optimistisch",
         "english": "optimistic",
         "grammar": "",
-        "icon": "optimistisch.webp"
+        "icon": "optimistisch.webp",
+        "conflicts": ["pessimistisch"],
+        "hard_icon": true
       },
       {
         "german": "pessimistisch",
         "english": "pessimistic",
         "grammar": "",
-        "icon": "pessimistisch.webp"
+        "icon": "pessimistisch.webp",
+        "hard_icon": true
       },
       {
         "german": "humorvoll",
@@ -129,31 +137,40 @@
         "german": "meinen",
         "english": "to think / be of the opinion",
         "grammar": "",
-        "icon": "meinen.webp"
+        "icon": "meinen.webp",
+        "conflicts": ["denken", "Meinung"],
+        "hard_icon": true
       },
       {
         "german": "glauben",
         "english": "to believe",
         "grammar": "",
-        "icon": "glauben.webp"
+        "icon": "glauben.webp",
+        "conflicts": ["denken"],
+        "hard_icon": true
       },
       {
         "german": "denken",
         "english": "to think",
         "grammar": "",
-        "icon": "denken.webp"
+        "icon": "denken.webp",
+        "conflicts": ["finden"],
+        "hard_icon": true
       },
       {
         "german": "finden",
         "english": "to find / think",
         "grammar": "",
-        "icon": "finden.webp"
+        "icon": "finden.webp",
+        "hard_icon": true
       },
       {
         "german": "Meinung",
         "english": "opinion",
         "grammar": "f",
-        "icon": "meinung.webp"
+        "icon": "meinung.webp",
+        "conflicts": ["Ansicht"],
+        "hard_icon": true
       },
       {
         "german": "Ansicht",
@@ -177,13 +194,15 @@
         "german": "ablehnen",
         "english": "to reject / disagree",
         "grammar": "",
-        "icon": "ablehnen.webp"
+        "icon": "ablehnen.webp",
+        "hard_icon": true
       },
       {
         "german": "begründen",
         "english": "to justify / give reasons",
         "grammar": "",
-        "icon": "begruenden.webp"
+        "icon": "begruenden.webp",
+        "hard_icon": true
       }
     ],
     "Diskussion": [
@@ -191,49 +210,59 @@
         "german": "diskutieren",
         "english": "to discuss",
         "grammar": "",
-        "icon": "diskutieren.webp"
+        "icon": "diskutieren.webp",
+        "hard_icon": true
       },
       {
         "german": "argumentieren",
         "english": "to argue / make an argument",
         "grammar": "",
-        "icon": "argumentieren.webp"
+        "icon": "argumentieren.webp",
+        "hard_icon": true
       },
       {
         "german": "einerseits",
         "english": "on the one hand",
         "grammar": "",
-        "icon": "einerseits.webp"
+        "icon": "einerseits.webp",
+        "conflicts": ["andererseits"],
+        "hard_icon": true
       },
       {
         "german": "andererseits",
         "english": "on the other hand",
         "grammar": "",
-        "icon": "andererseits.webp"
+        "icon": "andererseits.webp",
+        "hard_icon": true
       },
       {
         "german": "obwohl",
         "english": "although",
         "grammar": "",
-        "icon": "obwohl.webp"
+        "icon": "obwohl.webp",
+        "conflicts": ["trotzdem"],
+        "hard_icon": true
       },
       {
         "german": "trotzdem",
         "english": "nevertheless / still",
         "grammar": "",
-        "icon": "trotzdem.webp"
+        "icon": "trotzdem.webp",
+        "hard_icon": true
       },
       {
         "german": "deshalb",
         "english": "therefore / that's why",
         "grammar": "",
-        "icon": "deshalb.webp"
+        "icon": "deshalb.webp",
+        "hard_icon": true
       },
       {
         "german": "außerdem",
         "english": "moreover / besides",
         "grammar": "",
-        "icon": "ausserdem.webp"
+        "icon": "ausserdem.webp",
+        "hard_icon": true
       },
       {
         "german": "Beispiel",

@@ -2,35 +2,35 @@
   "Reisen und Transport": {
     "Verkehrsmittel": [
       {
-        "german": "die Straßenbahn",
-        "english": "the tram",
+        "german": "Straßenbahn",
+        "english": "tram",
         "grammar": "f",
         "icon": "strassenbahn.webp"
       },
       {
-        "german": "die U-Bahn",
-        "english": "the underground / metro",
+        "german": "U-Bahn",
+        "english": "underground / metro",
         "grammar": "f"
       },
       {
-        "german": "das Motorrad",
-        "english": "the motorbike",
+        "german": "Motorrad",
+        "english": "motorbike",
         "grammar": "n",
         "icon": "motorrad.webp"
       },
       {
-        "german": "der Mietwagen",
-        "english": "the hire car / rental car",
+        "german": "Mietwagen",
+        "english": "hire car / rental car",
         "grammar": "m"
       },
       {
-        "german": "die Fähre",
-        "english": "the ferry",
+        "german": "Fähre",
+        "english": "ferry",
         "grammar": "f"
       },
       {
-        "german": "der Intercity",
-        "english": "the intercity train",
+        "german": "Intercity",
+        "english": "intercity train",
         "grammar": "m"
       },
       {
@@ -39,18 +39,18 @@
         "grammar": ""
       },
       {
-        "german": "der Anschluss",
-        "english": "the connection (train/bus)",
+        "german": "Anschluss",
+        "english": "connection (train/bus)",
         "grammar": "m"
       },
       {
-        "german": "die Haltestelle",
-        "english": "the (bus/tram) stop",
+        "german": "Haltestelle",
+        "english": "(bus/tram) stop",
         "grammar": "f"
       },
       {
-        "german": "der Bahnsteig",
-        "english": "the platform",
+        "german": "Bahnsteig",
+        "english": "platform",
         "grammar": "m"
       }
     ],
@@ -59,33 +59,34 @@
         "german": "buchen",
         "english": "to book",
         "grammar": "",
-        "icon": "buchen.webp"
+        "icon": "buchen.webp",
+        "hard_icon": true
       },
       {
-        "german": "der Reisepass",
-        "english": "the passport",
+        "german": "Reisepass",
+        "english": "passport",
         "grammar": "m",
         "icon": "reisepass.webp"
       },
       {
-        "german": "das Visum",
-        "english": "the visa",
+        "german": "Visum",
+        "english": "visa",
         "grammar": "n",
         "icon": "visum.webp"
       },
       {
-        "german": "die Reiseversicherung",
-        "english": "the travel insurance",
+        "german": "Reiseversicherung",
+        "english": "travel insurance",
         "grammar": "f"
       },
       {
-        "german": "der Reiseveranstalter",
-        "english": "the tour operator",
+        "german": "Reiseveranstalter",
+        "english": "tour operator",
         "grammar": "m"
       },
       {
-        "german": "der Flughafen",
-        "english": "the airport",
+        "german": "Flughafen",
+        "english": "airport",
         "grammar": "m"
       },
       {
@@ -94,66 +95,69 @@
         "grammar": ""
       },
       {
-        "german": "das Handgepäck",
-        "english": "the hand luggage",
+        "german": "Handgepäck",
+        "english": "hand luggage",
         "grammar": "n"
       },
       {
-        "german": "der Check-in",
-        "english": "the check-in",
+        "german": "Check-in",
+        "english": "check-in",
         "grammar": "m"
       },
       {
-        "german": "die Verspätung",
-        "english": "the delay",
+        "german": "Verspätung",
+        "english": "delay",
         "grammar": "f"
       }
     ],
     "Unterkunft": [
       {
-        "german": "die Jugendherberge",
-        "english": "the youth hostel",
+        "german": "Jugendherberge",
+        "english": "youth hostel",
         "grammar": "f",
         "icon": "jugendherberge.webp"
       },
       {
-        "german": "die Pension",
-        "english": "the guesthouse / B&B",
+        "german": "Pension",
+        "english": "guesthouse / B&B",
         "grammar": "f",
         "icon": "pension.webp"
       },
       {
-        "german": "der Campingplatz",
-        "english": "the campsite",
+        "german": "Campingplatz",
+        "english": "campsite",
         "grammar": "m",
         "icon": "campingplatz.webp"
       },
       {
-        "german": "das Ferienhaus",
-        "english": "the holiday house",
+        "german": "Ferienhaus",
+        "english": "holiday house",
         "grammar": "n"
       },
       {
-        "german": "die Rezeption",
-        "english": "the reception",
+        "german": "Rezeption",
+        "english": "reception",
         "grammar": "f",
         "icon": "rezeption.webp"
       },
       {
-        "german": "das Einzelzimmer",
-        "english": "the single room",
+        "german": "Einzelzimmer",
+        "english": "single room",
         "grammar": "n",
-        "icon": "einzelzimmer.webp"
+        "icon": "einzelzimmer.webp",
+        "conflicts": ["Doppelzimmer"],
+        "hard_icon": true
       },
       {
-        "german": "das Doppelzimmer",
-        "english": "the double room",
+        "german": "Doppelzimmer",
+        "english": "double room",
         "grammar": "n",
-        "icon": "doppelzimmer.webp"
+        "icon": "doppelzimmer.webp",
+        "hard_icon": true
       },
       {
-        "german": "die Halbpension",
-        "english": "the half board",
+        "german": "Halbpension",
+        "english": "half board",
         "grammar": "f"
       },
       {
@@ -170,50 +174,51 @@
     ],
     "Orientierung und Verkehr": [
       {
-        "german": "die Umleitung",
-        "english": "the diversion / detour",
+        "german": "Umleitung",
+        "english": "diversion / detour",
         "grammar": "f"
       },
       {
-        "german": "der Stau",
-        "english": "the traffic jam",
+        "german": "Stau",
+        "english": "traffic jam",
         "grammar": "m",
         "icon": "stau.webp"
       },
       {
-        "german": "die Panne",
-        "english": "the breakdown",
+        "german": "Panne",
+        "english": "breakdown",
         "grammar": "f"
       },
       {
-        "german": "die Tankstelle",
-        "english": "the petrol station",
+        "german": "Tankstelle",
+        "english": "petrol station",
         "grammar": "f",
         "icon": "tankstelle.webp"
       },
       {
-        "german": "die Autobahn",
-        "english": "the motorway",
+        "german": "Autobahn",
+        "english": "motorway",
         "grammar": "f"
       },
       {
         "german": "parken",
         "english": "to park",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Parkhaus"]
       },
       {
-        "german": "das Parkhaus",
-        "english": "the multi-storey car park",
+        "german": "Parkhaus",
+        "english": "multi-storey car park",
         "grammar": "n"
       },
       {
-        "german": "die Navigation",
-        "english": "the navigation / sat nav",
+        "german": "Navigation",
+        "english": "navigation / sat nav",
         "grammar": "f"
       },
       {
-        "german": "die Vorfahrt",
-        "english": "the right of way",
+        "german": "Vorfahrt",
+        "english": "right of way",
         "grammar": "f"
       },
       {

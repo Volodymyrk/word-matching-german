@@ -33,7 +33,7 @@
       { "german": "Frost", "english": "frost", "grammar": "m", "icon": "frost.webp" },
       { "german": "Temperatur", "english": "temperature", "grammar": "f", "icon": "temperatur.webp" },
       { "german": "Grad", "english": "degree", "grammar": "m", "icon": "grad.webp" },
-      { "german": "Klima", "english": "climate", "grammar": "n", "icon": "klima.webp" },
+      { "german": "Klima", "english": "climate", "grammar": "n", "icon": "klima.webp", "conflicts": ["Klimawandel"] },
       { "german": "Jahreszeit", "english": "season", "grammar": "f", "icon": "jahreszeit.webp" }
     ],
     "Umwelt und Ökologie": [
@@ -42,11 +42,11 @@
       { "german": "Recycling", "english": "recycling", "grammar": "n", "icon": "recycling.webp" },
       { "german": "Müll", "english": "rubbish / waste", "grammar": "m", "icon": "muell.webp" },
       { "german": "Energie", "english": "energy", "grammar": "f", "icon": "energie.webp" },
-      { "german": "erneuerbar", "english": "renewable", "grammar": "", "icon": "erneuerbar.webp" },
+      { "german": "erneuerbar", "english": "renewable", "grammar": "", "icon": "erneuerbar.webp", "conflicts": ["nachhaltig"], "hard_icon": true },
       { "german": "Klimawandel", "english": "climate change", "grammar": "m", "icon": "klimawandel.webp" },
       { "german": "Verschmutzung", "english": "pollution", "grammar": "f", "icon": "verschmutzung.webp" },
       { "german": "Naturkatastrophe", "english": "natural disaster", "grammar": "f", "icon": "naturkatastrophe.webp" },
-      { "german": "nachhaltig", "english": "sustainable", "grammar": "", "icon": "nachhaltig.webp" }
+      { "german": "nachhaltig", "english": "sustainable", "grammar": "", "icon": "nachhaltig.webp", "hard_icon": true }
     ]
   }
 }

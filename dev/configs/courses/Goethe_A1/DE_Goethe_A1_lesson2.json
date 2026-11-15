@@ -56,12 +56,14 @@
       {
         "english": "grandmother",
         "grammar": "f",
-        "german": "Großmutter"
+        "german": "Großmutter",
+        "conflicts": ["Oma"]
       },
       {
         "english": "grandfather",
         "grammar": "m",
-        "german": "Großvater"
+        "german": "Großvater",
+        "conflicts": ["Opa"]
       },
       {
         "english": "grandma",
@@ -86,7 +88,8 @@
       {
         "english": "male cousin",
         "grammar": "m",
-        "german": "Cousin"
+        "german": "Cousin",
+        "conflicts": ["Cousine"]
       },
       {
         "english": "female cousin",
@@ -108,7 +111,8 @@
       {
         "english": "husband",
         "grammar": "m",
-        "german": "Ehemann"
+        "german": "Ehemann",
+        "conflicts": ["Ehefrau"]
       },
       {
         "english": "wife",
@@ -118,7 +122,8 @@
       {
         "english": "partner (m)",
         "grammar": "m",
-        "german": "Partner"
+        "german": "Partner",
+        "conflicts": ["Partnerin"]
       },
       {
         "english": "partner (f)",
@@ -138,7 +143,8 @@
       {
         "english": "neighbour (m)",
         "grammar": "m",
-        "german": "Nachbar"
+        "german": "Nachbar",
+        "conflicts": ["Nachbarin"]
       },
       {
         "english": "neighbour (f)",

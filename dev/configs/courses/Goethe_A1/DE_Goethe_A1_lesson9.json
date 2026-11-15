@@ -24,7 +24,8 @@
       {
         "english": "nose",
         "grammar": "f",
-        "german": "Nase"
+        "german": "Nase",
+        "conflicts": ["Schnupfen"]
       },
       {
         "english": "mouth",
