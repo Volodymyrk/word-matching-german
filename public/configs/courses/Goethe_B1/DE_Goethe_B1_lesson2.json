@@ -6,7 +6,7 @@
         "english": "report / certificate",
         "grammar": "n",
         "icon": "zeugnis.webp",
-        "conflicts": ["Zertifikat"]
+        "conflicts": ["Zertifikat", "Note"]
       },
       {
         "german": "Note",
@@ -28,30 +28,34 @@
         "german": "Abschluss",
         "english": "qualification / degree",
         "grammar": "m",
-        "icon": "abschluss.webp"
+        "icon": "abschluss.webp",
+        "conflicts": ["Zeugnis"]
       },
       {
         "german": "Abitur",
         "english": "A-levels / university entrance qualification",
         "grammar": "n",
-        "icon": "abitur.webp"
+        "icon": "abitur.webp",
+        "conflicts": ["Zeugnis"]
       },
       {
         "german": "Gymnasium",
         "english": "grammar school",
         "grammar": "n",
-        "icon": "gymnasium.webp"
+        "icon": "gymnasium.webp",
+        "conflicts": ["Gesamtschule"]
       },
       {
         "german": "Realschule",
         "english": "secondary school (intermediate)",
         "grammar": "f",
-        "conflicts": ["Hauptschule"]
+        "conflicts": ["Hauptschule", "Gesamtschule"]
       },
       {
         "german": "Hauptschule",
         "english": "lower secondary school",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Gesamtschule"]
       },
       {
         "german": "Gesamtschule",
@@ -76,7 +80,8 @@
       {
         "german": "Azubi",
         "english": "trainee / apprentice",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Ausbilder", "Lehre"]
       },
       {
         "german": "Ausbilder",
@@ -107,7 +112,8 @@
         "german": "Berufsschule",
         "english": "vocational school",
         "grammar": "f",
-        "icon": "berufsschule.webp"
+        "icon": "berufsschule.webp",
+        "conflicts": ["Fachschule"]
       },
       {
         "german": "Gesellenbrief",
@@ -137,7 +143,8 @@
       {
         "german": "Vorlesung",
         "english": "lecture",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Seminar"]
       },
       {
         "german": "Seminar",
@@ -158,7 +165,8 @@
       {
         "german": "Bachelor",
         "english": "bachelor's degree",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Master"]
       },
       {
         "german": "Master",
@@ -175,7 +183,8 @@
       {
         "german": "Fortbildung",
         "english": "professional development / training",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Umschulung", "Workshop"]
       },
       {
         "german": "Umschulung",
@@ -215,7 +224,8 @@
       {
         "german": "Fernstudium",
         "english": "distance learning",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Studium"]
       },
       {
         "german": "Anerkennung",

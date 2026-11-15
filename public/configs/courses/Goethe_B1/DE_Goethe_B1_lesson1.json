@@ -4,7 +4,8 @@
       {
         "german": "Stelle",
         "english": "position / job",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Stellenanzeige"]
       },
       {
         "german": "Stellenanzeige",
@@ -16,14 +17,16 @@
         "german": "sich bewerben",
         "english": "to apply (for a job)",
         "grammar": "",
-        "icon": "sich_bewerben.webp"
+        "icon": "sich_bewerben.webp",
+        "conflicts": ["Bewerbung"]
       },
       {
         "german": "Bewerbung",
         "english": "job application",
         "grammar": "f",
         "icon": "bewerbung.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Lebenslauf"]
       },
       {
         "german": "Lebenslauf",
@@ -35,7 +38,8 @@
         "german": "Vorstellungsgespräch",
         "english": "job interview",
         "grammar": "n",
-        "icon": "vorstellungsgespraech.webp"
+        "icon": "vorstellungsgespraech.webp",
+        "conflicts": ["Besprechung"]
       },
       {
         "german": "einstellen",
@@ -51,7 +55,8 @@
       {
         "german": "Arbeitgeber",
         "english": "employer",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Arbeitnehmer", "Vorgesetzte"]
       },
       {
         "german": "Arbeitnehmer",
@@ -70,7 +75,8 @@
         "german": "Gehalt",
         "english": "salary",
         "grammar": "n",
-        "icon": "gehalt.webp"
+        "icon": "gehalt.webp",
+        "conflicts": ["Lohn", "Gehaltserhöhung"]
       },
       {
         "german": "Probezeit",
@@ -83,7 +89,8 @@
         "german": "kündigen",
         "english": "to resign / give notice",
         "grammar": "",
-        "icon": "kuendigen.webp"
+        "icon": "kuendigen.webp",
+        "conflicts": ["entlassen"]
       },
       {
         "german": "entlassen",
@@ -100,7 +107,8 @@
       {
         "german": "Sozialversicherung",
         "english": "social insurance",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Krankenversicherung", "Rentenversicherung"]
       },
       {
         "german": "Lohn",
@@ -112,7 +120,8 @@
         "english": "health insurance",
         "grammar": "f",
         "icon": "krankenversicherung.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Rentenversicherung"]
       },
       {
         "german": "Rentenversicherung",
@@ -132,13 +141,15 @@
         "german": "Kollege",
         "english": "colleague (male)",
         "grammar": "m",
-        "icon": "kollege.webp"
+        "icon": "kollege.webp",
+        "conflicts": ["Zusammenarbeit"]
       },
       {
         "german": "Besprechung",
         "english": "meeting",
         "grammar": "f",
-        "icon": "besprechung.webp"
+        "icon": "besprechung.webp",
+        "conflicts": ["Konferenz"]
       },
       {
         "german": "Aufgabe",
@@ -164,7 +175,8 @@
       {
         "german": "Belegschaft",
         "english": "workforce / staff",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Arbeitnehmer"]
       },
       {
         "german": "Konferenz",
@@ -181,17 +193,20 @@
       {
         "german": "Überstunde",
         "english": "overtime hour",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Arbeitszeit"]
       },
       {
         "german": "Schicht",
         "english": "shift",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Arbeitszeit"]
       },
       {
         "german": "Feierabend",
         "english": "end of the working day",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Pause"]
       },
       {
         "german": "Teilzeit",
@@ -233,7 +248,8 @@
       {
         "german": "Arbeitsverhältnis",
         "english": "employment relationship",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Vertrag"]
       }
     ]
   }

@@ -91,7 +91,7 @@ Timer via `setInterval`, combo bar via `{#key comboRestartKey}` to replay CSS `d
 - `fetchLessons()` → loads `index.json` and `globals.json`, returns `{ lessons, globals }`
 - `fetchSections(lesson)` → returns `[{ id: "lessonKey/sectionKey", wordCount }]`
 - `createDeck(config, sectionId=null)` → loads pairs (vocab JSON cached per file), builds a symmetric conflict map (explicit `conflicts` + identical base/target text) and a shuffled target queue
-- `createRound(deck)` → one set of 6 cards: 3 targets taken from the queue (every word asked before repeats), 3 random distractors; no two conflicting words in the same set (relaxed only for tiny/over-constrained sections)
+- `createRound(deck)` → one set of up to 6 cards: 3 targets from the queue front (every word asked before repeats) + random distractors, searched so no two conflicting words share a set. In dense sections the board shrinks (min 4 cards) rather than show a conflict
 
 **`src/lib/history.js`** — localStorage under key `word_matching_history`:
 - `markPlay(lessonId, sectionId, dir, score)` — records play; `sectionId` is `'final'` for final round

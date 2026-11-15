@@ -15,7 +15,8 @@
       {
         "german": "Gebiet",
         "english": "area / territory",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Region", "Fläche"]
       },
       {
         "german": "Region",
@@ -25,7 +26,8 @@
       {
         "german": "Bevölkerung",
         "english": "population",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Einwohner"]
       },
       {
         "german": "Einwohner",
@@ -36,7 +38,8 @@
         "german": "Klima",
         "english": "climate",
         "grammar": "n",
-        "icon": "klima.webp"
+        "icon": "klima.webp",
+        "hard_icon": true
       },
       {
         "german": "Fläche",
@@ -86,13 +89,16 @@
         "german": "Wiedervereinigung",
         "english": "reunification",
         "grammar": "f",
-        "icon": "wiedervereinigung.webp"
+        "icon": "wiedervereinigung.webp",
+        "conflicts": ["Einigung"],
+        "hard_icon": true
       },
       {
         "german": "Denkmal",
         "english": "monument / memorial",
         "grammar": "n",
-        "icon": "denkmal.webp"
+        "icon": "denkmal.webp",
+        "conflicts": ["Gedenkstätte"]
       },
       {
         "german": "Einigung",
@@ -103,7 +109,8 @@
         "german": "Mauer",
         "english": "(Berlin) Wall",
         "grammar": "f",
-        "icon": "mauer.webp"
+        "icon": "mauer.webp",
+        "conflicts": ["Wiedervereinigung"]
       },
       {
         "german": "Gedenkstätte",
@@ -150,7 +157,8 @@
       {
         "german": "Epoche",
         "english": "epoch / era",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Jahrhundert"]
       },
       {
         "german": "Jahrhundert",
@@ -177,12 +185,14 @@
       {
         "german": "Vorurteil",
         "english": "prejudice",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Klischee"]
       },
       {
         "german": "stereotypisch",
         "english": "stereotypical",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Klischee"]
       },
       {
         "german": "Weltanschauung",
@@ -207,7 +217,8 @@
       {
         "german": "vergleichen",
         "english": "to compare",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Unterschied"]
       },
       {
         "german": "Austausch",

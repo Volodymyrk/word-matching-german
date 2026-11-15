@@ -5,19 +5,22 @@
         "german": "Kultur",
         "english": "culture",
         "grammar": "f",
-        "icon": "kultur.webp"
+        "icon": "kultur.webp",
+        "hard_icon": true
       },
       {
         "german": "Künstler",
         "english": "artist",
         "grammar": "m",
-        "icon": "kuenstler.webp"
+        "icon": "kuenstler.webp",
+        "conflicts": ["Gemälde"]
       },
       {
         "german": "Gemälde",
         "english": "painting / picture",
         "grammar": "n",
-        "icon": "gemaelde.webp"
+        "icon": "gemaelde.webp",
+        "conflicts": ["Galerie"]
       },
       {
         "german": "Skulptur",
@@ -30,7 +33,7 @@
         "english": "literature",
         "grammar": "f",
         "icon": "literatur.webp",
-        "conflicts": ["Roman"]
+        "conflicts": ["Roman", "Gedicht"]
       },
       {
         "german": "Roman",
@@ -48,7 +51,8 @@
         "german": "Komponist",
         "english": "composer",
         "grammar": "m",
-        "icon": "komponist.webp"
+        "icon": "komponist.webp",
+        "conflicts": ["Orchester"]
       },
       {
         "german": "Orchester",
@@ -69,13 +73,15 @@
         "english": "public holiday",
         "grammar": "m",
         "icon": "feiertag.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Nationalfeiertag"]
       },
       {
         "german": "Nationalfeiertag",
         "english": "national holiday",
         "grammar": "m",
-        "icon": "nationalfeiertag.webp"
+        "icon": "nationalfeiertag.webp",
+        "conflicts": ["Österreich"]
       },
       {
         "german": "Oktoberfest",
@@ -93,7 +99,8 @@
         "german": "Weihnachtsmarkt",
         "english": "Christmas market",
         "grammar": "m",
-        "icon": "weihnachtsmarkt.webp"
+        "icon": "weihnachtsmarkt.webp",
+        "conflicts": ["Adventszeit"]
       },
       {
         "german": "Fasching",
@@ -112,13 +119,15 @@
         "english": "tradition",
         "grammar": "f",
         "icon": "tradition.webp",
-        "conflicts": ["Brauch"]
+        "conflicts": ["Brauch"],
+        "hard_icon": true
       },
       {
         "german": "Brauch",
         "english": "custom / tradition",
         "grammar": "m",
-        "icon": "brauch.webp"
+        "icon": "brauch.webp",
+        "hard_icon": true
       },
       {
         "german": "feiern",
@@ -132,25 +141,31 @@
         "german": "Gesellschaft",
         "english": "society",
         "grammar": "f",
-        "icon": "gesellschaft.webp"
+        "icon": "gesellschaft.webp",
+        "conflicts": ["Gemeinschaft"],
+        "hard_icon": true
       },
       {
         "german": "Gemeinschaft",
         "english": "community",
         "grammar": "f",
-        "icon": "gemeinschaft.webp"
+        "icon": "gemeinschaft.webp",
+        "hard_icon": true
       },
       {
         "german": "Bürger",
         "english": "citizen",
         "grammar": "m",
-        "icon": "buerger.webp"
+        "icon": "buerger.webp",
+        "hard_icon": true
       },
       {
         "german": "Demokratie",
         "english": "democracy",
         "grammar": "f",
-        "icon": "demokratie.webp"
+        "icon": "demokratie.webp",
+        "conflicts": ["Wahl"],
+        "hard_icon": true
       },
       {
         "german": "Wahl",
@@ -168,26 +183,31 @@
         "german": "Gesetz",
         "english": "law",
         "grammar": "n",
-        "icon": "gesetz.webp"
+        "icon": "gesetz.webp",
+        "conflicts": ["Recht"]
       },
       {
         "german": "Recht",
         "english": "right / entitlement",
         "grammar": "n",
         "icon": "recht.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Gleichberechtigung"]
       },
       {
         "german": "Pflicht",
         "english": "duty / obligation",
         "grammar": "f",
-        "icon": "pflicht.webp"
+        "icon": "pflicht.webp",
+        "conflicts": ["Recht"],
+        "hard_icon": true
       },
       {
         "german": "Gleichberechtigung",
         "english": "equal rights / equality",
         "grammar": "f",
-        "icon": "gleichberechtigung.webp"
+        "icon": "gleichberechtigung.webp",
+        "hard_icon": true
       }
     ],
     "Deutschland und Nachbarländer": [
@@ -226,19 +246,22 @@
         "english": "dialect",
         "grammar": "m",
         "icon": "dialekt.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["mehrsprachig"]
       },
       {
         "german": "Wiedervereinigung",
         "english": "reunification",
         "grammar": "f",
-        "icon": "wiedervereinigung.webp"
+        "icon": "wiedervereinigung.webp",
+        "hard_icon": true
       },
       {
         "german": "Mauer",
         "english": "wall (e.g. Berlin Wall)",
         "grammar": "f",
-        "icon": "mauer.webp"
+        "icon": "mauer.webp",
+        "conflicts": ["Wiedervereinigung"]
       },
       {
         "german": "Europäische Union",

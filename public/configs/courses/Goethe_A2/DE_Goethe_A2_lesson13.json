@@ -5,14 +5,15 @@
         "german": "Freude",
         "english": "joy",
         "grammar": "f",
-        "icon": "freude.webp"
+        "icon": "freude.webp",
+        "conflicts": ["Begeisterung"]
       },
       {
         "german": "Trauer",
         "english": "sadness / grief",
         "grammar": "f",
         "icon": "trauer.webp",
-        "conflicts": ["Scham"]
+        "conflicts": ["Scham", "Enttäuschung", "Einsamkeit"]
       },
       {
         "german": "Angst",
@@ -36,13 +37,15 @@
         "german": "Enttäuschung",
         "english": "disappointment",
         "grammar": "f",
-        "icon": "enttaeuschung.webp"
+        "icon": "enttaeuschung.webp",
+        "hard_icon": true
       },
       {
         "german": "Begeisterung",
         "english": "enthusiasm",
         "grammar": "f",
-        "icon": "begeisterung.webp"
+        "icon": "begeisterung.webp",
+        "hard_icon": true
       },
       {
         "german": "Einsamkeit",
@@ -54,7 +57,8 @@
         "german": "Eifersucht",
         "english": "jealousy",
         "grammar": "f",
-        "icon": "eifersucht.webp"
+        "icon": "eifersucht.webp",
+        "hard_icon": true
       },
       {
         "german": "Scham",
@@ -68,7 +72,8 @@
         "german": "mutig",
         "english": "brave / courageous",
         "grammar": "",
-        "icon": "mutig.webp"
+        "icon": "mutig.webp",
+        "conflicts": ["selbstbewusst"]
       },
       {
         "german": "schüchtern",
@@ -101,7 +106,8 @@
         "english": "reliable",
         "grammar": "",
         "icon": "zuverlaessig.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["verantwortungsbewusst"]
       },
       {
         "german": "ungeduldig",
@@ -123,7 +129,8 @@
         "english": "pessimistic",
         "grammar": "",
         "icon": "pessimistisch.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["obwohl"]
       },
       {
         "german": "humorvoll",
@@ -169,20 +176,23 @@
         "english": "opinion",
         "grammar": "f",
         "icon": "meinung.webp",
-        "conflicts": ["Ansicht"],
+        "conflicts": ["Ansicht", "Standpunkt"],
         "hard_icon": true
       },
       {
         "german": "Ansicht",
         "english": "view / opinion",
         "grammar": "f",
-        "icon": "ansicht.webp"
+        "icon": "ansicht.webp",
+        "conflicts": ["Standpunkt"],
+        "hard_icon": true
       },
       {
         "german": "Standpunkt",
         "english": "standpoint / point of view",
         "grammar": "m",
-        "icon": "standpunkt.webp"
+        "icon": "standpunkt.webp",
+        "hard_icon": true
       },
       {
         "german": "zustimmen",
@@ -202,7 +212,8 @@
         "english": "to justify / give reasons",
         "grammar": "",
         "icon": "begruenden.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["argumentieren"]
       }
     ],
     "Diskussion": [
@@ -211,7 +222,8 @@
         "english": "to discuss",
         "grammar": "",
         "icon": "diskutieren.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["argumentieren"]
       },
       {
         "german": "argumentieren",
@@ -268,13 +280,16 @@
         "german": "Beispiel",
         "english": "example",
         "grammar": "n",
-        "icon": "beispiel.webp"
+        "icon": "beispiel.webp",
+        "conflicts": ["finden"],
+        "hard_icon": true
       },
       {
         "german": "Schluss",
         "english": "conclusion",
         "grammar": "m",
-        "icon": "schluss.webp"
+        "icon": "schluss.webp",
+        "hard_icon": true
       }
     ]
   }

@@ -5,7 +5,8 @@
         "german": "Supermarkt",
         "english": "supermarket",
         "grammar": "m",
-        "icon": "supermarkt.webp"
+        "icon": "supermarkt.webp",
+        "conflicts": ["Einkaufszentrum"]
       },
       {
         "german": "Einkaufszentrum",
@@ -29,7 +30,8 @@
         "german": "Apotheke",
         "english": "pharmacy",
         "grammar": "f",
-        "icon": "apotheke.webp"
+        "icon": "apotheke.webp",
+        "conflicts": ["Drogerie"]
       },
       {
         "german": "Drogerie",
@@ -71,7 +73,8 @@
         "german": "Hemd",
         "english": "shirt",
         "grammar": "n",
-        "icon": "hemd.webp"
+        "icon": "hemd.webp",
+        "conflicts": ["Bluse"]
       },
       {
         "german": "Bluse",
@@ -89,7 +92,8 @@
         "german": "Rock",
         "english": "skirt",
         "grammar": "m",
-        "icon": "rock.webp"
+        "icon": "rock.webp",
+        "conflicts": ["Kleid"]
       },
       {
         "german": "Kleid",
@@ -101,7 +105,8 @@
         "german": "Jacke",
         "english": "jacket",
         "grammar": "f",
-        "icon": "jacke.webp"
+        "icon": "jacke.webp",
+        "conflicts": ["Mantel"]
       },
       {
         "german": "Mantel",
@@ -152,7 +157,8 @@
         "german": "Postamt",
         "english": "post office",
         "grammar": "n",
-        "icon": "postamt.webp"
+        "icon": "postamt.webp",
+        "conflicts": ["Brief"]
       },
       {
         "german": "Konto",
@@ -173,19 +179,21 @@
         "english": "cash",
         "grammar": "n",
         "icon": "bargeld.webp",
-        "conflicts": ["Geldautomat"]
+        "conflicts": ["Geldautomat", "abheben", "zahlen"]
       },
       {
         "german": "Kreditkarte",
         "english": "credit card",
         "grammar": "f",
-        "icon": "kreditkarte.webp"
+        "icon": "kreditkarte.webp",
+        "conflicts": ["Überweisung"]
       },
       {
         "german": "Geldautomat",
         "english": "ATM / cash machine",
         "grammar": "m",
-        "icon": "geldautomat.webp"
+        "icon": "geldautomat.webp",
+        "conflicts": ["abheben"]
       },
       {
         "german": "abheben",
@@ -200,7 +208,7 @@
         "english": "price",
         "grammar": "m",
         "icon": "preis.webp",
-        "conflicts": ["kostenlos"]
+        "conflicts": ["kostenlos", "Sonderangebot", "Mehrwertsteuer"]
       },
       {
         "german": "Quittung",
@@ -218,20 +226,23 @@
         "german": "zahlen",
         "english": "to pay",
         "grammar": "",
-        "icon": "zahlen.webp"
+        "icon": "zahlen.webp",
+        "conflicts": ["Wechselgeld"]
       },
       {
         "german": "Wechselgeld",
         "english": "change (money back)",
         "grammar": "n",
-        "icon": "wechselgeld.webp"
+        "icon": "wechselgeld.webp",
+        "conflicts": ["Bargeld"]
       },
       {
         "german": "kostenlos",
         "english": "free of charge",
         "grammar": "",
         "icon": "kostenlos.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Sonderangebot"]
       },
       {
         "german": "Garantie",

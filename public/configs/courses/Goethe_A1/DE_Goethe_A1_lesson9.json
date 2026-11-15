@@ -4,12 +4,14 @@
       {
         "english": "head",
         "grammar": "m",
-        "german": "Kopf"
+        "german": "Kopf",
+        "conflicts": ["Gesicht"]
       },
       {
         "english": "face",
         "grammar": "n",
-        "german": "Gesicht"
+        "german": "Gesicht",
+        "conflicts": ["Auge", "Nase", "Mund"]
       },
       {
         "english": "eye",
@@ -30,7 +32,8 @@
       {
         "english": "mouth",
         "grammar": "m",
-        "german": "Mund"
+        "german": "Mund",
+        "conflicts": ["Zahn"]
       },
       {
         "english": "tooth",
@@ -45,7 +48,8 @@
       {
         "english": "arm",
         "grammar": "m",
-        "german": "Arm"
+        "german": "Arm",
+        "conflicts": ["Hand"]
       },
       {
         "english": "hand",
@@ -55,7 +59,8 @@
       {
         "english": "leg",
         "grammar": "n",
-        "german": "Bein"
+        "german": "Bein",
+        "conflicts": ["Fuß"]
       },
       {
         "english": "foot",
@@ -72,12 +77,14 @@
       {
         "english": "pharmacy",
         "grammar": "f",
-        "german": "Apotheke"
+        "german": "Apotheke",
+        "conflicts": ["Medikament"]
       },
       {
         "english": "medicine",
         "grammar": "n",
-        "german": "Medikament"
+        "german": "Medikament",
+        "conflicts": ["Tablette"]
       },
       {
         "english": "tablet / pill",
@@ -87,7 +94,8 @@
       {
         "english": "prescription",
         "grammar": "n",
-        "german": "Rezept"
+        "german": "Rezept",
+        "conflicts": ["Medikament"]
       },
       {
         "english": "appointment",
@@ -119,7 +127,8 @@
       {
         "english": "pain",
         "grammar": "m",
-        "german": "Schmerz"
+        "german": "Schmerz",
+        "conflicts": ["wehtun"]
       },
       {
         "english": "fever",
@@ -139,7 +148,8 @@
       {
         "english": "flu",
         "grammar": "f",
-        "german": "Grippe"
+        "german": "Grippe",
+        "conflicts": ["Fieber", "Husten", "Schnupfen"]
       },
       {
         "english": "allergy",
@@ -149,7 +159,8 @@
       {
         "english": "accident",
         "grammar": "m",
-        "german": "Unfall"
+        "german": "Unfall",
+        "conflicts": ["Verletzung"]
       },
       {
         "english": "injury",

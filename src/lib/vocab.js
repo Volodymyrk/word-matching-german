@@ -132,47 +132,94 @@ function clashes(deck, idx, chosen) {
   return chosen.some(c => c === idx || deck.conflicts[idx].has(c));
 }
 
+function countClashes(deck, set) {
+  let c = 0;
+  for (let a = 0; a < set.length; a++)
+    for (let b = a + 1; b < set.length; b++)
+      if (deck.conflicts[set[a]].has(set[b])) c++;
+  return c;
+}
+
+// Appends a fresh shuffled cycle to the queue; words from the last set go to the back.
+function refill(deck) {
+  const n = deck.pairs.length;
+  const fresh = shuffle([...Array(n).keys()].filter(i => !deck.queue.includes(i)));
+  const recent = new Set(deck.current);
+  deck.queue = [...deck.queue, ...fresh.filter(i => !recent.has(i)), ...fresh.filter(i => recent.has(i))];
+}
+
+// Combinations of r queue positions from [start, len), front positions first.
+function* queuePicks(len, r, start = 1) {
+  if (r === 0) { yield []; return; }
+  for (let i = start; i <= len - r; i++)
+    for (const rest of queuePicks(len, r - 1, i + 1)) yield [i, ...rest];
+}
+
+const DISTRACTOR_ATTEMPTS = 30;  // random fills tried per target combination
+const TARGET_WINDOW       = 12;  // how deep into the queue partner targets may come from
+const TARGET_COMBOS       = 25;  // target combinations tried before settling
+
+const MIN_CARDS = 4;  // board may shrink to this many cards rather than show a conflict
+
+// Fewer conflicts first, then more cards.
+const better = (a, b) => !b || a.c < b.c || (a.c === b.c && a.set.length > b.set.length);
+
+// Adds distinct non-target words up to `want` without conflicts. If that leaves
+// fewer than MIN_CARDS, fills the rest anyway (fewest conflicts wins).
+function fillDistractors(deck, targets, want) {
+  const others = [...Array(deck.pairs.length).keys()].filter(i => !targets.includes(i));
+  const full = Math.min(want, deck.pairs.length);
+  let best = null;
+  for (let a = 0; a < DISTRACTOR_ATTEMPTS; a++) {
+    const set = [...targets];
+    const order = shuffle(others);
+    for (const idx of order) { if (set.length >= want) break; if (!clashes(deck, idx, set)) set.push(idx); }
+    if (set.length < Math.min(MIN_CARDS, full)) {
+      for (const idx of order) { if (set.length >= want) break; if (!set.includes(idx)) set.push(idx); }
+    }
+    const fill = { set, c: countClashes(deck, set) };
+    if (better(fill, best)) best = fill;
+    if (best.c === 0 && best.set.length >= full) break;
+  }
+  return best;
+}
+
 // Picks the next set: targets come from the shuffled deck (every word is asked
-// before any repeats), distractors are random non-conflicting words.
+// before any repeats), distractors are random words. No two conflicting words
+// share a set; in dense sections the board shows fewer cards (down to MIN_CARDS)
+// instead. Only if even that is impossible does it accept the fewest conflicts.
 export function createRound(deck) {
   const n = deck.pairs.length;
-  const targets = [];
-  const nTargets = Math.min(TARGETS_PER_SET, n);
-
-  // 1. Targets from the front of the queue, skipping clashes (they stay queued).
-  for (let pass = 0; pass < 2 && targets.length < nTargets; pass++) {
-    if (pass === 1) {
-      // Queue exhausted or blocked: refill, putting words from the last set at the back.
-      const fresh = shuffle([...Array(n).keys()].filter(i => !deck.queue.includes(i)));
-      const recent = new Set(deck.current);
-      deck.queue = [...deck.queue, ...fresh.filter(i => !recent.has(i)), ...fresh.filter(i => recent.has(i))];
-    }
-    for (let qi = 0; qi < deck.queue.length && targets.length < nTargets; ) {
-      const idx = deck.queue[qi];
-      if (clashes(deck, idx, targets)) { qi++; continue; }
-      targets.push(idx);
-      deck.queue.splice(qi, 1);
-    }
-  }
-  // Last resort (all remaining words conflict): ignore conflicts, keep uniqueness.
-  for (const idx of shuffle([...Array(n).keys()])) {
-    if (targets.length >= nTargets) break;
-    if (!targets.includes(idx)) targets.push(idx);
-  }
-
-  // 2. Distractors: prefer non-conflicting, then any unused, then repeats (tiny sections).
-  const chosen = [...targets];
   const want = CARDS_PER_SET;
-  const others = shuffle([...Array(n).keys()].filter(i => !chosen.includes(i)));
-  for (const idx of others) {
-    if (chosen.length >= want) break;
-    if (!clashes(deck, idx, chosen)) chosen.push(idx);
+  const full = Math.min(want, n);
+  const nTargets = Math.min(TARGETS_PER_SET, n);
+  if (deck.queue.length < nTargets) refill(deck);
+
+  let best = null;
+  const done = () => best && best.c === 0 && best.set.length >= full;
+  for (let pass = 0; pass < 2 && !done(); pass++) {
+    if (pass === 1) refill(deck);  // widen the choice of partner targets into the next cycle
+    const q = deck.queue;
+    let tried = 0;
+    for (const pos of queuePicks(Math.min(q.length, TARGET_WINDOW), nTargets - 1)) {
+      const targets = [q[0], ...pos.map(p => q[p])];
+      if (countClashes(deck, targets) > 0) continue;
+      const fill = fillDistractors(deck, targets, want);
+      if (better(fill, best)) best = { pos: [0, ...pos], targets, set: fill.set, c: fill.c };
+      if (done() || ++tried >= TARGET_COMBOS) break;
+    }
   }
-  for (const idx of others) {
-    if (chosen.length >= want) break;
-    if (!chosen.includes(idx)) chosen.push(idx);
+  if (!best) {
+    // Every candidate target combination conflicts — take the queue front as-is.
+    const pos = [...Array(nTargets).keys()];
+    const targets = pos.map(p => deck.queue[p]);
+    best = { pos, targets, ...fillDistractors(deck, targets, want) };
   }
-  while (chosen.length < want && n > 0) {
+  for (const p of [...best.pos].sort((a, b) => b - a)) deck.queue.splice(p, 1);
+
+  const targets = best.targets;
+  const chosen  = best.set;
+  while (n < want && chosen.length < want && n > 0) {
     // Fewer than 6 words in total — fill with non-target repeats where possible.
     const pool = [...Array(n).keys()].filter(i => !targets.includes(i));
     const src = pool.length ? pool : [...Array(n).keys()];

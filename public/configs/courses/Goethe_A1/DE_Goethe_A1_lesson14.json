@@ -109,7 +109,8 @@
       {
         "english": "happy",
         "grammar": "",
-        "german": "glücklich"
+        "german": "glücklich",
+        "conflicts": ["froh", "zufrieden"]
       },
       {
         "english": "sad",
@@ -119,7 +120,8 @@
       {
         "english": "nervous",
         "grammar": "",
-        "german": "nervös"
+        "german": "nervös",
+        "conflicts": ["aufgeregt"]
       },
       {
         "english": "relaxed",
@@ -139,7 +141,8 @@
       {
         "english": "glad / pleased",
         "grammar": "",
-        "german": "froh"
+        "german": "froh",
+        "conflicts": ["zufrieden"]
       },
       {
         "english": "hungry",

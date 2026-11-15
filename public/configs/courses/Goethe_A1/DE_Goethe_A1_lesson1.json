@@ -161,12 +161,14 @@
       {
         "english": "man",
         "grammar": "m",
-        "german": "Mann"
+        "german": "Mann",
+        "conflicts": ["Herr"]
       },
       {
         "english": "woman",
         "grammar": "f",
-        "german": "Frau"
+        "german": "Frau",
+        "conflicts": ["Dame"]
       },
       {
         "english": "child",

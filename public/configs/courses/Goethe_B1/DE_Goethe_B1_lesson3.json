@@ -9,7 +9,8 @@
       {
         "german": "Onkel",
         "english": "uncle",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Tante"]
       },
       {
         "german": "Tante",
@@ -30,7 +31,8 @@
       {
         "german": "Neffe",
         "english": "nephew",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Nichte"]
       },
       {
         "german": "Nichte",
@@ -40,7 +42,8 @@
       {
         "german": "Schwiegermutter",
         "english": "mother-in-law",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Schwiegervater"]
       },
       {
         "german": "Schwiegervater",
@@ -62,18 +65,21 @@
       {
         "german": "sich verloben",
         "english": "to get engaged",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Hochzeit"]
       },
       {
         "german": "Hochzeit",
         "english": "wedding",
         "grammar": "f",
-        "icon": "hochzeit.webp"
+        "icon": "hochzeit.webp",
+        "conflicts": ["Ehe"]
       },
       {
         "german": "sich scheiden lassen",
         "english": "to get divorced",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["getrennt"]
       },
       {
         "german": "getrennt",
@@ -88,7 +94,8 @@
       {
         "german": "Paar",
         "english": "couple",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Beziehung"]
       },
       {
         "german": "treu",
@@ -103,14 +110,16 @@
       {
         "german": "Lebenspartner",
         "english": "life partner",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Paar"]
       }
     ],
     "Erziehung": [
       {
         "german": "erziehen",
         "english": "to raise / bring up",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Erziehung"]
       },
       {
         "german": "Erziehung",
@@ -140,7 +149,8 @@
       {
         "german": "Krippe",
         "english": "nursery / crèche",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Kindergarten"]
       },
       {
         "german": "Kindergarten",
@@ -150,7 +160,8 @@
       {
         "german": "Erzieherin",
         "english": "nursery teacher / educator (female)",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Kindergarten"]
       },
       {
         "german": "selbstständig",
@@ -166,7 +177,8 @@
         "english": "pension",
         "grammar": "f",
         "icon": "rente.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Rentner", "Altersvorsorge"]
       },
       {
         "german": "Rentner",
@@ -177,7 +189,8 @@
         "german": "Jugendliche",
         "english": "young person / teenager",
         "grammar": "m",
-        "icon": "jugendliche.webp"
+        "icon": "jugendliche.webp",
+        "conflicts": ["Erwachsenwerden"]
       },
       {
         "german": "Generation",
@@ -187,7 +200,8 @@
       {
         "german": "Erwachsenwerden",
         "english": "growing up / coming of age",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["aufwachsen"]
       },
       {
         "german": "Pflegebedürftigkeit",
@@ -202,7 +216,8 @@
       {
         "german": "Pflegeheim",
         "english": "care home / nursing home",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Pflegebedürftigkeit"]
       },
       {
         "german": "betreuen",

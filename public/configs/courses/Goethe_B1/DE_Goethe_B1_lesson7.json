@@ -5,7 +5,8 @@
         "german": "Gewürz",
         "english": "spice / seasoning",
         "grammar": "n",
-        "icon": "gewuerz.webp"
+        "icon": "gewuerz.webp",
+        "conflicts": ["würzen"]
       },
       {
         "german": "Mehl",
@@ -52,7 +53,8 @@
       {
         "german": "Süßigkeit",
         "english": "sweet / candy",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Dessert"]
       }
     ],
     "Kochen und Zubereiten": [
@@ -60,12 +62,14 @@
         "german": "braten",
         "english": "to fry / roast",
         "grammar": "",
-        "icon": "braten.webp"
+        "icon": "braten.webp",
+        "conflicts": ["Pfanne"]
       },
       {
         "german": "schmoren",
         "english": "to braise / stew",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Topf", "braten"]
       },
       {
         "german": "schälen",
@@ -129,13 +133,15 @@
         "german": "Vorspeise",
         "english": "starter",
         "grammar": "f",
-        "icon": "vorspeise.webp"
+        "icon": "vorspeise.webp",
+        "conflicts": ["Hauptgericht", "Dessert"]
       },
       {
         "german": "Hauptgericht",
         "english": "main course",
         "grammar": "n",
-        "icon": "hauptgericht.webp"
+        "icon": "hauptgericht.webp",
+        "conflicts": ["Dessert"]
       },
       {
         "german": "Dessert",
@@ -163,7 +169,8 @@
       {
         "german": "Tagesempfehlung",
         "english": "dish of the day",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Hauptgericht"]
       },
       {
         "german": "vegetarisch",
@@ -205,7 +212,8 @@
       {
         "german": "glutenfrei",
         "english": "gluten-free",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["laktosefrei"]
       },
       {
         "german": "laktosefrei",
@@ -215,7 +223,8 @@
       {
         "german": "Unverträglichkeit",
         "english": "intolerance",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["laktosefrei"]
       },
       {
         "german": "Diät",

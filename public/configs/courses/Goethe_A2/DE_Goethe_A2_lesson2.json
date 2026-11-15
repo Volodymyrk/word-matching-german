@@ -5,7 +5,8 @@
         "german": "Vermieter",
         "english": "landlord",
         "grammar": "m",
-        "icon": "vermieter.webp"
+        "icon": "vermieter.webp",
+        "conflicts": ["Mieter"]
       },
       {
         "german": "Mieter",
@@ -17,20 +18,23 @@
         "german": "Mietvertrag",
         "english": "rental contract",
         "grammar": "m",
-        "icon": "mietvertrag.webp"
+        "icon": "mietvertrag.webp",
+        "conflicts": ["Vermieter"]
       },
       {
         "german": "Kaution",
         "english": "deposit",
         "grammar": "f",
-        "icon": "kaution.webp"
+        "icon": "kaution.webp",
+        "hard_icon": true
       },
       {
         "german": "Nebenkosten",
         "english": "additional costs / utilities",
         "grammar": "",
         "icon": "nebenkosten.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Strom"]
       },
       {
         "german": "Quadratmeter",
@@ -113,7 +117,8 @@
         "german": "Dusche",
         "english": "shower",
         "grammar": "f",
-        "icon": "dusche.webp"
+        "icon": "dusche.webp",
+        "conflicts": ["Waschbecken"]
       },
       {
         "german": "Waschbecken",
@@ -139,7 +144,8 @@
         "german": "Stockwerk",
         "english": "floor / storey",
         "grammar": "n",
-        "icon": "stockwerk.webp"
+        "icon": "stockwerk.webp",
+        "conflicts": ["Erdgeschoss"]
       },
       {
         "german": "Erdgeschoss",
@@ -151,7 +157,8 @@
         "german": "Aufzug",
         "english": "lift / elevator",
         "grammar": "m",
-        "icon": "aufzug.webp"
+        "icon": "aufzug.webp",
+        "conflicts": ["Treppenhaus"]
       },
       {
         "german": "Klingel",
@@ -196,7 +203,8 @@
         "german": "kaputt",
         "english": "broken",
         "grammar": "",
-        "icon": "kaputt.webp"
+        "icon": "kaputt.webp",
+        "conflicts": ["reparieren"]
       },
       {
         "german": "reparieren",
@@ -208,7 +216,8 @@
         "german": "Handwerker",
         "english": "tradesperson / craftsman",
         "grammar": "m",
-        "icon": "handwerker.webp"
+        "icon": "handwerker.webp",
+        "conflicts": ["reparieren"]
       },
       {
         "german": "Strom",
@@ -226,19 +235,24 @@
         "german": "Schaden",
         "english": "damage",
         "grammar": "m",
-        "icon": "schaden.webp"
+        "icon": "schaden.webp",
+        "conflicts": ["kaputt"],
+        "hard_icon": true
       },
       {
         "german": "Feuchtigkeit",
         "english": "damp / moisture",
         "grammar": "f",
-        "icon": "feuchtigkeit.webp"
+        "icon": "feuchtigkeit.webp",
+        "conflicts": ["tropfen"],
+        "hard_icon": true
       },
       {
         "german": "Schloss",
         "english": "lock",
         "grammar": "n",
-        "icon": "schloss_lock.webp"
+        "icon": "schloss_lock.webp",
+        "hard_icon": true
       },
       {
         "german": "tropfen",

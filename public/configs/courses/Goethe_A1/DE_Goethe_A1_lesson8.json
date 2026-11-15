@@ -4,7 +4,8 @@
       {
         "english": "bus",
         "grammar": "m",
-        "german": "Bus"
+        "german": "Bus",
+        "conflicts": ["Straßenbahn"]
       },
       {
         "english": "train",
@@ -15,17 +16,20 @@
       {
         "english": "car",
         "grammar": "n",
-        "german": "Auto"
+        "german": "Auto",
+        "conflicts": ["Taxi"]
       },
       {
         "english": "motorbike",
         "grammar": "n",
-        "german": "Motorrad"
+        "german": "Motorrad",
+        "conflicts": ["Fahrrad"]
       },
       {
         "english": "aeroplane",
         "grammar": "n",
-        "german": "Flugzeug"
+        "german": "Flugzeug",
+        "conflicts": ["Flughafen"]
       },
       {
         "english": "ship",
@@ -35,7 +39,8 @@
       {
         "english": "underground / subway",
         "grammar": "f",
-        "german": "U-Bahn"
+        "german": "U-Bahn",
+        "conflicts": ["Zug", "Straßenbahn"]
       },
       {
         "english": "taxi",
@@ -68,7 +73,8 @@
       {
         "english": "departure",
         "grammar": "f",
-        "german": "Abfahrt"
+        "german": "Abfahrt",
+        "conflicts": ["Ankunft"]
       },
       {
         "english": "arrival",
@@ -88,7 +94,8 @@
       {
         "english": "bus stop",
         "grammar": "f",
-        "german": "Haltestelle"
+        "german": "Haltestelle",
+        "conflicts": ["Bus"]
       },
       {
         "english": "platform / track",
@@ -98,7 +105,8 @@
       {
         "english": "suitcase",
         "grammar": "m",
-        "german": "Koffer"
+        "german": "Koffer",
+        "conflicts": ["Reise"]
       },
       {
         "english": "delay",
@@ -162,7 +170,8 @@
       {
         "english": "journey / trip",
         "grammar": "f",
-        "german": "Reise"
+        "german": "Reise",
+        "conflicts": ["Urlaub"]
       },
       {
         "english": "holiday / vacation",
@@ -172,7 +181,8 @@
       {
         "english": "hotel",
         "grammar": "n",
-        "german": "Hotel"
+        "german": "Hotel",
+        "conflicts": ["Unterkunft"]
       },
       {
         "english": "accommodation",
@@ -182,7 +192,8 @@
       {
         "english": "passport",
         "grammar": "m",
-        "german": "Pass"
+        "german": "Pass",
+        "conflicts": ["Grenze"]
       },
       {
         "english": "border",
@@ -202,12 +213,14 @@
       {
         "english": "to arrive",
         "grammar": "",
-        "german": "ankommen"
+        "german": "ankommen",
+        "conflicts": ["Ankunft"]
       },
       {
         "english": "to depart / set off",
         "grammar": "",
-        "german": "abfahren"
+        "german": "abfahren",
+        "conflicts": ["Abfahrt"]
       }
     ]
   }

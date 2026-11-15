@@ -181,7 +181,8 @@
       {
         "english": "midday / noon",
         "grammar": "m",
-        "german": "Mittag"
+        "german": "Mittag",
+        "conflicts": ["Vormittag"]
       },
       {
         "english": "afternoon",

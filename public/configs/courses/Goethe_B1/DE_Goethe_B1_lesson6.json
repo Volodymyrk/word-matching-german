@@ -5,7 +5,8 @@
         "german": "Einkaufszentrum",
         "english": "shopping centre",
         "grammar": "n",
-        "icon": "einkaufszentrum.webp"
+        "icon": "einkaufszentrum.webp",
+        "conflicts": ["Kaufhaus"]
       },
       {
         "german": "Discounter",
@@ -74,7 +75,8 @@
         "german": "Hemd",
         "english": "shirt",
         "grammar": "n",
-        "icon": "hemd.webp"
+        "icon": "hemd.webp",
+        "conflicts": ["Bluse"]
       },
       {
         "german": "Pullover",
@@ -101,7 +103,8 @@
         "german": "Größe",
         "english": "size",
         "grammar": "f",
-        "icon": "groesse.webp"
+        "icon": "groesse.webp",
+        "conflicts": ["anprobieren"]
       },
       {
         "german": "anprobieren",
@@ -120,31 +123,35 @@
         "english": "discount",
         "grammar": "m",
         "icon": "rabatt.webp",
-        "conflicts": ["Sonderangebot"],
+        "conflicts": ["Sonderangebot", "Schnäppchen"],
         "hard_icon": true
       },
       {
         "german": "Quittung",
         "english": "receipt",
         "grammar": "f",
-        "icon": "quittung.webp"
+        "icon": "quittung.webp",
+        "conflicts": ["Rechnung"]
       },
       {
         "german": "Sonderangebot",
         "english": "special offer",
         "grammar": "n",
         "icon": "sonderangebot.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Schnäppchen"]
       },
       {
         "german": "reklamieren",
         "english": "to make a complaint / claim",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["zurückgeben"]
       },
       {
         "german": "Umtausch",
         "english": "exchange",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["zurückgeben"]
       },
       {
         "german": "zurückgeben",
@@ -214,7 +221,8 @@
         "english": "cheap / affordable",
         "grammar": "",
         "icon": "guenstig.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Schnäppchen"]
       },
       {
         "german": "Verbraucher",

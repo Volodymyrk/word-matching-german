@@ -4,7 +4,8 @@
       {
         "english": "apartment",
         "grammar": "f",
-        "german": "Wohnung"
+        "german": "Wohnung",
+        "conflicts": ["Haus"]
       },
       {
         "english": "house",
@@ -15,7 +16,7 @@
         "english": "room",
         "grammar": "n",
         "german": "Zimmer",
-        "conflicts": ["Wohnzimmer"]
+        "conflicts": ["Wohnzimmer", "Schlafzimmer", "Badezimmer"]
       },
       {
         "english": "bedroom",
@@ -77,7 +78,8 @@
       {
         "english": "wardrobe",
         "grammar": "m",
-        "german": "Schrank"
+        "german": "Schrank",
+        "conflicts": ["Regal"]
       },
       {
         "english": "shelf",
@@ -181,7 +183,8 @@
       {
         "english": "expensive",
         "grammar": "",
-        "german": "teuer"
+        "german": "teuer",
+        "conflicts": ["günstig"]
       },
       {
         "english": "affordable / cheap",
@@ -191,7 +194,8 @@
       {
         "english": "modern",
         "grammar": "",
-        "german": "modern"
+        "german": "modern",
+        "conflicts": ["neu"]
       },
       {
         "english": "old",

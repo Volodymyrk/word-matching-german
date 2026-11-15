@@ -9,7 +9,8 @@
       {
         "german": "installieren",
         "english": "to install",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["aktualisieren"]
       },
       {
         "german": "aktualisieren",
@@ -20,7 +21,9 @@
         "german": "Programm",
         "english": "programme / software",
         "grammar": "n",
-        "icon": "programm.webp"
+        "icon": "programm.webp",
+        "conflicts": ["Betriebssystem"],
+        "hard_icon": true
       },
       {
         "german": "abstürzen",
@@ -60,13 +63,15 @@
       {
         "german": "Smartphone",
         "english": "smartphone",
-        "grammar": "n"
+        "grammar": "n",
+        "conflicts": ["Tablet"]
       },
       {
         "german": "Laptop",
         "english": "laptop",
         "grammar": "m",
-        "icon": "laptop.webp"
+        "icon": "laptop.webp",
+        "conflicts": ["Tablet"]
       },
       {
         "german": "Tablet",
@@ -82,7 +87,8 @@
       {
         "german": "aufladen",
         "english": "to charge",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Akku"]
       },
       {
         "german": "Akku",
@@ -119,12 +125,14 @@
       {
         "german": "Roboter",
         "english": "robot",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Maschine", "künstliche Intelligenz"]
       },
       {
         "german": "automatisieren",
         "english": "to automate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Automatisierung"]
       },
       {
         "german": "Produktion",
@@ -167,12 +175,14 @@
         "german": "Ingenieur",
         "english": "engineer (male)",
         "grammar": "m",
-        "icon": "ingenieur.webp"
+        "icon": "ingenieur.webp",
+        "conflicts": ["Techniker"]
       },
       {
         "german": "Techniker",
         "english": "technician (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Mechaniker"]
       },
       {
         "german": "Elektriker",
@@ -190,12 +200,14 @@
         "german": "reparieren",
         "english": "to repair",
         "grammar": "",
-        "icon": "reparieren.webp"
+        "icon": "reparieren.webp",
+        "conflicts": ["beheben", "Wartung"]
       },
       {
         "german": "warten",
         "english": "to maintain / service",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Wartung"]
       },
       {
         "german": "beheben",
@@ -211,7 +223,8 @@
       {
         "german": "Werkstatt",
         "english": "workshop / garage",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Mechaniker"]
       },
       {
         "german": "Wartung",

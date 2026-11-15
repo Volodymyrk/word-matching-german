@@ -11,7 +11,8 @@
         "german": "Ingenieur",
         "english": "engineer",
         "grammar": "m",
-        "icon": "ingenieur.webp"
+        "icon": "ingenieur.webp",
+        "conflicts": ["Mechaniker", "Architekt"]
       },
       {
         "german": "Mechaniker",
@@ -67,7 +68,8 @@
         "german": "Büro",
         "english": "office",
         "grammar": "n",
-        "icon": "buero.webp"
+        "icon": "buero.webp",
+        "conflicts": ["Chef"]
       },
       {
         "german": "Besprechung",
@@ -79,7 +81,8 @@
         "german": "Kollege",
         "english": "colleague",
         "grammar": "m",
-        "icon": "kollege.webp"
+        "icon": "kollege.webp",
+        "conflicts": ["Besprechung"]
       },
       {
         "german": "Chef",
@@ -91,7 +94,8 @@
         "german": "Gehalt",
         "english": "salary",
         "grammar": "n",
-        "icon": "gehalt.webp"
+        "icon": "gehalt.webp",
+        "conflicts": ["Gehaltserhöhung"]
       },
       {
         "german": "Überstunden",
@@ -109,7 +113,8 @@
         "german": "Aufgabe",
         "english": "task",
         "grammar": "f",
-        "icon": "aufgabe.webp"
+        "icon": "aufgabe.webp",
+        "conflicts": ["Projekt"]
       },
       {
         "german": "Projekt",
@@ -123,7 +128,8 @@
         "english": "deadline",
         "grammar": "f",
         "icon": "deadline.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Probezeit"]
       }
     ],
     "Arbeitsbedingungen": [
@@ -146,13 +152,15 @@
         "german": "Vertrag",
         "english": "contract",
         "grammar": "m",
-        "icon": "vertrag.webp"
+        "icon": "vertrag.webp",
+        "conflicts": ["Zeugnis"]
       },
       {
         "german": "kündigen",
         "english": "to resign / quit",
         "grammar": "",
-        "icon": "kuendigen.webp"
+        "icon": "kuendigen.webp",
+        "conflicts": ["entlassen"]
       },
       {
         "german": "entlassen",
@@ -172,7 +180,8 @@
         "german": "Qualifikation",
         "english": "qualification",
         "grammar": "f",
-        "icon": "qualifikation.webp"
+        "icon": "qualifikation.webp",
+        "conflicts": ["Zeugnis"]
       },
       {
         "german": "selbstständig",
@@ -185,7 +194,8 @@
         "german": "Homeoffice",
         "english": "working from home",
         "grammar": "n",
-        "icon": "homeoffice.webp"
+        "icon": "homeoffice.webp",
+        "conflicts": ["selbstständig"]
       },
       {
         "german": "Gehaltserhöhung",
@@ -200,20 +210,23 @@
         "german": "Stellenanzeige",
         "english": "job advertisement",
         "grammar": "f",
-        "icon": "stellenanzeige.webp"
+        "icon": "stellenanzeige.webp",
+        "conflicts": ["Bewerbung"]
       },
       {
         "german": "sich bewerben",
         "english": "to apply (for a job)",
         "grammar": "",
-        "icon": "sich_bewerben.webp"
+        "icon": "sich_bewerben.webp",
+        "conflicts": ["Bewerbung"]
       },
       {
         "german": "Bewerbung",
         "english": "job application",
         "grammar": "f",
         "icon": "bewerbung.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Lebenslauf"]
       },
       {
         "german": "Lebenslauf",
@@ -225,7 +238,8 @@
         "german": "Vorstellungsgespräch",
         "english": "job interview",
         "grammar": "n",
-        "icon": "vorstellungsgespraech.webp"
+        "icon": "vorstellungsgespraech.webp",
+        "conflicts": ["Besprechung"]
       },
       {
         "german": "Probezeit",

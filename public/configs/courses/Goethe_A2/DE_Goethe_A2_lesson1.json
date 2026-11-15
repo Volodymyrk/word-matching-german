@@ -9,7 +9,7 @@
       { "german": "Mittagessen", "english": "lunch", "grammar": "n", "icon": "mittagessen.webp" },
       { "german": "Abendessen", "english": "dinner", "grammar": "n", "icon": "abendessen.webp" },
       { "german": "Wecker", "english": "alarm clock", "grammar": "m", "icon": "wecker.webp" },
-      { "german": "Gewohnheit", "english": "habit", "grammar": "f", "icon": "gewohnheit.webp" },
+      { "german": "Gewohnheit", "english": "habit", "grammar": "f", "icon": "gewohnheit.webp", "hard_icon": true },
       { "german": "schlafen gehen", "english": "to go to bed", "grammar": "", "icon": "schlafen_gehen.webp" }
     ],
     "Haushalt": [
@@ -29,7 +29,7 @@
       { "german": "planen", "english": "to plan", "grammar": "", "icon": "planen.webp", "hard_icon": true },
       { "german": "organisieren", "english": "to organise", "grammar": "", "icon": "organisieren.webp", "hard_icon": true },
       { "german": "Kalender", "english": "calendar", "grammar": "m", "icon": "kalender.webp" },
-      { "german": "Alltag", "english": "everyday life", "grammar": "m", "icon": "alltag.webp" },
+      { "german": "Alltag", "english": "everyday life", "grammar": "m", "icon": "alltag.webp", "hard_icon": true },
       { "german": "Wochenende", "english": "weekend", "grammar": "n", "icon": "wochenende.webp" },
       { "german": "Urlaub", "english": "holiday / vacation", "grammar": "m", "icon": "urlaub.webp" },
       { "german": "rechtzeitig", "english": "on time / in time", "grammar": "", "icon": "rechtzeitig.webp", "conflicts": ["pünktlich"], "hard_icon": true },

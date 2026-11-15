@@ -5,13 +5,15 @@
         "german": "Handy",
         "english": "mobile phone",
         "grammar": "n",
-        "icon": "handy.webp"
+        "icon": "handy.webp",
+        "conflicts": ["anrufen"]
       },
       {
         "german": "E-Mail",
         "english": "email",
         "grammar": "f",
-        "icon": "e-mail.webp"
+        "icon": "e-mail.webp",
+        "conflicts": ["Betreff"]
       },
       {
         "german": "Nachricht",
@@ -25,7 +27,7 @@
         "english": "(phone) call",
         "grammar": "m",
         "icon": "anruf.webp",
-        "conflicts": ["anrufen", "Videoanruf"]
+        "conflicts": ["anrufen", "Videoanruf", "Handy"]
       },
       {
         "german": "anrufen",
@@ -106,7 +108,8 @@
         "english": "to follow",
         "grammar": "",
         "icon": "folgen.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Follower"]
       },
       {
         "german": "Profil",
@@ -119,14 +122,16 @@
         "german": "Follower",
         "english": "follower",
         "grammar": "m",
-        "icon": "follower.webp"
+        "icon": "follower.webp",
+        "hard_icon": true
       },
       {
         "german": "online",
         "english": "online",
         "grammar": "",
         "icon": "online.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Empfang"]
       },
       {
         "german": "herunterladen",
@@ -141,13 +146,15 @@
         "english": "news",
         "grammar": "",
         "icon": "nachrichten.webp",
-        "conflicts": ["Meldung"]
+        "conflicts": ["Meldung", "Schlagzeile", "aktuell"]
       },
       {
         "german": "Bericht",
         "english": "report",
         "grammar": "m",
-        "icon": "bericht.webp"
+        "icon": "bericht.webp",
+        "conflicts": ["Artikel"],
+        "hard_icon": true
       },
       {
         "german": "Artikel",
@@ -159,20 +166,23 @@
         "german": "Thema",
         "english": "topic / theme",
         "grammar": "n",
-        "icon": "thema.webp"
+        "icon": "thema.webp",
+        "hard_icon": true
       },
       {
         "german": "Schlagzeile",
         "english": "headline",
         "grammar": "f",
-        "icon": "schlagzeile.webp"
+        "icon": "schlagzeile.webp",
+        "conflicts": ["aktuell"]
       },
       {
         "german": "Meldung",
         "english": "news item / announcement",
         "grammar": "f",
         "icon": "meldung.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["informieren"]
       },
       {
         "german": "aktuell",
@@ -192,13 +202,15 @@
         "german": "recherchieren",
         "english": "to research",
         "grammar": "",
-        "icon": "recherchieren.webp"
+        "icon": "recherchieren.webp",
+        "conflicts": ["Nachrichten"]
       },
       {
         "german": "Quelle",
         "english": "source",
         "grammar": "f",
-        "icon": "quelle.webp"
+        "icon": "quelle.webp",
+        "hard_icon": true
       }
     ],
     "Telefon und Schriftverkehr": [
@@ -206,26 +218,30 @@
         "german": "wählen",
         "english": "to dial",
         "grammar": "",
-        "icon": "waehlen.webp"
+        "icon": "waehlen.webp",
+        "conflicts": ["Handy"]
       },
       {
         "german": "Klingelton",
         "english": "ringtone",
         "grammar": "m",
-        "icon": "klingelton.webp"
+        "icon": "klingelton.webp",
+        "conflicts": ["Anruf"]
       },
       {
         "german": "Anrufbeantworter",
         "english": "answering machine",
         "grammar": "m",
-        "icon": "anrufbeantworter.webp"
+        "icon": "anrufbeantworter.webp",
+        "conflicts": ["Sprachnachricht"]
       },
       {
         "german": "besetzt",
         "english": "busy / engaged (line)",
         "grammar": "",
         "icon": "besetzt.webp",
-        "hard_icon": true
+        "hard_icon": true,
+        "conflicts": ["Anruf"]
       },
       {
         "german": "Empfang",

@@ -16,7 +16,8 @@
         "german": "abheben",
         "english": "to withdraw (money)",
         "grammar": "",
-        "icon": "abheben.webp"
+        "icon": "abheben.webp",
+        "conflicts": ["einzahlen"]
       },
       {
         "german": "einzahlen",
@@ -31,7 +32,8 @@
       {
         "german": "Kredit",
         "english": "loan / credit",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Schulden"]
       },
       {
         "german": "Schulden",
@@ -41,7 +43,8 @@
       {
         "german": "Hypothek",
         "english": "mortgage",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Kredit"]
       },
       {
         "german": "Währung",
@@ -68,12 +71,14 @@
       {
         "german": "Umsatz",
         "english": "turnover / revenue",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Gewinn"]
       },
       {
         "german": "Gewinn",
         "english": "profit",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Verlust"]
       },
       {
         "german": "Verlust",
@@ -83,7 +88,8 @@
       {
         "german": "Aktie",
         "english": "share / stock",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["investieren"]
       },
       {
         "german": "investieren",
@@ -98,7 +104,8 @@
       {
         "german": "Insolvenz",
         "english": "insolvency / bankruptcy",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Verlust"]
       },
       {
         "german": "Konkurrent",
@@ -110,7 +117,8 @@
       {
         "german": "Konjunktur",
         "english": "economic situation / business cycle",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Wachstum"]
       },
       {
         "german": "Wachstum",
@@ -120,7 +128,8 @@
       {
         "german": "Rezession",
         "english": "recession",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Konjunktur"]
       },
       {
         "german": "Arbeitslosigkeit",
@@ -130,7 +139,8 @@
       {
         "german": "exportieren",
         "english": "to export",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["importieren"]
       },
       {
         "german": "importieren",
@@ -140,18 +150,21 @@
       {
         "german": "Nachfrage",
         "english": "demand",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Angebot"]
       },
       {
         "german": "Angebot",
         "english": "supply / offer",
         "grammar": "n",
-        "icon": "angebot.webp"
+        "icon": "angebot.webp",
+        "hard_icon": true
       },
       {
         "german": "Handel",
         "english": "trade / commerce",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Markt"]
       },
       {
         "german": "Markt",
@@ -179,7 +192,8 @@
       {
         "german": "entschädigen",
         "english": "to compensate",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Rückerstattung"]
       },
       {
         "german": "Beschwerde",
@@ -189,7 +203,8 @@
       {
         "german": "AGB",
         "english": "terms and conditions",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Kleingedruckte"]
       },
       {
         "german": "Kleingedruckte",

@@ -45,8 +45,18 @@ def norm_en(s: str) -> str:
     return s.strip()
 
 
+def singular(t: str) -> str:
+    if len(t) > 4 and t.endswith("ies"):
+        return t[:-3] + "y"
+    if len(t) > 4 and t.endswith("es") and t[-3] in "sxz":
+        return t[:-2]
+    if len(t) > 3 and t.endswith("s") and not t.endswith("ss"):
+        return t[:-1]
+    return t
+
+
 def tokens(prompt: str) -> set[str]:
-    return {t for t in re.findall(r"[a-z]+", prompt.lower()) if t not in STOP and len(t) > 2}
+    return {singular(t) for t in re.findall(r"[a-z]+", prompt.lower()) if t not in STOP and len(t) > 2}
 
 
 def iter_words(data):
@@ -72,8 +82,11 @@ def main() -> None:
         words = [(sec, w) for sec, w in iter_words(data) if w.get("german")]
         conflicts, hard = [], []
 
+        linked = {frozenset((w["german"].lower(), c.lower())) for _, w in words for c in w.get("conflicts", [])}
         for (s1, a), (s2, b) in combinations(words, 2):
             ga, gb = a["german"], b["german"]
+            if frozenset((ga.lower(), gb.lower())) in linked:
+                continue
             sa, sb = to_stem(ga), to_stem(gb)
             ea, eb = norm_en(a.get("english", "")), norm_en(b.get("english", ""))
             reasons = []
@@ -98,7 +111,7 @@ def main() -> None:
                                  f"{'' if s1 == s2 else '  [diff section]'}: {'; '.join(reasons)}")
 
         for sec, w in words:
-            if not w.get("icon"):
+            if not w.get("icon") or w.get("hard_icon"):
                 continue
             p = prompts.get(to_stem(w["german"]))
             if p and ABSTRACT.search(p):

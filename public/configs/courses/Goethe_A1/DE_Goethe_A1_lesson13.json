@@ -9,12 +9,14 @@
       {
         "english": "to sleep",
         "grammar": "",
-        "german": "schlafen"
+        "german": "schlafen",
+        "conflicts": ["einschlafen"]
       },
       {
         "english": "to shower",
         "grammar": "",
-        "german": "duschen"
+        "german": "duschen",
+        "conflicts": ["waschen"]
       },
       {
         "english": "to get dressed",
@@ -34,7 +36,8 @@
       {
         "english": "to tidy up",
         "grammar": "",
-        "german": "aufräumen"
+        "german": "aufräumen",
+        "conflicts": ["putzen"]
       },
       {
         "english": "to clean",
@@ -56,7 +59,8 @@
       {
         "english": "to say",
         "grammar": "",
-        "german": "sagen"
+        "german": "sagen",
+        "conflicts": ["reden"]
       },
       {
         "english": "to tell / narrate",
@@ -66,7 +70,8 @@
       {
         "english": "to talk",
         "grammar": "",
-        "german": "reden"
+        "german": "reden",
+        "conflicts": ["erzählen"]
       },
       {
         "english": "to call out",
@@ -87,7 +92,8 @@
       {
         "english": "conversation",
         "grammar": "n",
-        "german": "Gespräch"
+        "german": "Gespräch",
+        "conflicts": ["reden"]
       },
       {
         "english": "message",
@@ -129,7 +135,8 @@
       {
         "english": "to fetch / get",
         "grammar": "",
-        "german": "holen"
+        "german": "holen",
+        "conflicts": ["bringen"]
       },
       {
         "english": "to stand",

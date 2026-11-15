@@ -4,7 +4,8 @@
       {
         "german": "Verletzung",
         "english": "injury",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Wunde"]
       },
       {
         "german": "Wunde",
@@ -14,7 +15,8 @@
       {
         "german": "Knochen",
         "english": "bone",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Bruch"]
       },
       {
         "german": "Bruch",
@@ -45,7 +47,8 @@
       {
         "german": "Herzinfarkt",
         "english": "heart attack",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Schlaganfall"]
       },
       {
         "german": "Schlaganfall",
@@ -69,12 +72,14 @@
       {
         "german": "untersuchen",
         "english": "to examine",
-        "grammar": ""
+        "grammar": "",
+        "conflicts": ["Untersuchung"]
       },
       {
         "german": "Untersuchung",
         "english": "examination / check-up",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Vorsorgeuntersuchung"]
       },
       {
         "german": "Behandlung",
@@ -84,12 +89,14 @@
       {
         "german": "Facharzt",
         "english": "specialist (doctor)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Chirurg"]
       },
       {
         "german": "Diagnose",
         "english": "diagnosis",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Symptom"]
       },
       {
         "german": "Symptom",
@@ -111,7 +118,8 @@
       {
         "german": "Operation",
         "english": "operation / surgery",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["operieren"]
       },
       {
         "german": "operieren",
@@ -126,7 +134,8 @@
       {
         "german": "Intensivstation",
         "english": "intensive care unit",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["Krankenhausstation"]
       },
       {
         "german": "Pflegerin",
@@ -136,7 +145,8 @@
       {
         "german": "Chirurg",
         "english": "surgeon (male)",
-        "grammar": "m"
+        "grammar": "m",
+        "conflicts": ["Operation"]
       },
       {
         "german": "entlassen werden",
@@ -151,7 +161,8 @@
       {
         "german": "Reha",
         "english": "rehabilitation",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["sich erholen"]
       },
       {
         "german": "sich erholen",
@@ -164,7 +175,9 @@
         "german": "Vorsorge",
         "english": "prevention / precaution",
         "grammar": "f",
-        "icon": "vorsorge.webp"
+        "icon": "vorsorge.webp",
+        "conflicts": ["Vorsorgeuntersuchung", "präventiv"],
+        "hard_icon": true
       },
       {
         "german": "Vorsorgeuntersuchung",
@@ -176,7 +189,8 @@
         "german": "impfen",
         "english": "to vaccinate",
         "grammar": "",
-        "icon": "impfen.webp"
+        "icon": "impfen.webp",
+        "conflicts": ["Impfung"]
       },
       {
         "german": "Impfung",
@@ -191,7 +205,8 @@
       {
         "german": "Sucht",
         "english": "addiction",
-        "grammar": "f"
+        "grammar": "f",
+        "conflicts": ["süchtig"]
       },
       {
         "german": "süchtig",
